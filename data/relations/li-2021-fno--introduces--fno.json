@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "relation.li-2021-fno--introduces--fno",
   "source_id": "paper.li-2021-fno",
   "target_id": "method.fno",
@@ -7,5 +7,7 @@
   "claim": "This publication introduces or establishes fno as a named method.",
   "evidence_paper_ids": [
     "paper.li-2021-fno"
-  ]
+  ],
+  "significance": "landmark",
+  "significance_reason": "Foundational publication introducing the named method and its core mechanism."
 }

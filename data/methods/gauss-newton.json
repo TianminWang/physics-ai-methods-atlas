@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "method.gauss-newton",
   "aliases": [
     "Gauss-Newton"
@@ -10,10 +10,11 @@
     "Least-squares optimization",
     "Linear algebra"
   ],
-  "core_reading": [],
   "name": "Gauss–Newton Method",
   "status": "draft",
   "summary": "Local least-squares optimization based on linearization of the residual map.",
   "core_idea": "Linearize residuals at the current iterate and solve a linear least-squares correction.",
-  "innovation": "Exploits residual structure by using a Gauss–Newton approximation to the least-squares Hessian."
+  "innovation": "Exploits residual structure by using a Gauss–Newton approximation to the least-squares Hessian.",
+  "start_here": [],
+  "curation_note": "Draft methodological scaffold pending a more complete scholarly review."
 }
