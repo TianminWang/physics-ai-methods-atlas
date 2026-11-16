@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.windkessel--addresses--systemic-arterial-calibration",
+  "source_id": "method.windkessel",
+  "target_id": "problem.systemic-arterial-calibration",
+  "type": "addresses",
+  "claim": "Provides a lumped vascular-load alternative or reduced terminal model."
+}

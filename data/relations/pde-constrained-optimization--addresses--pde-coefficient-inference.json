@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.pde-constrained-optimization--addresses--pde-coefficient-inference",
+  "source_id": "method.pde-constrained-optimization",
+  "target_id": "problem.pde-coefficient-inference",
+  "type": "addresses",
+  "claim": "Optimizes PDE coefficients while satisfying the physical state equations."
+}

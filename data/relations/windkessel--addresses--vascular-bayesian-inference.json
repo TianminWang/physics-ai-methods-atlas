@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.windkessel--addresses--vascular-bayesian-inference",
+  "source_id": "method.windkessel",
+  "target_id": "problem.vascular-bayesian-inference",
+  "type": "addresses",
+  "claim": "Introduces interpretable resistance/compliance parameters for model calibration."
+}

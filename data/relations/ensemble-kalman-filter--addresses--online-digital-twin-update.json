@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.ensemble-kalman-filter--addresses--online-digital-twin-update",
+  "source_id": "method.ensemble-kalman-filter",
+  "target_id": "problem.online-digital-twin-update",
+  "type": "addresses",
+  "claim": "Provides sequential model-state updates from longitudinal measurements."
+}

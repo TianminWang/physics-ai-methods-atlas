@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.ensemble-kalman-inversion--addresses--coronary-parameter-inference",
+  "source_id": "method.ensemble-kalman-inversion",
+  "target_id": "problem.coronary-parameter-inference",
+  "type": "addresses",
+  "claim": "Potential derivative-free alternative for calibrating reduced coronary flow models."
+}

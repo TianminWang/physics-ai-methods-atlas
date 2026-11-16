@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.derivative-informed-operator--addresses--vascular-bayesian-inference",
+  "source_id": "method.derivative-informed-operator",
+  "target_id": "problem.vascular-bayesian-inference",
+  "type": "addresses",
+  "claim": "Could accelerate sensitivity-dependent Bayesian sampling if trained for the relevant vessel model."
+}

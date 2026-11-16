@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.nonlinear-least-squares--addresses--ode-parameter-inference",
+  "source_id": "method.nonlinear-least-squares",
+  "target_id": "problem.ode-parameter-inference",
+  "type": "addresses",
+  "claim": "Minimizes ODE model-data mismatch for unknown rates or initial conditions."
+}

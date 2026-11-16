@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.pino--addresses--systemic-arterial-calibration",
+  "source_id": "method.pino",
+  "target_id": "problem.systemic-arterial-calibration",
+  "type": "addresses",
+  "claim": "Physics-informed solution operators have been evaluated in systemic multi-vessel parameter inference (Ryan et al. 2026)."
+}

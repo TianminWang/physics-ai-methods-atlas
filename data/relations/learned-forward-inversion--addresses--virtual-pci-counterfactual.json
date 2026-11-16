@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.learned-forward-inversion--addresses--virtual-pci-counterfactual",
+  "source_id": "method.learned-forward-inversion",
+  "target_id": "problem.virtual-pci-counterfactual",
+  "type": "addresses",
+  "claim": "Could accelerate post-intervention parameter sweeps, provided surrogate reliability on changed geometry is validated."
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.bayesian-inverse-problems--addresses--ode-parameter-inference",
+  "source_id": "method.bayesian-inverse-problems",
+  "target_id": "problem.ode-parameter-inference",
+  "type": "addresses",
+  "claim": "Supports priors and posterior uncertainty in ODE parameter inference."
+}

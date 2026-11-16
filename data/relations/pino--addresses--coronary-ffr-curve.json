@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.pino--addresses--coronary-ffr-curve",
+  "source_id": "method.pino",
+  "target_id": "problem.coronary-ffr-curve",
+  "type": "addresses",
+  "claim": "Physics-informed operator training provides a related framework, but requires coronary-specific validation."
+}

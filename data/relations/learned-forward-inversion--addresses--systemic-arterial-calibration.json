@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.learned-forward-inversion--addresses--systemic-arterial-calibration",
+  "source_id": "method.learned-forward-inversion",
+  "target_id": "problem.systemic-arterial-calibration",
+  "type": "addresses",
+  "claim": "Uses pre-trained vascular forward surrogates within repeated parameter inversion."
+}

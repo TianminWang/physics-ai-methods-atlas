@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.bayesian-inverse-problems--addresses--online-digital-twin-update",
+  "source_id": "method.bayesian-inverse-problems",
+  "target_id": "problem.online-digital-twin-update",
+  "type": "addresses",
+  "claim": "Supports posterior parameter updates as additional observations arrive."
+}

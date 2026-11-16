@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.proper-orthogonal-decomposition--addresses--coronary-parameter-inference",
+  "source_id": "method.proper-orthogonal-decomposition",
+  "target_id": "problem.coronary-parameter-inference",
+  "type": "addresses",
+  "claim": "Can reduce temporal state dimensionality ahead of inverse optimization."
+}

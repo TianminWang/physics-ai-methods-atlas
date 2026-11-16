@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.adjoint-sensitivity--addresses--ode-parameter-inference",
+  "source_id": "method.adjoint-sensitivity",
+  "target_id": "problem.ode-parameter-inference",
+  "type": "addresses",
+  "claim": "Computes objective gradients for ODE inverse estimation."
+}
