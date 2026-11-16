@@ -1,38 +1,39 @@
-# Roadmap · 项目分阶段建设计划
+# Roadmap · 项目计划与完成标准
 
-## Phase 1 — Foundation v0.1 (this Pull Request)
+## Phase 1 — Foundational schema and validation (completed; refined in v0.2)
 
-Acceptance criteria:
+- [x] Single canonical source for Method, Paper, Book, Problem, Area and typed Relation records.
+- [x] Evidence provenance, stable IDs, cross-file reference and typed-edge checks, DAG checks for specified graph projections.
+- [x] Make `start_here` a **nonbinding, uncapped advisory reading suggestion**, not a mandatory 1–2 quota.
+- [x] Attach `landmark` significance to contextual **paper→method contributions**, never a global yes/no paper tag.
+- [x] Allow book chapters alongside papers in recommended starting references.
+- [x] Deterministic graph export, regression tests and GitHub Actions validation.
+- [x] Document curation, methodology and data compatibility (`schema_version: 2.0.0`).
 
-- [x] Stable entity IDs, separate Method / Paper / Book / Problem / Area / Relation records.
-- [x] Type-safe graph links, evidence provenance and designated acyclic subgraphs.
-- [x] **1–2 verified must-read papers per curated method**; draft nodes are visibly incomplete.
-- [x] Small seed for PINN, DeepONet, FNO, and selected classical-method drafts.
-- [x] Cross-file semantic validation, regression tests and derived graph JSON export.
-- [x] Curation rules, source-of-truth policy, usage instructions and view planning.
-- [ ] Interactive website / large literature corpus (intentionally later phases).
+## Phase 2 — Initial curated methods and literature (v0.2)
 
-## Phase 2 — Method and literature population
+- [x] Construct classical inverse-theory spine: nonlinear least squares, Gauss–Newton, LM, Tikhonov, adjoint gradients, PDE-constrained optimization, Bayesian inverse problems.
+- [x] Construct scientific ML spine: PINN, neural operators, DeepONet, FNO, PINO / physics-informed DeepONet, learned-forward inversion, direct inverse operator, DINO and geometry-adaptive operators.
+- [x] Add data assimilation, ROM/operator inference and hemodynamics boundary-model branches.
+- [x] Link high-priority original works, syntheses, selected books and relevant coronary/systemic vascular tasks.
+- [x] Add minimal-reading guide and systematic, provenance-aware paper→method roles.
+- [ ] Continue scholarly curation as a living project: fuller author/DOI audits, comparative critiques, and underrepresented research branches. **No static literature collection is ever complete.**
 
-- Build a reliable initial backbone of about 15–25 method nodes, including classical optimization, adjoints, regularization, PINN, DeepONet, FNO, physics-informed operators, learned-forward inversion, Bayesian inverse methods and data assimilation.
-- Verify venues, authors, original publications and scholarly lineage; distinguish original contributions, independent evaluations and application studies.
-- Give each *curated* method a tight **1–2 paper minimum reading set**; keep all other papers optional.
-- Attach books/chapters and high-value coronary inverse-problem case studies.
-- Expand typed relationships without pretending a chronological improvement always implies technical superiority.
+**Scope of v0.2:** 30 method records, 32 paper/chapter records, 8 books, 10 problems and 5 areas linked by 210 typed relationships. These numbers measure the current indexed scope, not exhaustive coverage.
 
-## Phase 3 — Interactive knowledge graph
+## Phase 3 — Interactive knowledge graph (planned, NOT yet done)
 
-- GitHub README presents an accessible overview and a link to the viewer.
-- GitHub Pages shows searchable/zoomable/filterable default **method-evolution forest (A)**.
-- Provide **research problem / digital-twin pipeline view (B)** and optional **learning dependency view (C)** from the **same validated data**.
-- Show must-read papers first, further papers/books second, and make editorial/verification status visible.
-- Build visualization from the generated graph JSON rather than maintaining separate visual databases.
+- [ ] GitHub Pages for a searchable, filterable default **method-evolution forest (A)**.
+- [ ] Switchable **research problem / digital-twin pipeline (B)** view, plus optional **learning prerequisites (C)**.
+- [ ] Click methods for contextual Landmark works, optional `start_here`, further papers, books/chapters, and limitations.
+- [ ] Differentiate taxonomy, methodological descent, comparison and applicability by edge styles and clear legend.
+- [ ] Pull visualization data from validated `build/atlas-graph.json`, with no independent edited graph database.
 
-## Phase 4 — Ongoing scholarly maintenance
+## Phase 4 — Ongoing scholarly updates (when invoked)
 
-- Triage new publications, update existing method nodes or add a genuinely new method only when warranted.
-- Revisit core-paper choices as stronger tutorials or studies appear; preserve the old paper as further reading.
-- Integrate explicitly requested periodic searches or scheduled tasks if monitoring becomes useful.
-- Keep user-specific reading status separate from the public methodological truth.
+- [ ] Place new publications in existing method(s), or create a new node only when a genuinely reusable methodological innovation appears.
+- [ ] Update recommended starting readings if stronger pedagogical sources appear; preserve valuable old literature as optional.
+- [ ] Periodic checking or digests only through explicitly configured automations, if wanted.
+- [ ] Optional user-specific reading progress and duplicate-free cross-node reading routes, separate from public scholarly metadata.
 
-The Atlas is a versioned, evolving knowledge base. Changes to the schema require reviewed migrations; routine new papers and method links do not.
+The goal is **an expanding map and a small immediate reading load**. Editorial `status`, contextual `significance`, and user-specific reading progress are intentionally independent.
