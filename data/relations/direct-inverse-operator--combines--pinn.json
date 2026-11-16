@@ -1,10 +1,20 @@
 {
-  "schema_version": "2.0.0",
+  "schema_version": "2.1.0",
   "id": "relation.direct-inverse-operator--combines--pinn",
   "source_id": "method.direct-inverse-operator",
   "target_id": "method.pinn",
   "type": "combines",
   "claim": "Combines direct inverse-operator learning with PDE residual constraints during training.",
+  "claim_zh": "在观测到未知系数的直接映射训练中加入PDE约束。",
+  "innovation_detail": "Use PDE constraints while training a mapping from observations directly to unknown coefficients.",
+  "innovation_detail_zh": "在观测到未知系数的直接映射训练中加入PDE约束。",
+  "bottleneck": "Amortized inverse prediction without labeled inverse pairs remains constrained by physical consistency and identifiability.",
+  "bottleneck_zh": "直接逆映射缺少反演标签时仍需物理约束，同时要考虑可辨识性。",
+  "stage_ids": [
+    "stage.inverse-calibration"
+  ],
+  "primary_stage_id": "stage.inverse-calibration",
+  "tradeoff": "Physical training constraints do not by themselves resolve ill-posed inverse ambiguity.",
   "evidence_paper_ids": [
     "paper.cho-2025-pidion"
   ]

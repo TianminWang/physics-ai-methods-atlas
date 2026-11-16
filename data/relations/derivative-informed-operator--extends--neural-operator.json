@@ -1,10 +1,21 @@
 {
-  "schema_version": "2.0.0",
+  "schema_version": "2.1.0",
   "id": "relation.derivative-informed-operator--extends--neural-operator",
   "source_id": "method.derivative-informed-operator",
   "target_id": "method.neural-operator",
   "type": "extends",
   "claim": "Adds Jacobian-informed training to operator approximation for derivative-critical downstream tasks.",
+  "claim_zh": "将算子输出与导数/Jacobian信息联合纳入训练。",
+  "innovation_detail": "Jointly fit operator outputs and derivative/Jacobian information.",
+  "innovation_detail_zh": "将算子输出与导数/Jacobian信息联合纳入训练。",
+  "bottleneck": "Forward surrogate accuracy does not guarantee accurate gradients in outer-loop inverse optimization.",
+  "bottleneck_zh": "正向代理预测精度不能保证反问题外层优化所需的梯度精度。",
+  "stage_ids": [
+    "stage.physics-forward",
+    "stage.inverse-calibration"
+  ],
+  "primary_stage_id": "stage.inverse-calibration",
+  "tradeoff": "Obtaining derivative labels may introduce additional computational costs.",
   "evidence_paper_ids": [
     "paper.oleary-roseberry-2024-dino"
   ]

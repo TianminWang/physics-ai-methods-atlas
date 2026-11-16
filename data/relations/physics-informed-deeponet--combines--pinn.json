@@ -1,10 +1,21 @@
 {
-  "schema_version": "2.0.0",
+  "schema_version": "2.1.0",
   "id": "relation.physics-informed-deeponet--combines--pinn",
   "source_id": "method.physics-informed-deeponet",
   "target_id": "method.pinn",
   "type": "combines",
   "claim": "Brings PINN-style physical residual supervision into DeepONet learning across input functions.",
+  "claim_zh": "将微分方程残差与边界条件损失用于跨实例算子训练。",
+  "innovation_detail": "Inject differential-equation residual and boundary losses into multi-instance operator training.",
+  "innovation_detail_zh": "将微分方程残差与边界条件损失用于跨实例算子训练。",
+  "bottleneck": "Purely supervised operators may require extensive paired simulation labels.",
+  "bottleneck_zh": "纯监督算子学习可能需要大量配对数值模拟标签。",
+  "stage_ids": [
+    "stage.physics-forward",
+    "stage.prediction-uq"
+  ],
+  "primary_stage_id": "stage.physics-forward",
+  "tradeoff": "Physics penalties are typically soft and do not guarantee exact conservation.",
   "evidence_paper_ids": [
     "paper.wang-2021-physics-deeponet"
   ]

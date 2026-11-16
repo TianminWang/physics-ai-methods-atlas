@@ -1,10 +1,20 @@
 {
-  "schema_version": "2.0.0",
+  "schema_version": "2.1.0",
   "id": "relation.levenberg-marquardt--extends--gauss-newton",
   "source_id": "method.levenberg-marquardt",
   "target_id": "method.gauss-newton",
   "type": "extends",
   "claim": "Damped least-squares updates modify Gauss–Newton-style local corrections and stabilization.",
+  "claim_zh": "在Gauss–Newton型最小二乘迭代中加入阻尼。",
+  "innovation_detail": "Introduce damping into Gauss–Newton-like least-squares steps.",
+  "innovation_detail_zh": "在Gauss–Newton型最小二乘迭代中加入阻尼。",
+  "bottleneck": "Undamped local linearization can lead to unstable or overly aggressive parameter steps.",
+  "bottleneck_zh": "无阻尼局部线性化可能导致参数更新过大或不稳定。",
+  "stage_ids": [
+    "stage.inverse-calibration"
+  ],
+  "primary_stage_id": "stage.inverse-calibration",
+  "tradeoff": "Damping improves some convergence behavior but does not guarantee global optimality.",
   "evidence_paper_ids": [
     "paper.marquardt-1963-lm"
   ]

@@ -1,10 +1,21 @@
 {
-  "schema_version": "2.0.0",
+  "schema_version": "2.1.0",
   "id": "relation.bi-variational-pino--extends--pino",
   "source_id": "method.bi-variational-pino",
   "target_id": "method.pino",
   "type": "extends",
   "claim": "Adds locally weighted variational basis and residual mechanisms in coronary FFR applications.",
+  "claim_zh": "在解场表示和物理残差中引入局部变分加权。",
+  "innovation_detail": "Adds local variational weighting to field representation and physical residual terms.",
+  "innovation_detail_zh": "在解场表示和物理残差中引入局部变分加权。",
+  "bottleneck": "Need sensitivity to local stenosis features for continuous coronary FFR curve assessment.",
+  "bottleneck_zh": "连续冠脉FFR曲线评估需要关注局部狭窄对预测的影响。",
+  "stage_ids": [
+    "stage.physics-forward",
+    "stage.prediction-uq"
+  ],
+  "primary_stage_id": "stage.prediction-uq",
+  "tradeoff": "The published validation concerns coronary FFR curve assessment, not generic parameter inversion.",
   "evidence_paper_ids": [
     "paper.xie-2025-bvpino"
   ]
