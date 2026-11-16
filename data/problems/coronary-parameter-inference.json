@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "problem.coronary-parameter-inference",
   "constraints": [
     "Conservation laws and cardiovascular hemodynamic model assumptions"

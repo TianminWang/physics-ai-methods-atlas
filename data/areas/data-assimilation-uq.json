@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "area.data-assimilation-uq",
   "name": "System identification, data assimilation and UQ",
   "name_zh": "系统辨识、数据同化与不确定性量化",

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "problem.pde-coefficient-inference",
   "constraints": [
     "Governing PDE and boundary or initial conditions"
