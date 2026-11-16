@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "relation.raissi-2019-pinn--introduces--pinn",
   "source_id": "paper.raissi-2019-pinn",
   "target_id": "method.pinn",
@@ -7,5 +7,7 @@
   "claim": "This publication introduces or establishes pinn as a named method.",
   "evidence_paper_ids": [
     "paper.raissi-2019-pinn"
-  ]
+  ],
+  "significance": "landmark",
+  "significance_reason": "Foundational publication introducing the named method and its core mechanism."
 }

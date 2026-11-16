@@ -1,0 +1,27 @@
+{
+  "schema_version": "2.0.0",
+  "id": "method.ensemble-kalman-filter",
+  "name": "Ensemble Kalman Filter",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Sequential data assimilation approximating error covariances with an ensemble of model states.",
+  "core_idea": "Propagate ensemble members and update them using empirical covariances and observed data.",
+  "innovation": "Avoids propagating a full covariance matrix by using sample ensembles.",
+  "limitations": [
+    "Finite ensembles introduce sampling errors and spurious correlations.",
+    "Nonlinear and non-Gaussian behavior can limit the approximation."
+  ],
+  "background_topics": [
+    "Kalman filter",
+    "Covariance",
+    "Monte Carlo samples"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.evensen-2003-enkf",
+      "why": "Authoritative method overview with practical numerical formulation.",
+      "focus": "Ensemble covariance estimation, update formulas and localization caveats."
+    }
+  ],
+  "curation_note": "Core method concept and checked source(s) recorded; suggested readings remain advisory and may be revised."
+}

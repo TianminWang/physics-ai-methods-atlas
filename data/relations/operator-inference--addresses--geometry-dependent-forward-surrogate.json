@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.operator-inference--addresses--geometry-dependent-forward-surrogate",
+  "source_id": "method.operator-inference",
+  "target_id": "problem.geometry-dependent-forward-surrogate",
+  "type": "addresses",
+  "claim": "Potential reduced-dynamics alternative when representative trajectory data are available."
+}

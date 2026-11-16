@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.structured-tree-outflow--addresses--systemic-arterial-calibration",
+  "source_id": "method.structured-tree-outflow",
+  "target_id": "problem.systemic-arterial-calibration",
+  "type": "addresses",
+  "claim": "Models distal resistance/impedance in coupled 1D vascular flow networks."
+}

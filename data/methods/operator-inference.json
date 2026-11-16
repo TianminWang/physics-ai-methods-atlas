@@ -1,0 +1,27 @@
+{
+  "schema_version": "2.0.0",
+  "id": "method.operator-inference",
+  "name": "Data-driven Operator Inference",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Learn reduced dynamical-system operators from high-fidelity trajectories without intrusive access to the full PDE discretization.",
+  "core_idea": "Regress reduced vector-field operators in POD coordinates from projected trajectories and derivatives.",
+  "innovation": "Builds interpretable reduced-order dynamics from simulation data while retaining structural operator forms.",
+  "limitations": [
+    "Reduced model stability and extrapolation may require additional constraints.",
+    "Numerical differentiation can amplify trajectory noise."
+  ],
+  "background_topics": [
+    "POD",
+    "Least-squares regression",
+    "Reduced ODEs"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.peherstorfer-2016-opinf",
+      "why": "Key nonintrusive reduced-order model method paper.",
+      "focus": "From snapshots to reduced operators and dynamics."
+    }
+  ],
+  "curation_note": "Core method concept and checked source(s) recorded; suggested readings remain advisory and may be revised."
+}

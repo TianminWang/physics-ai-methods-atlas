@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "id": "paper.xie-2025-bvpino",
+  "title": "Bi-variational physics-informed operator network for fractional flow reserve curve assessment from coronary angiography",
+  "authors": [
+    "Baihong Xie",
+    "Heye Zhang",
+    "Anbang Wang",
+    "Xiujian Liu",
+    "Zhifan Gao"
+  ],
+  "year": 2025,
+  "venue": "Medical Image Analysis",
+  "publication_status": "peer_reviewed",
+  "url": "https://doi.org/10.1016/j.media.2025.103564",
+  "identifiers": {
+    "doi": "10.1016/j.media.2025.103564"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://doi.org/10.1016/j.media.2025.103564",
+  "summary": "Introduces a locally variationally weighted physics-informed operator for coronary angiography-derived FFR curves."
+}

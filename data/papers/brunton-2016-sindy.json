@@ -1,0 +1,20 @@
+{
+  "schema_version": "2.0.0",
+  "id": "paper.brunton-2016-sindy",
+  "title": "Discovering governing equations from data by sparse identification of nonlinear dynamical systems",
+  "authors": [
+    "Steven L. Brunton",
+    "Joshua L. Proctor",
+    "J. Nathan Kutz"
+  ],
+  "year": 2016,
+  "venue": "Proceedings of the National Academy of Sciences",
+  "publication_status": "peer_reviewed",
+  "url": "https://doi.org/10.1073/pnas.1517384113",
+  "identifiers": {
+    "doi": "10.1073/pnas.1517384113"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://doi.org/10.1073/pnas.1517384113",
+  "summary": "Introduces sparse identification of interpretable dynamical equations from time-series measurements."
+}

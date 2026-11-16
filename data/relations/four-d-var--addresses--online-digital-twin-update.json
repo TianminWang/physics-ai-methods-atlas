@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.four-d-var--addresses--online-digital-twin-update",
+  "source_id": "method.four-d-var",
+  "target_id": "problem.online-digital-twin-update",
+  "type": "addresses",
+  "claim": "Provides windowed re-estimation of dynamical states when new measurements accumulate."
+}

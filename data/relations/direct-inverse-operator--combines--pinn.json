@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.direct-inverse-operator--combines--pinn",
+  "source_id": "method.direct-inverse-operator",
+  "target_id": "method.pinn",
+  "type": "combines",
+  "claim": "Combines direct inverse-operator learning with PDE residual constraints during training.",
+  "evidence_paper_ids": [
+    "paper.cho-2025-pidion"
+  ]
+}

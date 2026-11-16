@@ -1,0 +1,20 @@
+{
+  "schema_version": "2.0.0",
+  "id": "paper.cao-2025-dino-mcmc",
+  "title": "Derivative-Informed Neural Operator Acceleration of Geometric MCMC for Infinite-Dimensional Bayesian Inverse Problems",
+  "authors": [
+    "Lianghao Cao",
+    "Thomas O'Leary-Roseberry",
+    "Omar Ghattas"
+  ],
+  "year": 2025,
+  "venue": "Journal of Machine Learning Research",
+  "publication_status": "peer_reviewed",
+  "url": "https://arxiv.org/abs/2403.08220",
+  "identifiers": {
+    "arxiv": "2403.08220"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://jmlr.org/papers/v26/24-0745.html",
+  "summary": "Uses Jacobian-informed operator surrogates and delayed-acceptance geometric MCMC to accelerate Bayesian inverse problems."
+}

@@ -1,96 +1,76 @@
-# Architecture · 数据与知识图谱架构
+# Architecture · 知识图谱数据与演化关系
 
-## 1. Three layers, one source of truth
+## Three layers from one source of truth
 
-1. **Canonical data:** individual JSON documents in data/{areas,methods,papers,books,problems,relations}.
-2. **Validation and projections:** JSON Schema + semantic checks; a reconstructable, normalized graph snapshot.
-3. **Views (not authoritative):** GitHub README overview, future default method-evolution forest, research-task/digital-twin workflow, and optional learning-dependency view.
+1. **Canonical records:** individual JSON files in `data/areas`, `methods`, `papers`, `books`, `problems`, `relations`.
+2. **Validation/projections:** JSON Schema draft 2020-12 and cross-file semantic validator; `scripts/export_graph.py` produces a normalized graph JSON.
+3. **Views:** simplified README, future default **method-evolution forest A**, switchable coronary/digital-twin **research-problem view B**, optional **learning dependencies C**.
 
-Do **not** keep a separate hand-curated graph for each view. Do **not** duplicate a paper's metadata within every method record. The overall knowledge graph may contain cycles; only designated taxonomic / learning subgraphs must be acyclic.
+All views use the **same authoritative records**. Never maintain three independent knowledge maps.
 
-## 2. Entity types
+## Entity types and identifiers
 
-| Kind | Stable ID example | Purpose |
+| Entity | Identifier | What it represents |
 |---|---|---|
-| area | area.inverse-problems | A broad navigation category, **not** method ancestry |
-| method | method.fno | A distinct reusable method, family or methodological framework |
-| paper | paper.li-2021-fno | Bibliographic evidence, reusable across multiple methods |
-| book | book.physics-based-deep-learning | Textbook/monograph, covering multiple nodes or areas |
-| problem | problem.coronary-parameter-inference | An inverse, inference or digital-twin research task |
-| relation | relation.fno--belongs-to--physics-ai | A directed, semantically typed graph link |
+| area | `area.inverse-problems` | Scope/navigation category, **not** a historical ancestor |
+| method | `method.fno` | Reusable method, algorithm or distinct framework |
+| paper | `paper.li-2024-pino` | One verified scholarly reference; reuse across nodes |
+| book | `book.chavent-nonlinear-least-squares` | Monograph or textbook with broad chapter coverage |
+| problem | `problem.coronary-parameter-inference` | Concrete scientific/research task with unknowns and measurements |
+| relation | `relation.pino--extends--fno` | Directed, typed and optionally evidence-backed link |
 
-Every record is a **separate file** under data/<plural>/<id suffix>.json. IDs, not labels or filenames, are the stable references. Rename display labels freely; avoid changing stable IDs after references exist. v0.1 uses schema_version "1.0.0".
+v0.2 uses `schema_version: "2.0.0"` on all records; a major-version bump was required to replace the first-stage `core_reading` field with `start_here` and to **remove the global paper Landmark flag**. The ID suffix must match the JSON filename, and stable IDs must be reused, not duplicated.
 
-Method records hold the central idea, innovation, limitations, required background and an ordered **core_reading** with at most two papers. Other papers are attached by relations. Books use `covers` relations with a chapter/section locator when known.
+Methods contain `summary`, `core_idea`, `innovation`, optional `limitations`, `background_topics`, editorial `status`, optional `curation_note`, and optional ordered `start_here`. Bibliographic metadata lives only in paper/book records.
 
-## 3. Typed relations (direction is significant)
+## Edge semantics (direction matters)
 
-| Type | Allowed direction | Meaning |
+| Relation | Allowed direction | Meaning |
 |---|---|---|
-| belongs_to | method → area | Navigation membership; multiple areas allowed |
-| subarea_of | area → area | Area hierarchy |
-| specializes | specific method → general method | Conceptual specialization, not temporal improvement |
-| extends | successor → predecessor | Evidence-backed methodological extension, **not** universal superiority |
-| combines | composite method → constituent method | Evidence-backed method fusion |
-| depends_on | method → prerequisite method | Learning prerequisite, **not** a historical influence claim |
-| contrasts_with | method → method | Meaningful comparison; viewer may draw as undirected |
-| addresses | method → problem | Can contribute to the task given suitable assumptions |
-| introduces | paper → method | Introduces or establishes the named method |
-| analyzes | paper → method | Theoretical, error, limitation or failure analysis |
-| applies | paper → method | Application / empirical test |
-| surveys | paper → method | Survey / tutorial |
-| compares | paper → method | Comparative study |
-| covers | book → method/area/problem | Educational coverage; optional `locator` for section |
+| `belongs_to` | method→area | Navigation membership, many allowed |
+| `subarea_of` | area→area | Scope category hierarchy |
+| `specializes` | specific method→general method | Method taxonomy; **not necessarily newer** |
+| `extends` | later/new approach→method predecessor | Evidence-backed modification to a method |
+| `combines` | composite method→component method | Evidence-backed methodological fusion |
+| `depends_on` | method→method | Pedagogical prerequisite, **not** historical influence |
+| `contrasts_with` | method→method | Important alternative with a different trade-off |
+| `addresses` | method→problem | Can support an application under stated conditions |
+| `introduces`, `analyzes`, `applies`, `surveys`, `compares` | paper→method | Role of a paper **relative to that method** |
+| `covers` | book→method/area/problem | Educational coverage, optionally localized to chapter |
 
-Every relation stores a human-readable `claim`; `evidence_paper_ids` may cite supporting papers. `extends` and `combines` require at least one evidence paper. Bibliographic dates alone do not establish causal inheritance.
+All relation records have a human-readable `claim`. `extends` and `combines` require `evidence_paper_ids`, allowing a reviewer to inspect an actual claimed methodological lineage. A paper→method role may also record `significance` and must give `significance_reason` for `landmark`.
 
-**Example:** method.fno → area.physics-ai is `belongs_to`; paper.li-2021-fno → method.fno is `introduces`. Cross-domain membership is never silently reinterpreted as method ancestry.
+**Important:** The entire graph may have cycles; the semantic projections `subarea_of`, `specializes`, (`extends` + `combines`), and `depends_on` must each be acyclic. Multiple parents are natural. The viewer must distinguish taxonomy and historical evolution from pedagogical prerequisites and clinical applicability.
 
-## 4. Directed acyclic projections
-
-The validator separately checks:
-- area taxonomy (`subarea_of`);
-- method taxonomy (`specializes`);
-- method evolution (`extends` + `combines`, together);
-- learning prerequisites (`depends_on`).
-
-Other edge types can create legitimate loops in the overall graph. A method may have multiple ancestors, components or applications. Every relationship has its own explicit semantics.
-
-## 5. Reading rules and metadata normalization
+## Start-here references are intentionally non-normative
 
 ~~~json
 {
   "id": "method.fno",
-  "status": "curated",
-  "core_reading": [
+  "start_here": [
     {
-      "paper_id": "paper.li-2021-fno",
-      "why": "Original definition of the Fourier neural-operator mechanism",
-      "focus": "Fourier layers and PDE experiments"
+      "reference_id": "paper.li-2021-fno",
+      "why": "Original Fourier neural-operator architecture",
+      "focus": "Fourier layers and parametric PDE examples"
     }
   ]
 }
 ~~~
 
-This is only an excerpt; the complete source is data/methods/fno.json. `status=curated` requires **1–2** verified, linked papers, while draft records can have none. Additional related papers use paper→method relationships and do not add to the must-read count.
+The excerpt is illustrative, not a complete method record. `start_here` may be absent or have any number of entries. Most curated nodes suggest around 1–2 sources for convenience, not because a numerical requirement exists.
 
-User-specific reading status ("read", "to-read") is **independent** of editorial must-read status. If a paper is core to more than one method, the viewer should deduplicate it in an aggregated reading route.
+Books can appear directly in `start_here` and do **not** count as landmark papers. A new journal study can attach to several methods without creating a method node or expanding every reading list.
 
-## 6. Technical boundary
+## Engineering and scientific responsibilities
 
-- JSON Schema validates fields, required types, enums, identifier shape and the two-paper cap.
-- scripts/validate.py checks **cross-file** reference integrity, relation endpoint pairs, duplicate IDs/DOIs, paper-method links, evidence, area membership, curated selection and DAG cycles.
-- scripts/export_graph.py produces deterministic graph JSON and refuses invalid data. Exported files live in ignored build/.
-- The future UI will consume this JSON export and must never turn into another independently maintained source of truth.
+- JSON Schema: field validity and `schema_version`.
+- Semantic validator: ID uniqueness, typed relation endpoints, bibliographic identifier duplicates, reference and evidence integrity, contextual landmark requirements, recommended paper/book verification, acyclic views.
+- Exporter: deterministic nodes+edges, refusing invalid input. `build/` is derived and ignored.
+- Reader/frontend (Phase 3): displays methods in a forest by default, with cross-links, scholarly role, Landmark significance, optional `start_here`, and contrasting problem-oriented view.
+- Scholar/curator: verifies publications against authoritative sources and checks whether a paper **really** proposes, extends, tests, or merely discusses a method.
 
-Schema-breaking changes require versioned migration. Adding papers and ordinary method nodes should not require code changes.
+**No arbitrary rule that newer = better; no inference that 1D systemic vascular validation proves 1D coronary clinical validation.** Problem examples describe applicability subject to evidence, not clinical guarantees.
 
-## 7. Future interactive views
+## Near-term research scope
 
-**Default A — method-evolution forest:** select areas and distinguish taxonomy, evidence-backed lineage and cross-links. Click nodes for core papers, further reading, book coverage and limitations.
-
-**Switchable B — research-problem view:** start from coronary parameter inference / model calibration / state assimilation / counterfactual PCI tasks, and follow `addresses` links to available methods.
-
-**Optional C — learning dependencies:** follow `depends_on` edges plus basic `background_topics` to determine what to learn next without a prerequisite of completing a whole mathematics curriculum.
-
-The viewer should visibly distinguish curated vs draft nodes, verified vs provisional bibliography, and descriptive method links vs performance rankings.
+Traditional nonlinear least squares and adjoint optimization, stability/regularization, Bayesian inverse inference and ensemble/state assimilation belong on the **same** methodological map as PINNs, neural operators, derivative-informed surrogates and direct inverse networks. Vascular Windkessel and structured trees are physical boundary-model methods. Coronary FFR and virtual PCI are **problems/application slots**, not generic mathematical ancestor nodes.

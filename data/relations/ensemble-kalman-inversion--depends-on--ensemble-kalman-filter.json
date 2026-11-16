@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.ensemble-kalman-inversion--depends-on--ensemble-kalman-filter",
+  "source_id": "method.ensemble-kalman-inversion",
+  "target_id": "method.ensemble-kalman-filter",
+  "type": "depends_on",
+  "claim": "Ensemble Kalman inverse updates are easier to learn after the original filter."
+}

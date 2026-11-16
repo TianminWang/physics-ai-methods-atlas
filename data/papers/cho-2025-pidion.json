@@ -1,0 +1,19 @@
+{
+  "schema_version": "2.0.0",
+  "id": "paper.cho-2025-pidion",
+  "title": "Physics-Informed Deep Inverse Operator Networks for Solving PDE Inverse Problems",
+  "authors": [
+    "Sung Woong Cho",
+    "Hwijae Son"
+  ],
+  "year": 2025,
+  "venue": "International Conference on Learning Representations (ICLR 2025)",
+  "publication_status": "peer_reviewed",
+  "url": "https://arxiv.org/abs/2412.03161",
+  "identifiers": {
+    "arxiv": "2412.03161"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/cbe1fd3136e0f049bb8bc104231ccb99-Abstract-Conference.html",
+  "summary": "Direct physics-informed inverse operator learning with stability analyses and no labeled inverse-training pairs."
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": "2.0.0",
+  "id": "book.hinze-pde-constraints",
+  "title": "Optimization with PDE Constraints",
+  "authors": [
+    "Michael Hinze",
+    "René Pinnau",
+    "Michael Ulbrich",
+    "Stefan Ulbrich"
+  ],
+  "year": 2009,
+  "publisher": "Springer",
+  "url": "https://doi.org/10.1007/978-1-4020-8839-1",
+  "summary": "PDE-constrained optimality theory, tailored optimization and discrete adjoint formulations."
+}

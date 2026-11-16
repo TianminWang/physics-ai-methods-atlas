@@ -1,0 +1,20 @@
+{
+  "schema_version": "2.0.0",
+  "id": "paper.arridge-2024-learned-forward",
+  "title": "Inverse problems with learned forward operators",
+  "authors": [
+    "Simon Arridge",
+    "Andreas Hauptmann",
+    "Yury Korolev"
+  ],
+  "year": 2024,
+  "venue": "Data-driven Models in Inverse Problems (De Gruyter, book chapter)",
+  "publication_status": "peer_reviewed",
+  "url": "https://doi.org/10.1515/9783111251233-003",
+  "identifiers": {
+    "doi": "10.1515/9783111251233-003"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://oulu.cris.fi/en/publications/8019f097-1da7-43cb-a2ff-23051cf7bb82",
+  "summary": "Studies inverse reconstruction when the forward operator is learned or physically approximated with data-driven corrections."
+}

@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.li-2023-geofno--introduces--geo-fno",
+  "source_id": "paper.li-2023-geofno",
+  "target_id": "method.geo-fno",
+  "type": "introduces",
+  "claim": "Introduces geometry warping to transfer FNO computations to irregular domains.",
+  "significance": "landmark",
+  "significance_reason": "Introduces geometry warping to transfer FNO computations to irregular domains."
+}

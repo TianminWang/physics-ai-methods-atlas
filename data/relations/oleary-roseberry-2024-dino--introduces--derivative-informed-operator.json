@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.oleary-roseberry-2024-dino--introduces--derivative-informed-operator",
+  "source_id": "paper.oleary-roseberry-2024-dino",
+  "target_id": "method.derivative-informed-operator",
+  "type": "introduces",
+  "claim": "Introduces derivative-informed neural operators and output-plus-Jacobian training.",
+  "significance": "landmark",
+  "significance_reason": "Introduces derivative-informed neural operators and output-plus-Jacobian training."
+}

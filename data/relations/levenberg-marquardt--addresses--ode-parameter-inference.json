@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.levenberg-marquardt--addresses--ode-parameter-inference",
+  "source_id": "method.levenberg-marquardt",
+  "target_id": "problem.ode-parameter-inference",
+  "type": "addresses",
+  "claim": "Provides a damped local least-squares update for ODE parameter fitting."
+}

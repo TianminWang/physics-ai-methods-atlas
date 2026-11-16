@@ -1,0 +1,20 @@
+{
+  "schema_version": "2.0.0",
+  "id": "paper.westerhof-2009-windkessel",
+  "title": "The arterial Windkessel",
+  "authors": [
+    "Nico Westerhof",
+    "Jan-Willem Lankhaar",
+    "Berend E. Westerhof"
+  ],
+  "year": 2009,
+  "venue": "Medical & Biological Engineering & Computing",
+  "publication_status": "peer_reviewed",
+  "url": "https://doi.org/10.1007/s11517-008-0359-2",
+  "identifiers": {
+    "doi": "10.1007/s11517-008-0359-2"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://doi.org/10.1007/s11517-008-0359-2",
+  "summary": "Authoritative review of lumped resistance, compliance and characteristic-impedance arterial outflow models."
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.bi-variational-pino--extends--pino",
+  "source_id": "method.bi-variational-pino",
+  "target_id": "method.pino",
+  "type": "extends",
+  "claim": "Adds locally weighted variational basis and residual mechanisms in coronary FFR applications.",
+  "evidence_paper_ids": [
+    "paper.xie-2025-bvpino"
+  ]
+}

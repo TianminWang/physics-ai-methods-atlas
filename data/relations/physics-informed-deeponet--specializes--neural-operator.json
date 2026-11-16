@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.physics-informed-deeponet--specializes--neural-operator",
+  "source_id": "method.physics-informed-deeponet",
+  "target_id": "method.neural-operator",
+  "type": "specializes",
+  "claim": "Physics-informed DeepONet is an operator-learning method with equation residual supervision."
+}

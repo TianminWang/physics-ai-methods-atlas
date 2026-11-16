@@ -1,0 +1,27 @@
+{
+  "schema_version": "2.0.0",
+  "id": "method.physics-informed-deeponet",
+  "name": "Physics-Informed DeepONet",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Train DeepONet solution operators using differential-equation and boundary-condition constraints.",
+  "core_idea": "Apply physics-based residual penalties across varying input functions to bias an operator network toward PDE-consistent outputs.",
+  "innovation": "Reduces dependence on paired forward-solver labels compared with purely supervised operator learning.",
+  "limitations": [
+    "Residual weighting and optimization can remain difficult.",
+    "Generalization depends on the distribution of input functions and constraints."
+  ],
+  "background_topics": [
+    "DeepONet branch/trunk",
+    "Automatic differentiation",
+    "PDE residuals"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.wang-2021-physics-deeponet",
+      "why": "Seminal physics-informed DeepONet construction and equation-driven examples.",
+      "focus": "Physical residual losses applied across input-function samples."
+    }
+  ],
+  "curation_note": "Scholarly source and method contribution checked; starting references are suggestions, not mandatory reading."
+}

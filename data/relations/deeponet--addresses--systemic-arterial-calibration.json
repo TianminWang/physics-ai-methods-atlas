@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.deeponet--addresses--systemic-arterial-calibration",
+  "source_id": "method.deeponet",
+  "target_id": "problem.systemic-arterial-calibration",
+  "type": "addresses",
+  "claim": "DeepONet surrogates are studied as a systemic arterial forward-model alternative."
+}

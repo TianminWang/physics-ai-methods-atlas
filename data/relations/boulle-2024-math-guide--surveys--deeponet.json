@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.boulle-2024-math-guide--surveys--deeponet",
+  "source_id": "paper.boulle-2024-math-guide",
+  "target_id": "method.deeponet",
+  "type": "surveys",
+  "claim": "Presents operator-learning architectures and their numerical linear algebra intuition.",
+  "significance": "supporting"
+}

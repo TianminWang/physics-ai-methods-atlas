@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.ryan-2026-cardiovascular-pino--applies--bayesian-inverse-problems",
+  "source_id": "paper.ryan-2026-cardiovascular-pino",
+  "target_id": "method.bayesian-inverse-problems",
+  "type": "applies",
+  "claim": "Embeds vascular surrogate predictions inside a Bayesian parameter calibration pipeline.",
+  "significance": "supporting"
+}

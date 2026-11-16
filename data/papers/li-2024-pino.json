@@ -1,0 +1,25 @@
+{
+  "schema_version": "2.0.0",
+  "id": "paper.li-2024-pino",
+  "title": "Physics-Informed Neural Operator for Learning Partial Differential Equations",
+  "authors": [
+    "Zongyi Li",
+    "Hongkai Zheng",
+    "Nikola Kovachki",
+    "David Jin",
+    "Haoxuan Chen",
+    "Burigede Liu",
+    "Kamyar Azizzadenesheli",
+    "Anima Anandkumar"
+  ],
+  "year": 2024,
+  "venue": "ACM/IMS Journal of Data Science",
+  "publication_status": "peer_reviewed",
+  "url": "https://doi.org/10.1145/3648506",
+  "identifiers": {
+    "doi": "10.1145/3648506"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://doi.org/10.1145/3648506",
+  "summary": "Combines FNO-style operator learning with high-resolution physics constraints and data at different resolutions."
+}

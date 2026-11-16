@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.asch-data-assimilation--covers--data-assimilation-uq",
+  "source_id": "book.asch-data-assimilation",
+  "target_id": "area.data-assimilation-uq",
+  "type": "covers",
+  "claim": "Survey of variational and sequential data assimilation in time-dependent systems."
+}

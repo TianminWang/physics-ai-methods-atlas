@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.ryan-2026-cardiovascular-pino--applies--deeponet",
+  "source_id": "paper.ryan-2026-cardiovascular-pino",
+  "target_id": "method.deeponet",
+  "type": "applies",
+  "claim": "Empirically compares DeepONet-based systemic arterial surrogates.",
+  "significance": "supporting"
+}

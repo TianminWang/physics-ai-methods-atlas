@@ -1,20 +1,18 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "book.physics-based-deep-learning",
   "title": "Physics-based Deep Learning",
   "authors": [
     "Nils Thuerey",
-    "Benjamin Holzschuh",
     "Philipp Holl",
-    "Georg Kohl",
-    "Mario Lino",
-    "Qiang Liu",
+    "Maximilian Mueller",
     "Patrick Schnell",
-    "Felix Trost"
+    "Felix Trost",
+    "Kiwon Um"
   ],
   "year": 2021,
   "publisher": "Online book (living edition)",
-  "edition": "v0.3 online edition",
+  "edition": "Living online edition",
   "url": "https://www.physicsbaseddeeplearning.org/",
-  "summary": "Hands-on online book covering supervised surrogate learning, physical losses, differentiable physics, and inverse problems; periodically updated."
+  "summary": "Free living online text with practical notebooks on physics-based losses, differentiable simulation, learned surrogates and inverse problems."
 }

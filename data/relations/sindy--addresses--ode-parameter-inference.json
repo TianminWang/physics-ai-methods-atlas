@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.sindy--addresses--ode-parameter-inference",
+  "source_id": "method.sindy",
+  "target_id": "problem.ode-parameter-inference",
+  "type": "addresses",
+  "claim": "Addresses discovery of unknown ODE governing terms rather than only fixed-structure parameters."
+}

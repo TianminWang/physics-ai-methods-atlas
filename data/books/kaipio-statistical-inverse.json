@@ -1,0 +1,13 @@
+{
+  "schema_version": "2.0.0",
+  "id": "book.kaipio-statistical-inverse",
+  "title": "Statistical and Computational Inverse Problems",
+  "authors": [
+    "Jari P. Kaipio",
+    "Erkki Somersalo"
+  ],
+  "year": 2005,
+  "publisher": "Springer",
+  "url": "https://doi.org/10.1007/b138659",
+  "summary": "Practical probabilistic inverse-problem modeling, priors, likelihoods and numerical inference."
+}

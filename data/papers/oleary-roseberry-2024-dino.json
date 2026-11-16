@@ -1,0 +1,21 @@
+{
+  "schema_version": "2.0.0",
+  "id": "paper.oleary-roseberry-2024-dino",
+  "title": "Derivative-Informed Neural Operator: An efficient framework for high-dimensional parametric derivative learning",
+  "authors": [
+    "Thomas O'Leary-Roseberry",
+    "Peng Chen",
+    "Umberto Villa",
+    "Omar Ghattas"
+  ],
+  "year": 2024,
+  "venue": "Journal of Computational Physics",
+  "publication_status": "peer_reviewed",
+  "url": "https://doi.org/10.1016/j.jcp.2023.112555",
+  "identifiers": {
+    "doi": "10.1016/j.jcp.2023.112555"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://www.sciencedirect.com/science/article/pii/S0021999123006502",
+  "summary": "Original derivative-informed operator framework supervising both outputs and Jacobian information for reliable outer-loop applications."
+}

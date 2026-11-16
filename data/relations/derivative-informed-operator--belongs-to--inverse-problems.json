@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.derivative-informed-operator--belongs-to--inverse-problems",
+  "source_id": "method.derivative-informed-operator",
+  "target_id": "area.inverse-problems",
+  "type": "belongs_to",
+  "claim": "Navigation membership: derivative-informed-operator contributes to inverse-problems, without implying historical ancestry."
+}

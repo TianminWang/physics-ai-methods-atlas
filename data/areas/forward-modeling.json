@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "area.forward-modeling",
   "name": "Physical modeling and forward solvers",
   "name_zh": "物理建模与正问题求解",

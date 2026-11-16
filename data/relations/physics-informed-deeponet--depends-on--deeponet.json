@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.physics-informed-deeponet--depends-on--deeponet",
+  "source_id": "method.physics-informed-deeponet",
+  "target_id": "method.deeponet",
+  "type": "depends_on",
+  "claim": "Learn the basic branch/trunk representation before physics-constrained operator training."
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.neural-ode--belongs-to--world-models-planning",
+  "source_id": "method.neural-ode",
+  "target_id": "area.world-models-planning",
+  "type": "belongs_to",
+  "claim": "Navigation membership: neural-ode contributes to world-models-planning, without implying historical ancestry."
+}

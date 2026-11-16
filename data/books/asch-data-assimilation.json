@@ -1,0 +1,15 @@
+{
+  "schema_version": "2.0.0",
+  "id": "book.asch-data-assimilation",
+  "title": "Data Assimilation: Methods, Algorithms, and Applications",
+  "authors": [
+    "Mark Asch",
+    "Marc Bocquet",
+    "Maëlle Nodet"
+  ],
+  "year": 2017,
+  "publisher": "SIAM",
+  "url": "https://doi.org/10.1137/1.9781611974546",
+  "summary": "Accessible bridge between dynamical inverse problems, variational DA, Kalman filtering and EnKF.",
+  "edition": "SIAM copyright 2016; online/publisher book citation 2017"
+}

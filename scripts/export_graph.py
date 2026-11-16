@@ -30,7 +30,7 @@ def export_graph(root: Path = ROOT) -> dict:
                 "label": record.get("name", record.get("title", entity_id)),
                 "data": record,
             })
-    return {"schema_version": "1.0.0", "nodes": nodes, "edges": edges}
+    return {"schema_version": "2.0.0", "nodes": nodes, "edges": edges}
 
 
 def main() -> int:

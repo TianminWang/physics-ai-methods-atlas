@@ -1,0 +1,18 @@
+{
+  "schema_version": "2.0.0",
+  "id": "paper.sirovich-1987-pod",
+  "title": "Turbulence and the dynamics of coherent structures. I. Coherent structures",
+  "authors": [
+    "Lawrence Sirovich"
+  ],
+  "year": 1987,
+  "venue": "Quarterly of Applied Mathematics",
+  "publication_status": "peer_reviewed",
+  "url": "https://doi.org/10.1090/qam/910462",
+  "identifiers": {
+    "doi": "10.1090/qam/910462"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://doi.org/10.1090/qam/910462",
+  "summary": "Classic snapshot-based coherent-mode extraction connected to proper orthogonal decomposition."
+}

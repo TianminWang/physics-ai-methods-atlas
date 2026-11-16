@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.structured-tree-outflow--belongs-to--forward-modeling",
+  "source_id": "method.structured-tree-outflow",
+  "target_id": "area.forward-modeling",
+  "type": "belongs_to",
+  "claim": "Navigation membership: structured-tree-outflow contributes to forward-modeling, without implying historical ancestry."
+}

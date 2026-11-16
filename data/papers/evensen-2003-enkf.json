@@ -1,0 +1,18 @@
+{
+  "schema_version": "2.0.0",
+  "id": "paper.evensen-2003-enkf",
+  "title": "The Ensemble Kalman Filter: theoretical formulation and practical implementation",
+  "authors": [
+    "Geir Evensen"
+  ],
+  "year": 2003,
+  "venue": "Ocean Dynamics",
+  "publication_status": "peer_reviewed",
+  "url": "https://doi.org/10.1007/s10236-003-0036-9",
+  "identifiers": {
+    "doi": "10.1007/s10236-003-0036-9"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://doi.org/10.1007/s10236-003-0036-9",
+  "summary": "Widely used exposition of ensemble-based covariance estimation and sequential state assimilation."
+}

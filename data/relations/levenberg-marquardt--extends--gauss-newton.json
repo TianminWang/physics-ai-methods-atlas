@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.levenberg-marquardt--extends--gauss-newton",
+  "source_id": "method.levenberg-marquardt",
+  "target_id": "method.gauss-newton",
+  "type": "extends",
+  "claim": "Damped least-squares updates modify Gauss–Newton-style local corrections and stabilization.",
+  "evidence_paper_ids": [
+    "paper.marquardt-1963-lm"
+  ]
+}

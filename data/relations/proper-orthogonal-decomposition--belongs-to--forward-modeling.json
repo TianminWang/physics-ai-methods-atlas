@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.proper-orthogonal-decomposition--belongs-to--forward-modeling",
+  "source_id": "method.proper-orthogonal-decomposition",
+  "target_id": "area.forward-modeling",
+  "type": "belongs_to",
+  "claim": "Navigation membership: proper-orthogonal-decomposition contributes to forward-modeling, without implying historical ancestry."
+}

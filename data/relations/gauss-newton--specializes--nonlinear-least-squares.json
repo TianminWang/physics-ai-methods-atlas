@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.gauss-newton--specializes--nonlinear-least-squares",
+  "source_id": "method.gauss-newton",
+  "target_id": "method.nonlinear-least-squares",
+  "type": "specializes",
+  "claim": "Gauss–Newton is a local solver for nonlinear least-squares objectives, not a new inverse-problem class."
+}

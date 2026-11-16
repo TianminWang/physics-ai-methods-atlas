@@ -1,0 +1,19 @@
+{
+  "schema_version": "2.0.0",
+  "id": "paper.giles-2000-adjoint",
+  "title": "An Introduction to the Adjoint Approach to Design",
+  "authors": [
+    "Michael B. Giles",
+    "Niles A. Pierce"
+  ],
+  "year": 2000,
+  "venue": "Flow, Turbulence and Combustion",
+  "publication_status": "peer_reviewed",
+  "url": "https://doi.org/10.1023/A:1011430410075",
+  "identifiers": {
+    "doi": "10.1023/A:1011430410075"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://doi.org/10.1023/A:1011430410075",
+  "summary": "Accessible linear-algebra introduction to adjoints and PDE-constrained gradient calculation."
+}

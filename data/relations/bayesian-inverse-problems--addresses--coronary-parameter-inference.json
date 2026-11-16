@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.bayesian-inverse-problems--addresses--coronary-parameter-inference",
+  "source_id": "method.bayesian-inverse-problems",
+  "target_id": "problem.coronary-parameter-inference",
+  "type": "addresses",
+  "claim": "Quantifies uncertainty in patient-specific coronary parameter calibration."
+}

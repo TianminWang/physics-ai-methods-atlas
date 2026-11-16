@@ -1,43 +1,45 @@
 # Maintaining the Atlas · 数据新增与维护
 
-## Core rule
+## Editing principle
 
-Edit **canonical JSON records**, never hand-edited graph drawings. Every contribution should increase understanding, improve provenance, or make a method easier to locate and learn.
+Edit **canonical JSON files**; never manually edit generated graph drawings or copies of a paper record. Method names, claims, reference roles and study suggestions must stay distinct.
 
-## Adding a paper
+## New paper
 
-1. Search `data/papers/` by title/DOI/arXiv first; **one paper = one record**.
-2. Verify authors, title, year, venue and identifiers against the publisher, official proceedings or a trustworthy bibliographic source. Save a `verification_url` and honest status.
-3. Create `data/papers/<slug>.json`. Its ID must be `paper.<slug>`.
-4. Link the paper to each genuinely relevant method using `data/relations/<slug>.json`, with roles such as `introduces`, `applies`, `analyzes`, `compares` or `surveys`.
-5. Update the method's 1–2 `core_reading` selections only if the new paper improves the *minimum reading set*. Add a clear `why` and `focus`.
+1. Look for duplicates by **DOI, arXiv identifier and title** in `data/papers/`.
+2. Verify original author list, publication venue, date, and persistent identifier through the publisher, proceedings, or trusted bibliographic source. Store a `verification_url`; `provisional` is permitted when not fully checked.
+3. Create `data/papers/<slug>.json` with `schema_version: "2.0.0"`. **Do not add a global `landmark` flag.**
+4. Connect the paper to one or more relevant methods using typed paper→method relations: `introduces`, `analyzes`, `applies`, `compares`, or `surveys`. The same paper can serve different roles for different methods.
+5. Put `significance: "landmark"` **on the specific paper→method relation** only when the contribution is demonstrably foundational or a major turning point **for that method**. Explain via `significance_reason`. `representative` and `supporting` are alternatives, not ranks of the entire paper.
+6. Optionally add the source to a method's `start_here` recommendations **only** when it efficiently teaches that method. Typical goal is 1–2, but there is **no minimum or maximum**.
 
-## Creating a method node
+## New method
 
-A new node should represent a **distinct, reusable methodological idea or algorithmic framework**. Do not create nodes solely because of a new clinical dataset, task, hyperparameter or small implementation variant.
+A method node should capture a reusable and conceptually distinct algorithm, formulation or framework. Do not turn every new application, benchmark, clinical cohort, hyperparameter tweak or paper into a new node.
 
-- Create one `data/methods/<slug>.json`.
-- Supply name, summary, central idea, methodological innovation, limitations and the background topics *actually necessary* to learn it.
-- Attach at least one area through `belongs_to`.
-- Link to relevant problems through `addresses`, without implying those applications validate the method in every clinical setting.
-- Use `specializes` for taxonomy, `extends` for evidence-backed methodological extensions, `combines` for evidence-backed mergers. **Never infer ancestry from publication dates alone.**
-- Start as `draft`; promote to `curated` only after selecting **1–2 verified linked** must-read papers.
+- Create `data/methods/<slug>.json` with a stable ID, short `summary`, `core_idea`, `innovation`, `limitations`, `background_topics`, and `status`.
+- Link to its navigational areas with `belongs_to`, and to scientific tasks with `addresses`.
+- `specializes` is a taxonomic claim; `extends` is evidence-backed methodological modification; `combines` is evidence-backed multi-method fusion; `depends_on` means a **learning** prerequisite. Do not blur these relations.
+- A `curated` method has a reviewed definition and sufficiently checked claims; it need **not** have any `start_here` items. A `draft` is still under scholarly review. Both may have references.
+- If recommendations are included, write `reference_id` (paper or book), `why`, `focus`, optionally `locator` and a documented publication-status exception. **All recommendations are advisory**, not an obligation to the reader.
+- Every recommended paper must be verified and have a paper→method relation; each recommended book must have a `covers` relation to the method.
 
 ## Books and problems
 
-- A book belongs in `data/books/`; connect to as many methods, areas or problems as genuinely covered via `covers`. Put chapters or sections in the relation's `locator` when available. Books do **not** count toward the per-node paper cap.
-- A research task belongs in `data/problems/`; describe observables, unknowns and physical constraints. Attach relevant methods with `addresses`.
-- A methodological lineage claim should cite `evidence_paper_ids` and explain the specific innovation or borrowing in the relation `claim`.
+- Create `data/books/<slug>.json`; books may cover multiple methods/areas/problems via `covers`, with a chapter/section `locator` when known. A textbook chapter is often a better first reference for a historic method than a difficult original primary source.
+- Create `data/problems/<slug>.json` for a scientific problem, listing actual unknowns, available observations and model constraints.
+- `addresses` means an applicable methodological tool subject to assumptions, **not** proof of clinically validated performance.
+- Never equate evidence from a **systemic 1D vascular network** directly to a coronary 3D patient-specific validation claim.
 
-## Conventions
+## ID/version conventions
 
-- IDs are stable lowercase kebab-case suffixes, e.g. `method.pde-constrained-optimization`.
-- Filename equals the ID suffix plus `.json` and must remain stable after publication.
-- Relationship records use the legible `source--predicate--target` suffix. The same `(source_id, type, target_id)` triple cannot be duplicated.
-- Use `schema_version: "1.0.0"` on every record; change it only through an explicit migration.
-- A provisional paper may be stored for research triage, but cannot be the required paper of a curated node.
+- All files contain `schema_version: "2.0.0"`.
+- The file's stem must match the ID suffix (`method.fno` → `data/methods/fno.json`).
+- Use stable lowercase kebab-case slugs; avoid renaming IDs after there are inbound links.
+- Relations use `source--predicate--target` slugs. The triple `(source_id, type, target_id)` must be unique.
+- Lineage edges (`extends`, `combines`) require evidence paper IDs; their chronological order and specific causal/methodological claim deserve manual scholarly review.
 
-## Validation and review
+## Local checks and PR review
 
 ~~~bash
 python -m pip install -r requirements-dev.txt
@@ -46,6 +48,6 @@ python -m pytest -q
 python -m scripts.export_graph
 ~~~
 
-If validation fails, fix **source records** rather than the derived graph export. Describe **why** new methods deserve nodes and **why** core-reading changes help the learner. Use a feature branch and PR so taxonomic claims, bibliographic metadata and changes to reading burden can be reviewed.
+Validation enforces structural integrity, not the correctness of a scientific theorem. For each new method or lineage link, manually inspect the cited scientific source and state the boundary of its evidence. For changes to `start_here`, explain why the new recommendation reduces the reader's effort or adds key conceptual coverage. Prefer a feature branch/PR so changes are reviewable.
 
-The initial scope prioritizes coronary hemodynamic inverse problems, but the architecture supports other ODE/PDE systems, data assimilation, world models and virtual interventions without needing new entity types for each domain.
+The atlas should help prioritize research about PDE/ODE inverse problems, coronary hemodynamics and future digital twins. It does not impose a separate full mathematics curriculum or assume the user will read every paper.

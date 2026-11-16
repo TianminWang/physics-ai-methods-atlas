@@ -1,0 +1,15 @@
+{
+  "schema_version": "2.0.0",
+  "id": "problem.online-digital-twin-update",
+  "name": "Longitudinal patient-specific digital twin updating",
+  "summary": "Update individual patient parameters and hidden states when later imaging and physiological data become available.",
+  "unknowns": [
+    "Patient-specific parameters and dynamic states"
+  ],
+  "observables": [
+    "Repeated visits, imaging and physiological measurements"
+  ],
+  "constraints": [
+    "Model evolution and observation uncertainty"
+  ]
+}

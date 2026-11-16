@@ -1,0 +1,27 @@
+{
+  "schema_version": "2.0.0",
+  "id": "method.windkessel",
+  "name": "Windkessel Lumped-Parameter Hemodynamic Model",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Represent aggregate vascular resistance, compliance and optionally characteristic impedance with a small ODE/circuit model.",
+  "core_idea": "Approximate distal arterial load with 2- or 3-element lumped pressure–flow relationships.",
+  "innovation": "Provides physiologically interpretable low-order terminal boundary conditions and parameters for inverse calibration.",
+  "limitations": [
+    "Spatial wave effects are approximated rather than explicitly resolved.",
+    "Parameters can be weakly identifiable from limited measurements."
+  ],
+  "background_topics": [
+    "Circuit analogies",
+    "Pressure-flow relations",
+    "First-order ODEs"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.westerhof-2009-windkessel",
+      "why": "Concise authoritative review comparing variants and physiological meaning.",
+      "focus": "2- versus 3-element Windkessel; parameter interpretation and limits."
+    }
+  ],
+  "curation_note": "Core method concept and checked source(s) recorded; suggested readings remain advisory and may be revised."
+}

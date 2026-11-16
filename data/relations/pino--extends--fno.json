@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.pino--extends--fno",
+  "source_id": "method.pino",
+  "target_id": "method.fno",
+  "type": "extends",
+  "claim": "Uses the Fourier neural operator backbone and adds physical residual losses, including higher-resolution physics constraints.",
+  "evidence_paper_ids": [
+    "paper.li-2024-pino"
+  ]
+}

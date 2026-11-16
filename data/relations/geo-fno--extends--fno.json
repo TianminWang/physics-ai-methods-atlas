@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.geo-fno--extends--fno",
+  "source_id": "method.geo-fno",
+  "target_id": "method.fno",
+  "type": "extends",
+  "claim": "Maps irregular physical domains into a latent regular domain to retain Fourier operator computation.",
+  "evidence_paper_ids": [
+    "paper.li-2023-geofno"
+  ]
+}

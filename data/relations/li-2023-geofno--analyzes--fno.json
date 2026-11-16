@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.li-2023-geofno--analyzes--fno",
+  "source_id": "paper.li-2023-geofno",
+  "target_id": "method.fno",
+  "type": "analyzes",
+  "claim": "Addresses geometric limitations of regular-grid FNO through coordinate deformation.",
+  "significance": "supporting"
+}

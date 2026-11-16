@@ -1,0 +1,27 @@
+{
+  "schema_version": "2.0.0",
+  "id": "method.structured-tree-outflow",
+  "name": "Structured-Tree Arterial Outflow Boundary Condition",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Use recursively scaled distal vascular trees to derive terminal pressure-flow impedance for proximal vessel models.",
+  "core_idea": "Represent unresolved distal arteries as a structured network and compute an effective dynamic impedance boundary.",
+  "innovation": "Preserves frequency-dependent wave reflections beyond a pure resistance or simple lumped terminal.",
+  "limitations": [
+    "Depends on distal tree geometry and constitutive assumptions.",
+    "Additional frequency-domain calculations may complicate coupling."
+  ],
+  "background_topics": [
+    "1D arterial waves",
+    "Impedance",
+    "Fourier transforms"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.olufsen-1999-structured-tree",
+      "why": "Influential physiological outflow formulation for truncated arterial networks.",
+      "focus": "Structured distal tree assumptions and terminal impedance construction."
+    }
+  ],
+  "curation_note": "Core method concept and checked source(s) recorded; suggested readings remain advisory and may be revised."
+}

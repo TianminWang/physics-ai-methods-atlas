@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.subedi-2026-statistical-operators--surveys--neural-operator",
+  "source_id": "paper.subedi-2026-statistical-operators",
+  "target_id": "method.neural-operator",
+  "type": "surveys",
+  "claim": "Introduces a complementary statistical learning view of operator approximation and UQ.",
+  "significance": "representative"
+}

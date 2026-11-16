@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.proper-orthogonal-decomposition--addresses--dynamic-state-assimilation",
+  "source_id": "method.proper-orthogonal-decomposition",
+  "target_id": "problem.dynamic-state-assimilation",
+  "type": "addresses",
+  "claim": "Offers a reduced state coordinate system for efficient dynamical estimation."
+}

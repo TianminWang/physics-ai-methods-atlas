@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.direct-inverse-operator--contrasts-with--learned-forward-inversion",
+  "source_id": "method.direct-inverse-operator",
+  "target_id": "method.learned-forward-inversion",
+  "type": "contrasts_with",
+  "claim": "Direct amortized inverse mapping differs from optimizing parameters through a learned forward surrogate."
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.adjoint-sensitivity--addresses--coronary-parameter-inference",
+  "source_id": "method.adjoint-sensitivity",
+  "target_id": "problem.coronary-parameter-inference",
+  "type": "addresses",
+  "claim": "Can compute sensitivity of coronary pressure and flow objectives to many model parameters."
+}

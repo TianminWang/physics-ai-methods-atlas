@@ -1,0 +1,27 @@
+{
+  "schema_version": "2.0.0",
+  "id": "method.deep-ritz",
+  "name": "Deep Ritz Method",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Approximate PDE solutions by minimizing a variational energy functional parameterized by a neural network.",
+  "core_idea": "Represent trial functions with a neural network and optimize a discretized energy integral rather than pointwise strong residual.",
+  "innovation": "Provides a neural variational solver that exploits an available energy/weak formulation.",
+  "limitations": [
+    "Requires a suitable variational functional for the governing problem.",
+    "Boundary-condition enforcement and quadrature can affect accuracy."
+  ],
+  "background_topics": [
+    "Variational principle",
+    "Integration",
+    "Neural optimization"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.e-2018-deep-ritz",
+      "why": "Original neural Ritz scheme that is easily contrasted with strong-residual methods.",
+      "focus": "Energy minimization and representative variational PDE examples."
+    }
+  ],
+  "curation_note": "Scholarly source and method contribution checked; starting references are suggestions, not mandatory reading."
+}

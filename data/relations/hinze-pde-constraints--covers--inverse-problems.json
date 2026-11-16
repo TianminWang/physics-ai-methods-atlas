@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.hinze-pde-constraints--covers--inverse-problems",
+  "source_id": "book.hinze-pde-constraints",
+  "target_id": "area.inverse-problems",
+  "type": "covers",
+  "claim": "Reference monograph for PDE-constrained optimization in inverse/design settings."
+}

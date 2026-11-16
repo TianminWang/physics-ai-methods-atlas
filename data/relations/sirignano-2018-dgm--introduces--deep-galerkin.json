@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.sirignano-2018-dgm--introduces--deep-galerkin",
+  "source_id": "paper.sirignano-2018-dgm",
+  "target_id": "method.deep-galerkin",
+  "type": "introduces",
+  "claim": "Introduces DGM for high-dimensional PDE solutions through sampled strong-form residuals.",
+  "significance": "landmark",
+  "significance_reason": "Introduces DGM for high-dimensional PDE solutions through sampled strong-form residuals."
+}

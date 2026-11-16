@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.asch-data-assimilation--covers--four-d-var",
+  "source_id": "book.asch-data-assimilation",
+  "target_id": "method.four-d-var",
+  "type": "covers",
+  "claim": "Variational and four-dimensional data assimilation.",
+  "locator": "Chapter 2"
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.0.0",
+  "id": "method.pde-constrained-optimization",
+  "name": "PDE-Constrained Optimization",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Optimize parameters or control variables subject to a discretized or continuous PDE state equation.",
+  "core_idea": "Minimize an objective J(u,theta) while imposing a PDE F(u,theta)=0, often via adjoint gradients.",
+  "innovation": "Uses governing equations as hard state constraints rather than only soft regression penalties.",
+  "limitations": [
+    "Computing reliable derivatives requires consistent discretization and state solves.",
+    "Large systems remain computationally expensive."
+  ],
+  "background_topics": [
+    "Lagrangian multipliers",
+    "PDE discretization",
+    "Adjoints"
+  ],
+  "start_here": [
+    {
+      "reference_id": "book.hinze-pde-constraints",
+      "why": "Systematic reference for mathematical and discrete PDE-constrained optimization.",
+      "focus": "Optimality conditions, Lagrangian, adjoints, and discrete concepts.",
+      "locator": "Discrete Concepts in PDE Constrained Optimization"
+    }
+  ],
+  "curation_note": "Core method concept and checked source(s) recorded; suggested readings remain advisory and may be revised."
+}

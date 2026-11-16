@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "method.derivative-informed-operator",
+  "name": "Derivative-Informed Neural Operator (DINO)",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Learn parameter-to-observable operators and their derivatives for gradient-sensitive inverse and control calculations.",
+  "core_idea": "Jointly train a neural operator on outputs and Jacobian information, often in reduced parameter coordinates.",
+  "innovation": "Prioritizes surrogate sensitivity accuracy, crucial when optimizing or sampling a posterior with learned forward maps.",
+  "limitations": [
+    "Collecting training Jacobians can be expensive.",
+    "Reduced basis choices limit which derivative directions are represented."
+  ],
+  "background_topics": [
+    "Jacobian",
+    "POD/reduced basis",
+    "Adjoint sensitivity"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.oleary-roseberry-2024-dino",
+      "why": "Introduces DINO and explains why derivative-blind surrogates may be unsuitable for inversion.",
+      "focus": "Joint output-derivative loss and reduced Jacobian representation."
+    },
+    {
+      "reference_id": "paper.cao-2025-dino-mcmc",
+      "why": "Shows the consequence of derivative-informed operators for actual Bayesian inverse computations.",
+      "focus": "Delayed acceptance and surrogate-driven geometric MCMC."
+    }
+  ],
+  "curation_note": "Scholarly source and method contribution checked; starting references are suggestions, not mandatory reading."
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": "2.0.0",
+  "id": "book.bubba-data-driven-inverse",
+  "title": "Data-driven Models in Inverse Problems",
+  "authors": [
+    "Tatiana A. Bubba (editor)"
+  ],
+  "year": 2025,
+  "publisher": "De Gruyter",
+  "url": "https://doi.org/10.1515/9783111251233",
+  "summary": "Edited monograph combining mathematical learned regularization, forward operator surrogates and inverse reconstruction.",
+  "edition": "Publisher citation 2025; electronic edition released Nov 2024"
+}

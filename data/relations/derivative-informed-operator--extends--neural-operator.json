@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.derivative-informed-operator--extends--neural-operator",
+  "source_id": "method.derivative-informed-operator",
+  "target_id": "method.neural-operator",
+  "type": "extends",
+  "claim": "Adds Jacobian-informed training to operator approximation for derivative-critical downstream tasks.",
+  "evidence_paper_ids": [
+    "paper.oleary-roseberry-2024-dino"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.physics-informed-deeponet--extends--deeponet",
+  "source_id": "method.physics-informed-deeponet",
+  "target_id": "method.deeponet",
+  "type": "extends",
+  "claim": "Adds PDE residual and boundary constraint training to a DeepONet solution-operator model.",
+  "evidence_paper_ids": [
+    "paper.wang-2021-physics-deeponet"
+  ]
+}

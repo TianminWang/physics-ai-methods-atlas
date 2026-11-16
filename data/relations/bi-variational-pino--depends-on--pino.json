@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.bi-variational-pino--depends-on--pino",
+  "source_id": "method.bi-variational-pino",
+  "target_id": "method.pino",
+  "type": "depends_on",
+  "claim": "The bi-variational extension presupposes an understanding of physics-informed operator learning."
+}

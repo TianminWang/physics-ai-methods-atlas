@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.pinn--addresses--ode-parameter-inference",
+  "source_id": "method.pinn",
+  "target_id": "problem.ode-parameter-inference",
+  "type": "addresses",
+  "claim": "Fits ODE states and unknown coefficients via physical residual constraints."
+}

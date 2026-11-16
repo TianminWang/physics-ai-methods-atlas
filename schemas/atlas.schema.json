@@ -9,7 +9,7 @@
       "additionalProperties": false,
       "properties": {
         "schema_version": {
-          "const": "1.0.0"
+          "const": "2.0.0"
         },
         "id": {
           "type": "string",
@@ -40,7 +40,7 @@
       "additionalProperties": false,
       "properties": {
         "schema_version": {
-          "const": "1.0.0"
+          "const": "2.0.0"
         },
         "id": {
           "type": "string",
@@ -92,16 +92,15 @@
           },
           "uniqueItems": true
         },
-        "core_reading": {
+        "start_here": {
           "type": "array",
-          "maxItems": 2,
           "items": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
-              "paper_id": {
+              "reference_id": {
                 "type": "string",
-                "pattern": "^paper\\.[a-z0-9]+(?:-[a-z0-9]+)*$"
+                "pattern": "^(paper|book)\\.[a-z0-9]+(?:-[a-z0-9]+)*$"
               },
               "why": {
                 "type": "string",
@@ -111,17 +110,25 @@
                 "type": "string",
                 "minLength": 8
               },
+              "locator": {
+                "type": "string",
+                "minLength": 1
+              },
               "exception_reason": {
                 "type": "string",
                 "minLength": 15
               }
             },
             "required": [
-              "paper_id",
+              "reference_id",
               "why",
               "focus"
             ]
           }
+        },
+        "curation_note": {
+          "type": "string",
+          "minLength": 10
         }
       },
       "required": [
@@ -130,8 +137,7 @@
         "name",
         "status",
         "summary",
-        "core_idea",
-        "core_reading"
+        "core_idea"
       ]
     },
     "problem": {
@@ -139,7 +145,7 @@
       "additionalProperties": false,
       "properties": {
         "schema_version": {
-          "const": "1.0.0"
+          "const": "2.0.0"
         },
         "id": {
           "type": "string",
@@ -192,7 +198,7 @@
       "additionalProperties": false,
       "properties": {
         "schema_version": {
-          "const": "1.0.0"
+          "const": "2.0.0"
         },
         "id": {
           "type": "string",
@@ -255,9 +261,6 @@
           "type": "string",
           "format": "uri"
         },
-        "landmark": {
-          "type": "boolean"
-        },
         "summary": {
           "type": "string",
           "minLength": 10
@@ -275,7 +278,6 @@
         "identifiers",
         "verification_status",
         "verification_url",
-        "landmark",
         "summary"
       ]
     },
@@ -284,7 +286,7 @@
       "additionalProperties": false,
       "properties": {
         "schema_version": {
-          "const": "1.0.0"
+          "const": "2.0.0"
         },
         "id": {
           "type": "string",
@@ -340,7 +342,7 @@
       "additionalProperties": false,
       "properties": {
         "schema_version": {
-          "const": "1.0.0"
+          "const": "2.0.0"
         },
         "id": {
           "type": "string",
@@ -387,6 +389,17 @@
         "locator": {
           "type": "string",
           "minLength": 1
+        },
+        "significance": {
+          "enum": [
+            "landmark",
+            "representative",
+            "supporting"
+          ]
+        },
+        "significance_reason": {
+          "type": "string",
+          "minLength": 12
         }
       },
       "required": [
@@ -396,6 +409,25 @@
         "target_id",
         "type",
         "claim"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "significance": {
+                "const": "landmark"
+              }
+            },
+            "required": [
+              "significance"
+            ]
+          },
+          "then": {
+            "required": [
+              "significance_reason"
+            ]
+          }
+        }
       ]
     }
   }

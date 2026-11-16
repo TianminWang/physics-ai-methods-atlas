@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "method.learned-forward-inversion",
   "aliases": [],
   "limitations": [
@@ -11,10 +11,17 @@
     "Regularized optimization",
     "Surrogate-model error"
   ],
-  "core_reading": [],
   "name": "Inverse Problems with Learned Forward Surrogates",
-  "status": "draft",
+  "status": "curated",
   "summary": "Use a trained forward surrogate, potentially a neural operator, inside a conventional inversion or Bayesian inference algorithm.",
   "core_idea": "Replace repeated expensive physical forward solves with a learned approximation while retaining explicit data-misfit or posterior inference.",
-  "innovation": "Separates amortized forward-model training from repeated inverse inference, with new surrogate-error and bias considerations."
+  "innovation": "Separates amortized forward-model training from repeated inverse inference, with new surrogate-error and bias considerations.",
+  "start_here": [
+    {
+      "reference_id": "paper.arridge-2024-learned-forward",
+      "why": "Directly discusses inverse problems with learned forward operators and model correction.",
+      "focus": "Surrogate forward-model errors, projection regularization and correction."
+    }
+  ],
+  "curation_note": "Original methodological formulation reviewed; starting reference is advisory, not a quota."
 }

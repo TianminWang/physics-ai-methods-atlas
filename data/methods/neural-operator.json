@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0.0",
+  "id": "method.neural-operator",
+  "name": "Neural Operator Learning",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Learn parametric nonlinear maps between function spaces rather than solve each ODE/PDE instance independently.",
+  "core_idea": "Represent a family of solution operators through trainable integral/spectral/basis maps shared across discretizations.",
+  "innovation": "Amortizes repeated forward solves and provides a framework unifying different function-to-function network architectures.",
+  "limitations": [
+    "Reliable extrapolation to unfamiliar parameter or geometry regimes remains difficult.",
+    "Operator evaluations inherit numerical and training-data errors."
+  ],
+  "background_topics": [
+    "Function-space maps",
+    "Neural network layers",
+    "PDE families"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.boulle-2024-math-guide",
+      "why": "Compact tutorial that connects numerical linear algebra to operator architectures.",
+      "focus": "Functional regression, numerical basis representation, and data-generation design."
+    },
+    {
+      "reference_id": "paper.kovachki-2023-neural-operator",
+      "why": "Authoritative formal operator framework and architectural taxonomy.",
+      "focus": "Composition of operator layers and discretization transfer, selected sections."
+    }
+  ],
+  "curation_note": "Scholarly source and method contribution checked; starting references are suggestions, not mandatory reading."
+}

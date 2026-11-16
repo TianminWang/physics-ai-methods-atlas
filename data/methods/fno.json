@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "method.fno",
   "aliases": [
     "FNO"
@@ -13,16 +13,17 @@
     "Convolution and spectral truncation",
     "Parameterized PDEs"
   ],
-  "core_reading": [
-    {
-      "paper_id": "paper.li-2021-fno",
-      "why": "Original ICLR paper defining the Fourier-layer construction and standard PDE benchmarks.",
-      "focus": "Fourier layer, discrete implementation, Burgers/Darcy/Navier–Stokes experiments."
-    }
-  ],
   "name": "Fourier Neural Operator",
   "status": "curated",
   "summary": "A spectral neural-operator architecture for parametric PDE solution mappings.",
   "core_idea": "Parameterize a global operator layer by learnable transformations of selected Fourier modes.",
-  "innovation": "Provides an efficient learnable spectral operator for families of PDEs instead of individual PDE solves."
+  "innovation": "Provides an efficient learnable spectral operator for families of PDEs instead of individual PDE solves.",
+  "start_here": [
+    {
+      "reference_id": "paper.li-2021-fno",
+      "why": "Original ICLR paper defining the Fourier-layer construction and standard PDE benchmarks.",
+      "focus": "Fourier layer, discrete implementation, Burgers/Darcy/Navier–Stokes experiments."
+    }
+  ],
+  "curation_note": "Method identity and original bibliographic sources reviewed; suggested starting literature is guidance, not a quota."
 }

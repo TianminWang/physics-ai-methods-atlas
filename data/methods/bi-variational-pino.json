@@ -1,0 +1,27 @@
+{
+  "schema_version": "2.0.0",
+  "id": "method.bi-variational-pino",
+  "name": "Bi-variational Physics-Informed Operator Network (BVPINO)",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Use locally weighted variational mechanisms for continuous coronary fractional-flow-reserve curve prediction.",
+  "core_idea": "Weight neural basis learning and equation residual evaluation with variational functions carrying local stenosis information.",
+  "innovation": "Specializes physics-informed operator learning to emphasize local stenosis patterns and FFR pullback gradients.",
+  "limitations": [
+    "Clinical validation is limited to the evaluated angiography cohort and assumptions.",
+    "Cannot be treated as a general patient-specific PDE parameter-inference method without new tests."
+  ],
+  "background_topics": [
+    "PINO",
+    "Weak/variational residuals",
+    "Coronary FFR"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.xie-2025-bvpino",
+      "why": "Direct coronary-specific method and evaluation example.",
+      "focus": "Local variational weighting and continuous FFR-curve evaluation."
+    }
+  ],
+  "curation_note": "Scholarly source and method contribution checked; starting references are suggestions, not mandatory reading."
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": "2.0.0",
+  "id": "method.four-d-var",
+  "name": "Four-Dimensional Variational Data Assimilation",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Estimate dynamical initial states or controls from observations distributed across a time window.",
+  "core_idea": "Minimize time-window observation mismatch plus background regularization under evolution constraints.",
+  "innovation": "Uses an entire dynamical trajectory and adjoint-based gradients for windowed state estimation.",
+  "limitations": [
+    "Optimization can be difficult for strongly nonlinear dynamics.",
+    "Adjoint and model-error assumptions matter."
+  ],
+  "background_topics": [
+    "State-space models",
+    "Adjoint optimization",
+    "Time-dependent ODE/PDE"
+  ],
+  "start_here": [
+    {
+      "reference_id": "book.asch-data-assimilation",
+      "why": "Clearer first explanation than operational implementation papers.",
+      "focus": "Variational assimilation and 4D-Var objective.",
+      "locator": "Chapter 2"
+    },
+    {
+      "reference_id": "paper.courtier-1994-4dvar",
+      "why": "Milestone for computationally tractable incremental 4D-Var.",
+      "focus": "Incremental formulation and computational motivation."
+    }
+  ],
+  "curation_note": "Core method concept and checked source(s) recorded; suggested readings remain advisory and may be revised."
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": "2.0.0",
+  "id": "method.ensemble-kalman-inversion",
+  "name": "Ensemble Kalman Inversion",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Derivative-free or derivative-light iterative parameter inference via ensemble Kalman-style updates.",
+  "core_idea": "Iteratively update an ensemble of unknown parameters toward observations by applying the forward model.",
+  "innovation": "Adapts ensemble covariance updates from sequential assimilation to static nonlinear inverse problems.",
+  "limitations": [
+    "The algorithm can collapse or be biased without suitable regularization.",
+    "May fail to represent multimodal posterior uncertainty faithfully."
+  ],
+  "background_topics": [
+    "Ensemble Kalman filter",
+    "Parameter-to-observation maps",
+    "Regularization"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.iglesias-2013-eki",
+      "why": "Foundational inverse-problem adaptation of ensemble Kalman methods.",
+      "focus": "Distinguish parameter inversion updates from filtering dynamical states."
+    }
+  ],
+  "curation_note": "Core method concept and checked source(s) recorded; suggested readings remain advisory and may be revised."
+}

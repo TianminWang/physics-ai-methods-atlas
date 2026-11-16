@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.pinn--contrasts-with--deep-ritz",
+  "source_id": "method.pinn",
+  "target_id": "method.deep-ritz",
+  "type": "contrasts_with",
+  "claim": "Strong-form PDE residual losses differ from variational-energy minimization when an energy functional exists."
+}

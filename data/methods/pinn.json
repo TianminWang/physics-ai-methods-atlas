@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "method.pinn",
   "aliases": [
     "PINN",
@@ -14,16 +14,17 @@
     "PDE residual and boundary conditions",
     "Loss functions and numerical optimization"
   ],
-  "core_reading": [
-    {
-      "paper_id": "paper.raissi-2019-pinn",
-      "why": "Seminal framework that connects physical residual losses to forward and inverse PDE tasks.",
-      "focus": "Continuous-time PINN losses, data-driven discovery, and the inverse examples."
-    }
-  ],
   "name": "Physics-Informed Neural Networks",
   "status": "curated",
   "summary": "Neural function approximators trained with physical equation residuals and observational or boundary-condition constraints.",
   "core_idea": "Represent a solution field by a neural network and penalize ODE/PDE residuals alongside data and boundary conditions.",
-  "innovation": "Makes differential-equation constraints part of network training, supporting both forward and selected inverse problems."
+  "innovation": "Makes differential-equation constraints part of network training, supporting both forward and selected inverse problems.",
+  "start_here": [
+    {
+      "reference_id": "paper.raissi-2019-pinn",
+      "why": "Seminal framework that connects physical residual losses to forward and inverse PDE tasks.",
+      "focus": "Continuous-time PINN losses, data-driven discovery, and the inverse examples."
+    }
+  ],
+  "curation_note": "Method identity and original bibliographic sources reviewed; suggested starting literature is guidance, not a quota."
 }

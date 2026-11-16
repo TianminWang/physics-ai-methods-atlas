@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.li-2024-pino--applies--fno",
+  "source_id": "paper.li-2024-pino",
+  "target_id": "method.fno",
+  "type": "applies",
+  "claim": "Uses a Fourier neural operator base as a trainable solution operator with additional PDE constraints.",
+  "significance": "supporting"
+}

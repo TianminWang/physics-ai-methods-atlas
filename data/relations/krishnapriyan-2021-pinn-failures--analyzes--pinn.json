@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.krishnapriyan-2021-pinn-failures--analyzes--pinn",
+  "source_id": "paper.krishnapriyan-2021-pinn-failures",
+  "target_id": "method.pinn",
+  "type": "analyzes",
+  "claim": "Important analysis of optimization failure mechanisms for residual-based PINNs.",
+  "significance": "representative"
+}

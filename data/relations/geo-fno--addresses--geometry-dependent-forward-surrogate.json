@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.geo-fno--addresses--geometry-dependent-forward-surrogate",
+  "source_id": "method.geo-fno",
+  "target_id": "problem.geometry-dependent-forward-surrogate",
+  "type": "addresses",
+  "claim": "Explicitly addresses arbitrary geometries through learned latent coordinate deformation."
+}

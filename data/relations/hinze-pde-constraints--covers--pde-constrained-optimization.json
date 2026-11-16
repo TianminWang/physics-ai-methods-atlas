@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.hinze-pde-constraints--covers--pde-constrained-optimization",
+  "source_id": "book.hinze-pde-constraints",
+  "target_id": "method.pde-constrained-optimization",
+  "type": "covers",
+  "claim": "Optimization subject to PDE constraints, including discrete concepts."
+}

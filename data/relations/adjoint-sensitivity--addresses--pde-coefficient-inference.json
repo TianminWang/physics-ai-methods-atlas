@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.adjoint-sensitivity--addresses--pde-coefficient-inference",
+  "source_id": "method.adjoint-sensitivity",
+  "target_id": "problem.pde-coefficient-inference",
+  "type": "addresses",
+  "claim": "Computes PDE-constrained objective gradients efficiently for many unknown coefficients."
+}

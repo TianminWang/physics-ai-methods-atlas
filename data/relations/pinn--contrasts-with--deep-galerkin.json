@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.pinn--contrasts-with--deep-galerkin",
+  "source_id": "method.pinn",
+  "target_id": "method.deep-galerkin",
+  "type": "contrasts_with",
+  "claim": "Both train individual neural PDE solutions using differential residuals but differ in original formulations and focus."
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.physics-informed-deeponet--combines--pinn",
+  "source_id": "method.physics-informed-deeponet",
+  "target_id": "method.pinn",
+  "type": "combines",
+  "claim": "Brings PINN-style physical residual supervision into DeepONet learning across input functions.",
+  "evidence_paper_ids": [
+    "paper.wang-2021-physics-deeponet"
+  ]
+}

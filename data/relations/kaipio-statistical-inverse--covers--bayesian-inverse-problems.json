@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.kaipio-statistical-inverse--covers--bayesian-inverse-problems",
+  "source_id": "book.kaipio-statistical-inverse",
+  "target_id": "method.bayesian-inverse-problems",
+  "type": "covers",
+  "claim": "Likelihood, prior, posterior and computational inverse methods."
+}

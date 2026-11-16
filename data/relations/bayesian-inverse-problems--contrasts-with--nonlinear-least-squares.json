@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.bayesian-inverse-problems--contrasts-with--nonlinear-least-squares",
+  "source_id": "method.bayesian-inverse-problems",
+  "target_id": "method.nonlinear-least-squares",
+  "type": "contrasts_with",
+  "claim": "A posterior distribution carries uncertainty beyond a point estimator; MAP often connects back to regularized least squares."
+}

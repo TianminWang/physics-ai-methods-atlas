@@ -1,0 +1,20 @@
+{
+  "schema_version": "2.0.0",
+  "id": "paper.iglesias-2013-eki",
+  "title": "Ensemble Kalman methods for inverse problems",
+  "authors": [
+    "Marco A. Iglesias",
+    "Kody J. H. Law",
+    "Andrew M. Stuart"
+  ],
+  "year": 2013,
+  "venue": "Inverse Problems",
+  "publication_status": "peer_reviewed",
+  "url": "https://doi.org/10.1088/0266-5611/29/4/045001",
+  "identifiers": {
+    "doi": "10.1088/0266-5611/29/4/045001"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://doi.org/10.1088/0266-5611/29/4/045001",
+  "summary": "Adapts ensemble Kalman updates to iterative parameter inversion instead of sequential state filtering."
+}

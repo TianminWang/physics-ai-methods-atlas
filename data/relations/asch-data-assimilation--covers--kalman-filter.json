@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.asch-data-assimilation--covers--kalman-filter",
+  "source_id": "book.asch-data-assimilation",
+  "target_id": "method.kalman-filter",
+  "type": "covers",
+  "claim": "Sequential statistical estimation and Kalman filtering.",
+  "locator": "Chapter 3"
+}

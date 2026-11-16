@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.kalman-filter--addresses--dynamic-state-assimilation",
+  "source_id": "method.kalman-filter",
+  "target_id": "problem.dynamic-state-assimilation",
+  "type": "addresses",
+  "claim": "Provides recursive state estimation for approximately linear Gaussian models."
+}

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "relation.lu-2021-deeponet--introduces--deeponet",
   "source_id": "paper.lu-2021-deeponet",
   "target_id": "method.deeponet",
@@ -7,5 +7,7 @@
   "claim": "This publication introduces or establishes deeponet as a named method.",
   "evidence_paper_ids": [
     "paper.lu-2021-deeponet"
-  ]
+  ],
+  "significance": "landmark",
+  "significance_reason": "Foundational publication introducing the named method and its core mechanism."
 }

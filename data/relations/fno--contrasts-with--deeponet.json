@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.fno--contrasts-with--deeponet",
+  "source_id": "method.fno",
+  "target_id": "method.deeponet",
+  "type": "contrasts_with",
+  "claim": "The Fourier kernel layers and branch/trunk factorization are distinct operator parameterizations."
+}

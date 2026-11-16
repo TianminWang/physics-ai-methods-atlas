@@ -1,0 +1,33 @@
+{
+  "schema_version": "2.0.0",
+  "id": "method.kalman-filter",
+  "name": "Kalman Filter",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Recursive linear-Gaussian state estimation for a dynamical system with noisy measurements.",
+  "core_idea": "Alternate model prediction and covariance-weighted observation updates.",
+  "innovation": "Transforms sequential state inference into prediction-update recursions with uncertainty propagation.",
+  "limitations": [
+    "Linear-Gaussian assumptions are essential to the classical optimality result.",
+    "Covariances become expensive in very high dimensions."
+  ],
+  "background_topics": [
+    "Conditional Gaussian distributions",
+    "Linear state-space models",
+    "Matrix covariance"
+  ],
+  "start_here": [
+    {
+      "reference_id": "book.asch-data-assimilation",
+      "why": "Pedagogical foundation for sequential assimilation and later ensemble methods.",
+      "focus": "Kalman prediction and correction equations.",
+      "locator": "Chapter 3"
+    },
+    {
+      "reference_id": "paper.kalman-1960-filter",
+      "why": "Original landmark for recursive state-space filtering.",
+      "focus": "State transition model and covariance update; historical context."
+    }
+  ],
+  "curation_note": "Core method concept and checked source(s) recorded; suggested readings remain advisory and may be revised."
+}

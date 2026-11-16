@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "method.tikhonov-regularization",
   "aliases": [],
   "limitations": [],
@@ -8,10 +8,17 @@
     "Norms and quadratic penalties",
     "Regularization parameters"
   ],
-  "core_reading": [],
   "name": "Tikhonov Regularization",
-  "status": "draft",
+  "status": "curated",
   "summary": "Stabilize ill-posed inverse problems by penalizing parameter size or deviation from prior structure.",
   "core_idea": "Add a regularization penalty to the data-misfit objective to select more stable solutions.",
-  "innovation": "Encodes stabilizing prior structure through an explicit penalty and its strength."
+  "innovation": "Encodes stabilizing prior structure through an explicit penalty and its strength.",
+  "start_here": [
+    {
+      "reference_id": "book.engl-regularization",
+      "why": "Canonical monograph on stable regularization of inverse problems.",
+      "focus": "Regularization penalties, stability and convergence arguments."
+    }
+  ],
+  "curation_note": "Original methodological formulation reviewed; starting reference is advisory, not a quota."
 }
