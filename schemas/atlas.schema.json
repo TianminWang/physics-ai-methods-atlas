@@ -110,6 +110,10 @@
               "focus": {
                 "type": "string",
                 "minLength": 8
+              },
+              "exception_reason": {
+                "type": "string",
+                "minLength": 15
               }
             },
             "required": [
@@ -340,7 +344,7 @@
         },
         "id": {
           "type": "string",
-          "pattern": "^relation\\.[a-z0-9]+(?:-[a-z0-9]+)*$"
+          "pattern": "^relation\\.[a-z0-9]+(?:-{1,2}[a-z0-9]+)*$"
         },
         "source_id": {
           "type": "string",
