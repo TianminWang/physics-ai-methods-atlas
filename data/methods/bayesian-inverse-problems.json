@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.0.0",
+  "id": "method.bayesian-inverse-problems",
+  "name": "Bayesian Inverse Problems",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Infer a posterior distribution for unknown physical parameters from noisy observations.",
+  "core_idea": "Combine prior distributions and an observation likelihood, then compute or approximate p(theta | y).",
+  "innovation": "Quantifies parameter uncertainty, multimodality and prior assumptions rather than producing one fit alone.",
+  "limitations": [
+    "Computing posterior distributions may require many costly forward evaluations.",
+    "Priors and likelihoods can strongly influence weakly identifiable parameters."
+  ],
+  "background_topics": [
+    "Conditional probability",
+    "Likelihood",
+    "Regularization",
+    "Posterior sampling"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.stuart-2010-bayesian",
+      "why": "Influential unifying treatment of Bayesian inverse-problem formulation and well-posedness.",
+      "focus": "Read the Bayesian formulation and computational overview first, not every proof."
+    }
+  ],
+  "curation_note": "Core method concept and checked source(s) recorded; suggested readings remain advisory and may be revised."
+}

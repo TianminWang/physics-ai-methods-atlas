@@ -1,0 +1,27 @@
+{
+  "schema_version": "2.0.0",
+  "id": "method.proper-orthogonal-decomposition",
+  "name": "Proper Orthogonal Decomposition / Snapshot POD",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Construct low-dimensional basis functions approximating high-dimensional simulation snapshots.",
+  "core_idea": "Compute dominant modes of snapshot covariance or an SVD and project state fields into that basis.",
+  "innovation": "Provides a data-efficient reduced coordinate space for surrogate modeling and inverse problems.",
+  "limitations": [
+    "Truncated subspaces may poorly represent out-of-distribution dynamics.",
+    "Accuracy depends strongly on snapshot coverage."
+  ],
+  "background_topics": [
+    "SVD",
+    "Covariance matrices",
+    "Projection"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.sirovich-1987-pod",
+      "why": "Classical snapshot-based coherent-structure perspective.",
+      "focus": "How flow snapshots define dominant modes and a reduced representation."
+    }
+  ],
+  "curation_note": "Core method concept and checked source(s) recorded; suggested readings remain advisory and may be revised."
+}

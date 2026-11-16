@@ -9,10 +9,16 @@
     "Regularization parameters"
   ],
   "name": "Tikhonov Regularization",
-  "status": "draft",
+  "status": "curated",
   "summary": "Stabilize ill-posed inverse problems by penalizing parameter size or deviation from prior structure.",
   "core_idea": "Add a regularization penalty to the data-misfit objective to select more stable solutions.",
   "innovation": "Encodes stabilizing prior structure through an explicit penalty and its strength.",
-  "start_here": [],
-  "curation_note": "Draft methodological scaffold pending a more complete scholarly review."
+  "start_here": [
+    {
+      "reference_id": "book.engl-regularization",
+      "why": "Canonical monograph on stable regularization of inverse problems.",
+      "focus": "Regularization penalties, stability and convergence arguments."
+    }
+  ],
+  "curation_note": "Original methodological formulation reviewed; starting reference is advisory, not a quota."
 }

@@ -11,10 +11,16 @@
     "Constrained optimization"
   ],
   "name": "Adjoint Sensitivity Method",
-  "status": "draft",
+  "status": "curated",
   "summary": "Compute gradients of scalar objectives with respect to many physical parameters through an adjoint solve.",
   "core_idea": "Introduce an adjoint variable to eliminate explicit differentiation of every state with respect to each parameter.",
   "innovation": "Can reduce gradient cost when the number of parameters is large and the objective dimension is small.",
-  "start_here": [],
-  "curation_note": "Draft methodological scaffold pending a more complete scholarly review."
+  "start_here": [
+    {
+      "reference_id": "paper.giles-2000-adjoint",
+      "why": "Accessible adjoint derivation grounded in linear algebra and PDE examples.",
+      "focus": "Derive adjoint gradients and distinguish continuous/discrete adjoints."
+    }
+  ],
+  "curation_note": "Original methodological formulation reviewed; starting reference is advisory, not a quota."
 }

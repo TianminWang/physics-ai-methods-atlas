@@ -11,10 +11,16 @@
     "Linear algebra"
   ],
   "name": "Gauss–Newton Method",
-  "status": "draft",
+  "status": "curated",
   "summary": "Local least-squares optimization based on linearization of the residual map.",
   "core_idea": "Linearize residuals at the current iterate and solve a linear least-squares correction.",
   "innovation": "Exploits residual structure by using a Gauss–Newton approximation to the least-squares Hessian.",
-  "start_here": [],
-  "curation_note": "Draft methodological scaffold pending a more complete scholarly review."
+  "start_here": [
+    {
+      "reference_id": "book.chavent-nonlinear-least-squares",
+      "why": "Traditional inverse-problem reference covering nonlinear least-squares methods.",
+      "focus": "Jacobian linearization and local correction steps."
+    }
+  ],
+  "curation_note": "Original methodological formulation reviewed; starting reference is advisory, not a quota."
 }

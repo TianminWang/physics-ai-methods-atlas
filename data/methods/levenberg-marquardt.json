@@ -1,0 +1,27 @@
+{
+  "schema_version": "2.0.0",
+  "id": "method.levenberg-marquardt",
+  "name": "Levenberg–Marquardt Method",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Damped trust-region-like steps for nonlinear least-squares parameter estimation.",
+  "core_idea": "Combine Gauss–Newton curvature with a positive diagonal damping term to regularize the linearized step.",
+  "innovation": "Balances large Gauss–Newton steps and safer gradient-like behavior depending on damping.",
+  "limitations": [
+    "Damping choices affect convergence and scaling.",
+    "Requires useful Jacobian information or approximations."
+  ],
+  "background_topics": [
+    "Gauss–Newton",
+    "Least squares",
+    "Matrix factorization"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.marquardt-1963-lm",
+      "why": "Canonical modern reference for the damped nonlinear least-squares algorithm.",
+      "focus": "Derive the damped correction and understand parameter scaling."
+    }
+  ],
+  "curation_note": "Core method concept and checked source(s) recorded; suggested readings remain advisory and may be revised."
+}
