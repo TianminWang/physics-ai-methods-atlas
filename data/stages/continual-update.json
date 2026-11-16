@@ -1,0 +1,18 @@
+{
+  "schema_version": "2.1.0",
+  "id": "stage.continual-update",
+  "name": "Continual assimilation and model updating",
+  "name_zh": "持续观测、同化与模型更新",
+  "summary": "Incorporate new observations over time to revise physical states, parameters and model uncertainty without assuming perfect knowledge.",
+  "summary_zh": "根据后续新观测更新个体状态、参数和不确定性，再反馈到后续反演与预测环节。",
+  "order": 6,
+  "color": "#15803D",
+  "inputs": [
+    "New observations",
+    "Previous model and posterior beliefs"
+  ],
+  "outputs": [
+    "Updated states and model parameters"
+  ],
+  "is_iterative": true
+}

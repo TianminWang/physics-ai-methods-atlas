@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "concern.physical-validity",
+  "name": "Physical consistency and conservation",
+  "name_zh": "物理一致性与守恒",
+  "summary": "Check conservation laws, boundary compatibility and physically meaningful modeling assumptions.",
+  "summary_zh": "检查守恒方程、边界条件与模型假设的一致性，不能只依据训练误差判断。"
+}

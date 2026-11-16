@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "family.numerical-solvers",
+  "name": "Classical numerical ODE/PDE solvers",
+  "name_zh": "传统 ODE/PDE 数值求解",
+  "summary": "Time integration, finite difference, finite volume, finite element and coupled solvers.",
+  "summary_zh": "包括常微分方程时间积分、有限差分、有限体积、有限元和耦合数值求解。",
+  "coverage_status": "planned",
+  "scope_note": "Family scaffold only; methods and citations await Phase v0.4.",
+  "scope_note_zh": "目前仅建立方法家族占位，具体方法及代表论文将在后续补充。"
+}

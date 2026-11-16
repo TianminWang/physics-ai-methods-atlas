@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "family.optimization-regularization",
+  "name": "Optimization and regularization for inversion",
+  "name_zh": "优化反演与正则化",
+  "summary": "Nonlinear residual optimization, derivatives, constraints and stabilization.",
+  "summary_zh": "包括最小二乘、Gauss–Newton、LM、PDE 约束优化和正则化。",
+  "coverage_status": "populated",
+  "scope_note": "Optimizers and regularizers have different mathematical roles.",
+  "scope_note_zh": "优化算法与正则化机制角色不同，家族仅用于组织。"
+}

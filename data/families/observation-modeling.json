@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "family.observation-modeling",
+  "name": "Measurement and observation operators",
+  "name_zh": "测量建模与观测算子",
+  "summary": "Translate physical states into actual measured signals and their noise statistics.",
+  "summary_zh": "研究观测算子、采样、影像到物理量映射和测量误差。",
+  "coverage_status": "planned",
+  "scope_note": "Will need domain-specific physical measurement models in later curation.",
+  "scope_note_zh": "后续需补充具体传感、影像和数据噪声的代表性方法。"
+}

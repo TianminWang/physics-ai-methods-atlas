@@ -1,0 +1,18 @@
+{
+  "schema_version": "2.1.0",
+  "id": "stage.intervention-planning",
+  "name": "Counterfactual intervention and decision planning",
+  "name_zh": "反事实干预与决策规划",
+  "summary": "Compare hypothetical interventions or actions by predicting their consequences and optimizing decisions under constraints.",
+  "summary_zh": "针对假设的干预或行动，预测可能结果并通过优化或规划比较方案，同时考虑风险与约束。",
+  "order": 5,
+  "color": "#BE185D",
+  "inputs": [
+    "Predictive model",
+    "Candidate intervention settings"
+  ],
+  "outputs": [
+    "Counterfactual predictions, risk-aware decisions"
+  ],
+  "is_iterative": false
+}

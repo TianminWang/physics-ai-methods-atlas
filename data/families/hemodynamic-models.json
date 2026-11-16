@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "family.hemodynamic-models",
+  "name": "Vascular physical and boundary models",
+  "name_zh": "血流动力学与血管边界模型",
+  "summary": "Lumped and distributed hemodynamic models and physically interpretable boundary conditions.",
+  "summary_zh": "包括血管阻抗、Windkessel、结构树边界等生理物理建模方法。",
+  "coverage_status": "populated",
+  "scope_note": "Current seed focuses on boundary models, not all 0D/1D/3D models.",
+  "scope_note_zh": "当前主要覆盖出口边界模型，完整的0D/1D/3D血流模型有待扩展。"
+}

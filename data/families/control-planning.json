@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "family.control-planning",
+  "name": "Optimal control, MPC and model-based RL",
+  "name_zh": "最优控制、MPC 与基于模型的强化学习",
+  "summary": "Optimize actions and intervention strategies using predictive dynamical models.",
+  "summary_zh": "利用预测模型开展最优控制、模型预测控制及基于模型的强化学习。",
+  "coverage_status": "planned",
+  "scope_note": "No validated coronary PCI control method is asserted at this stage.",
+  "scope_note_zh": "目前不主张已有经过验证的冠脉虚拟支架决策算法。"
+}

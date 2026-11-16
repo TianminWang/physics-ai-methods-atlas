@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "family.reduced-modeling",
+  "name": "Model order reduction and operator inference",
+  "name_zh": "降阶建模与低维动力学",
+  "summary": "Projection, reduced-order numerical models and inferred reduced dynamics.",
+  "summary_zh": "通过 POD、低维投影和数据驱动算子辨识降低正向计算成本。",
+  "coverage_status": "populated",
+  "scope_note": "Reduced physical dynamics rather than all machine-learning surrogates.",
+  "scope_note_zh": "主要涵盖低维物理动力学，不等同于所有神经代理模型。"
+}

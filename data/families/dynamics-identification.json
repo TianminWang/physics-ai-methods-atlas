@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "family.dynamics-identification",
+  "name": "System identification and learned dynamics",
+  "name_zh": "系统辨识与学习型动力学",
+  "summary": "Identify governing dynamics or learn continuous-time state evolution.",
+  "summary_zh": "包括 SINDy、Neural ODE 等方程辨识和学习型动力学方法。",
+  "coverage_status": "populated",
+  "scope_note": "Dynamics identification does not itself ensure online state assimilation.",
+  "scope_note_zh": "学习到动力学不代表自动具备在线状态同化能力。"
+}
