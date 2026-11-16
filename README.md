@@ -1,53 +1,74 @@
 # Physics AI Methods Atlas · 物理 AI 方法图谱
 
-> A living, evidence-linked **methods atlas** for scientific computing, ODE/PDE inverse problems, neural operators, coronary hemodynamics, and patient-specific digital twins.
+> A living, evidence-linked methodological knowledge graph for **ODE/PDE inverse problems, Physics AI, neural operators, coronary hemodynamics, and patient-specific digital twins**.
 
-**Our goal is not to collect every paper.** We want to understand *what each method does, where it came from, what changed, and when it is useful*. The default mental model is a **method-evolution forest** projected from a typed knowledge graph; a research-problem view will be built from the **same data**.
+**目标是理解方法体系，而不是收藏尽可能多的论文。** 默认以**方法演化森林**组织知识，并将论文、书籍、研究问题及跨方法融合关系关联到相应节点。以后可以从同一份数据切换到冠脉/数字孪生研究任务视图。
 
-**核心阅读原则：每个已经整理完成（curated）的方法节点只选 1–2 篇必读论文。** 其他关联论文作为可选扩展，不要求全部阅读。未完成文献筛选的节点明确标记为 draft。
+## Current release — curated method backbone v0.2 · 2026-11-16
 
-## Current status — foundation v0.1 (2026-11-16)
+| Entity | Count | Purpose |
+|---|---:|---|
+| Research areas | 5 | Navigation, not method ancestry |
+| Methods | 30 | Traditional + learned approaches, curated for this initial scope |
+| Papers/peer-reviewed chapters | 32 | Verified bibliographic references, reusable across methods |
+| Books / monographs | 8 | Many-to-many coverage, with chapters when known |
+| Research problems | 10 | Inversion, vascular flow, FFR, dynamic twins and intervention |
+| Typed relations | 210 | Taxonomy, lineage, bibliography, applicability and coverage |
 
-- **5** scope areas, **7** method nodes (**3 curated**, **4 draft**)
-- **3** verified landmark papers and **1** living online book
-- **2** example research problems, **22** typed relationships
-- JSON Schema, graph integrity and reading-policy validator, and normalized graph exporter
-- **Not yet built:** full literature corpus, interactive GitHub Pages site, and automated literature discovery. These belong to later stages.
+**Start here (优先阅读) ≠ 必须完成的任务。** Each method *may* suggest a small starting set (usually about 1–2 papers or textbook chapters), but **there is no mandatory count**. Some methods need no starting recommendation, others benefit from more. Landmark significance is attached to a **paper's contribution to a particular method**, not a blanket global paper badge. See [reading policy](docs/READING_POLICY.md).
 
-### Explore the seed catalog
+## Conceptual forest (illustrative overview)
 
-| Curated method | Required paper | What to focus on |
-|---|---|---|
-| [PINN](data/methods/pinn.json) | [Raissi et al. (2019)](data/papers/raissi-2019-pinn.json) | PDE residuals, forward/inverse formulations |
-| [DeepONet](data/methods/deeponet.json) | [Lu et al. (2021)](data/papers/lu-2021-deeponet.json) | Branch/trunk structure and operator maps |
-| [FNO](data/methods/fno.json) | [Li et al. (ICLR 2021)](data/papers/li-2021-fno.json) | Fourier layers and parameterized PDEs |
+The arrows below make the general families legible. They are **not** a substitute for the precisely typed, evidence-linked edges in `data/relations/`.
 
-The seed catalog validates the **architecture and reading workflow**, not comprehensive scholarly coverage. See [the reading policy](docs/READING_POLICY.md).
-
-## Canonical data structure
-
-~~~text
-data/
-  areas/       # scope / view filters (not methodological ancestry)
-  methods/     # one method record per node; core_reading lives here
-  papers/      # one bibliographic record per paper; reusable across methods
-  books/       # books and textbooks; chapter-level coverage is linked
-  problems/    # inverse problems / coronary or digital-twin research use cases
-  relations/   # typed, evidence-aware directed links
-schemas/
-  atlas.schema.json  # JSON Schema draft 2020-12, schema_version=1.0.0
-scripts/
-  validate.py        # cross-record validation + reading-policy checks
-  export_graph.py    # normalized graph JSON for a future viewer
-tests/               # integrity regression tests
-docs/                # architecture, curation policy, contributions, roadmap
+~~~mermaid
+flowchart LR
+  LS["Nonlinear least squares"] --> GN["Gauss–Newton"] --> LM["Levenberg–Marquardt"]
+  NO["Neural operator learning"] --> DeepONet["DeepONet"] --> PIDO["Physics-informed DeepONet"]
+  NO --> FNO["FNO"] --> PINO["PINO"] --> BVPINO["Bi-variational PINO / coronary FFR"]
+  FNO --> GeoFNO["Geo-FNO"]
+  NO --> DINO["Derivative-informed operator"]
+  KF["Kalman filtering"] --> EnKF["EnKF"] --> EKI["Ensemble Kalman inversion"]
+  POD["POD / reduced basis"] --> OpInf["Operator inference"]
 ~~~
 
-**Single source of truth:** edit records and relationships, **not** manually maintained graph drawings. One paper can connect to several methods. Books can span multiple methods or research areas. Relationships have explicit types: *belongs_to*, *specializes*, *extends*, *combines*, *addresses*, *introduces*, *covers*.
+The real graph also links PINNs, learned-forward inversion, direct inverse operators, Bayesian inference, adjoints, 4D-Var, vascular boundary models and research applications. The full **interactive website** is planned for Phase 3.
 
-### Locally validate and export
+## Recommended starting research path
 
-Requires Python 3.11+.
+**For ODE/PDE inversion + neural operators**, avoid reading every method node. A manageable spine is:
+
+1. **Nonlinear least squares / PDE adjoints:** selected Chavent book sections + [Giles & Pierce (2000)](data/papers/giles-2000-adjoint.json).
+2. **PINN:** [Raissi et al. (2019)](data/papers/raissi-2019-pinn.json).
+3. **Operator-learning overview:** [Boullé & Townsend (2024)](data/papers/boulle-2024-math-guide.json).
+4. **One operator architecture first:** [DeepONet (2021)](data/papers/lu-2021-deeponet.json) **or** [FNO (ICLR 2021)](data/papers/li-2021-fno.json); read the second later as needed.
+5. **Physics-informed operators:** [PINO (2024)](data/papers/li-2024-pino.json).
+6. **Inverse-problem bridge:** [Inverse problems with learned forward operators](data/papers/arridge-2024-learned-forward.json).
+7. **Choose your specialization:** [direct inverse operator, ICLR 2025](data/papers/cho-2025-pidion.json), or [DINO, JCP 2024](data/papers/oleary-roseberry-2024-dino.json), or [Bayesian perspective](data/papers/stuart-2010-bayesian.json).
+
+No full prerequisite mathematics curriculum is assumed. See [Minimal reading route and expansion branches](docs/READING_GUIDE.md).
+
+## Research-specific examples
+
+- [Patient-specific coronary parameter inference](data/problems/coronary-parameter-inference.json): physical inverse calibration, boundary models, sensitivities, Bayesian uncertainty.
+- [Coronary FFR curve estimation](data/problems/coronary-ffr-curve.json): bi-variational PINO and angiographic applications.
+- [Multi-vessel systemic calibration](data/problems/systemic-arterial-calibration.json): vascular operator surrogates and Bayesian inference (**systemic, not proof of coronary validation**).
+- [Virtual PCI counterfactual modeling](data/problems/virtual-pci-counterfactual.json): a **future research question**, not yet a validated method node.
+
+## Canonical data and development
+
+~~~text
+data/{areas,methods,papers,books,problems,relations}/   one JSON file per record
+schemas/atlas.schema.json                              schema version 2.0.0
+scripts/validate.py                                    semantic + reference validation
+scripts/export_graph.py                                derived normalized nodes/edges
+tests/                                                regression tests
+docs/                                                 architecture and curation guidance
+~~~
+
+A method's `start_here` list is **optional, ordered, uncapped** and may reference either `paper.*` or `book.*`. Other papers stay attached using typed relationships; they are **not** additional required reading. Method `status=curated` reflects reviewed content, **not how many papers were recommended**.
+
+To check or export the source graph (Python 3.11+):
 
 ~~~bash
 python -m pip install -r requirements-dev.txt
@@ -56,19 +77,8 @@ python -m pytest -q
 python -m scripts.export_graph --output build/atlas-graph.json
 ~~~
 
-Generated exports are deliberately excluded from Git. The interactive visualization is planned for Phase 3, with **method-forest as default** and **research-workflow as switchable view**.
+The exported JSON is generated; edit the source records instead of hand-maintaining graph files.
 
-## Design documents
+**Documentation:** [Architecture](docs/ARCHITECTURE.md) · [Reading policy](docs/READING_POLICY.md) · [Reading guide](docs/READING_GUIDE.md) · [Contributing](docs/CONTRIBUTING.md) · [Roadmap](docs/ROADMAP.md).
 
-- [Architecture and typed graph semantics](docs/ARCHITECTURE.md)
-- [Must-read policy: 1–2 papers per curated method](docs/READING_POLICY.md)
-- [Adding papers, methods, books, and evidence claims](docs/CONTRIBUTING.md)
-- [Phases and acceptance criteria](docs/ROADMAP.md)
-
-## Scope and standards
-
-Traditional numerical methods and learning-based methods are **peers**, not separate catalogues. The atlas prioritizes ODE/PDE forward solvers, inverse problems, Physics AI, data assimilation & uncertainty, and world models & intervention planning. Coronary hemodynamics is a central use case, not the only allowable domain.
-
-An arrow represents a *specific* claim (e.g., classification, extension, application), **not** proof that one technique is universally better. Claims of lineage require evidence. Mathematical background is documented **as needed per method**, not as a separate obligation to relearn a complete mathematics curriculum.
-
-This is an evolving research aid; original publications remain authoritative.
+**Scope:** Scientific modeling, physical inverse problems and model learning. Coronary hemodynamics is the primary application, but classical numerical methods and transferable learning techniques are first-class citizens. A newer paper is not automatically a superior method; linkage claims require semantic and scientific justification.
