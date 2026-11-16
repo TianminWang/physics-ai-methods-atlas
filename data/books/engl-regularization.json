@@ -1,0 +1,14 @@
+{
+  "schema_version": "2.0.0",
+  "id": "book.engl-regularization",
+  "title": "Regularization of Inverse Problems",
+  "authors": [
+    "Heinz W. Engl",
+    "Martin Hanke",
+    "Andreas Neubauer"
+  ],
+  "year": 1996,
+  "publisher": "Kluwer Academic Publishers",
+  "url": "https://link.springer.com/book/9780792341574",
+  "summary": "Classic monograph on stabilization, regularization operators and convergence for ill-posed inverse problems."
+}

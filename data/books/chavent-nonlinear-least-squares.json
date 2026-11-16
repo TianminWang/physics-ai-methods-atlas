@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.0.0",
+  "id": "book.chavent-nonlinear-least-squares",
+  "title": "Nonlinear Least Squares for Inverse Problems: Theoretical Foundations and Step-by-Step Guide for Applications",
+  "authors": [
+    "Guy Chavent"
+  ],
+  "year": 2010,
+  "publisher": "Springer",
+  "url": "https://doi.org/10.1007/978-90-481-2785-6",
+  "summary": "Finite- and infinite-dimensional least-squares inverse theory, identifiability, well-posedness and optimization."
+}
