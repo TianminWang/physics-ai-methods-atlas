@@ -60,7 +60,7 @@ def test_core_reading_must_link_paper_to_method(tmp_path):
 
 def test_wrong_relationship_endpoint_types_are_caught(tmp_path):
     root = _working_copy(tmp_path)
-    path = next((root / "data" / "relations").glob("*.json"))
+    path = root / "data" / "relations" / "pinn--belongs-to--physics-ai.json"
     data = json.loads(path.read_text(encoding="utf-8"))
     data.update(type="introduces")
     path.write_text(json.dumps(data, indent=2), encoding="utf-8")
