@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.operator-inference--belongs-to--physics-ai",
+  "source_id": "method.operator-inference",
+  "target_id": "area.physics-ai",
+  "type": "belongs_to",
+  "claim": "Navigation membership: operator-inference contributes to physics-ai, without implying historical ancestry."
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.neural-operator--belongs-to--forward-modeling",
+  "source_id": "method.neural-operator",
+  "target_id": "area.forward-modeling",
+  "type": "belongs_to",
+  "claim": "Navigation membership: neural-operator contributes to forward-modeling, without implying historical ancestry."
+}

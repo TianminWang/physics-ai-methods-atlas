@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.pde-constrained-optimization--belongs-to--forward-modeling",
+  "source_id": "method.pde-constrained-optimization",
+  "target_id": "area.forward-modeling",
+  "type": "belongs_to",
+  "claim": "Navigation membership: pde-constrained-optimization contributes to forward-modeling, without implying historical ancestry."
+}

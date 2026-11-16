@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.physics-informed-deeponet--belongs-to--physics-ai",
+  "source_id": "method.physics-informed-deeponet",
+  "target_id": "area.physics-ai",
+  "type": "belongs_to",
+  "claim": "Navigation membership: physics-informed-deeponet contributes to physics-ai, without implying historical ancestry."
+}

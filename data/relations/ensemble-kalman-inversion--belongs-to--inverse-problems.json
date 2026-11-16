@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.ensemble-kalman-inversion--belongs-to--inverse-problems",
+  "source_id": "method.ensemble-kalman-inversion",
+  "target_id": "area.inverse-problems",
+  "type": "belongs_to",
+  "claim": "Navigation membership: ensemble-kalman-inversion contributes to inverse-problems, without implying historical ancestry."
+}

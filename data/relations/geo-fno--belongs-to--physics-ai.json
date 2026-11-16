@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.geo-fno--belongs-to--physics-ai",
+  "source_id": "method.geo-fno",
+  "target_id": "area.physics-ai",
+  "type": "belongs_to",
+  "claim": "Navigation membership: geo-fno contributes to physics-ai, without implying historical ancestry."
+}

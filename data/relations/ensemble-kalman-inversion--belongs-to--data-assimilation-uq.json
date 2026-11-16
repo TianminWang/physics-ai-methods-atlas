@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.ensemble-kalman-inversion--belongs-to--data-assimilation-uq",
+  "source_id": "method.ensemble-kalman-inversion",
+  "target_id": "area.data-assimilation-uq",
+  "type": "belongs_to",
+  "claim": "Navigation membership: ensemble-kalman-inversion contributes to data-assimilation-uq, without implying historical ancestry."
+}
