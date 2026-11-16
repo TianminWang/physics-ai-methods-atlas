@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.geo-fno--specializes--neural-operator",
+  "source_id": "method.geo-fno",
+  "target_id": "method.neural-operator",
+  "type": "specializes",
+  "claim": "Geo-FNO belongs to neural operator learning while adapting coordinate domains."
+}

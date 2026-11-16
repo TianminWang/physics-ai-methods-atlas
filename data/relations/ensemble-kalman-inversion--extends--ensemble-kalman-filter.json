@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.ensemble-kalman-inversion--extends--ensemble-kalman-filter",
+  "source_id": "method.ensemble-kalman-inversion",
+  "target_id": "method.ensemble-kalman-filter",
+  "type": "extends",
+  "claim": "The inverse-problem method adapts ensemble Kalman updates from state assimilation to unknown parameters.",
+  "evidence_paper_ids": [
+    "paper.iglesias-2013-eki"
+  ]
+}

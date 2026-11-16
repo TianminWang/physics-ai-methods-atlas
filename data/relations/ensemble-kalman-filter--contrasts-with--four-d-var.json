@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.ensemble-kalman-filter--contrasts-with--four-d-var",
+  "source_id": "method.ensemble-kalman-filter",
+  "target_id": "method.four-d-var",
+  "type": "contrasts_with",
+  "claim": "Sequential ensemble updates and windowed variational state estimation make different numerical trade-offs."
+}

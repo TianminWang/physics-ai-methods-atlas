@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.fno--specializes--neural-operator",
+  "source_id": "method.fno",
+  "target_id": "method.neural-operator",
+  "type": "specializes",
+  "claim": "FNO learns an operator using Fourier-space kernels and neural composition."
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.bi-variational-pino--specializes--neural-operator",
+  "source_id": "method.bi-variational-pino",
+  "target_id": "method.neural-operator",
+  "type": "specializes",
+  "claim": "BVPINO is a specialized physics-informed operator architecture."
+}

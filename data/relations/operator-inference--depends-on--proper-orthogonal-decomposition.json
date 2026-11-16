@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.operator-inference--depends-on--proper-orthogonal-decomposition",
+  "source_id": "method.operator-inference",
+  "target_id": "method.proper-orthogonal-decomposition",
+  "type": "depends_on",
+  "claim": "Projection-based operator inference commonly uses POD-type coordinates as a reduced dynamical representation."
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.levenberg-marquardt--specializes--nonlinear-least-squares",
+  "source_id": "method.levenberg-marquardt",
+  "target_id": "method.nonlinear-least-squares",
+  "type": "specializes",
+  "claim": "Levenberg–Marquardt is an optimization method specialized to nonlinear least-squares residuals."
+}
