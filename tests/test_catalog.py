@@ -1,4 +1,4 @@
-"""Regression tests for the Atlas's essential data-integrity rules."""
+"""Checks that method-reading suggestions stay advisory and graph data is consistent."""
 from __future__ import annotations
 
 import json
@@ -9,92 +9,87 @@ from scripts.export_graph import export_graph
 from scripts.validate import ROOT, validate_catalog
 
 
-def _working_copy(tmp_path: Path) -> Path:
+def copy_data(tmp_path: Path) -> Path:
     shutil.copytree(ROOT / "data", tmp_path / "data")
     shutil.copytree(ROOT / "schemas", tmp_path / "schemas")
     return tmp_path
 
 
-def _edit(root: Path, relpath: str, modify) -> None:
-    path = root / relpath
-    data = json.loads(path.read_text(encoding="utf-8"))
-    modify(data)
-    path.write_text(
-        json.dumps(data, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8"
-    )
+def mutate(root, name, callback):
+    file = root / name
+    obj = json.loads(file.read_text(encoding="utf-8"))
+    callback(obj)
+    file.write_text(json.dumps(obj, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
-def test_seed_catalog_valid():
+def test_catalog_valid():
     assert validate_catalog() == []
 
 
-def test_export_is_deterministic_and_has_typed_links():
-    first = export_graph()
-    assert first == export_graph()
-    assert any(e["type"] == "introduces" for e in first["edges"])
-    assert any(n["id"] == "method.fno" for n in first["nodes"])
+def test_graph_export_reproducible():
+    graph = export_graph()
+    assert graph == export_graph()
+    assert any(n["id"] == "method.fno" for n in graph["nodes"])
 
 
-def test_curated_node_requires_must_read(tmp_path):
-    root = _working_copy(tmp_path)
-    _edit(root, "data/methods/fno.json", lambda x: x.update(core_reading=[]))
-    assert any("curated methods require" in e for e in validate_catalog(root))
+def test_curated_nodes_can_have_no_recommendations(tmp_path):
+    root = copy_data(tmp_path)
+    mutate(root, "data/methods/fno.json", lambda o: o.update(start_here=[]))
+    assert validate_catalog(root) == []
 
 
-def test_core_reading_cannot_exceed_two(tmp_path):
-    root = _working_copy(tmp_path)
-    def change(x):
-        x["core_reading"] = x["core_reading"] * 3
-    _edit(root, "data/methods/fno.json", change)
-    assert any("too long" in e or "maxItems" in e for e in validate_catalog(root))
+def test_three_recommendations_are_not_disallowed_by_quota(tmp_path):
+    root = copy_data(tmp_path)
+    def edit(o):
+        o["start_here"] = o["start_here"] + [
+            {"reference_id": "paper.raissi-2019-pinn", "why": "Physical constraints context", "focus": "Differential residual loss"},
+            {"reference_id": "paper.lu-2021-deeponet", "why": "Competing operator architecture", "focus": "Branch and trunk networks"},
+        ]
+    mutate(root, "data/methods/fno.json", edit)
+    errors = validate_catalog(root)
+    assert not any("maxItems" in e or "require 1–2" in e for e in errors)
+    assert any("requires a paper→method relation" in e for e in errors)
 
 
-def test_core_reading_must_link_paper_to_method(tmp_path):
-    root = _working_copy(tmp_path)
-    _edit(root, "data/methods/fno.json", lambda x: x["core_reading"][0].update(
-        paper_id="paper.raissi-2019-pinn"
-    ))
-    assert any("needs a paper→method relation" in e for e in validate_catalog(root))
+def test_missing_starting_reference_detected(tmp_path):
+    root = copy_data(tmp_path)
+    mutate(root, "data/methods/fno.json", lambda o: o["start_here"][0].update(reference_id="paper.nonexistent"))
+    assert any("missing starting reference" in e for e in validate_catalog(root))
 
 
-def test_wrong_relationship_endpoint_types_are_caught(tmp_path):
-    root = _working_copy(tmp_path)
-    path = root / "data" / "relations" / "pinn--belongs-to--physics-ai.json"
-    data = json.loads(path.read_text(encoding="utf-8"))
-    data.update(type="introduces")
-    path.write_text(json.dumps(data, indent=2), encoding="utf-8")
+def test_unverified_starting_paper_detected(tmp_path):
+    root = copy_data(tmp_path)
+    mutate(root, "data/papers/li-2021-fno.json", lambda o: o.update(verification_status="provisional"))
+    assert any("is not verified" in e for e in validate_catalog(root))
+
+
+def test_landmark_significance_requires_justification(tmp_path):
+    root = copy_data(tmp_path)
+    mutate(root, "data/relations/li-2021-fno--introduces--fno.json", lambda o: o.pop("significance_reason"))
+    assert any("significance_reason" in e or "justify" in e for e in validate_catalog(root))
+
+
+def test_bad_relation_types_detected(tmp_path):
+    root = copy_data(tmp_path)
+    mutate(root, "data/relations/pinn--belongs-to--physics-ai.json", lambda o: o.update(type="introduces"))
     assert any("invalid source/target types" in e for e in validate_catalog(root))
 
 
-def test_taxonomy_cycles_are_caught(tmp_path):
-    root = _working_copy(tmp_path)
-    rels = [
-        ("area.forward-modeling", "area.inverse-problems", "cycle-a"),
-        ("area.inverse-problems", "area.forward-modeling", "cycle-b"),
-    ]
-    for src, dst, slug in rels:
-        content = {
-            "schema_version": "1.0.0",
-            "id": f"relation.{slug}", "source_id": src, "target_id": dst,
-            "type": "subarea_of", "claim": "Intentionally cyclic test relation."
-        }
-        path = root / "data" / "relations" / f"{slug}.json"
-        path.write_text(json.dumps(content, indent=2), encoding="utf-8")
+def test_taxonomy_cycle_detected(tmp_path):
+    root = copy_data(tmp_path)
+    for x, y, slug in [
+        ("area.forward-modeling","area.inverse-problems","cycle-a"),
+        ("area.inverse-problems","area.forward-modeling","cycle-b"),
+    ]:
+        item = {"schema_version":"2.0.0","id":f"relation.{slug}",
+                "source_id":x,"target_id":y,"type":"subarea_of",
+                "claim":"Intentional cyclic relationship for a regression test."}
+        (root / "data" / "relations" / f"{slug}.json").write_text(json.dumps(item), encoding="utf-8")
     assert any("area taxonomy: cycle detected" in e for e in validate_catalog(root))
 
 
-def test_duplicate_paper_doi_is_caught(tmp_path):
-    root = _working_copy(tmp_path)
-    _edit(root, "data/papers/lu-2021-deeponet.json", lambda x: x.update(
-        identifiers={"doi": "10.1016/j.jcp.2018.10.045"}
-    ))
+def test_duplicate_doi_detected(tmp_path):
+    root = copy_data(tmp_path)
+    mutate(root, "data/papers/lu-2021-deeponet.json",
+           lambda o: o.update(identifiers={"doi":"10.1016/j.jcp.2018.10.045"}))
     assert any("duplicate doi" in e for e in validate_catalog(root))
-
-
-def test_unverified_core_paper_is_caught(tmp_path):
-    root = _working_copy(tmp_path)
-    _edit(root, "data/papers/li-2021-fno.json", lambda x: x.update(
-        verification_status="provisional"
-    ))
-    assert any("is not verified" in e for e in validate_catalog(root))

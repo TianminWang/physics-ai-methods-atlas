@@ -1,4 +1,4 @@
-"""Validate JSON Schemas, cross-references, reading policy, and graph semantics.
+"""Validate JSON Schemas, cross-references, reading guidance, and graph semantics.
 
 Run: python -m scripts.validate
 Dependencies: python -m pip install -r requirements-dev.txt
@@ -162,6 +162,11 @@ def validate_catalog(root: Path = ROOT) -> list[str]:
             paper_method_links.add((source, target))
         if predicate == "belongs_to" and _kind(source) == "method":
             method_areas.add(source)
+        if rel.get("significance") == "landmark":
+            if predicate not in PAPER_RELATIONS:
+                errors.append(f"{rel_id}: landmark significance must describe paper→method contribution")
+            if not rel.get("significance_reason"):
+                errors.append(f"{rel_id}: landmark must justify its contribution")
         evidence = rel.get("evidence_paper_ids", [])
         if isinstance(evidence, list):
             for paper_id in evidence:
@@ -175,42 +180,33 @@ def validate_catalog(root: Path = ROOT) -> list[str]:
     for method_id, method in methods.items():
         if method_id not in method_areas:
             errors.append(f"{method_id}: missing 'belongs_to' area relation")
-        core = method.get("core_reading", [])
-        if not isinstance(core, list):
+        recommendations = method.get("start_here", [])
+        if not isinstance(recommendations, list):
             continue
-        if method.get("status") == "curated" and not 1 <= len(core) <= 2:
-            errors.append(f"{method_id}: curated methods require 1–2 must-read papers")
         seen: set[str] = set()
-        for entry in core:
+        for entry in recommendations:
             if not isinstance(entry, dict):
                 continue
-            paper_id = entry.get("paper_id")
-            if not isinstance(paper_id, str):
+            ref_id = entry.get("reference_id")
+            if not isinstance(ref_id, str):
                 continue
-            if paper_id in seen:
-                errors.append(f"{method_id}: repeated must-read paper '{paper_id}'")
-            seen.add(paper_id)
-            paper = papers.get(paper_id)
-            if paper is None:
-                errors.append(f"{method_id}: must-read paper '{paper_id}' is missing")
+            if ref_id in seen:
+                errors.append(f"{method_id}: duplicated starting reference '{ref_id}'")
+            seen.add(ref_id)
+            source = records.get(ref_id)
+            if source is None:
+                errors.append(f"{method_id}: missing starting reference '{ref_id}'")
                 continue
-            if (paper_id, method_id) not in paper_method_links:
-                errors.append(
-                    f"{method_id}: must-read '{paper_id}' needs a paper→method relation"
-                )
-            if method.get("status") == "curated":
-                if paper.get("verification_status") != "verified":
-                    errors.append(
-                        f"{method_id}: must-read '{paper_id}' is not verified"
-                    )
-                if (
-                    paper.get("publication_status") != "peer_reviewed"
-                    and not entry.get("exception_reason")
-                ):
-                    errors.append(
-                        f"{method_id}: must-read '{paper_id}' needs a documented "
-                        "preprint/unknown-publication exception"
-                    )
+            if ref_id.startswith("paper."):
+                if (ref_id, method_id) not in paper_method_links:
+                    errors.append(f"{method_id}: starting paper '{ref_id}' requires a paper→method relation")
+                if source.get("verification_status") != "verified":
+                    errors.append(f"{method_id}: starting paper '{ref_id}' is not verified")
+                if source.get("publication_status") != "peer_reviewed" and not entry.get("exception_reason"):
+                    errors.append(f"{method_id}: starting paper '{ref_id}' needs an explicit publication-status exception")
+            elif ref_id.startswith("book."):
+                if (ref_id, "covers", method_id) not in edge_signatures:
+                    errors.append(f"{method_id}: starting book '{ref_id}' requires a covers relation")
 
     for paper_id in papers:
         if not any(source == paper_id for source, _ in paper_method_links):
