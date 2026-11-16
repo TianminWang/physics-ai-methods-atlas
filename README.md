@@ -1,86 +1,92 @@
-# Physics AI Methods Atlas · 物理 AI 方法图谱
+# 物理 AI 方法知识图谱 · Physics AI Methods Atlas
 
-> A living, evidence-linked methodological knowledge graph for **ODE/PDE inverse problems, Physics AI, neural operators, coronary hemodynamics, and patient-specific digital twins**.
+**[简体中文（默认）](README.md) | [English](README.en.md)**
 
-**目标是理解方法体系，而不是收藏尽可能多的论文。** 默认以**方法演化森林**组织知识，并将论文、书籍、研究问题及跨方法融合关系关联到相应节点。以后可以从同一份数据切换到冠脉/数字孪生研究任务视图。
+> 一张以**科学研究闭环为主轴、方法演化 DAG 为分支**的动态知识图谱，服务于 ODE/PDE 反问题、物理 AI、冠脉血流动力学、患者特异数字孪生与反事实决策。
 
-## Current release — curated method backbone v0.2 · 2026-11-16
+我们关注的不是尽可能多地收藏论文，而是：**链路需要什么能力？方法提供什么功能？新方法相对前驱改变了什么、解决了什么瓶颈？哪些论文最值得先读？**
 
-| Entity | Count | Purpose |
-|---|---:|---|
-| Research areas | 5 | Navigation, not method ancestry |
-| Methods | 30 | Traditional + learned approaches, curated for this initial scope |
-| Papers/peer-reviewed chapters | 32 | Verified bibliographic references, reusable across methods |
-| Books / monographs | 8 | Many-to-many coverage, with chapters when known |
-| Research problems | 10 | Inversion, vascular flow, FFR, dynamic twins and intervention |
-| Typed relations | 210 | Taxonomy, lineage, bibliography, applicability and coverage |
+## 一、统一研究主轴
 
-**Start here (优先阅读) ≠ 必须完成的任务。** Each method *may* suggest a small starting set (usually about 1–2 papers or textbook chapters), but **there is no mandatory count**. Some methods need no starting recommendation, others benefit from more. Landmark significance is attached to a **paper's contribution to a particular method**, not a blanket global paper badge. See [reading policy](docs/READING_POLICY.md).
-
-## Conceptual forest (illustrative overview)
-
-The arrows below make the general families legible. They are **not** a substitute for the precisely typed, evidence-linked edges in `data/relations/`.
-
-~~~mermaid
+```mermaid
 flowchart LR
-  LS["Nonlinear least squares"] --> GN["Gauss–Newton"] --> LM["Levenberg–Marquardt"]
-  NO["Neural operator learning"] --> DeepONet["DeepONet"] --> PIDO["Physics-informed DeepONet"]
-  NO --> FNO["FNO"] --> PINO["PINO"] --> BVPINO["Bi-variational PINO / coronary FFR"]
-  FNO --> GeoFNO["Geo-FNO"]
-  NO --> DINO["Derivative-informed operator"]
-  KF["Kalman filtering"] --> EnKF["EnKF"] --> EKI["Ensemble Kalman inversion"]
-  POD["POD / reduced basis"] --> OpInf["Operator inference"]
-~~~
+  A["① 物理表征与正向模拟"] --> C["③ 个体化反演与状态估计"]
+  B["② 观测与数据建模"] --> C
+  C --> D["④ 可信预测与不确定性传播"]
+  D --> E["⑤ 反事实干预与决策规划"]
+  B --> F["⑥ 持续观测、同化与模型更新"]
+  F -. "更新参数和状态" .-> C
+  F -. "修正模型" .-> A
+  F -. "更新预测" .-> D
+  style A fill:#DBEAFE,stroke:#2563EB,color:#1E3A8A
+  style B fill:#CFFAFE,stroke:#0891B2,color:#164E63
+  style C fill:#EDE9FE,stroke:#7C3AED,color:#4C1D95
+  style D fill:#FEF3C7,stroke:#B45309,color:#78350F
+  style E fill:#FCE7F3,stroke:#BE185D,color:#831843
+  style F fill:#DCFCE7,stroke:#15803D,color:#14532D
+```
 
-The real graph also links PINNs, learned-forward inversion, direct inverse operators, Bayesian inference, adjoints, 4D-Var, vascular boundary models and research applications. The full **interactive website** is planned for Phase 3.
+主轴表示**研究能力的逻辑关系**，不是固定执行顺序：正向模拟可能在反演、预测和干预中被反复调用，而新观测会触发反馈更新。
 
-## Recommended starting research path
+## 二、主轴与方法演化 DAG 的关系
 
-**For ODE/PDE inversion + neural operators**, avoid reading every method node. A manageable spine is:
+**方法家族不属于某个唯一环节。** 各研究环节通过有向**功能边**指向相关方法家族或具体方法，边上说明它们承担的作用。
 
-1. **Nonlinear least squares / PDE adjoints:** selected Chavent book sections + [Giles & Pierce (2000)](data/papers/giles-2000-adjoint.json).
-2. **PINN:** [Raissi et al. (2019)](data/papers/raissi-2019-pinn.json).
-3. **Operator-learning overview:** [Boullé & Townsend (2024)](data/papers/boulle-2024-math-guide.json).
-4. **One operator architecture first:** [DeepONet (2021)](data/papers/lu-2021-deeponet.json) **or** [FNO (ICLR 2021)](data/papers/li-2021-fno.json); read the second later as needed.
-5. **Physics-informed operators:** [PINO (2024)](data/papers/li-2024-pino.json).
-6. **Inverse-problem bridge:** [Inverse problems with learned forward operators](data/papers/arridge-2024-learned-forward.json).
-7. **Choose your specialization:** [direct inverse operator, ICLR 2025](data/papers/cho-2025-pidion.json), or [DINO, JCP 2024](data/papers/oleary-roseberry-2024-dino.json), or [Bayesian perspective](data/papers/stuart-2010-bayesian.json).
+例如，正向模拟环节使用神经算子学习参数到物理解的映射；反演环节可以把神经算子用作可微正向代理；预测环节可以在验证过的输入分布内利用它快速预测。三个环节指向的是**同一个神经算子家族**，不是三个重复实体。
 
-No full prerequisite mathematics curriculum is assumed. See [Minimal reading route and expansion branches](docs/READING_GUIDE.md).
+方法家族内部是分类树/演化 DAG。分类（`specializes`）、方法改进（`extends`）、融合（`combines`）和学习依赖（`depends_on`）使用不同关系。对于真正的改进/融合边，记录：
 
-## Research-specific examples
+- **改变了什么**（技术机制）
+- **解决什么瓶颈**（研究动机）
+- **代价与适用边界**
+- **直接支撑的论文**
+- **对应哪些研究环节**，并用主要环节的颜色表示边的关注方向
 
-- [Patient-specific coronary parameter inference](data/problems/coronary-parameter-inference.json): physical inverse calibration, boundary models, sensitivities, Bayesian uncertainty.
-- [Coronary FFR curve estimation](data/problems/coronary-ffr-curve.json): bi-variational PINO and angiographic applications.
-- [Multi-vessel systemic calibration](data/problems/systemic-arterial-calibration.json): vascular operator surrogates and Bayesian inference (**systemic, not proof of coronary validation**).
-- [Virtual PCI counterfactual modeling](data/problems/virtual-pci-counterfactual.json): a **future research question**, not yet a validated method node.
+物理一致性、可辨识性、数值/模型误差、不确定性校准和外部泛化是**跨环节质量关注点**，不是又一个线性步骤。
 
-## Canonical data and development
+## 三、当前 v0.3 的建设边界
 
-~~~text
-data/{areas,methods,papers,books,problems,relations}/   one JSON file per record
-schemas/atlas.schema.json                              schema version 2.0.0
-scripts/validate.py                                    semantic + reference validation
-scripts/export_graph.py                                derived normalized nodes/edges
-tests/                                                regression tests
-docs/                                                 architecture and curation guidance
-~~~
+| 模块 | 状态 |
+|---|---|
+| 研究主轴 | 6 个环节、双输入汇合及更新反馈 |
+| 方法家族 | 20 个家族与子家族；允许多重成员关系 |
+| 原有方法 | 保留30个方法节点、32篇论文/章节、8本专著、10个研究问题 |
+| 横向关注点 | 5类跨环节可信性问题 |
+| 演化边 | 原有10条改进/融合关系均补充变化、瓶颈、环节映射 |
+| 尚待系统整理 | 生成式物理建模、传统数值离散、可微物理模拟、最优控制与世界模型等 |
 
-A method's `start_here` list is **optional, ordered, uncapped** and may reference either `paper.*` or `book.*`. Other papers stay attached using typed relationships; they are **not** additional required reading. Method `status=curated` reflects reviewed content, **not how many papers were recommended**.
+**planned 只表示目前尚未完成本知识库的系统整理，不代表该领域缺少成熟研究。** 当前不为凑节点而伪造论文与方法关系。
 
-To check or export the source graph (Python 3.11+):
+## 四、从这里开始
 
-~~~bash
+- **[统一图谱架构（中文）](docs/zh/UNIFIED_GRAPH.md)**：主轴、方法家族、功能边、演化边、颜色及边界。
+- **[方法目录（30个已有节点）](docs/METHOD_CATALOG.md)**：现有方法与文献索引（内容逐步双语化）。
+- **[最小阅读路径](docs/READING_GUIDE.md)**：优先少量 Landmark 或优质教材章节，不设强制数量。
+- **[建设路线图](docs/ROADMAP.md)**：搭建架构 → 补全方法和文献 → 用小图验证 → 正式交互可视化。
+
+Landmark 是论文**对具体方法的学术贡献关系**，Start Here 只是**可选的优先阅读建议**。
+
+## 五、数据与检查
+
+```text
+data/stages/         研究主轴（环节自有颜色）
+data/families/       方法家族与分类 DAG
+data/methods/        具体方法；不因跨环节复用而复制
+data/relations/      功能角色、演化机制、瓶颈及文献证据
+data/concerns/       跨环节质量问题
+data/{papers,books,problems,areas}/  原有资料与研究问题
+locales/zh-CN.json   原方法名称中文翻译（不复制学术事实）
+scripts/export_unified.py           为未来界面生成中英文投影
+```
+
+```bash
 python -m pip install -r requirements-dev.txt
 python -m scripts.validate
 python -m pytest -q
-python -m scripts.export_graph --output build/atlas-graph.json
-~~~
+python -m scripts.export_unified --lang zh --output build/unified-zh.json
+python -m scripts.export_unified --lang en --output build/unified-en.json
+```
 
-The exported JSON is generated; edit the source records instead of hand-maintaining graph files.
+目前尚未完成交互式 GitHub Pages；上述 Mermaid 只是研究主轴示意。科学知识数据先建立正确，再扩充文献，最后完成正式可视化。
 
-**Browse:** [Method catalogue (30 nodes)](docs/METHOD_CATALOG.md) · [Minimal reading path](docs/READING_GUIDE.md)
-
-**Documentation:** [Architecture](docs/ARCHITECTURE.md) · [Reading policy](docs/READING_POLICY.md) · [Reading guide](docs/READING_GUIDE.md) · [Contributing](docs/CONTRIBUTING.md) · [Roadmap](docs/ROADMAP.md).
-
-**Scope:** Scientific modeling, physical inverse problems and model learning. Coronary hemodynamics is the primary application, but classical numerical methods and transferable learning techniques are first-class citizens. A newer paper is not automatically a superior method; linkage claims require semantic and scientific justification.
+[完整架构说明](docs/zh/UNIFIED_GRAPH.md) · [English architecture](docs/en/UNIFIED_GRAPH.md) · [维护规范](docs/CONTRIBUTING.md)
