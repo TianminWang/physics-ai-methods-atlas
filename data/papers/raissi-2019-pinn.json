@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "id": "paper.raissi-2019-pinn",
+  "landmark": true,
+  "verification_status": "verified",
+  "publication_status": "peer_reviewed",
+  "title": "Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations",
+  "authors": [
+    "Maziar Raissi",
+    "Paris Perdikaris",
+    "George Em Karniadakis"
+  ],
+  "year": 2019,
+  "venue": "Journal of Computational Physics",
+  "url": "https://doi.org/10.1016/j.jcp.2018.10.045",
+  "identifiers": {
+    "doi": "10.1016/j.jcp.2018.10.045"
+  },
+  "verification_url": "https://doi.org/10.1016/j.jcp.2018.10.045",
+  "summary": "Establishes PINN frameworks and examples for forward solution and inverse identification with differential equations."
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "id": "method.learned-forward-inversion",
+  "aliases": [],
+  "limitations": [
+    "Inverse optimization can exploit forward-surrogate approximation errors.",
+    "Out-of-distribution inverse iterates may invalidate the surrogate."
+  ],
+  "background_topics": [
+    "Forward and inverse maps",
+    "Regularized optimization",
+    "Surrogate-model error"
+  ],
+  "core_reading": [],
+  "name": "Inverse Problems with Learned Forward Surrogates",
+  "status": "draft",
+  "summary": "Use a trained forward surrogate, potentially a neural operator, inside a conventional inversion or Bayesian inference algorithm.",
+  "core_idea": "Replace repeated expensive physical forward solves with a learned approximation while retaining explicit data-misfit or posterior inference.",
+  "innovation": "Separates amortized forward-model training from repeated inverse inference, with new surrogate-error and bias considerations."
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "id": "problem.coronary-parameter-inference",
+  "constraints": [
+    "Conservation laws and cardiovascular hemodynamic model assumptions"
+  ],
+  "name": "Patient-specific coronary hemodynamic parameter inference",
+  "summary": "Infer coronary flow-model parameters and hidden hemodynamic states from patient-specific geometry, imaging, and physiological observations.",
+  "unknowns": [
+    "Inlet/outlet or vascular material parameters",
+    "Potentially unobserved flow or pressure states"
+  ],
+  "observables": [
+    "Patient-specific coronary geometry or area estimates",
+    "Sparse clinical pressure or flow measurements, when available"
+  ]
+}

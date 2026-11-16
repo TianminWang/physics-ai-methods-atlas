@@ -1,0 +1,7 @@
+{
+  "schema_version": "1.0.0",
+  "id": "area.world-models-planning",
+  "name": "World models and intervention planning",
+  "name_zh": "世界模型与干预规划",
+  "summary": "Dynamic prediction, counterfactual intervention modeling, control, and planning for digital twins."
+}

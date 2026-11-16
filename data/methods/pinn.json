@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "id": "method.pinn",
+  "aliases": [
+    "PINN",
+    "PINNs"
+  ],
+  "limitations": [
+    "Optimization can be difficult or ill-conditioned.",
+    "A separately trained model is often needed for each new problem instance."
+  ],
+  "background_topics": [
+    "Automatic differentiation",
+    "PDE residual and boundary conditions",
+    "Loss functions and numerical optimization"
+  ],
+  "core_reading": [
+    {
+      "paper_id": "paper.raissi-2019-pinn",
+      "why": "Seminal framework that connects physical residual losses to forward and inverse PDE tasks.",
+      "focus": "Continuous-time PINN losses, data-driven discovery, and the inverse examples."
+    }
+  ],
+  "name": "Physics-Informed Neural Networks",
+  "status": "curated",
+  "summary": "Neural function approximators trained with physical equation residuals and observational or boundary-condition constraints.",
+  "core_idea": "Represent a solution field by a neural network and penalize ODE/PDE residuals alongside data and boundary conditions.",
+  "innovation": "Makes differential-equation constraints part of network training, supporting both forward and selected inverse problems."
+}

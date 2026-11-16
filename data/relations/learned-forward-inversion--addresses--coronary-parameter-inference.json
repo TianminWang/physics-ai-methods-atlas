@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0.0",
+  "id": "relation.learned-forward-inversion--addresses--coronary-parameter-inference",
+  "source_id": "method.learned-forward-inversion",
+  "target_id": "problem.coronary-parameter-inference",
+  "type": "addresses",
+  "claim": "Learned forward surrogates can be used to accelerate repeated coronary model-parameter inference when sufficiently validated."
+}

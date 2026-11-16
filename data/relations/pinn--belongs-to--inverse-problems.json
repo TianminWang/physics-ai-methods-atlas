@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0.0",
+  "id": "relation.pinn--belongs-to--inverse-problems",
+  "source_id": "method.pinn",
+  "target_id": "area.inverse-problems",
+  "type": "belongs_to",
+  "claim": "Classifies pinn as relevant to inverse-problems."
+}

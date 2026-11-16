@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0.0",
+  "id": "relation.tikhonov-regularization--addresses--pde-coefficient-inference",
+  "source_id": "method.tikhonov-regularization",
+  "target_id": "problem.pde-coefficient-inference",
+  "type": "addresses",
+  "claim": "This method can contribute to PDE coefficient inference under suitable assumptions."
+}

@@ -1,0 +1,7 @@
+{
+  "schema_version": "1.0.0",
+  "id": "area.inverse-problems",
+  "name": "Inverse problems and parameter inference",
+  "name_zh": "反问题与参数推断",
+  "summary": "Optimization, regularization, identifiability, sensitivity, Bayesian inference, and PDE-constrained inversion."
+}

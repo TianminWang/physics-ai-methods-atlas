@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "id": "method.deeponet",
+  "aliases": [
+    "DeepONet"
+  ],
+  "limitations": [
+    "Performance depends on representative training function distributions.",
+    "Sensor placement and input discretization affect generalization."
+  ],
+  "background_topics": [
+    "Function-to-function maps",
+    "Basis expansions and dot products",
+    "Supervised learning"
+  ],
+  "core_reading": [
+    {
+      "paper_id": "paper.lu-2021-deeponet",
+      "why": "Original reference linking the branch/trunk construction to nonlinear operator approximation.",
+      "focus": "Operator learning setup, branch/trunk architecture, and representative ODE/PDE examples."
+    }
+  ],
+  "name": "Deep Operator Network",
+  "status": "curated",
+  "summary": "An operator-learning architecture using branch and trunk neural networks for function-to-function prediction.",
+  "core_idea": "Encode input-function observations with a branch network and combine them with output-coordinate features from a trunk network.",
+  "innovation": "Learns nonlinear operators across varying input functions rather than training a separate solution network per instance."
+}

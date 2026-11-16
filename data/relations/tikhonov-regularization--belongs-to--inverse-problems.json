@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0.0",
+  "id": "relation.tikhonov-regularization--belongs-to--inverse-problems",
+  "source_id": "method.tikhonov-regularization",
+  "target_id": "area.inverse-problems",
+  "type": "belongs_to",
+  "claim": "Classifies tikhonov-regularization as relevant to inverse-problems."
+}
