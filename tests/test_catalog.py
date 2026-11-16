@@ -38,17 +38,32 @@ def test_curated_nodes_can_have_no_recommendations(tmp_path):
     assert validate_catalog(root) == []
 
 
-def test_three_recommendations_are_not_disallowed_by_quota(tmp_path):
+def test_three_distinct_linked_recommendations_are_valid(tmp_path):
     root = copy_data(tmp_path)
+    # This fixture demonstrates that 3 linked, verified starting papers are valid.
     def edit(o):
         o["start_here"] = o["start_here"] + [
-            {"reference_id": "paper.raissi-2019-pinn", "why": "Physical constraints context", "focus": "Differential residual loss"},
-            {"reference_id": "paper.lu-2021-deeponet", "why": "Competing operator architecture", "focus": "Branch and trunk networks"},
+            {"reference_id": "paper.raissi-2019-pinn",
+             "why": "Physical constraints context",
+             "focus": "Differential residual loss"},
+            {"reference_id": "paper.lu-2021-deeponet",
+             "why": "Competing operator architecture",
+             "focus": "Branch and trunk networks"},
         ]
     mutate(root, "data/methods/fno.json", edit)
-    errors = validate_catalog(root)
-    assert not any("maxItems" in e or "require 1–2" in e for e in errors)
-    assert any("requires a paper→method relation" in e for e in errors)
+    for paper_slug in ("raissi-2019-pinn", "lu-2021-deeponet"):
+        suffix = f"{paper_slug}--surveys--fno"
+        relation = {
+            "schema_version": "2.0.0",
+            "id": f"relation.{suffix}",
+            "source_id": f"paper.{paper_slug}",
+            "target_id": "method.fno",
+            "type": "surveys",
+            "claim": "Synthetic test-only reference link, not a scholarly attribution.",
+        }
+        path = root / "data" / "relations" / f"{suffix}.json"
+        path.write_text(json.dumps(relation), encoding="utf-8")
+    assert validate_catalog(root) == []
 
 
 def test_missing_starting_reference_detected(tmp_path):
