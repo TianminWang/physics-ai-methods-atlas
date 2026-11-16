@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.bubba-data-driven-inverse--covers--bayesian-inverse-problems",
+  "source_id": "book.bubba-data-driven-inverse",
+  "target_id": "method.bayesian-inverse-problems",
+  "type": "covers",
+  "claim": "Contributions on Bayesian and data-driven inverse modeling.",
+  "locator": "Part II"
+}

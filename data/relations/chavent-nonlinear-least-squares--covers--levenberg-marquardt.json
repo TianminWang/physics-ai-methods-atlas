@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.chavent-nonlinear-least-squares--covers--levenberg-marquardt",
+  "source_id": "book.chavent-nonlinear-least-squares",
+  "target_id": "method.levenberg-marquardt",
+  "type": "covers",
+  "claim": "Damped nonlinear least-squares algorithms and inverse-model applications."
+}

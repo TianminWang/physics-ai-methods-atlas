@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.ray-computational-physics--covers--deeponet",
+  "source_id": "book.ray-computational-physics",
+  "target_id": "method.deeponet",
+  "type": "covers",
+  "claim": "Operator network foundations in computational physics.",
+  "locator": "Chapter 6: Operator Networks"
+}

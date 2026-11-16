@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.ray-computational-physics--covers--fno",
+  "source_id": "book.ray-computational-physics",
+  "target_id": "method.fno",
+  "type": "covers",
+  "claim": "Fourier operator learning with computational-physics background.",
+  "locator": "Chapter 6: Operator Networks"
+}

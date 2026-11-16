@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.chavent-nonlinear-least-squares--covers--gauss-newton",
+  "source_id": "book.chavent-nonlinear-least-squares",
+  "target_id": "method.gauss-newton",
+  "type": "covers",
+  "claim": "Jacobian-based least-squares optimization and convergence discussion."
+}

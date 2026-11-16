@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.ray-computational-physics--covers--neural-operator",
+  "source_id": "book.ray-computational-physics",
+  "target_id": "method.neural-operator",
+  "type": "covers",
+  "claim": "Introductory neural solution operators and their numerical context.",
+  "locator": "Chapter 6: Operator Networks"
+}
