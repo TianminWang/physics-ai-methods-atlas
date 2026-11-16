@@ -1,0 +1,27 @@
+{
+  "schema_version": "2.0.0",
+  "id": "method.neural-ode",
+  "name": "Neural Ordinary Differential Equations",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Model continuous-time hidden-state dynamics with a neural vector field integrated by a numerical ODE solver.",
+  "core_idea": "Use a learned right-hand side du/dt=f_theta(u,t) and differentiate through numerical integration for training.",
+  "innovation": "Connects continuous-time state-space representation, learnable dynamics and differentiable solvers.",
+  "limitations": [
+    "Solver numerical tolerance and stability affect gradients.",
+    "Unobserved states may not be identifiable from sparse measurements."
+  ],
+  "background_topics": [
+    "ODE initial-value problems",
+    "Backpropagation",
+    "Numerical integration"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.chen-2018-neural-ode",
+      "why": "Landmark introduction to continuous-depth neural dynamics.",
+      "focus": "Neural vector field, black-box solver, continuous adjoint training."
+    }
+  ],
+  "curation_note": "Scholarly source and method contribution checked; starting references are suggestions, not mandatory reading."
+}

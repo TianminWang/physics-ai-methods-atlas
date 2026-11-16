@@ -1,0 +1,27 @@
+{
+  "schema_version": "2.0.0",
+  "id": "method.deep-galerkin",
+  "name": "Deep Galerkin Method (DGM)",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Train neural PDE solutions through meshfree residual and boundary-condition losses.",
+  "core_idea": "Parameterize a PDE solution with a neural network and minimize sampled differential residuals.",
+  "innovation": "Offers an early high-dimensional neural PDE solver formulation independent of mesh discretization.",
+  "limitations": [
+    "Training and loss-conditioning problems can be severe.",
+    "A small empirical residual does not necessarily ensure accurate global solutions."
+  ],
+  "background_topics": [
+    "Automatic differentiation",
+    "PDE residuals",
+    "Monte Carlo quadrature"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.sirignano-2018-dgm",
+      "why": "Early neural residual-based solver precursor/comparator to later PINN terminology.",
+      "focus": "PDE residual objective, sampling, and high-dimensional examples."
+    }
+  ],
+  "curation_note": "Scholarly source and method contribution checked; starting references are suggestions, not mandatory reading."
+}
