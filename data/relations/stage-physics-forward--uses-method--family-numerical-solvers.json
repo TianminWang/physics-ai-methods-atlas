@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-physics-forward--uses-method--family-numerical-solvers",
+  "source_id": "stage.physics-forward",
+  "target_id": "family.numerical-solvers",
+  "type": "uses_method",
+  "claim": "This stage can draw on numerical-solvers for computing ODE/PDE forward solutions under stated conditions.",
+  "claim_zh": "本环节可调用numerical-solvers：在已知参数和边界条件下数值求解ODE/PDE。",
+  "role": "computing ODE/PDE forward solutions under stated conditions",
+  "role_zh": "在已知参数和边界条件下数值求解ODE/PDE",
+  "evidence_scope": "conceptual"
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-continual-update--feeds-back-to--stage-physics-forward",
+  "source_id": "stage.continual-update",
+  "target_id": "stage.physics-forward",
+  "type": "feeds_back_to",
+  "claim": "Updated physical parameters and model assumptions may change the forward representation.",
+  "claim_zh": "更新后的物理参数或模型假设可能改变正向预测。",
+  "role": "Updated physical parameters and model assumptions may change the forward representation.",
+  "role_zh": "更新后的物理参数或模型假设可能改变正向预测。"
+}

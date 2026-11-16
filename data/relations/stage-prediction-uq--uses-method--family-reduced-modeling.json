@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-prediction-uq--uses-method--family-reduced-modeling",
+  "source_id": "stage.prediction-uq",
+  "target_id": "family.reduced-modeling",
+  "type": "uses_method",
+  "claim": "This stage can draw on reduced-modeling for computationally inexpensive reduced-system rollouts.",
+  "claim_zh": "本环节可调用reduced-modeling：利用低维动力学快速展开预测。",
+  "role": "computationally inexpensive reduced-system rollouts",
+  "role_zh": "利用低维动力学快速展开预测",
+  "evidence_scope": "conceptual"
+}

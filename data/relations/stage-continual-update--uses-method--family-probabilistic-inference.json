@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-continual-update--uses-method--family-probabilistic-inference",
+  "source_id": "stage.continual-update",
+  "target_id": "family.probabilistic-inference",
+  "type": "uses_method",
+  "claim": "This stage can draw on probabilistic-inference for updating beliefs about uncertain parameters with longitudinal data.",
+  "claim_zh": "本环节可调用probabilistic-inference：根据纵向观测更新未知参数的概率认识。",
+  "role": "updating beliefs about uncertain parameters with longitudinal data",
+  "role_zh": "根据纵向观测更新未知参数的概率认识",
+  "evidence_scope": "conceptual"
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-continual-update--uses-method--family-observation-modeling",
+  "source_id": "stage.continual-update",
+  "target_id": "family.observation-modeling",
+  "type": "uses_method",
+  "claim": "This stage can draw on observation-modeling for integrating new measurements through a consistent observation likelihood.",
+  "claim_zh": "本环节可调用observation-modeling：通过明确的观测模型接入新测量数据。",
+  "role": "integrating new measurements through a consistent observation likelihood",
+  "role_zh": "通过明确的观测模型接入新测量数据",
+  "evidence_scope": "conceptual"
+}

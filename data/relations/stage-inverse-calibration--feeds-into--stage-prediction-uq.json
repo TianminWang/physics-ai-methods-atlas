@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-inverse-calibration--feeds-into--stage-prediction-uq",
+  "source_id": "stage.inverse-calibration",
+  "target_id": "stage.prediction-uq",
+  "type": "feeds_into",
+  "claim": "Calibrated states and parameters condition later physical predictions.",
+  "claim_zh": "已校准的参数和状态为后续预测提供个体化条件。",
+  "role": "Calibrated states and parameters condition later physical predictions.",
+  "role_zh": "已校准的参数和状态为后续预测提供个体化条件。"
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-physics-forward--uses-method--family-hemodynamic-models",
+  "source_id": "stage.physics-forward",
+  "target_id": "family.hemodynamic-models",
+  "type": "uses_method",
+  "claim": "This stage can draw on hemodynamic-models for physiological governing and boundary assumptions.",
+  "claim_zh": "本环节可调用hemodynamic-models：提供生理控制方程、血管阻抗及出口边界模型。",
+  "role": "physiological governing and boundary assumptions",
+  "role_zh": "提供生理控制方程、血管阻抗及出口边界模型",
+  "evidence_scope": "conceptual"
+}

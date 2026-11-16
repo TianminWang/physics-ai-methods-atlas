@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-physics-forward--feeds-into--stage-inverse-calibration",
+  "source_id": "stage.physics-forward",
+  "target_id": "stage.inverse-calibration",
+  "type": "feeds_into",
+  "claim": "Forward model defines how unknown parameters imply predicted states.",
+  "claim_zh": "正向模型定义未知参数到可预测物理状态的映射。",
+  "role": "Forward model defines how unknown parameters imply predicted states.",
+  "role_zh": "正向模型定义未知参数到可预测物理状态的映射。"
+}

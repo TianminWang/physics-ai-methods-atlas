@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-continual-update--feeds-back-to--stage-prediction-uq",
+  "source_id": "stage.continual-update",
+  "target_id": "stage.prediction-uq",
+  "type": "feeds_back_to",
+  "claim": "New posterior state information updates forecast initial conditions.",
+  "claim_zh": "新的后验状态信息修正预测初始条件。",
+  "role": "New posterior state information updates forecast initial conditions.",
+  "role_zh": "新的后验状态信息修正预测初始条件。"
+}

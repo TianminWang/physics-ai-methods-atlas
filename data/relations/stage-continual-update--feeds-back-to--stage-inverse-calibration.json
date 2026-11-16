@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-continual-update--feeds-back-to--stage-inverse-calibration",
+  "source_id": "stage.continual-update",
+  "target_id": "stage.inverse-calibration",
+  "type": "feeds_back_to",
+  "claim": "Assimilated measurements revise parameter and hidden-state estimates.",
+  "claim_zh": "同化后的新信息反馈更新参数与状态估计。",
+  "role": "Assimilated measurements revise parameter and hidden-state estimates.",
+  "role_zh": "同化后的新信息反馈更新参数与状态估计。"
+}

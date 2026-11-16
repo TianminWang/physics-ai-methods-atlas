@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-intervention-planning--uses-method--family-numerical-solvers",
+  "source_id": "stage.intervention-planning",
+  "target_id": "family.numerical-solvers",
+  "type": "uses_method",
+  "claim": "This stage can draw on numerical-solvers for resolving physical responses under intervention-induced changes.",
+  "claim_zh": "本环节可调用numerical-solvers：重算干预改变几何或边界条件后的物理响应。",
+  "role": "resolving physical responses under intervention-induced changes",
+  "role_zh": "重算干预改变几何或边界条件后的物理响应",
+  "evidence_scope": "conceptual"
+}

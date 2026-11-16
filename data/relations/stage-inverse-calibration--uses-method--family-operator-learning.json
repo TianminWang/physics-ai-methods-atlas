@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-inverse-calibration--uses-method--family-operator-learning",
+  "source_id": "stage.inverse-calibration",
+  "target_id": "family.operator-learning",
+  "type": "uses_method",
+  "claim": "This stage can draw on operator-learning for providing a reusable differentiable forward surrogate within inversion.",
+  "claim_zh": "本环节可调用operator-learning：作为反演内循环中可重复调用的正向算子代理。",
+  "role": "providing a reusable differentiable forward surrogate within inversion",
+  "role_zh": "作为反演内循环中可重复调用的正向算子代理",
+  "evidence_scope": "conceptual"
+}

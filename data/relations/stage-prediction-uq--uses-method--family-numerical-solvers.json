@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-prediction-uq--uses-method--family-numerical-solvers",
+  "source_id": "stage.prediction-uq",
+  "target_id": "family.numerical-solvers",
+  "type": "uses_method",
+  "claim": "This stage can draw on numerical-solvers for propagating calibrated models to new physical conditions.",
+  "claim_zh": "本环节可调用numerical-solvers：在新工况下求解已校准的物理模型。",
+  "role": "propagating calibrated models to new physical conditions",
+  "role_zh": "在新工况下求解已校准的物理模型",
+  "evidence_scope": "conceptual"
+}

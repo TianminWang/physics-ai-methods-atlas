@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-prediction-uq--uses-method--family-generative-modeling",
+  "source_id": "stage.prediction-uq",
+  "target_id": "family.generative-modeling",
+  "type": "uses_method",
+  "claim": "This stage can draw on generative-modeling for sampling predictive distributions when the distributional model is justified.",
+  "claim_zh": "本环节可调用generative-modeling：在有可靠概率模型时生成条件预测分布。",
+  "role": "sampling predictive distributions when the distributional model is justified",
+  "role_zh": "在有可靠概率模型时生成条件预测分布",
+  "evidence_scope": "hypothesis"
+}

@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.concern-identifiability--concern-applies-to--stage-observation",
+  "source_id": "concern.identifiability",
+  "target_id": "stage.observation",
+  "type": "concern_applies_to",
+  "claim": "The identifiability issue must be assessed when evaluating this stage.",
+  "claim_zh": "“identifiability”是此环节需要独立评估的可靠性问题。"
+}

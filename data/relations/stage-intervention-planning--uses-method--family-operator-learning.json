@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-intervention-planning--uses-method--family-operator-learning",
+  "source_id": "stage.intervention-planning",
+  "target_id": "family.operator-learning",
+  "type": "uses_method",
+  "claim": "This stage can draw on operator-learning for accelerating repeated conditional simulations if validated on interventions.",
+  "claim_zh": "本环节可调用operator-learning：在干预输入分布上验证后加速多方案模拟。",
+  "role": "accelerating repeated conditional simulations if validated on interventions",
+  "role_zh": "在干预输入分布上验证后加速多方案模拟",
+  "evidence_scope": "hypothesis"
+}

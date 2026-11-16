@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-observation--uses-method--family-observation-modeling",
+  "source_id": "stage.observation",
+  "target_id": "family.observation-modeling",
+  "type": "uses_method",
+  "claim": "This stage can draw on observation-modeling for mapping latent physics to measured signals and explicit noise.",
+  "claim_zh": "本环节可调用observation-modeling：构建观测算子、采样过程及误差模型。",
+  "role": "mapping latent physics to measured signals and explicit noise",
+  "role_zh": "构建观测算子、采样过程及误差模型",
+  "evidence_scope": "conceptual"
+}
