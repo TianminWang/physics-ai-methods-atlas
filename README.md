@@ -79,6 +79,8 @@ python -m scripts.export_graph --output build/atlas-graph.json
 
 The exported JSON is generated; edit the source records instead of hand-maintaining graph files.
 
+**Browse:** [Method catalogue (30 nodes)](docs/METHOD_CATALOG.md) · [Minimal reading path](docs/READING_GUIDE.md)
+
 **Documentation:** [Architecture](docs/ARCHITECTURE.md) · [Reading policy](docs/READING_POLICY.md) · [Reading guide](docs/READING_GUIDE.md) · [Contributing](docs/CONTRIBUTING.md) · [Roadmap](docs/ROADMAP.md).
 
 **Scope:** Scientific modeling, physical inverse problems and model learning. Coronary hemodynamics is the primary application, but classical numerical methods and transferable learning techniques are first-class citizens. A newer paper is not automatically a superior method; linkage claims require semantic and scientific justification.
