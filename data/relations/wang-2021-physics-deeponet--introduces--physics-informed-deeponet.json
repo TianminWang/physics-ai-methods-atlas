@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.wang-2021-physics-deeponet--introduces--physics-informed-deeponet",
+  "source_id": "paper.wang-2021-physics-deeponet",
+  "target_id": "method.physics-informed-deeponet",
+  "type": "introduces",
+  "claim": "Introduces physical-residual training across DeepONet input function families.",
+  "significance": "landmark",
+  "significance_reason": "Introduces physical-residual training across DeepONet input function families."
+}

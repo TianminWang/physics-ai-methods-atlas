@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.ryan-2026-cardiovascular-pino--applies--pino",
+  "source_id": "paper.ryan-2026-cardiovascular-pino",
+  "target_id": "method.pino",
+  "type": "applies",
+  "claim": "Applies physics-informed operators and Bayesian inversion to systemic 1D vessel networks; not direct coronary validation.",
+  "significance": "representative"
+}

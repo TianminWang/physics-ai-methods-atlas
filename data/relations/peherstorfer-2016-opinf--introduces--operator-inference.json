@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.peherstorfer-2016-opinf--introduces--operator-inference",
+  "source_id": "paper.peherstorfer-2016-opinf",
+  "target_id": "method.operator-inference",
+  "type": "introduces",
+  "claim": "Introduces nonintrusive operator inference in projection-based reduced-order modeling.",
+  "significance": "landmark",
+  "significance_reason": "Introduces nonintrusive operator inference in projection-based reduced-order modeling."
+}

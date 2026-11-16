@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.chen-2018-neural-ode--introduces--neural-ode",
+  "source_id": "paper.chen-2018-neural-ode",
+  "target_id": "method.neural-ode",
+  "type": "introduces",
+  "claim": "Introduces neural ODEs as trainable continuous-depth neural dynamics.",
+  "significance": "landmark",
+  "significance_reason": "Introduces neural ODEs as trainable continuous-depth neural dynamics."
+}

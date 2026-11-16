@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.sirovich-1987-pod--analyzes--proper-orthogonal-decomposition",
+  "source_id": "paper.sirovich-1987-pod",
+  "target_id": "method.proper-orthogonal-decomposition",
+  "type": "analyzes",
+  "claim": "Classic snapshot framework for extracting coherent modes; not the original invention of POD.",
+  "significance": "landmark",
+  "significance_reason": "Classic snapshot framework for extracting coherent modes; not the original invention of POD."
+}

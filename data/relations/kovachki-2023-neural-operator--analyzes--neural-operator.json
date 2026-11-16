@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.kovachki-2023-neural-operator--analyzes--neural-operator",
+  "source_id": "paper.kovachki-2023-neural-operator",
+  "target_id": "method.neural-operator",
+  "type": "analyzes",
+  "claim": "Foundational unified neural-operator architecture and approximation-theoretic exposition.",
+  "significance": "landmark",
+  "significance_reason": "Foundational unified neural-operator architecture and approximation-theoretic exposition."
+}

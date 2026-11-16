@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.courtier-1994-4dvar--analyzes--four-d-var",
+  "source_id": "paper.courtier-1994-4dvar",
+  "target_id": "method.four-d-var",
+  "type": "analyzes",
+  "claim": "Influential incremental operational implementation of 4D-Var; does not introduce 4D-Var as a whole.",
+  "significance": "landmark",
+  "significance_reason": "Influential incremental operational implementation of 4D-Var; does not introduce 4D-Var as a whole."
+}

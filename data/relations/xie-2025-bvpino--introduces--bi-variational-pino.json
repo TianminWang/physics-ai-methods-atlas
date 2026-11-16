@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.xie-2025-bvpino--introduces--bi-variational-pino",
+  "source_id": "paper.xie-2025-bvpino",
+  "target_id": "method.bi-variational-pino",
+  "type": "introduces",
+  "claim": "Introduces locally variationally weighted operator learning for angiographic coronary FFR curve estimation.",
+  "significance": "landmark",
+  "significance_reason": "Introduces locally variationally weighted operator learning for angiographic coronary FFR curve estimation."
+}

@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.li-2024-pino--introduces--pino",
+  "source_id": "paper.li-2024-pino",
+  "target_id": "method.pino",
+  "type": "introduces",
+  "claim": "Introduces the named PINO framework combining learned solution operators and equation residuals.",
+  "significance": "landmark",
+  "significance_reason": "Introduces the named PINO framework combining learned solution operators and equation residuals."
+}

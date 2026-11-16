@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.westerhof-2009-windkessel--surveys--windkessel",
+  "source_id": "paper.westerhof-2009-windkessel",
+  "target_id": "method.windkessel",
+  "type": "surveys",
+  "claim": "Accessible synthesis of the historic Windkessel model and parameter interpretation.",
+  "significance": "representative"
+}

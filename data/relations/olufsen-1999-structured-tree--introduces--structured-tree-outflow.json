@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.olufsen-1999-structured-tree--introduces--structured-tree-outflow",
+  "source_id": "paper.olufsen-1999-structured-tree",
+  "target_id": "method.structured-tree-outflow",
+  "type": "introduces",
+  "claim": "Introduces the structured distal arterial-tree impedance boundary formulation.",
+  "significance": "landmark",
+  "significance_reason": "Introduces the structured distal arterial-tree impedance boundary formulation."
+}

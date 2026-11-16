@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.brunton-2016-sindy--introduces--sindy",
+  "source_id": "paper.brunton-2016-sindy",
+  "target_id": "method.sindy",
+  "type": "introduces",
+  "claim": "Introduces SINDy and its sparse discovery of candidate dynamical terms.",
+  "significance": "landmark",
+  "significance_reason": "Introduces SINDy and its sparse discovery of candidate dynamical terms."
+}

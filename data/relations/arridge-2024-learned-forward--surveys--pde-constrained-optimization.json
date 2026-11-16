@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.arridge-2024-learned-forward--surveys--pde-constrained-optimization",
+  "source_id": "paper.arridge-2024-learned-forward",
+  "target_id": "method.pde-constrained-optimization",
+  "type": "surveys",
+  "claim": "Connects model-based reconstruction to learned or corrected forward operators.",
+  "significance": "supporting"
+}

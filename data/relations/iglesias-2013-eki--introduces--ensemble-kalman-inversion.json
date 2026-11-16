@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.iglesias-2013-eki--introduces--ensemble-kalman-inversion",
+  "source_id": "paper.iglesias-2013-eki",
+  "target_id": "method.ensemble-kalman-inversion",
+  "type": "introduces",
+  "claim": "One of the foundational iterative ensemble Kalman formulations for inverse parameter estimation.",
+  "significance": "landmark",
+  "significance_reason": "One of the foundational iterative ensemble Kalman formulations for inverse parameter estimation."
+}

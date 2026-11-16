@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.li-2024-blood-flow-pino--applies--physics-informed-deeponet",
+  "source_id": "paper.li-2024-blood-flow-pino",
+  "target_id": "method.physics-informed-deeponet",
+  "type": "applies",
+  "claim": "Uses physics-constrained operator concepts and blood flow equations for physiological waveform prediction.",
+  "significance": "representative"
+}

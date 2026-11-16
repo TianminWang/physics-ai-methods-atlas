@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.0.0",
+  "id": "relation.kalman-1960-filter--introduces--kalman-filter",
+  "source_id": "paper.kalman-1960-filter",
+  "target_id": "method.kalman-filter",
+  "type": "introduces",
+  "claim": "Original recursive linear state-estimation method using state transitions and covariance updates.",
+  "significance": "landmark",
+  "significance_reason": "Original recursive linear state-estimation method using state transitions and covariance updates."
+}
