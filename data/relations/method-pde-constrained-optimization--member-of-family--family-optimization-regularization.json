@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-pde-constrained-optimization--member-of-family--family-optimization-regularization",
+  "source_id": "method.pde-constrained-optimization",
+  "target_id": "family.optimization-regularization",
+  "type": "member_of_family",
+  "claim": "The pde-constrained-optimization method belongs to the optimization-regularization conceptual family, independently of its applications.",
+  "claim_zh": "方法“pde-constrained-optimization”属于“optimization-regularization”家族；这不是限制其跨环节的应用。"
+}

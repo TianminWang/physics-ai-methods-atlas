@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-direct-inverse-operator--member-of-family--family-learned-inverse",
+  "source_id": "method.direct-inverse-operator",
+  "target_id": "family.learned-inverse",
+  "type": "member_of_family",
+  "claim": "The direct-inverse-operator method belongs to the learned-inverse conceptual family, independently of its applications.",
+  "claim_zh": "方法“direct-inverse-operator”属于“learned-inverse”家族；这不是限制其跨环节的应用。"
+}

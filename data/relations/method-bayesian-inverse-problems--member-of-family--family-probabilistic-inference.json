@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-bayesian-inverse-problems--member-of-family--family-probabilistic-inference",
+  "source_id": "method.bayesian-inverse-problems",
+  "target_id": "family.probabilistic-inference",
+  "type": "member_of_family",
+  "claim": "The bayesian-inverse-problems method belongs to the probabilistic-inference conceptual family, independently of its applications.",
+  "claim_zh": "方法“bayesian-inverse-problems”属于“probabilistic-inference”家族；这不是限制其跨环节的应用。"
+}

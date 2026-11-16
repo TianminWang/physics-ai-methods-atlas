@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-neural-ode--member-of-family--family-dynamics-identification",
+  "source_id": "method.neural-ode",
+  "target_id": "family.dynamics-identification",
+  "type": "member_of_family",
+  "claim": "The neural-ode method belongs to the dynamics-identification conceptual family, independently of its applications.",
+  "claim_zh": "方法“neural-ode”属于“dynamics-identification”家族；这不是限制其跨环节的应用。"
+}

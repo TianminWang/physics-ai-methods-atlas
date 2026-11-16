@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-structured-tree-outflow--member-of-family--family-hemodynamic-models",
+  "source_id": "method.structured-tree-outflow",
+  "target_id": "family.hemodynamic-models",
+  "type": "member_of_family",
+  "claim": "The structured-tree-outflow method belongs to the hemodynamic-models conceptual family, independently of its applications.",
+  "claim_zh": "方法“structured-tree-outflow”属于“hemodynamic-models”家族；这不是限制其跨环节的应用。"
+}

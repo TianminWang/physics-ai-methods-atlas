@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.family-control-planning--subfamily-of--family-dynamics-decision",
+  "source_id": "family.control-planning",
+  "target_id": "family.dynamics-decision",
+  "type": "subfamily_of",
+  "claim": "The control-planning family is a conceptual subfamily of dynamics-decision; this is classification, not historical descent.",
+  "claim_zh": "“control-planning”是“dynamics-decision”的概念子家族，此关系只表示分类，并不表示历史继承。"
+}

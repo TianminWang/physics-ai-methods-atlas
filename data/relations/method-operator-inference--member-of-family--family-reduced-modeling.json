@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-operator-inference--member-of-family--family-reduced-modeling",
+  "source_id": "method.operator-inference",
+  "target_id": "family.reduced-modeling",
+  "type": "member_of_family",
+  "claim": "The operator-inference method belongs to the reduced-modeling conceptual family, independently of its applications.",
+  "claim_zh": "方法“operator-inference”属于“reduced-modeling”家族；这不是限制其跨环节的应用。"
+}

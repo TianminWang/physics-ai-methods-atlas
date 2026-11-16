@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.family-reduced-modeling--subfamily-of--family-physical-modeling",
+  "source_id": "family.reduced-modeling",
+  "target_id": "family.physical-modeling",
+  "type": "subfamily_of",
+  "claim": "The reduced-modeling family is a conceptual subfamily of physical-modeling; this is classification, not historical descent.",
+  "claim_zh": "“reduced-modeling”是“physical-modeling”的概念子家族，此关系只表示分类，并不表示历史继承。"
+}

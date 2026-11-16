@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-windkessel--member-of-family--family-hemodynamic-models",
+  "source_id": "method.windkessel",
+  "target_id": "family.hemodynamic-models",
+  "type": "member_of_family",
+  "claim": "The windkessel method belongs to the hemodynamic-models conceptual family, independently of its applications.",
+  "claim_zh": "方法“windkessel”属于“hemodynamic-models”家族；这不是限制其跨环节的应用。"
+}

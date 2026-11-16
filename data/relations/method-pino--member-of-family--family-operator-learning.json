@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-pino--member-of-family--family-operator-learning",
+  "source_id": "method.pino",
+  "target_id": "family.operator-learning",
+  "type": "member_of_family",
+  "claim": "The pino method belongs to the operator-learning conceptual family, independently of its applications.",
+  "claim_zh": "方法“pino”属于“operator-learning”家族；这不是限制其跨环节的应用。"
+}
