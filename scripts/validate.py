@@ -21,6 +21,9 @@ COLLECTIONS = {
     "papers": "paper",
     "books": "book",
     "relations": "relation",
+    "stages": "stage",
+    "families": "family",
+    "concerns": "concern",
 }
 RELATION_PAIRS = {
     "belongs_to": {("method", "area")},
@@ -37,6 +40,12 @@ RELATION_PAIRS = {
     "surveys": {("paper", "method")},
     "compares": {("paper", "method")},
     "covers": {("book", "method"), ("book", "area"), ("book", "problem")},
+    "uses_method": {("stage", "family"), ("stage", "method")},
+    "feeds_into": {("stage", "stage")},
+    "feeds_back_to": {("stage", "stage")},
+    "member_of_family": {("method", "family")},
+    "subfamily_of": {("family", "family")},
+    "concern_applies_to": {("concern", "stage")},
 }
 PAPER_RELATIONS = {"introduces", "analyzes", "applies", "surveys", "compares"}
 DAG_GROUPS = {
@@ -44,6 +53,7 @@ DAG_GROUPS = {
     "method taxonomy": {"specializes"},
     "method evolution": {"extends", "combines"},
     "learning prerequisites": {"depends_on"},
+    "method-family taxonomy": {"subfamily_of"},
 }
 
 
@@ -135,9 +145,13 @@ def validate_catalog(root: Path = ROOT) -> list[str]:
     papers = {
         k: r for k, r in records.items() if _kind(k) == "paper"
     }
+    stages = {k: r for k, r in records.items() if _kind(k) == "stage"}
+    families = {k: r for k, r in records.items() if _kind(k) == "family"}
     edge_signatures: set[tuple[str, str, str]] = set()
     paper_method_links: set[tuple[str, str]] = set()
     method_areas: set[str] = set()
+    method_families: set[str] = set()
+    stage_roles: set[str] = set()
 
     for rel_id, rel in relations.items():
         source, target, predicate = (
@@ -162,11 +176,28 @@ def validate_catalog(root: Path = ROOT) -> list[str]:
             paper_method_links.add((source, target))
         if predicate == "belongs_to" and _kind(source) == "method":
             method_areas.add(source)
+        if predicate == "member_of_family":
+            method_families.add(source)
+        if predicate == "uses_method":
+            stage_roles.add(source)
         if rel.get("significance") == "landmark":
             if predicate not in PAPER_RELATIONS:
                 errors.append(f"{rel_id}: landmark significance must describe paper→method contribution")
             if not rel.get("significance_reason"):
                 errors.append(f"{rel_id}: landmark must justify its contribution")
+        assigned_stages = rel.get("stage_ids", [])
+        if isinstance(assigned_stages, list):
+            for stage_id in assigned_stages:
+                if stage_id not in stages:
+                    errors.append(f"{rel_id}: unknown stage annotation '{stage_id}'")
+        primary_stage = rel.get("primary_stage_id")
+        if primary_stage is not None:
+            if primary_stage not in stages:
+                errors.append(f"{rel_id}: unknown primary stage '{primary_stage}'")
+            if primary_stage not in assigned_stages:
+                errors.append(f"{rel_id}: primary_stage_id must appear in stage_ids")
+        if predicate == "uses_method" and (not rel.get("role") or not rel.get("role_zh")):
+            errors.append(f"{rel_id}: stage usage must explain the functional role in both languages")
         evidence = rel.get("evidence_paper_ids", [])
         if isinstance(evidence, list):
             for paper_id in evidence:
@@ -180,6 +211,8 @@ def validate_catalog(root: Path = ROOT) -> list[str]:
     for method_id, method in methods.items():
         if method_id not in method_areas:
             errors.append(f"{method_id}: missing 'belongs_to' area relation")
+        if families and method_id not in method_families:
+            errors.append(f"{method_id}: missing method family membership")
         recommendations = method.get("start_here", [])
         if not isinstance(recommendations, list):
             continue
@@ -208,6 +241,21 @@ def validate_catalog(root: Path = ROOT) -> list[str]:
                 if (ref_id, "covers", method_id) not in edge_signatures:
                     errors.append(f"{method_id}: starting book '{ref_id}' requires a covers relation")
 
+    order_seen: dict[int, str] = {}
+    color_seen: dict[str, str] = {}
+    for stage_id, stage in stages.items():
+        n = stage.get("order")
+        color = str(stage.get("color", "")).upper()
+        if isinstance(n, int) and n in order_seen:
+            errors.append(f"{stage_id}: duplicate workflow order {n} with {order_seen[n]}")
+        elif isinstance(n, int):
+            order_seen[n] = stage_id
+        if color in color_seen:
+            errors.append(f"{stage_id}: stage color duplicated with {color_seen[color]}")
+        else:
+            color_seen[color] = stage_id
+        if stage_id not in stage_roles:
+            errors.append(f"{stage_id}: stage has no functional method links")
     for paper_id in papers:
         if not any(source == paper_id for source, _ in paper_method_links):
             errors.append(f"{paper_id}: paper must link to at least one method")
