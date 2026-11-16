@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0.0",
+  "id": "relation.adjoint-sensitivity--belongs-to--inverse-problems",
+  "source_id": "method.adjoint-sensitivity",
+  "target_id": "area.inverse-problems",
+  "type": "belongs_to",
+  "claim": "Classifies adjoint-sensitivity as relevant to inverse-problems."
+}

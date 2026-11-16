@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "id": "problem.pde-coefficient-inference",
+  "constraints": [
+    "Governing PDE and boundary or initial conditions"
+  ],
+  "name": "PDE coefficient inference from sparse observations",
+  "summary": "Recover unknown PDE coefficients or coefficient fields from noisy and incomplete state observations.",
+  "unknowns": [
+    "PDE coefficients or coefficient fields"
+  ],
+  "observables": [
+    "Sparse noisy measurements of the PDE state"
+  ]
+}

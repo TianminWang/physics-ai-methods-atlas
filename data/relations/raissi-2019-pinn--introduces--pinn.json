@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0.0",
+  "id": "relation.raissi-2019-pinn--introduces--pinn",
+  "source_id": "paper.raissi-2019-pinn",
+  "target_id": "method.pinn",
+  "type": "introduces",
+  "claim": "This publication introduces or establishes pinn as a named method.",
+  "evidence_paper_ids": [
+    "paper.raissi-2019-pinn"
+  ]
+}

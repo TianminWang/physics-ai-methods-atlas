@@ -1,0 +1,7 @@
+{
+  "schema_version": "1.0.0",
+  "id": "area.forward-modeling",
+  "name": "Physical modeling and forward solvers",
+  "name_zh": "物理建模与正问题求解",
+  "summary": "ODE/PDE models, numerical solvers, reduced-order modeling, and learned forward surrogates."
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0.0",
+  "id": "relation.fno--belongs-to--physics-ai",
+  "source_id": "method.fno",
+  "target_id": "area.physics-ai",
+  "type": "belongs_to",
+  "claim": "Classifies fno as relevant to physics-ai."
+}

@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0.0",
+  "id": "relation.physics-based-deep-learning--covers--pinn",
+  "source_id": "book.physics-based-deep-learning",
+  "target_id": "method.pinn",
+  "type": "covers",
+  "claim": "The Physical Loss Terms section explains PINN-style physical residual constraints.",
+  "locator": "Physical Loss Terms"
+}

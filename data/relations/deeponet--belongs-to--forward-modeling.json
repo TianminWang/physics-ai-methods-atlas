@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0.0",
+  "id": "relation.deeponet--belongs-to--forward-modeling",
+  "source_id": "method.deeponet",
+  "target_id": "area.forward-modeling",
+  "type": "belongs_to",
+  "claim": "Classifies deeponet as relevant to forward-modeling."
+}

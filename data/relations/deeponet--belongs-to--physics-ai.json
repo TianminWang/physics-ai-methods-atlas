@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0.0",
+  "id": "relation.deeponet--belongs-to--physics-ai",
+  "source_id": "method.deeponet",
+  "target_id": "area.physics-ai",
+  "type": "belongs_to",
+  "claim": "Classifies deeponet as relevant to physics-ai."
+}

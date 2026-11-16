@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "id": "paper.lu-2021-deeponet",
+  "landmark": true,
+  "verification_status": "verified",
+  "publication_status": "peer_reviewed",
+  "title": "Learning nonlinear operators via DeepONet based on the universal approximation theorem of operators",
+  "authors": [
+    "Lu Lu",
+    "Pengzhan Jin",
+    "Guofei Pang",
+    "Zhongqiang Zhang",
+    "George Em Karniadakis"
+  ],
+  "year": 2021,
+  "venue": "Nature Machine Intelligence",
+  "url": "https://doi.org/10.1038/s42256-021-00302-5",
+  "identifiers": {
+    "doi": "10.1038/s42256-021-00302-5"
+  },
+  "verification_url": "https://doi.org/10.1038/s42256-021-00302-5",
+  "summary": "Introduces the branch/trunk DeepONet structure for approximation of nonlinear function-to-function operators."
+}
