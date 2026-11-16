@@ -1,0 +1,20 @@
+{
+  "schema_version": "2.0.0",
+  "id": "paper.li-2024-blood-flow-pino",
+  "title": "A new method to compute the blood flow equations using the physics-informed neural operator",
+  "authors": [
+    "Lingfeng Li",
+    "Xue-Cheng Tai",
+    "Raymond Hon-Fu Chan"
+  ],
+  "year": 2024,
+  "venue": "Journal of Computational Physics",
+  "publication_status": "peer_reviewed",
+  "url": "https://doi.org/10.1016/j.jcp.2024.113380",
+  "identifiers": {
+    "doi": "10.1016/j.jcp.2024.113380"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://doi.org/10.1016/j.jcp.2024.113380",
+  "summary": "Physics-informed operator for waveform-valued blood flow prediction from noninvasive physiological signals."
+}

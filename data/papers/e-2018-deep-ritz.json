@@ -1,0 +1,19 @@
+{
+  "schema_version": "2.0.0",
+  "id": "paper.e-2018-deep-ritz",
+  "title": "The Deep Ritz Method: A Deep Learning-Based Numerical Algorithm for Solving Variational Problems",
+  "authors": [
+    "Weinan E",
+    "Bing Yu"
+  ],
+  "year": 2018,
+  "venue": "Communications in Mathematics and Statistics",
+  "publication_status": "peer_reviewed",
+  "url": "https://doi.org/10.1007/s40304-018-0127-z",
+  "identifiers": {
+    "doi": "10.1007/s40304-018-0127-z"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://doi.org/10.1007/s40304-018-0127-z",
+  "summary": "Trains solution networks by minimizing the energy functional of variational PDE problems."
+}

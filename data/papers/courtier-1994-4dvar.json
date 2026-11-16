@@ -1,0 +1,20 @@
+{
+  "schema_version": "2.0.0",
+  "id": "paper.courtier-1994-4dvar",
+  "title": "A strategy for operational implementation of 4D-Var, using an incremental approach",
+  "authors": [
+    "Philippe Courtier",
+    "Jean-Noël Thépaut",
+    "Anthony Hollingsworth"
+  ],
+  "year": 1994,
+  "venue": "Quarterly Journal of the Royal Meteorological Society",
+  "publication_status": "peer_reviewed",
+  "url": "https://doi.org/10.1002/qj.49712051912",
+  "identifiers": {
+    "doi": "10.1002/qj.49712051912"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://doi.org/10.1002/qj.49712051912",
+  "summary": "Canonical incremental 4D-Var implementation that reduces the cost of variational data assimilation."
+}

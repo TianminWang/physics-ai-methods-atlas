@@ -1,0 +1,19 @@
+{
+  "schema_version": "2.0.0",
+  "id": "paper.sirignano-2018-dgm",
+  "title": "DGM: A deep learning algorithm for solving partial differential equations",
+  "authors": [
+    "Justin Sirignano",
+    "Konstantinos Spiliopoulos"
+  ],
+  "year": 2018,
+  "venue": "Journal of Computational Physics",
+  "publication_status": "peer_reviewed",
+  "url": "https://doi.org/10.1016/j.jcp.2018.08.029",
+  "identifiers": {
+    "doi": "10.1016/j.jcp.2018.08.029"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://doi.org/10.1016/j.jcp.2018.08.029",
+  "summary": "Develops a neural residual-minimization method for meshfree high-dimensional PDE solutions."
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": "2.0.0",
+  "id": "paper.marquardt-1963-lm",
+  "title": "An Algorithm for Least-Squares Estimation of Nonlinear Parameters",
+  "authors": [
+    "Donald W. Marquardt"
+  ],
+  "year": 1963,
+  "venue": "Journal of the Society for Industrial and Applied Mathematics",
+  "publication_status": "peer_reviewed",
+  "url": "https://doi.org/10.1137/0111030",
+  "identifiers": {
+    "doi": "10.1137/0111030"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://doi.org/10.1137/0111030",
+  "summary": "Classical nonlinear least-squares algorithm combining damping and a Gauss–Newton-style local model."
+}

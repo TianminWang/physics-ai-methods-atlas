@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "id": "paper.ryan-2026-cardiovascular-pino",
+  "title": "Physics-Informed Neural Operators for Parameter Inference in Multi-vessel Cardiovascular Networks",
+  "authors": [
+    "William Ryan",
+    "Alyssa Taylor-LaPole",
+    "Mette S. Olufsen",
+    "Vladislav Vyshemirsky",
+    "Dirk Husmeier"
+  ],
+  "year": 2026,
+  "venue": "Annals of Biomedical Engineering",
+  "publication_status": "peer_reviewed",
+  "url": "https://doi.org/10.1007/s10439-026-04219-1",
+  "identifiers": {
+    "doi": "10.1007/s10439-026-04219-1"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://doi.org/10.1007/s10439-026-04219-1",
+  "summary": "1D systemic arterial-network DeepONet/FNO/PINO surrogates embedded in Bayesian parameter inference with sparse Fontan data."
+}

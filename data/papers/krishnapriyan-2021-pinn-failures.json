@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "id": "paper.krishnapriyan-2021-pinn-failures",
+  "title": "Characterizing possible failure modes in physics-informed neural networks",
+  "authors": [
+    "Aditi S. Krishnapriyan",
+    "Amir Gholami",
+    "Shandian Zhe",
+    "Robert M. Kirby",
+    "Michael W. Mahoney"
+  ],
+  "year": 2021,
+  "venue": "Advances in Neural Information Processing Systems (NeurIPS 2021)",
+  "publication_status": "peer_reviewed",
+  "url": "https://arxiv.org/abs/2109.01050",
+  "identifiers": {
+    "arxiv": "2109.01050"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://proceedings.neurips.cc/paper/2021/hash/df438e5206f31600e6ae4af72f2725f1-Abstract.html",
+  "summary": "Analyzes PINN loss pathologies and optimization difficulties with PDE-based soft constraints."
+}

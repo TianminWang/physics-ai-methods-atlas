@@ -1,0 +1,18 @@
+{
+  "schema_version": "2.0.0",
+  "id": "paper.olufsen-1999-structured-tree",
+  "title": "Structured tree outflow condition for blood flow in larger systemic arteries",
+  "authors": [
+    "Mette S. Olufsen"
+  ],
+  "year": 1999,
+  "venue": "American Journal of Physiology-Heart and Circulatory Physiology",
+  "publication_status": "peer_reviewed",
+  "url": "https://doi.org/10.1152/ajpheart.1999.276.1.H257",
+  "identifiers": {
+    "doi": "10.1152/ajpheart.1999.276.1.H257"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://doi.org/10.1152/ajpheart.1999.276.1.H257",
+  "summary": "Develops physiologically motivated terminal impedance boundary conditions using structured distal arterial trees."
+}

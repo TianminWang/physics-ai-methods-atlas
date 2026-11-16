@@ -1,0 +1,20 @@
+{
+  "schema_version": "2.0.0",
+  "id": "paper.wang-2021-physics-deeponet",
+  "title": "Learning the solution operator of parametric partial differential equations with physics-informed DeepONets",
+  "authors": [
+    "Sifan Wang",
+    "Hanwen Wang",
+    "Paris Perdikaris"
+  ],
+  "year": 2021,
+  "venue": "Science Advances",
+  "publication_status": "peer_reviewed",
+  "url": "https://doi.org/10.1126/sciadv.abi8605",
+  "identifiers": {
+    "doi": "10.1126/sciadv.abi8605"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://doi.org/10.1126/sciadv.abi8605",
+  "summary": "Introduces physics-informed DeepONets capable of leveraging equation residuals without paired solution targets."
+}

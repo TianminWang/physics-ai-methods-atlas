@@ -1,0 +1,18 @@
+{
+  "schema_version": "2.0.0",
+  "id": "paper.stuart-2010-bayesian",
+  "title": "Inverse problems: A Bayesian perspective",
+  "authors": [
+    "Andrew M. Stuart"
+  ],
+  "year": 2010,
+  "venue": "Acta Numerica",
+  "publication_status": "peer_reviewed",
+  "url": "https://doi.org/10.1017/S0962492910000061",
+  "identifiers": {
+    "doi": "10.1017/S0962492910000061"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://doi.org/10.1017/S0962492910000061",
+  "summary": "Foundational synthesis of function-space Bayesian inverse problems, regularization, well-posedness, and computation."
+}

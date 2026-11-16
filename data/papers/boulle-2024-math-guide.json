@@ -1,0 +1,19 @@
+{
+  "schema_version": "2.0.0",
+  "id": "paper.boulle-2024-math-guide",
+  "title": "A mathematical guide to operator learning",
+  "authors": [
+    "Nicolas Boullé",
+    "Alex Townsend"
+  ],
+  "year": 2024,
+  "venue": "Handbook of Numerical Analysis",
+  "publication_status": "peer_reviewed",
+  "url": "https://doi.org/10.1016/bs.hna.2024.05.003",
+  "identifiers": {
+    "doi": "10.1016/bs.hna.2024.05.003"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://doi.org/10.1016/bs.hna.2024.05.003",
+  "summary": "Pedagogical operator-learning survey bridging architectures and numerical linear algebra."
+}

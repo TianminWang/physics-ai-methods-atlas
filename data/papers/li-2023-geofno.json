@@ -1,0 +1,21 @@
+{
+  "schema_version": "2.0.0",
+  "id": "paper.li-2023-geofno",
+  "title": "Fourier Neural Operator with Learned Deformations for PDEs on General Geometries",
+  "authors": [
+    "Zongyi Li",
+    "Daniel Zhengyu Huang",
+    "Burigede Liu",
+    "Anima Anandkumar"
+  ],
+  "year": 2023,
+  "venue": "Journal of Machine Learning Research",
+  "publication_status": "peer_reviewed",
+  "url": "https://arxiv.org/abs/2207.05209",
+  "identifiers": {
+    "arxiv": "2207.05209"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://jmlr.org/papers/v24/23-0064.html",
+  "summary": "Learns coordinate deformations so Fourier neural operators can work with irregular physical domains."
+}

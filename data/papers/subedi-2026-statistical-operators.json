@@ -1,0 +1,19 @@
+{
+  "schema_version": "2.0.0",
+  "id": "paper.subedi-2026-statistical-operators",
+  "title": "Operator Learning: A Statistical Perspective",
+  "authors": [
+    "Unique Subedi",
+    "Ambuj Tewari"
+  ],
+  "year": 2026,
+  "venue": "Annual Review of Statistics and Its Application",
+  "publication_status": "peer_reviewed",
+  "url": "https://doi.org/10.1146/annurev-statistics-042424-070908",
+  "identifiers": {
+    "doi": "10.1146/annurev-statistics-042424-070908"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://doi.org/10.1146/annurev-statistics-042424-070908",
+  "summary": "Reviews the statistical learning formulation, finite-sample considerations, data design and uncertainties in operator learning."
+}
