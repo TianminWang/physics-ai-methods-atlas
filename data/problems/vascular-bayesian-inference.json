@@ -1,0 +1,16 @@
+{
+  "schema_version": "2.0.0",
+  "id": "problem.vascular-bayesian-inference",
+  "name": "Bayesian vascular parameter inference",
+  "summary": "Calibrate uncertain vascular model parameters and predict credible ranges using hemodynamic data and repeated forward simulations.",
+  "unknowns": [
+    "Distributions over vessel parameters"
+  ],
+  "observables": [
+    "Sparse pressure or flow waveforms"
+  ],
+  "constraints": [
+    "Hemodynamic forward model",
+    "Prior and likelihood assumptions"
+  ]
+}

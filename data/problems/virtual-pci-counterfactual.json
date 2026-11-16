@@ -1,0 +1,17 @@
+{
+  "schema_version": "2.0.0",
+  "id": "problem.virtual-pci-counterfactual",
+  "name": "Virtual PCI counterfactual hemodynamics",
+  "summary": "Predict how coronary functional indices might change under hypothetical changes to lesion geometry and intervention settings.",
+  "unknowns": [
+    "Post-intervention pressure/flow and functional indices"
+  ],
+  "observables": [
+    "Pre-intervention images and physiological observations",
+    "Candidate intervention parameters"
+  ],
+  "constraints": [
+    "Hemodynamic forward model",
+    "Post-intervention geometry hypothesis"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": "2.0.0",
+  "id": "problem.systemic-arterial-calibration",
+  "name": "Multi-vessel systemic arterial network calibration",
+  "summary": "Infer hemodynamic parameters in systemic 1D arterial networks from limited flow and pressure observations; distinct from coronary-specific clinical validation.",
+  "unknowns": [
+    "Vessel stiffness and distal impedance parameters"
+  ],
+  "observables": [
+    "Sparse 4D flow MRI or peripheral pressure measurements"
+  ],
+  "constraints": [
+    "1D vascular PDEs",
+    "Network junction and terminal conditions"
+  ]
+}

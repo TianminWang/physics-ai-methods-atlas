@@ -1,0 +1,15 @@
+{
+  "schema_version": "2.0.0",
+  "id": "problem.coronary-ffr-curve",
+  "name": "Coronary angiography to FFR curve",
+  "summary": "Estimate a fractional flow reserve profile along a coronary vessel from angiographic anatomy and functional constraints.",
+  "unknowns": [
+    "Coronary FFR or pressure-ratio profile"
+  ],
+  "observables": [
+    "Coronary angiography and optional invasive FFR measurements"
+  ],
+  "constraints": [
+    "Coronary flow equations and model assumptions"
+  ]
+}

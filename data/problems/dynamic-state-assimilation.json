@@ -1,0 +1,16 @@
+{
+  "schema_version": "2.0.0",
+  "id": "problem.dynamic-state-assimilation",
+  "name": "Dynamic hidden-state estimation",
+  "summary": "Reconstruct evolving unmeasured physical states by updating an ODE/PDE model with sequential or windowed measurements.",
+  "unknowns": [
+    "Latent physical state trajectory"
+  ],
+  "observables": [
+    "Intermittent noisy measurements"
+  ],
+  "constraints": [
+    "Time-evolution dynamics",
+    "Observation operator"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": "2.0.0",
+  "id": "problem.ode-parameter-inference",
+  "name": "ODE parameter inference",
+  "summary": "Recover unknown rate constants, forcing or initial states of dynamical ODE systems from time-series observations.",
+  "unknowns": [
+    "Dynamical parameters",
+    "Unknown initial states"
+  ],
+  "observables": [
+    "Noisy or sparse time-series states"
+  ],
+  "constraints": [
+    "ODE evolution and observation model"
+  ]
+}
