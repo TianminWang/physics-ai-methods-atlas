@@ -207,6 +207,11 @@ def validate_catalog(root: Path = ROOT) -> list[str]:
                 errors.append(
                     f"{rel_id}: method-lineage claim requires evidence_paper_ids"
                 )
+            if predicate == "uses_method" and rel.get("evidence_scope") in {
+                    "literature_supported", "application_verified"} and not evidence:
+                errors.append(
+                    f"{rel_id}: verified functional claims require evidence_paper_ids"
+                )
 
     for method_id, method in methods.items():
         if method_id not in method_areas:

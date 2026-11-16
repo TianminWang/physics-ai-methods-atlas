@@ -109,3 +109,10 @@ def test_feedback_loop_is_legitimate_and_not_an_ancestry_cycle():
     assert not any("cycle detected" in e for e in validate_catalog())
     x = export_unified()
     assert any(e["type"] == "feeds_back_to" for e in x["edges"])
+
+def test_verified_functional_role_requires_paper_evidence(tmp_path):
+    root = fixture(tmp_path)
+    path = "data/relations/stage-physics-forward--uses-method--family-operator-learning.json"
+    edit(root, path, lambda x: x.update(evidence_scope="application_verified"))
+    assert any("verified functional claims require evidence_paper_ids" in e
+               for e in validate_catalog(root))
