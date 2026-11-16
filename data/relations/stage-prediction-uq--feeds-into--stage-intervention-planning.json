@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-prediction-uq--feeds-into--stage-intervention-planning",
+  "source_id": "stage.prediction-uq",
+  "target_id": "stage.intervention-planning",
+  "type": "feeds_into",
+  "claim": "Predictive responses and their uncertainty inform intervention comparison.",
+  "claim_zh": "预测结果及不确定性用于比较不同干预方案。",
+  "role": "Predictive responses and their uncertainty inform intervention comparison.",
+  "role_zh": "预测结果及不确定性用于比较不同干预方案。"
+}

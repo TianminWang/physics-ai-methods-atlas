@@ -2,14 +2,17 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/TianminWang/physics-ai-methods-atlas/blob/main/schemas/atlas.schema.json",
   "title": "Physics AI Methods Atlas data schemas",
-  "description": "One JSON document per entity or typed relation. Cross-record constraints are checked by scripts/validate.py.",
+  "description": "Backwards compatible Atlas records (2.0.0 and 2.1.0) and unified workflow/method-family schema; semantic validity enforced in scripts/validate.py.",
   "$defs": {
     "area": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
         "schema_version": {
-          "const": "2.0.0"
+          "enum": [
+            "2.0.0",
+            "2.1.0"
+          ]
         },
         "id": {
           "type": "string",
@@ -26,6 +29,10 @@
         "summary": {
           "type": "string",
           "minLength": 10
+        },
+        "summary_zh": {
+          "type": "string",
+          "minLength": 5
         }
       },
       "required": [
@@ -40,7 +47,10 @@
       "additionalProperties": false,
       "properties": {
         "schema_version": {
-          "const": "2.0.0"
+          "enum": [
+            "2.0.0",
+            "2.1.0"
+          ]
         },
         "id": {
           "type": "string",
@@ -129,6 +139,14 @@
         "curation_note": {
           "type": "string",
           "minLength": 10
+        },
+        "name_zh": {
+          "type": "string",
+          "minLength": 2
+        },
+        "summary_zh": {
+          "type": "string",
+          "minLength": 5
         }
       },
       "required": [
@@ -145,7 +163,10 @@
       "additionalProperties": false,
       "properties": {
         "schema_version": {
-          "const": "2.0.0"
+          "enum": [
+            "2.0.0",
+            "2.1.0"
+          ]
         },
         "id": {
           "type": "string",
@@ -182,6 +203,10 @@
             "minLength": 1
           },
           "uniqueItems": true
+        },
+        "name_zh": {
+          "type": "string",
+          "minLength": 2
         }
       },
       "required": [
@@ -198,7 +223,10 @@
       "additionalProperties": false,
       "properties": {
         "schema_version": {
-          "const": "2.0.0"
+          "enum": [
+            "2.0.0",
+            "2.1.0"
+          ]
         },
         "id": {
           "type": "string",
@@ -286,7 +314,10 @@
       "additionalProperties": false,
       "properties": {
         "schema_version": {
-          "const": "2.0.0"
+          "enum": [
+            "2.0.0",
+            "2.1.0"
+          ]
         },
         "id": {
           "type": "string",
@@ -342,7 +373,10 @@
       "additionalProperties": false,
       "properties": {
         "schema_version": {
-          "const": "2.0.0"
+          "enum": [
+            "2.0.0",
+            "2.1.0"
+          ]
         },
         "id": {
           "type": "string",
@@ -350,11 +384,11 @@
         },
         "source_id": {
           "type": "string",
-          "pattern": "^(area|method|paper|book|problem)\\.[a-z0-9]+(?:-[a-z0-9]+)*$"
+          "pattern": "^(area|method|paper|book|problem|stage|family|concern)\\.[a-z0-9]+(?:-[a-z0-9]+)*$"
         },
         "target_id": {
           "type": "string",
-          "pattern": "^(area|method|paper|book|problem)\\.[a-z0-9]+(?:-[a-z0-9]+)*$"
+          "pattern": "^(area|method|paper|book|problem|stage|family|concern)\\.[a-z0-9]+(?:-[a-z0-9]+)*$"
         },
         "type": {
           "enum": [
@@ -371,7 +405,13 @@
             "applies",
             "surveys",
             "compares",
-            "covers"
+            "covers",
+            "uses_method",
+            "feeds_into",
+            "feeds_back_to",
+            "member_of_family",
+            "subfamily_of",
+            "concern_applies_to"
           ]
         },
         "claim": {
@@ -400,6 +440,62 @@
         "significance_reason": {
           "type": "string",
           "minLength": 12
+        },
+        "claim_zh": {
+          "type": "string",
+          "minLength": 5
+        },
+        "role": {
+          "type": "string",
+          "minLength": 8
+        },
+        "role_zh": {
+          "type": "string",
+          "minLength": 5
+        },
+        "innovation_detail": {
+          "type": "string",
+          "minLength": 8
+        },
+        "innovation_detail_zh": {
+          "type": "string",
+          "minLength": 5
+        },
+        "bottleneck": {
+          "type": "string",
+          "minLength": 8
+        },
+        "bottleneck_zh": {
+          "type": "string",
+          "minLength": 5
+        },
+        "tradeoff": {
+          "type": "string",
+          "minLength": 8
+        },
+        "tradeoff_zh": {
+          "type": "string",
+          "minLength": 5
+        },
+        "stage_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^stage\\.[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "uniqueItems": true
+        },
+        "primary_stage_id": {
+          "type": "string",
+          "pattern": "^stage\\.[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "evidence_scope": {
+          "enum": [
+            "conceptual",
+            "literature_supported",
+            "application_verified",
+            "hypothesis"
+          ]
         }
       },
       "required": [
@@ -427,7 +523,230 @@
               "significance_reason"
             ]
           }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "enum": [
+                  "extends",
+                  "combines"
+                ]
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "required": [
+              "innovation_detail",
+              "innovation_detail_zh",
+              "bottleneck",
+              "bottleneck_zh"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "uses_method"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "required": [
+              "role",
+              "role_zh",
+              "claim_zh",
+              "evidence_scope"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "enum": [
+                  "feeds_into",
+                  "feeds_back_to",
+                  "concern_applies_to"
+                ]
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "required": [
+              "claim_zh"
+            ]
+          }
         }
+      ]
+    },
+    "stage": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": "2.1.0"
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^stage\\.[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 2
+        },
+        "name_zh": {
+          "type": "string",
+          "minLength": 2
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 5
+        },
+        "summary_zh": {
+          "type": "string",
+          "minLength": 5
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 30
+        },
+        "color": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$"
+        },
+        "inputs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 5
+          }
+        },
+        "outputs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 5
+          }
+        },
+        "is_iterative": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "schema_version",
+        "id",
+        "name",
+        "name_zh",
+        "summary",
+        "summary_zh",
+        "order",
+        "color",
+        "inputs",
+        "outputs",
+        "is_iterative"
+      ]
+    },
+    "family": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": "2.1.0"
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^family\\.[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 2
+        },
+        "name_zh": {
+          "type": "string",
+          "minLength": 2
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 5
+        },
+        "summary_zh": {
+          "type": "string",
+          "minLength": 5
+        },
+        "coverage_status": {
+          "enum": [
+            "populated",
+            "planned"
+          ]
+        },
+        "scope_note": {
+          "type": "string",
+          "minLength": 5
+        },
+        "scope_note_zh": {
+          "type": "string",
+          "minLength": 5
+        }
+      },
+      "required": [
+        "schema_version",
+        "id",
+        "name",
+        "name_zh",
+        "summary",
+        "summary_zh",
+        "coverage_status",
+        "scope_note",
+        "scope_note_zh"
+      ]
+    },
+    "concern": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": "2.1.0"
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^concern\\.[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 2
+        },
+        "name_zh": {
+          "type": "string",
+          "minLength": 2
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 5
+        },
+        "summary_zh": {
+          "type": "string",
+          "minLength": 5
+        }
+      },
+      "required": [
+        "schema_version",
+        "id",
+        "name",
+        "name_zh",
+        "summary",
+        "summary_zh"
       ]
     }
   }

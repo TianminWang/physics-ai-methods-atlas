@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-intervention-planning--uses-method--family-control-planning",
+  "source_id": "stage.intervention-planning",
+  "target_id": "family.control-planning",
+  "type": "uses_method",
+  "claim": "This stage can draw on control-planning for optimizing candidate interventions under constraints and risks.",
+  "claim_zh": "本环节可调用control-planning：在约束和风险下比较、优化干预方案。",
+  "role": "optimizing candidate interventions under constraints and risks",
+  "role_zh": "在约束和风险下比较、优化干预方案",
+  "evidence_scope": "hypothesis"
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "concern.uncertainty-calibration",
+  "name": "Uncertainty reliability and calibration",
+  "name_zh": "不确定性可信度与校准",
+  "summary": "Evaluate whether predictive/posterior uncertainty has meaningful empirical coverage and sensitivity.",
+  "summary_zh": "评估后验或预测不确定性是否可靠，而不是仅凭多次采样就认为已完成量化。"
+}

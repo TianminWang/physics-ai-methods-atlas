@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "concern.numerical-model-error",
+  "name": "Discretization and model discrepancy",
+  "name_zh": "数值误差与模型失配",
+  "summary": "Separate discretization error, surrogate bias and physical model discrepancy in inference and forecasts.",
+  "summary_zh": "区分离散误差、学习型代理偏差和物理模型失配对反演与预测的影响。"
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-prediction-uq--uses-method--family-dynamics-identification",
+  "source_id": "stage.prediction-uq",
+  "target_id": "family.dynamics-identification",
+  "type": "uses_method",
+  "claim": "This stage can draw on dynamics-identification for providing learned evolution rules for the predicted physical state.",
+  "claim_zh": "本环节可调用dynamics-identification：利用辨识或学习到的动力学传播状态。",
+  "role": "providing learned evolution rules for the predicted physical state",
+  "role_zh": "利用辨识或学习到的动力学传播状态",
+  "evidence_scope": "conceptual"
+}

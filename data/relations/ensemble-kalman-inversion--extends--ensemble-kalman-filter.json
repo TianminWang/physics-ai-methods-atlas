@@ -1,10 +1,21 @@
 {
-  "schema_version": "2.0.0",
+  "schema_version": "2.1.0",
   "id": "relation.ensemble-kalman-inversion--extends--ensemble-kalman-filter",
   "source_id": "method.ensemble-kalman-inversion",
   "target_id": "method.ensemble-kalman-filter",
   "type": "extends",
   "claim": "The inverse-problem method adapts ensemble Kalman updates from state assimilation to unknown parameters.",
+  "claim_zh": "将集合协方差更新从动态滤波改用于迭代参数反演。",
+  "innovation_detail": "Reuse ensemble-covariance updates iteratively for inverse parameter estimation.",
+  "innovation_detail_zh": "将集合协方差更新从动态滤波改用于迭代参数反演。",
+  "bottleneck": "Classical ensemble filtering updates time-evolving states, whereas static nonlinear inverse parameters require an inference formulation.",
+  "bottleneck_zh": "经典集合滤波偏重状态跟踪，而静态非线性未知参数需要不同的迭代反演形式。",
+  "stage_ids": [
+    "stage.inverse-calibration",
+    "stage.continual-update"
+  ],
+  "primary_stage_id": "stage.inverse-calibration",
+  "tradeoff": "EKI does not generically sample the exact Bayesian posterior.",
   "evidence_paper_ids": [
     "paper.iglesias-2013-eki"
   ]

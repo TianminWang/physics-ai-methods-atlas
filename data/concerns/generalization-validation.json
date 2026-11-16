@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "concern.generalization-validation",
+  "name": "Generalization and external validation",
+  "name_zh": "泛化能力与外部验证",
+  "summary": "Test distribution shift, patient-level generalization and out-of-sample physical conditions.",
+  "summary_zh": "检查分布外参数、未见血管几何及外部病例上的误差和可靠性。"
+}

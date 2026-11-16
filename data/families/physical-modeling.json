@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "family.physical-modeling",
+  "name": "Physics and forward-modeling foundations",
+  "name_zh": "物理模型与正向计算基础",
+  "summary": "Physical equations and forward calculations across classical and learned approaches.",
+  "summary_zh": "描述物理系统的控制方程和正向求解技术，是反演和预测所依赖的模型基础。",
+  "coverage_status": "populated",
+  "scope_note": "Organizational family, not one historical algorithm.",
+  "scope_note_zh": "这是知识组织家族，并不宣称其中所有算法具有相同历史来源。"
+}

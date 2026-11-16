@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "family.inverse-inference",
+  "name": "Inverse methods and inference frameworks",
+  "name_zh": "反问题求解与推断框架",
+  "summary": "Methods for estimating parameters or states using observations and models.",
+  "summary_zh": "组织确定性优化、概率反演、动态同化和学习型反演技术。",
+  "coverage_status": "populated",
+  "scope_note": "Problem-solving umbrella, not a single numerical algorithm.",
+  "scope_note_zh": "属于问题求解框架家族，不表示下属算法直接相互继承。"
+}

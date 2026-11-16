@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "family.uncertainty-quantification",
+  "name": "Uncertainty quantification and calibration",
+  "name_zh": "不确定性量化与模型校准",
+  "summary": "Assess uncertainty sources and calibration of predictive claims.",
+  "summary_zh": "研究预测不确定性来源、传播、校准和模型差异。",
+  "coverage_status": "planned",
+  "scope_note": "Cross-cutting concern nodes exist; detailed UQ methods are not yet populated.",
+  "scope_note_zh": "已建立跨环节质量关注点，尚未整理完整 UQ 算法树。"
+}

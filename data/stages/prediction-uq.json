@@ -1,0 +1,18 @@
+{
+  "schema_version": "2.1.0",
+  "id": "stage.prediction-uq",
+  "name": "Trustworthy prediction and uncertainty propagation",
+  "name_zh": "可信预测与不确定性传播",
+  "summary": "Predict physical states under new conditions while assessing uncertainty, calibration, model discrepancy and generalization.",
+  "summary_zh": "利用已校准的物理模型进行条件预测，并评估参数不确定性、模型误差、可信度及泛化能力。",
+  "order": 4,
+  "color": "#B45309",
+  "inputs": [
+    "Inferred state and parameters",
+    "Predictive conditions"
+  ],
+  "outputs": [
+    "Predicted fields and uncertainty estimates"
+  ],
+  "is_iterative": false
+}

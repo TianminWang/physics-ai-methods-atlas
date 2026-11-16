@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-tikhonov-regularization--member-of-family--family-optimization-regularization",
+  "source_id": "method.tikhonov-regularization",
+  "target_id": "family.optimization-regularization",
+  "type": "member_of_family",
+  "claim": "The tikhonov-regularization method belongs to the optimization-regularization conceptual family, independently of its applications.",
+  "claim_zh": "方法“tikhonov-regularization”属于“optimization-regularization”家族；这不是限制其跨环节的应用。"
+}

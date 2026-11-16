@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-inverse-calibration--uses-method--family-differentiable-simulation",
+  "source_id": "stage.inverse-calibration",
+  "target_id": "family.differentiable-simulation",
+  "type": "uses_method",
+  "claim": "This stage can draw on differentiable-simulation for differentiating physical predictions with respect to inverse parameters.",
+  "claim_zh": "本环节可调用differentiable-simulation：提供物理模型对反演参数的可靠导数。",
+  "role": "differentiating physical predictions with respect to inverse parameters",
+  "role_zh": "提供物理模型对反演参数的可靠导数",
+  "evidence_scope": "conceptual"
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-inverse-calibration--uses-method--family-data-assimilation",
+  "source_id": "stage.inverse-calibration",
+  "target_id": "family.data-assimilation",
+  "type": "uses_method",
+  "claim": "This stage can draw on data-assimilation for estimating hidden states or parameters from sequential or windowed observations.",
+  "claim_zh": "本环节可调用data-assimilation：结合时窗或序贯观测估计状态与参数。",
+  "role": "estimating hidden states or parameters from sequential or windowed observations",
+  "role_zh": "结合时窗或序贯观测估计状态与参数",
+  "evidence_scope": "conceptual"
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": "2.1.0",
+  "id": "stage.observation",
+  "name": "Observation and measurement modeling",
+  "name_zh": "观测与数据建模",
+  "summary": "Describe how physical states produce observable signals and how sampling, noise, and missing data enter the inverse problem.",
+  "summary_zh": "定义观测算子、采样机制、测量噪声和缺失信息，将影像或生理数据与物理状态建立联系。",
+  "order": 2,
+  "color": "#0891B2",
+  "inputs": [
+    "Measurements, images, acquisition protocols"
+  ],
+  "outputs": [
+    "Observation operator, likelihood or error model"
+  ],
+  "is_iterative": false
+}

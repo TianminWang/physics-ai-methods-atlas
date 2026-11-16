@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.concern-physical-validity--concern-applies-to--stage-inverse-calibration",
+  "source_id": "concern.physical-validity",
+  "target_id": "stage.inverse-calibration",
+  "type": "concern_applies_to",
+  "claim": "The physical-validity issue must be assessed when evaluating this stage.",
+  "claim_zh": "“physical-validity”是此环节需要独立评估的可靠性问题。"
+}

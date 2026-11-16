@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "family.data-assimilation",
+  "name": "Filtering and data assimilation",
+  "name_zh": "滤波与数据同化",
+  "summary": "Sequential and variational updating for dynamic states and parameters.",
+  "summary_zh": "包括 Kalman、EnKF、4D-Var 和集合型参数反演等。",
+  "coverage_status": "populated",
+  "scope_note": "Filtering and inverse parameter updating share tools but are not identical.",
+  "scope_note_zh": "动态状态滤波和静态参数反演有联系，但不可混为一谈。"
+}

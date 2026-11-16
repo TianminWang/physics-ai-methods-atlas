@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-intervention-planning--uses-method--family-dynamics-identification",
+  "source_id": "stage.intervention-planning",
+  "target_id": "family.dynamics-identification",
+  "type": "uses_method",
+  "claim": "This stage can draw on dynamics-identification for providing an estimated transition model for action-conditioned forecasts.",
+  "claim_zh": "本环节可调用dynamics-identification：为有动作条件的未来预测提供状态转移近似。",
+  "role": "providing an estimated transition model for action-conditioned forecasts",
+  "role_zh": "为有动作条件的未来预测提供状态转移近似",
+  "evidence_scope": "hypothesis"
+}

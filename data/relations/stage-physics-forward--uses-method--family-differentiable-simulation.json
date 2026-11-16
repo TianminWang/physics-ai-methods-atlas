@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-physics-forward--uses-method--family-differentiable-simulation",
+  "source_id": "stage.physics-forward",
+  "target_id": "family.differentiable-simulation",
+  "type": "uses_method",
+  "claim": "This stage can draw on differentiable-simulation for obtaining reliable state sensitivities through computational physics.",
+  "claim_zh": "本环节可调用differentiable-simulation：通过可微求解器或伴随计算状态敏感性。",
+  "role": "obtaining reliable state sensitivities through computational physics",
+  "role_zh": "通过可微求解器或伴随计算状态敏感性",
+  "evidence_scope": "hypothesis"
+}

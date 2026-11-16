@@ -1,10 +1,21 @@
 {
-  "schema_version": "2.0.0",
+  "schema_version": "2.1.0",
   "id": "relation.pino--extends--fno",
   "source_id": "method.pino",
   "target_id": "method.fno",
   "type": "extends",
   "claim": "Uses the Fourier neural operator backbone and adds physical residual losses, including higher-resolution physics constraints.",
+  "claim_zh": "在傅里叶算子主干上引入物理损失，并可在更细分辨率评估残差。",
+  "innovation_detail": "Use a Fourier operator backbone with physical training constraints, sometimes at finer resolutions.",
+  "innovation_detail_zh": "在傅里叶算子主干上引入物理损失，并可在更细分辨率评估残差。",
+  "bottleneck": "Low-resolution paired data and pure supervised fitting may miss fine physical structure.",
+  "bottleneck_zh": "低分辨率配对数据与纯监督拟合可能遗漏细尺度物理结构。",
+  "stage_ids": [
+    "stage.physics-forward",
+    "stage.prediction-uq"
+  ],
+  "primary_stage_id": "stage.physics-forward",
+  "tradeoff": "PDE residuals increase training cost and do not guarantee universal extrapolation.",
   "evidence_paper_ids": [
     "paper.li-2024-pino"
   ]

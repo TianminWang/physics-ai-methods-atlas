@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.concern-generalization-validation--concern-applies-to--stage-physics-forward",
+  "source_id": "concern.generalization-validation",
+  "target_id": "stage.physics-forward",
+  "type": "concern_applies_to",
+  "claim": "The generalization-validation issue must be assessed when evaluating this stage.",
+  "claim_zh": "“generalization-validation”是此环节需要独立评估的可靠性问题。"
+}

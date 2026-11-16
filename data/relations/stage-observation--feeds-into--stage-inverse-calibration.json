@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-observation--feeds-into--stage-inverse-calibration",
+  "source_id": "stage.observation",
+  "target_id": "stage.inverse-calibration",
+  "type": "feeds_into",
+  "claim": "Observation operator and noisy data constrain the inferred unknowns.",
+  "claim_zh": "观测模型和测量数据为反演提供对未知量的约束。",
+  "role": "Observation operator and noisy data constrain the inferred unknowns.",
+  "role_zh": "观测模型和测量数据为反演提供对未知量的约束。"
+}

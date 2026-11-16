@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "family.physics-informed-learning",
+  "name": "Physics-constrained neural solution learning",
+  "name_zh": "物理约束神经求解",
+  "summary": "Neural PDE methods trained with differential, boundary or variational physics information.",
+  "summary_zh": "利用 PDE 残差、边界条件或变分能量训练神经网络求解物理问题。",
+  "coverage_status": "populated",
+  "scope_note": "PINN, DGM and Deep Ritz differ in objectives and formulations.",
+  "scope_note_zh": "PINN、DGM 与 Deep Ritz 并非完全相同的训练目标。"
+}

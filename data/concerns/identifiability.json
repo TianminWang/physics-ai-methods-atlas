@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "concern.identifiability",
+  "name": "Identifiability and information content",
+  "name_zh": "可辨识性与信息充分性",
+  "summary": "Examine which parameters or hidden states can be recovered from the available observations.",
+  "summary_zh": "评估有限观测是否足以区分未知参数或潜在状态，避免把不适定性误认为优化失败。"
+}

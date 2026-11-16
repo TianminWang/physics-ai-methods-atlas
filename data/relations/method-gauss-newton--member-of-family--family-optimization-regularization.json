@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-gauss-newton--member-of-family--family-optimization-regularization",
+  "source_id": "method.gauss-newton",
+  "target_id": "family.optimization-regularization",
+  "type": "member_of_family",
+  "claim": "The gauss-newton method belongs to the optimization-regularization conceptual family, independently of its applications.",
+  "claim_zh": "方法“gauss-newton”属于“optimization-regularization”家族；这不是限制其跨环节的应用。"
+}

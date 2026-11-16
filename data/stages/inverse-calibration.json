@@ -1,0 +1,19 @@
+{
+  "schema_version": "2.1.0",
+  "id": "stage.inverse-calibration",
+  "name": "Individualized inference and state estimation",
+  "name_zh": "个体化反演与状态估计",
+  "summary": "Infer unknown parameters and hidden states using physics models, measurements, regularization, or probabilistic inference.",
+  "summary_zh": "结合正向模型与现实观测，推断未知参数、边界条件、潜在状态及其可能的不确定性。",
+  "order": 3,
+  "color": "#7C3AED",
+  "inputs": [
+    "Forward model",
+    "Observation model",
+    "Patient-specific measurements"
+  ],
+  "outputs": [
+    "Calibrated parameters and inferred states"
+  ],
+  "is_iterative": false
+}

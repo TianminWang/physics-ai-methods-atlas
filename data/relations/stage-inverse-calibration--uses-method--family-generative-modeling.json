@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-inverse-calibration--uses-method--family-generative-modeling",
+  "source_id": "stage.inverse-calibration",
+  "target_id": "family.generative-modeling",
+  "type": "uses_method",
+  "claim": "This stage can draw on generative-modeling for representing priors or sampling candidate solutions under observations.",
+  "claim_zh": "本环节可调用generative-modeling：生成先验或根据观测产生候选反演样本。",
+  "role": "representing priors or sampling candidate solutions under observations",
+  "role_zh": "生成先验或根据观测产生候选反演样本",
+  "evidence_scope": "hypothesis"
+}

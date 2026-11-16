@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-prediction-uq--uses-method--family-uncertainty-quantification",
+  "source_id": "stage.prediction-uq",
+  "target_id": "family.uncertainty-quantification",
+  "type": "uses_method",
+  "claim": "This stage can draw on uncertainty-quantification for propagating and calibrating uncertainties and model discrepancy.",
+  "claim_zh": "本环节可调用uncertainty-quantification：传播、评估并校准参数与预测不确定性。",
+  "role": "propagating and calibrating uncertainties and model discrepancy",
+  "role_zh": "传播、评估并校准参数与预测不确定性",
+  "evidence_scope": "conceptual"
+}

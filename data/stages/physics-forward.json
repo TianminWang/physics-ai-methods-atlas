@@ -1,0 +1,18 @@
+{
+  "schema_version": "2.1.0",
+  "id": "stage.physics-forward",
+  "name": "Physical representation and forward modeling",
+  "name_zh": "物理表征与正向模拟",
+  "summary": "Choose state variables, equations, constitutive assumptions, boundary conditions, and numerical or learned forward solvers.",
+  "summary_zh": "定义物理状态、控制方程、材料与边界条件，建立可以预测状态的正向模型及数值或学习型求解器。",
+  "order": 1,
+  "color": "#2563EB",
+  "inputs": [
+    "Geometry and physical assumptions",
+    "Material and boundary parameters"
+  ],
+  "outputs": [
+    "Forward map and simulated physical fields"
+  ],
+  "is_iterative": false
+}

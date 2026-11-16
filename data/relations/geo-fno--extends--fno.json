@@ -1,10 +1,21 @@
 {
-  "schema_version": "2.0.0",
+  "schema_version": "2.1.0",
   "id": "relation.geo-fno--extends--fno",
   "source_id": "method.geo-fno",
   "target_id": "method.fno",
   "type": "extends",
   "claim": "Maps irregular physical domains into a latent regular domain to retain Fourier operator computation.",
+  "claim_zh": "学习随几何变化的坐标变形，在规则潜在域中使用傅里叶算子层。",
+  "innovation_detail": "Learn geometry-dependent coordinate deformations and apply Fourier layers in a regular latent domain.",
+  "innovation_detail_zh": "学习随几何变化的坐标变形，在规则潜在域中使用傅里叶算子层。",
+  "bottleneck": "Standard FNO parameterizations have difficulty with nonrectangular domains and irregular meshes.",
+  "bottleneck_zh": "标准FNO对非规则几何和非均匀网格的表示能力有限。",
+  "stage_ids": [
+    "stage.physics-forward",
+    "stage.prediction-uq"
+  ],
+  "primary_stage_id": "stage.physics-forward",
+  "tradeoff": "Geometric generalization remains dependent on the training distribution.",
   "evidence_paper_ids": [
     "paper.li-2023-geofno"
   ]

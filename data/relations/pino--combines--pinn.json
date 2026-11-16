@@ -1,10 +1,21 @@
 {
-  "schema_version": "2.0.0",
+  "schema_version": "2.1.0",
   "id": "relation.pino--combines--pinn",
   "source_id": "method.pino",
   "target_id": "method.pinn",
   "type": "combines",
   "claim": "Combines operator training with PINN-style physics residual constraints without adopting single-instance PINN inference.",
+  "claim_zh": "将方程残差监督融入神经算子训练，而非仅针对单个问题求解。",
+  "innovation_detail": "Add equation-residual supervision to neural-operator learning rather than solve only one instance.",
+  "innovation_detail_zh": "将方程残差监督融入神经算子训练，而非仅针对单个问题求解。",
+  "bottleneck": "Data-only operator learning can lack physical consistency or require many labeled solves.",
+  "bottleneck_zh": "纯数据算子学习可能物理一致性不足，且依赖大量标注解场。",
+  "stage_ids": [
+    "stage.physics-forward",
+    "stage.prediction-uq"
+  ],
+  "primary_stage_id": "stage.physics-forward",
+  "tradeoff": "Adding residual penalties does not prove physical validity outside the training regime.",
   "evidence_paper_ids": [
     "paper.li-2024-pino"
   ]

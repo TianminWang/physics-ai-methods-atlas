@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "family.probabilistic-inference",
+  "name": "Bayesian and probabilistic inverse inference",
+  "name_zh": "贝叶斯与概率反演",
+  "summary": "Likelihoods, priors, posteriors, sampling and uncertainty-aware inversion.",
+  "summary_zh": "包括贝叶斯反问题、后验近似、采样与不确定性估计。",
+  "coverage_status": "populated",
+  "scope_note": "MCMC, VI and simulation-based inference remain incomplete.",
+  "scope_note_zh": "现有贝叶斯反问题基础，MCMC、变分推断和 SBI 仍待补充。"
+}

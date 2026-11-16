@@ -1,10 +1,21 @@
 {
-  "schema_version": "2.0.0",
+  "schema_version": "2.1.0",
   "id": "relation.physics-informed-deeponet--extends--deeponet",
   "source_id": "method.physics-informed-deeponet",
   "target_id": "method.deeponet",
   "type": "extends",
   "claim": "Adds PDE residual and boundary constraint training to a DeepONet solution-operator model.",
+  "claim_zh": "在DeepONet训练目标中增加物理残差与边界约束。",
+  "innovation_detail": "Augment the DeepONet training objective with physical residual and boundary constraints.",
+  "innovation_detail_zh": "在DeepONet训练目标中增加物理残差与边界约束。",
+  "bottleneck": "Paired high-fidelity solution samples may be costly for training parametric PDE solution operators.",
+  "bottleneck_zh": "参数化PDE算子训练所需的高精度配对解场成本较高。",
+  "stage_ids": [
+    "stage.physics-forward",
+    "stage.prediction-uq"
+  ],
+  "primary_stage_id": "stage.physics-forward",
+  "tradeoff": "Requires appropriate physics formulation and training weight choices.",
   "evidence_paper_ids": [
     "paper.wang-2021-physics-deeponet"
   ]

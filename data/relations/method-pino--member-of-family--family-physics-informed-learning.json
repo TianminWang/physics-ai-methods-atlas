@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-pino--member-of-family--family-physics-informed-learning",
+  "source_id": "method.pino",
+  "target_id": "family.physics-informed-learning",
+  "type": "member_of_family",
+  "claim": "The pino method belongs to the physics-informed-learning conceptual family, independently of its applications.",
+  "claim_zh": "方法“pino”属于“physics-informed-learning”家族；这不是限制其跨环节的应用。"
+}

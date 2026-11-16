@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-kalman-filter--member-of-family--family-data-assimilation",
+  "source_id": "method.kalman-filter",
+  "target_id": "family.data-assimilation",
+  "type": "member_of_family",
+  "claim": "The kalman-filter method belongs to the data-assimilation conceptual family, independently of its applications.",
+  "claim_zh": "方法“kalman-filter”属于“data-assimilation”家族；这不是限制其跨环节的应用。"
+}

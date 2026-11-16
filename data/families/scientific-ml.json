@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "family.scientific-ml",
+  "name": "Scientific machine learning and Physics AI",
+  "name_zh": "科学机器学习与物理 AI",
+  "summary": "Neural learning of physical solutions, operators, distributions and constraints.",
+  "summary_zh": "涵盖物理约束学习、神经算子和生成式物理建模等方法路线。",
+  "coverage_status": "populated",
+  "scope_note": "An umbrella family across multiple purposes; not one workflow step.",
+  "scope_note_zh": "跨多个研究环节的方法家族，不是主轴上的单一流程步骤。"
+}

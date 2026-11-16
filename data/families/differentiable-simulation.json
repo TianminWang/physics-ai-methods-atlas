@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "family.differentiable-simulation",
+  "name": "Differentiable physical simulation",
+  "name_zh": "可微物理模拟",
+  "summary": "Differentiable solvers and sensitivity-consistent computational physics.",
+  "summary_zh": "研究可微求解器、离散伴随和物理计算中的梯度传播。",
+  "coverage_status": "planned",
+  "scope_note": "Adjoints exist in the catalogue; unified differentiable solver lineage remains to be curated.",
+  "scope_note_zh": "已有伴随敏感性方法，但可微模拟的完整谱系仍待整理。"
+}

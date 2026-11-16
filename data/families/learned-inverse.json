@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "family.learned-inverse",
+  "name": "Learned and surrogate-assisted inversion",
+  "name_zh": "学习型及代理辅助反演",
+  "summary": "Direct learned inverse maps or learned forward surrogates used in inversion.",
+  "summary_zh": "包含直接逆算子学习与学习型正向模型辅助反演两条路线。",
+  "coverage_status": "populated",
+  "scope_note": "Direct inverse learning is not interchangeable with forward-surrogate optimization.",
+  "scope_note_zh": "直接逆映射与基于正向代理的优化反演不是同一种方法。"
+}

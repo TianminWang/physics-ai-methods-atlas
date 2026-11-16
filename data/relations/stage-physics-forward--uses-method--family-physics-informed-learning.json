@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-physics-forward--uses-method--family-physics-informed-learning",
+  "source_id": "stage.physics-forward",
+  "target_id": "family.physics-informed-learning",
+  "type": "uses_method",
+  "claim": "This stage can draw on physics-informed-learning for fitting individual physical solution fields with physics losses.",
+  "claim_zh": "本环节可调用physics-informed-learning：通过物理残差或变分目标近似物理解场。",
+  "role": "fitting individual physical solution fields with physics losses",
+  "role_zh": "通过物理残差或变分目标近似物理解场",
+  "evidence_scope": "conceptual"
+}

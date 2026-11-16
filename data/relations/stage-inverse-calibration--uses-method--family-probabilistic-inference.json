@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-inverse-calibration--uses-method--family-probabilistic-inference",
+  "source_id": "stage.inverse-calibration",
+  "target_id": "family.probabilistic-inference",
+  "type": "uses_method",
+  "claim": "This stage can draw on probabilistic-inference for estimating posterior uncertainty over unknowns given observations.",
+  "claim_zh": "本环节可调用probabilistic-inference：从有限观测计算或近似未知量后验分布。",
+  "role": "estimating posterior uncertainty over unknowns given observations",
+  "role_zh": "从有限观测计算或近似未知量后验分布",
+  "evidence_scope": "conceptual"
+}

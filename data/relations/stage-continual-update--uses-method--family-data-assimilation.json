@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-continual-update--uses-method--family-data-assimilation",
+  "source_id": "stage.continual-update",
+  "target_id": "family.data-assimilation",
+  "type": "uses_method",
+  "claim": "This stage can draw on data-assimilation for updating patient states and parameters when fresh measurements arrive.",
+  "claim_zh": "本环节可调用data-assimilation：随着新增观测序贯更新患者状态或参数。",
+  "role": "updating patient states and parameters when fresh measurements arrive",
+  "role_zh": "随着新增观测序贯更新患者状态或参数",
+  "evidence_scope": "conceptual"
+}

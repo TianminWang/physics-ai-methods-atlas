@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-physics-forward--uses-method--family-generative-modeling",
+  "source_id": "stage.physics-forward",
+  "target_id": "family.generative-modeling",
+  "type": "uses_method",
+  "claim": "This stage can draw on generative-modeling for learning distributional representations of physical fields or uncertain inputs.",
+  "claim_zh": "本环节可调用generative-modeling：学习物理场或不确定输入的条件分布。",
+  "role": "learning distributional representations of physical fields or uncertain inputs",
+  "role_zh": "学习物理场或不确定输入的条件分布",
+  "evidence_scope": "hypothesis"
+}

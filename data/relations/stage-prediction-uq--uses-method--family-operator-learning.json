@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-prediction-uq--uses-method--family-operator-learning",
+  "source_id": "stage.prediction-uq",
+  "target_id": "family.operator-learning",
+  "type": "uses_method",
+  "claim": "This stage can draw on operator-learning for fast prediction across a learned family of model inputs.",
+  "claim_zh": "本环节可调用operator-learning：对参数族和输入条件快速预测物理场。",
+  "role": "fast prediction across a learned family of model inputs",
+  "role_zh": "对参数族和输入条件快速预测物理场",
+  "evidence_scope": "conceptual"
+}

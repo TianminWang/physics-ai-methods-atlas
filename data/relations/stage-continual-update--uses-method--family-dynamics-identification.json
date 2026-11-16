@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-continual-update--uses-method--family-dynamics-identification",
+  "source_id": "stage.continual-update",
+  "target_id": "family.dynamics-identification",
+  "type": "uses_method",
+  "claim": "This stage can draw on dynamics-identification for revising or adapting state-transition dynamics over time.",
+  "claim_zh": "本环节可调用dynamics-identification：根据长期数据重新辨识或适应系统动力学。",
+  "role": "revising or adapting state-transition dynamics over time",
+  "role_zh": "根据长期数据重新辨识或适应系统动力学",
+  "evidence_scope": "conceptual"
+}

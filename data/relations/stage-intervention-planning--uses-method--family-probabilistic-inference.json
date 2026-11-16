@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-intervention-planning--uses-method--family-probabilistic-inference",
+  "source_id": "stage.intervention-planning",
+  "target_id": "family.probabilistic-inference",
+  "type": "uses_method",
+  "claim": "This stage can draw on probabilistic-inference for propagating inferred uncertainty to compare intervention outcomes.",
+  "claim_zh": "本环节可调用probabilistic-inference：将未知参数后验传播到干预结果比较中。",
+  "role": "propagating inferred uncertainty to compare intervention outcomes",
+  "role_zh": "将未知参数后验传播到干预结果比较中",
+  "evidence_scope": "conceptual"
+}

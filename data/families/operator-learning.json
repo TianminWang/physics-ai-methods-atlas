@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "family.operator-learning",
+  "name": "Neural operator learning",
+  "name_zh": "神经算子学习",
+  "summary": "Learn reusable maps between functions across families of PDE problems.",
+  "summary_zh": "学习函数到函数的算子映射，包括 DeepONet、FNO、PINO 等架构。",
+  "coverage_status": "populated",
+  "scope_note": "Class includes both architectures and physics/derivative-informed specializations.",
+  "scope_note_zh": "涵盖架构和带物理约束、导数监督的扩展方法。"
+}

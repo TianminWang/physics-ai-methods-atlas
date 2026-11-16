@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-observation--feeds-into--stage-continual-update",
+  "source_id": "stage.observation",
+  "target_id": "stage.continual-update",
+  "type": "feeds_into",
+  "claim": "New measurements provide evidence for sequential model updates.",
+  "claim_zh": "后续测量提供持续更新所需的新证据。",
+  "role": "New measurements provide evidence for sequential model updates.",
+  "role_zh": "后续测量提供持续更新所需的新证据。"
+}

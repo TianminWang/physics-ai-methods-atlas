@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-physics-forward--uses-method--family-operator-learning",
+  "source_id": "stage.physics-forward",
+  "target_id": "family.operator-learning",
+  "type": "uses_method",
+  "claim": "This stage can draw on operator-learning for learning reusable parameter-to-field solution operators.",
+  "claim_zh": "本环节可调用operator-learning：学习跨参数实例复用的正向解算子。",
+  "role": "learning reusable parameter-to-field solution operators",
+  "role_zh": "学习跨参数实例复用的正向解算子",
+  "evidence_scope": "conceptual"
+}

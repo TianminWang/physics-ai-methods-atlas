@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-fno--member-of-family--family-operator-learning",
+  "source_id": "method.fno",
+  "target_id": "family.operator-learning",
+  "type": "member_of_family",
+  "claim": "The fno method belongs to the operator-learning conceptual family, independently of its applications.",
+  "claim_zh": "方法“fno”属于“operator-learning”家族；这不是限制其跨环节的应用。"
+}

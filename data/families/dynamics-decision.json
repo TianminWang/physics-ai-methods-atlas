@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "family.dynamics-decision",
+  "name": "Dynamical systems and planning",
+  "name_zh": "动力系统、世界模型与决策",
+  "summary": "Models and algorithms for evolution, counterfactual rollouts and intervention planning.",
+  "summary_zh": "围绕状态演化、反事实预测、控制优化和决策规划组织相关方法。",
+  "coverage_status": "populated",
+  "scope_note": "World models and closed-loop decision methods are not yet curated.",
+  "scope_note_zh": "世界模型和闭环决策方法的细分节点尚未整理。"
+}
