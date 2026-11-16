@@ -1,39 +1,57 @@
-# Roadmap · 项目计划与完成标准
+# Roadmap · 物理 AI 方法知识图谱建设路线
 
-## Phase 1 — Foundational schema and validation (completed; refined in v0.2)
+**总原则：先保证知识组织结构正确，再增加学术证据，随后开展渐进式可视化。** 新论文和新方法可以持续补充，因此不存在“必须把所有文献找齐以后才准展示”的最终完成点。
 
-- [x] Single canonical source for Method, Paper, Book, Problem, Area and typed Relation records.
-- [x] Evidence provenance, stable IDs, cross-file reference and typed-edge checks, DAG checks for specified graph projections.
-- [x] Make `start_here` a **nonbinding, uncapped advisory reading suggestion**, not a mandatory 1–2 quota.
-- [x] Attach `landmark` significance to contextual **paper→method contributions**, never a global yes/no paper tag.
-- [x] Allow book chapters alongside papers in recommended starting references.
-- [x] Deterministic graph export, regression tests and GitHub Actions validation.
-- [x] Document curation, methodology and data compatibility (`schema_version: 2.0.0`).
+## v0.1 / v0.2 — 已完成的历史基础
 
-## Phase 2 — Initial curated methods and literature (v0.2)
+- [x] 方法、论文、专著、研究问题、领域和有类型关系的统一数据源
+- [x] 原有30个方法、32篇论文/章节、8本专著、10个研究问题
+- [x] 原始论文与方法贡献关系、优先阅读建议、类型及基础 DAG 校验
+- [x] 优先阅读非强制（通常少量，但没有0/1/2篇的强制额度）
 
-- [x] Construct classical inverse-theory spine: nonlinear least squares, Gauss–Newton, LM, Tikhonov, adjoint gradients, PDE-constrained optimization, Bayesian inverse problems.
-- [x] Construct scientific ML spine: PINN, neural operators, DeepONet, FNO, PINO / physics-informed DeepONet, learned-forward inversion, direct inverse operator, DINO and geometry-adaptive operators.
-- [x] Add data assimilation, ROM/operator inference and hemodynamics boundary-model branches.
-- [x] Link high-priority original works, syntheses, selected books and relevant coronary/systemic vascular tasks.
-- [x] Add minimal-reading guide and systematic, provenance-aware paper→method roles.
-- [ ] Continue scholarly curation as a living project: fuller author/DOI audits, comparative critiques, and underrepresented research branches. **No static literature collection is ever complete.**
+## v0.3 — 统一研究主轴 + 方法家族 DAG（本次）
 
-**Scope of v0.2:** 30 method records, 32 paper/chapter records, 8 books, 10 problems and 5 areas linked by 210 typed relationships. These numbers measure the current indexed scope, not exhaustive coverage.
+- [x] 六个主轴环节及循环反馈，环节颜色稳定且唯一
+- [x] 独立方法家族及多重成员关系，无需把方法固定归属于主轴中的单个环节
+- [x] 环节→方法家族/具体方法的双语功能边，写明方法实际提供的能力
+- [x] 方法分类与改进/融合关系分离；改进/融合边写明机制、瓶颈、证据、主次关联环节与可选代价
+- [x] 五类跨环节可靠性关注点
+- [x] 保留原数据，增量扩展兼容 Schema（v2.0.0 / v2.1.0）
+- [x] 中文默认首页、英文镜像、双语架构说明与中文方法名翻译层
+- [x] 能导出主轴+家族总览和完整方法关系的中英文图谱投影
+- [x] 测试/CI 验证主轴角色、演进边、配色、循环和不重复节点
 
-## Phase 3 — Interactive knowledge graph (planned, NOT yet done)
+**本阶段没有完成的工作（刻意留给下一阶段）**：大量新增生成式或强化学习论文，完整前端界面。
 
-- [ ] GitHub Pages for a searchable, filterable default **method-evolution forest (A)**.
-- [ ] Switchable **research problem / digital-twin pipeline (B)** view, plus optional **learning prerequisites (C)**.
-- [ ] Click methods for contextual Landmark works, optional `start_here`, further papers, books/chapters, and limitations.
-- [ ] Differentiate taxonomy, methodological descent, comparison and applicability by edge styles and clear legend.
-- [ ] Pull visualization data from validated `build/atlas-graph.json`, with no independent edited graph database.
+## v0.4 — 系统方法谱系与文献补全（下一阶段）
 
-## Phase 4 — Ongoing scholarly updates (when invoked)
+- [ ] 传统 ODE/PDE 数值方法、非线性反演及可辨识性理论
+- [ ] 神经算子不同架构（图方法、Transformer、频谱、几何及多尺度）
+- [ ] 生成式模型（VAE、Flow、Diffusion、Score、Flow Matching）与生成式物理反问题
+- [ ] Simulation-Based Inference、贝叶斯计算、生成式后验采样及 UQ
+- [ ] 可微物理模拟、模型误差校正、灵敏度一致性
+- [ ] 世界模型、状态空间模型、最优控制、MPC、Model-based / Offline RL
+- [ ] 血流动力学模型、冠脉反问题、虚拟 PCI 及外部临床验证范围
+- [ ] 每个新增方法确认类型、前驱/融合关系、解决瓶颈和对应主轴环节
+- [ ] 核查论文的 venue/DOI/作者及 Landmark 贡献；保留“Start Here”短推荐但不强制篇数
+- [ ] 方法谱系按家族补齐，明确“已验证/待补全”覆盖状态
 
-- [ ] Place new publications in existing method(s), or create a new node only when a genuinely reusable methodological innovation appears.
-- [ ] Update recommended starting readings if stronger pedagogical sources appear; preserve valuable old literature as optional.
-- [ ] Periodic checking or digests only through explicitly configured automations, if wanted.
-- [ ] Optional user-specific reading progress and duplicate-free cross-node reading routes, separate from public scholarly metadata.
+## v0.5 — 小规模可视化与知识质量审查
 
-The goal is **an expanding map and a small immediate reading load**. Editorial `status`, contextual `significance`, and user-specific reading progress are intentionally independent.
+- [ ] 用真实方法家族验证主轴→功能边→方法 DAG 的可读性
+- [ ] 测试复杂多重方法归属、跨家族融合、循环反馈和高密度连线的处理
+- [ ] 测试颜色、线型、文字说明在不同尺寸屏幕上的区分度
+- [ ] 点击方法先展示概念、Landmark、优先阅读，再展开附加文献
+- [ ] 检查中英文标签、历史证据和“推测性适用”标识
+
+## v1.0 — 正式交互图谱（GitHub Pages）
+
+- [ ] 统一大图：全局主轴 / 局部家族展开 / 关联探索，而不是两套独立知识图谱
+- [ ] 搜索、筛选、缩放、按环节配色、边的技术瓶颈详情
+- [ ] 中英文切换，默认中文
+- [ ] 同一方法在多环节只存在一个权威节点，视图只维护显示状态
+- [ ] 稳定静态站点发布与版本化数据导出
+
+## 后续维护
+
+新论文先进行学术筛选，附在已有节点或确有独立创新时创建新节点，重大“演进边”必须记录真实文献证据。阅读建议服务减负，不变成强制课程。任何定期检索/更新都需要具体触发或另行配置计划任务。

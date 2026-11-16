@@ -1,53 +1,48 @@
-# Maintaining the Atlas · 数据新增与维护
+# Contributing · 维护与更新规范
 
-## Editing principle
+## 1. 先找节点，再看论文
 
-Edit **canonical JSON files**; never manually edit generated graph drawings or copies of a paper record. Method names, claims, reference roles and study suggestions must stay distinct.
+每次增加论文前先搜索是否已有同一论文（DOI、arXiv、标题）；同一篇论文只建立一次权威记录。明确论文是提出、理论分析、应用、综述还是比较某个方法；Landmark 必须相对于具体方法关系给出理由。优先阅读建议（`start_here`）是可选的，没有固定数量限制。
 
-## New paper
+## 2. 新方法与家族不应等同于新论文
 
-1. Look for duplicates by **DOI, arXiv identifier and title** in `data/papers/`.
-2. Verify original author list, publication venue, date, and persistent identifier through the publisher, proceedings, or trusted bibliographic source. Store a `verification_url`; `provisional` is permitted when not fully checked.
-3. Create `data/papers/<slug>.json` with `schema_version: "2.0.0"`. **Do not add a global `landmark` flag.**
-4. Connect the paper to one or more relevant methods using typed paper→method relations: `introduces`, `analyzes`, `applies`, `compares`, or `surveys`. The same paper can serve different roles for different methods.
-5. Put `significance: "landmark"` **on the specific paper→method relation** only when the contribution is demonstrably foundational or a major turning point **for that method**. Explain via `significance_reason`. `representative` and `supporting` are alternatives, not ranks of the entire paper.
-6. Optionally add the source to a method's `start_here` recommendations **only** when it efficiently teaches that method. Typical goal is 1–2, but there is **no minimum or maximum**.
+- 新节点应该代表可独立理解、复用的数学或算法机制，而不是一篇论文、一个数据集或一种临床应用。
+- 先选择是否属于现有方法家族（`member_of_family`）；同一方法可以属于多个家族，但只能保留一份 `method.*` 记录。
+- 若真的存在可追溯的前驱或融合来源，才使用 `extends` / `combines`，提供具体创新、原先的技术瓶颈、证据论文和适用边界。
+- 如果只是一般/特殊化，则使用 `specializes`；学习依赖使用 `depends_on`；不要把研究时间先后当作继承证据。
+- 未完成系统检索的家族使用 `coverage_status=planned`，不填造假的代表论文。
 
-## New method
+## 3. 研究主轴与方法是多对多功能关系
 
-A method node should capture a reusable and conceptually distinct algorithm, formulation or framework. Do not turn every new application, benchmark, clinical cohort, hyperparameter tweak or paper into a new node.
+新增家族或方法以后，检查它是否与当前六个环节有关。只有在能够解释具体功能时才加入 `stage.* → family.*` 或 `stage.* → method.*` 的 `uses_method`，用中英文 `role` 清楚说明。
 
-- Create `data/methods/<slug>.json` with a stable ID, short `summary`, `core_idea`, `innovation`, `limitations`, `background_topics`, and `status`.
-- Link to its navigational areas with `belongs_to`, and to scientific tasks with `addresses`.
-- `specializes` is a taxonomic claim; `extends` is evidence-backed methodological modification; `combines` is evidence-backed multi-method fusion; `depends_on` means a **learning** prerequisite. Do not blur these relations.
-- A `curated` method has a reviewed definition and sufficiently checked claims; it need **not** have any `start_here` items. A `draft` is still under scholarly review. Both may have references.
-- If recommendations are included, write `reference_id` (paper or book), `why`, `focus`, optionally `locator` and a documented publication-status exception. **All recommendations are advisory**, not an obligation to the reader.
-- Every recommended paper must be verified and have a paper→method relation; each recommended book must have a `covers` relation to the method.
+例如“反演阶段使用 FNO 作为正向代理”不同于“FNO 本身直接输出参数后验”。避免笼统归类误导用户。
 
-## Books and problems
+## 4. 演进边的文字和颜色
 
-- Create `data/books/<slug>.json`; books may cover multiple methods/areas/problems via `covers`, with a chapter/section `locator` when known. A textbook chapter is often a better first reference for a historic method than a difficult original primary source.
-- Create `data/problems/<slug>.json` for a scientific problem, listing actual unknowns, available observations and model constraints.
-- `addresses` means an applicable methodological tool subject to assumptions, **not** proof of clinically validated performance.
-- Never equate evidence from a **systemic 1D vascular network** directly to a coronary 3D patient-specific validation claim.
+- `extends` / `combines` 记录 `innovation_detail`, `innovation_detail_zh`, `bottleneck`, `bottleneck_zh` 和 `evidence_paper_ids`。
+- 可以用 `stage_ids` 标注多个确有关联的环节；明确主要研究动机时再设置 `primary_stage_id`，它必须属于 `stage_ids`。
+- 配色由主轴环节的 `color` 派生，**不得在关系文件中随意设置另一个颜色**。
+- `tradeoff` 记录复杂性、计算成本或适用边界；“改进”不表示所有指标都更好。
+- `uses_method` 的 `evidence_scope` 指明它是概念可用、已有学术支持、特定应用验证还是暂时性的候选研究设想。
 
-## ID/version conventions
+## 5. 中文/英文维护
 
-- All files contain `schema_version: "2.0.0"`.
-- The file's stem must match the ID suffix (`method.fno` → `data/methods/fno.json`).
-- Use stable lowercase kebab-case slugs; avoid renaming IDs after there are inbound links.
-- Relations use `source--predicate--target` slugs. The triple `(source_id, type, target_id)` must be unique.
-- Lineage edges (`extends`, `combines`) require evidence paper IDs; their chronological order and specific causal/methodological claim deserve manual scholarly review.
+统一科学事实只写入一份权威实体或关系 JSON。新的 `stage`、`family`、`concern` 节点具有 `name`/`name_zh` 与相应中英文说明。旧方法的中文名通过 `locales/zh-CN.json` 提供，后续可逐步迁到记录的双语字段。
 
-## Local checks and PR review
+GitHub 首页 `README.md` 为中文，`README.en.md` 为英文；统一架构说明为 `docs/zh/UNIFIED_GRAPH.md` 和 `docs/en/UNIFIED_GRAPH.md`。不维护两份互相独立的图谱数据。
 
-~~~bash
+## 6. 本地或 PR 自动检查
+
+```bash
 python -m pip install -r requirements-dev.txt
 python -m scripts.validate
 python -m pytest -q
 python -m scripts.export_graph
-~~~
+python -m scripts.export_unified --lang zh --output build/unified-zh.json
+python -m scripts.export_unified --lang en --output build/unified-en.json
+```
 
-Validation enforces structural integrity, not the correctness of a scientific theorem. For each new method or lineage link, manually inspect the cited scientific source and state the boundary of its evidence. For changes to `start_here`, explain why the new recommendation reduces the reader's effort or adds key conceptual coverage. Prefer a feature branch/PR so changes are reviewable.
+所有数据源中引用的 ID 必须存在。家族分类 DAG 和方法演进 DAG 不允许循环；主轴反馈循环则合法。**校验工具能够保证结构一致，不代表自动验证了论文的科学结论。** 对新的历史前驱关系和临床应用有效性，必须人工依据原文判断。
 
-The atlas should help prioritize research about PDE/ODE inverse problems, coronary hemodynamics and future digital twins. It does not impose a separate full mathematics curriculum or assume the user will read every paper.
+完整架构：[中文版](zh/UNIFIED_GRAPH.md) · [English](en/UNIFIED_GRAPH.md)。
