@@ -1,9 +1,0 @@
-{
-  "schema_version": "2.1.0",
-  "id": "relation.paper-pfaff-2021-meshgraphnets--compares--method-neural-operator",
-  "source_id": "paper.pfaff-2021-meshgraphnets",
-  "target_id": "method.neural-operator",
-  "type": "compares",
-  "claim": "Related learned-simulation architecture with mesh graph representations, without establishing equivalence to neural operator approximation.",
-  "significance": "supporting"
-}
