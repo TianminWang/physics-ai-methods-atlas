@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-dreamer-latent-imagination--extends--method-planet-latent-planning",
+  "source_id": "method.dreamer-latent-imagination",
+  "target_id": "method.planet-latent-planning",
+  "type": "extends",
+  "claim": "Uses latent imagined trajectories to train actor and critic behavior rather than only searching action sequences online.",
+  "claim_zh": "在潜在世界模型生成的想象轨迹上训练actor和critic，而非仅靠在线搜索动作序列。",
+  "innovation_detail": "Uses latent imagined trajectories to train actor and critic behavior rather than only searching action sequences online.",
+  "innovation_detail_zh": "在潜在世界模型生成的想象轨迹上训练actor和critic，而非仅靠在线搜索动作序列。",
+  "bottleneck": "Online planning alone can be computationally expensive for long-horizon behavior optimization.",
+  "bottleneck_zh": "单纯依靠在线规划的长时域行为优化可能计算开销较大。",
+  "stage_ids": [
+    "stage.intervention-planning",
+    "stage.prediction-uq"
+  ],
+  "primary_stage_id": "stage.intervention-planning",
+  "tradeoff": "Policy quality can degrade when imagined latent dynamics are inaccurate; clinical transfer remains speculative.",
+  "evidence_paper_ids": [
+    "paper.hafner-2020-dreamer"
+  ]
+}

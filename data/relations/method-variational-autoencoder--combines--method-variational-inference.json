@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-variational-autoencoder--combines--method-variational-inference",
+  "source_id": "method.variational-autoencoder",
+  "target_id": "method.variational-inference",
+  "type": "combines",
+  "claim": "Combines learnable latent generative decoding with reparameterized amortized variational posterior inference.",
+  "claim_zh": "将可学习的潜变量生成模型与重参数化、摊销式变分后验推断结合。",
+  "innovation_detail": "Combines learnable latent generative decoding with reparameterized amortized variational posterior inference.",
+  "innovation_detail_zh": "将可学习的潜变量生成模型与重参数化、摊销式变分后验推断结合。",
+  "bottleneck": "Latent generative models can have intractable posterior inference and expensive gradient estimates.",
+  "bottleneck_zh": "潜变量生成模型常面临后验不可解析和随机梯度估计开销等困难。",
+  "stage_ids": [
+    "stage.prediction-uq",
+    "stage.inverse-calibration"
+  ],
+  "primary_stage_id": "stage.prediction-uq",
+  "tradeoff": "Variational families and learned decoder support can misrepresent the true physical distribution.",
+  "evidence_paper_ids": [
+    "paper.kingma-2014-vae"
+  ]
+}

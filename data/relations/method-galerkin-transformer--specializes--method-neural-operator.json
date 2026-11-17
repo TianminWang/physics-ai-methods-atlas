@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-galerkin-transformer--specializes--method-neural-operator",
+  "source_id": "method.galerkin-transformer",
+  "target_id": "method.neural-operator",
+  "type": "specializes",
+  "claim": "The Galerkin Transformer is an attention-based realization of function-to-function operator learning.",
+  "claim_zh": "Galerkin Transformer 用注意力与投影结构具体实现函数到函数的算子学习。"
+}

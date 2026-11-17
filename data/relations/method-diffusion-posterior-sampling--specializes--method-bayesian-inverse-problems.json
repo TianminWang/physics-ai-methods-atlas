@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-diffusion-posterior-sampling--specializes--method-bayesian-inverse-problems",
+  "source_id": "method.diffusion-posterior-sampling",
+  "target_id": "method.bayesian-inverse-problems",
+  "type": "specializes",
+  "claim": "DPS is an approximate generative posterior-inference technique for noisy inverse problems.",
+  "claim_zh": "DPS 是用于含噪反问题的近似生成式后验推断方法。"
+}

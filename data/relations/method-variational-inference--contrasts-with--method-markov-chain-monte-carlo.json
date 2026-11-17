@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-variational-inference--contrasts-with--method-markov-chain-monte-carlo",
+  "source_id": "method.variational-inference",
+  "target_id": "method.markov-chain-monte-carlo",
+  "type": "contrasts_with",
+  "claim": "VI approximates a posterior through optimization while MCMC estimates expectations through chains and mixing.",
+  "claim_zh": "VI 通过分布优化近似后验，MCMC 通过马尔可夫链样本近似后验积分。"
+}

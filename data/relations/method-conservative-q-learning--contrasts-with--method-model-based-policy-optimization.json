@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-conservative-q-learning--contrasts-with--method-model-based-policy-optimization",
+  "source_id": "method.conservative-q-learning",
+  "target_id": "method.model-based-policy-optimization",
+  "type": "contrasts_with",
+  "claim": "CQL explicitly handles offline Q overestimation, while MBPO trades off learned model rollouts and real-data policy learning.",
+  "claim_zh": "CQL 关注纯离线数据的Q值高估，MBPO 则权衡模型生成轨迹和真实数据的策略学习。"
+}

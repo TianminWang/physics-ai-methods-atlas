@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-model-based-policy-optimization--contrasts-with--method-model-predictive-control",
+  "source_id": "method.model-based-policy-optimization",
+  "target_id": "method.model-predictive-control",
+  "type": "contrasts_with",
+  "claim": "MBPO trains policies from short model rollouts whereas MPC explicitly replans controls by horizon optimization.",
+  "claim_zh": "MBPO 利用短模型轨迹训练策略，MPC 则通过有限时域优化滚动决策。"
+}

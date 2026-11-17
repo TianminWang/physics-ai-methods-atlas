@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-diffusion-posterior-sampling--extends--method-score-based-sde",
+  "source_id": "method.diffusion-posterior-sampling",
+  "target_id": "method.score-based-sde",
+  "type": "extends",
+  "claim": "Augments reverse generative score trajectories with approximate observation-likelihood gradients to condition inverse reconstruction.",
+  "claim_zh": "在基于得分函数的反向生成路径中加入近似的观测似然梯度，进行条件反演。",
+  "innovation_detail": "Augments reverse generative score trajectories with approximate observation-likelihood gradients to condition inverse reconstruction.",
+  "innovation_detail_zh": "在基于得分函数的反向生成路径中加入近似的观测似然梯度，进行条件反演。",
+  "bottleneck": "Unconditional generative priors alone do not enforce agreement with incomplete noisy measurements.",
+  "bottleneck_zh": "仅有无条件生成先验不能保证样本与稀疏含噪观测相容。",
+  "stage_ids": [
+    "stage.inverse-calibration",
+    "stage.prediction-uq"
+  ],
+  "primary_stage_id": "stage.inverse-calibration",
+  "tradeoff": "Guided samples are generally approximate posterior draws and require calibration tests.",
+  "evidence_paper_ids": [
+    "paper.chung-2023-dps"
+  ]
+}
