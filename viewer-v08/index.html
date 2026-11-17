@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="description" content="Physics AI Methods Atlas: compact evidence-first method genealogy">
+<title>Physics AI Methods Atlas · v0.8</title>
+<link rel="stylesheet" href="./style.css"><script defer src="./app.js"></script>
+</head><body>
+<a class="skip" href="#dag-title">跳转到方法演化图</a>
+<header class="top"><div class="logo"><div class="mark">◎</div><div><strong>PHYSICS AI <em>ATLAS</em></strong><small data-i18n="brand">物理 AI 方法知识图谱</small></div></div>
+<nav><a href="https://github.com/TianminWang/physics-ai-methods-atlas" target="_blank" rel="noopener noreferrer" data-i18n="repo">GitHub 仓库</a><button type="button" id="language" class="lang">EN</button></nav></header>
+<main class="wrap">
+ <section class="intro">
+   <div class="eyebrow">SCIENTIFIC WORKFLOW <span>×</span> METHOD GENEALOGY</div>
+   <h1 data-i18n="title">理解问题，也理解方法为什么演进。</h1>
+   <p data-i18n="subtitle">三阶段研究主轴 × 一张有证据的方法演化 DAG。节点颜色区分方法范式；演进边的颜色表示它针对的研究阶段。</p>
+   <div class="minor"><span class="edition">v0.8 · EVIDENCE-FIRST ATLAS</span><span id="total-count"></span></div>
+ </section>
+ <section class="axis panel">
+   <div class="section-head"><div><div class="kicker">01 / RESEARCH WORKFLOW</div><h2 data-i18n="axisTitle">研究主轴</h2></div>
+     <button type="button" class="link-btn" id="clear-phase" data-i18n="clearPhase">取消筛选</button>
+   </div>
+   <div id="phases" class="phases" role="group" aria-label="Three research phases"></div>
+   <div class="axis-bottom"><span data-i18n="axisNote">选择研究阶段，高亮相关方法和这类研究问题推动的演进边。</span><span data-i18n="concerns">贯穿要求：物理一致性 · 可辨识性 · 误差 · 不确定性 · 外部验证</span></div>
+ </section>
+ <section class="mapping panel">
+   <div class="section-head"><div><div class="kicker">02 / FUNCTIONAL MAPPING</div><h2 data-i18n="mappingTitle">研究环节如何使用方法？</h2></div>
+     <button type="button" class="link-btn" id="mapping-more" data-i18n="moreMapping">展开全部映射</button>
+   </div>
+   <div class="mapping-line"><div id="phase-origin" class="mapping-origin"></div><span class="mapping-arrow" aria-hidden="true">⟶</span><div id="mapping-links" class="mapping-links"></div></div>
+   <p class="footnote" data-i18n="mappingNote">家族级关联是研究线索，并非该家族每一个方法都已经过独立验证。</p>
+ </section>
+
+ <section id="graph-card" class="graph-card panel" aria-labelledby="dag-title">
+   <div class="graph-toolbar">
+     <div><div class="kicker">03 / GLOBAL METHOD GENEALOGY</div><h2 id="dag-title" data-i18n="dagTitle">方法演化 DAG</h2><p id="graph-subtitle" class="graph-subtitle"></p></div>
+     <div class="graph-actions">
+       <button id="zoom-out" type="button" class="icon-button" aria-label="Zoom out" title="Zoom out">−</button>
+       <button id="zoom-in" type="button" class="icon-button" aria-label="Zoom in" title="Zoom in">＋</button>
+       <button id="fit-all" type="button" class="link-btn" data-i18n="fitAll">纵览全图</button>
+       <button id="focus-map" type="button" class="link-btn" data-i18n="readingZoom">阅读比例</button>
+       <button id="fullscreen" type="button" class="full-btn" data-i18n="fullscreen">全屏查看</button>
+     </div>
+   </div>
+   <div class="graph-controls">
+      <div class="search-wrap">
+        <label class="search"><span>⌕</span><input type="search" id="search" autocomplete="off" placeholder="搜索方法、中英文术语…" aria-label="Search methods"></label>
+        <div id="search-results" class="search-results" hidden role="listbox" aria-label="Search suggestions"></div>
+      </div>
+      <div id="paradigm-filters" class="paradigm-filters" role="group" aria-label="Method paradigm filters"></div>
+      <label class="check"><input id="taxonomy" type="checkbox"><span data-i18n="taxonomy">显示分类线</span></label>
+      <label class="check"><input id="comparisons" type="checkbox"><span data-i18n="comparisons">显示对照线</span></label>
+      <button id="lineage-focus" type="button" class="link-btn" data-i18n="lineageFocus" disabled>聚焦前驱与后继</button>
+      <button id="reset-focus" type="button" class="link-btn" data-i18n="resetFocus">清除聚焦</button>
+   </div>
+   <div class="graph-status"><span id="graph-status" aria-live="polite"></span><span data-i18n="graphHint">节点＝方法范式色 · 演进边＝研究阶段色</span></div>
+   <div id="graph-layout" class="graph-layout">
+     <div class="graph-surface">
+       <div id="viewport" class="viewport">
+         <div id="board" class="board"><div id="dag-slot"></div></div>
+         <div id="mini" class="mini" aria-label="Graph minimap">
+           <div class="mini-top"><span data-i18n="miniTitle">全图导航</span><button id="hide-mini" type="button" aria-label="Hide minimap" title="Hide minimap">×</button></div>
+           <canvas id="mini-canvas" width="230" height="142" aria-label="Click minimap to navigate" tabindex="0"></canvas>
+         </div>
+         <button id="restore-mini" type="button" class="restore-mini" hidden data-i18n="showMini">显示小地图</button>
+         <div class="canvas-corner" data-i18n="canvasHint">拖动平移 · 滚轮缩放 · 点击节点或有向边</div>
+       </div>
+     </div>
+     <aside id="drawer" class="drawer" hidden aria-label="Method evidence and explanation">
+       <div class="drawer-head"><div><div class="kicker">04 / EXPLANATION & EVIDENCE</div><h2 data-i18n="drawerTitle">方法与证据</h2></div>
+         <div class="drawer-actions"><button id="pin-drawer" type="button" class="icon-button" aria-pressed="false" title="Pin detail panel" data-i18n="pin">固定</button><button id="close-drawer" type="button" class="icon-button" aria-label="Close details">×</button></div>
+       </div>
+       <div id="details-body" class="details-body" aria-live="polite"></div>
+     </aside>
+   </div>
+   <div class="graph-bottom">
+     <div class="legend">
+       <span><i class="line-sample evolutionary"></i><b data-i18n="legendExtends">方法扩展</b></span>
+       <span><i class="line-sample fusion"></i><b data-i18n="legendCombines">技术融合</b></span>
+       <span><i class="line-sample taxonomy"></i><b data-i18n="legendTaxonomy">灰点线：分类</b></span>
+       <span><i class="line-sample muted"></i><b data-i18n="legendMuted">淡化：非当前关注</b></span>
+     </div>
+     <div id="component-nav" class="component-nav" aria-label="Evolution components"></div>
+   </div>
+   <div id="unlinked-section" class="unlinked-section">
+     <button id="toggle-unlinked" type="button" class="unlinked-toggle" aria-expanded="false">
+       <span><strong data-i18n="unlinkedTitle">暂无已记录演化关系的方法</strong><small id="unlinked-count"></small></span><span id="unlinked-chevron">⌄</span>
+     </button>
+     <div id="unlinked-list" class="unlinked-list" hidden></div>
+     <p class="footnote" data-i18n="unlinkedNote">此处仅表示尚未收录方法扩展／融合的证据；它们可能仍有分类关系或代表性论文，不应被删除或随意添加演进连线。</p>
+   </div>
+ </section>
+ <div class="closing"><strong data-i18n="prototype">v0.8 为方法演化布局与导航的可交互原型。</strong> <span data-i18n="prototypeDesc">所有学术事实来自现有权威数据，未编造连接；正式部署和文献完善仍将继续。</span></div>
+</main><noscript>请启用 JavaScript 以使用交互式图谱。</noscript>
+</body></html>
