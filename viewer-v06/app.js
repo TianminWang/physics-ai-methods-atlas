@@ -10,7 +10,7 @@
       mapTitle:"研究环节如何调用方法？",moreRoles:"查看全部映射",fewerRoles:"收起映射",
       selectedStage:"当前研究环节",mappedMethodFamilies:"相关方法家族与直接方法",
       scopeNote:"虚线表示用途映射，不代表历史演化。家族级关联是研究线索，不等同于每个子方法都经单独验证。",
-      graphTitle:"统一方法网络",fit:"适应窗口",taxonomy:"显示分类边",contrast:"显示对照边",
+      graphTitle:"统一方法网络",fit:"阅读比例",overviewFit:"查看全图",taxonomy:"显示分类边",contrast:"显示对照边",
       expandAll:"展开全部方法",collapseAll:"恢复精简布局",panHint:"拖动平移 · 滚轮缩放 · 点击方法或关系",
       legendDirect:"直接关联",legendInherited:"家族级关联",legendMuted:"其他方法（淡化）",
       legendEvolution:"方法扩展",legendFusion:"方法融合",legendTaxonomy:"分类联系",
@@ -49,7 +49,7 @@
       mapTitle:"How does a stage use methods?",moreRoles:"Show all mappings",fewerRoles:"Fewer mappings",
       selectedStage:"Selected research stage",mappedMethodFamilies:"Linked method families and direct methods",
       scopeNote:"Dashed links represent functional use, not historical descent. Family-level relevance is a research lead, not separate validation of every method.",
-      graphTitle:"One unified method network",fit:"Fit view",taxonomy:"Show taxonomy edges",contrast:"Show contrast edges",
+      graphTitle:"One unified method network",fit:"Reading zoom",overviewFit:"Fit entire graph",taxonomy:"Show taxonomy edges",contrast:"Show contrast edges",
       expandAll:"Expand all methods",collapseAll:"Use compact layout",panHint:"Drag to pan · scroll to zoom · select method or link",
       legendDirect:"Direct mapping",legendInherited:"Family-based mapping",legendMuted:"Other methods (faded)",
       legendEvolution:"Method extension",legendFusion:"Method combination",legendTaxonomy:"Taxonomic relation",
@@ -335,7 +335,7 @@
       box.style.width=b.width+"px";box.style.height=b.height+"px";
       const head=textEl("div","zone-head");
       const title=textEl("div","");
-      title.append(textEl("div","category","VISUAL REGION / "+String(graph.zones.indexOf(z)+1).padStart(2,"0")));
+      title.append(textEl("div","category",(state.lang==="zh"?"方法分区 / ":"VISUAL REGION / ")+String(graph.zones.indexOf(z)+1).padStart(2,"0")));
       title.append(textEl("h3","",tr(z.label)));
       title.append(textEl("div","zone-counter",(state.stage?match+" "+t("mapped")+" / ":"")+z.method_ids.length+" "+t("methods")));
       head.append(title);
@@ -522,14 +522,22 @@
   }
   function fit(){
     if(!layout)return;
-    const v=$("viewport"),s=Math.min(1.0,(v.clientWidth-32)/layout.width,(v.clientHeight-32)/layout.height);
+    const v=$("viewport");
     if(v.clientWidth<580){
-      state.zoom=.8;state.panX=12;state.panY=15;
+      state.zoom=.84;state.panX=12;state.panY=16;
     }else{
-      state.zoom=Math.max(.57,s);
+      state.zoom=Math.max(.78,Math.min(1,(v.clientWidth-32)/layout.width));
       state.panX=(v.clientWidth-layout.width*state.zoom)/2;
-      state.panY=(v.clientHeight-layout.height*state.zoom)/2;
+      state.panY=18;
     }
+    applyTransform();
+  }
+  function fitAll(){
+    if(!layout)return;
+    const v=$("viewport");
+    state.zoom=Math.max(.28,Math.min(1,(v.clientWidth-25)/layout.width,(v.clientHeight-25)/layout.height));
+    state.panX=(v.clientWidth-layout.width*state.zoom)/2;
+    state.panY=(v.clientHeight-layout.height*state.zoom)/2;
     applyTransform();
   }
   function zoom(k){
@@ -596,6 +604,7 @@
       $("zoom-plus").addEventListener("click",()=>zoom(1.18));
       $("zoom-minus").addEventListener("click",()=>zoom(.84));
       $("zoom-fit").addEventListener("click",fit);
+      $("zoom-all").addEventListener("click",fitAll);
       document.addEventListener("keydown",e=>{
         if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==="k"){e.preventDefault();$("search").focus();}
         if(e.key==="Escape"){state.role=null;state.selected=null;refresh();}

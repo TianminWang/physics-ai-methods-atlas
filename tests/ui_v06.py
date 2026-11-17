@@ -22,7 +22,12 @@ def test_page(page, errors):
     assert page.locator(".method-node.dimmed").count() >= 1, "non-stage methods must fade, not disappear"
     assert "反演" in page.locator("#source-stage-name").inner_text()
 
-    page.screenshot(path=str(SHOTS / "01-unified-stage-inverse-zh.png"), full_page=True)
+    # Default reading zoom should not shrink the entire graph into illegibility.
+    scale=page.locator("#scene").evaluate(
+        "el => { const m=el.style.transform.match(/scale\\(([^)]+)\\)/); return m ? Number(m[1]) : 0; }"
+    )
+    assert scale >= .78, "Reading zoom should preserve text size"
+        page.screenshot(path=str(SHOTS / "01-unified-stage-inverse-zh.png"), full_page=True)
 
     # Selecting the family/method role exposes its original functional explanation.
     page.locator(".role-card").first.click()
@@ -70,7 +75,13 @@ def test_page(page, errors):
 
     # Both zoom/pan and translation must operate without rebuilding graph records.
     previous = page.locator("#scene").get_attribute("style")
-    page.locator("#zoom-plus").click()
+    page.locator("#zoom-all").click()
+    all_scale=page.locator("#scene").evaluate(
+        "el => Number(el.style.transform.match(/scale\\(([^)]+)\\)/)[1])"
+    )
+    assert all_scale < .78, "Full overview should intentionally be more compact"
+    page.locator("#zoom-fit").click()
+        page.locator("#zoom-plus").click()
     assert page.locator("#scene").get_attribute("style") != previous
     page.locator("#lang").click()
     assert "workflow" in page.locator(".hero p").inner_text().lower() or "stage" in page.locator(".hero p").inner_text().lower()
