@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.book-hairer-ode-i--covers--method-runge-kutta-integration",
+  "source_id": "book.hairer-ode-i",
+  "target_id": "method.runge-kutta-integration",
+  "type": "covers",
+  "locator": "Runge–Kutta and Extrapolation Methods",
+  "claim": "Reference for staged numerical ODE integrators, truncation error and step-size adaptation."
+}

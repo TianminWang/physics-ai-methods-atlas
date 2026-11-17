@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.book-kaipio-statistical-inverse--covers--method-markov-chain-monte-carlo",
+  "source_id": "book.kaipio-statistical-inverse",
+  "target_id": "method.markov-chain-monte-carlo",
+  "type": "covers",
+  "locator": "Statistical posterior sampling sections",
+  "claim": "Inverse-problem-centered reference for Bayesian Monte Carlo posterior computation."
+}

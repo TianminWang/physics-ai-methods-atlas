@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.book-leveque-finite-volume--covers--method-finite-volume",
+  "source_id": "book.leveque-finite-volume",
+  "target_id": "method.finite-volume",
+  "type": "covers",
+  "locator": "Control volume discretizations, Riemann problems and flux calculations",
+  "claim": "Classical reference for conservative finite-volume schemes and hyperbolic physical models."
+}

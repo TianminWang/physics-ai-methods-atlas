@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.book-brenner-scott-fem--covers--method-finite-element",
+  "source_id": "book.brenner-scott-fem",
+  "target_id": "method.finite-element",
+  "type": "covers",
+  "locator": "Weak formulation, finite-element spaces and error analysis",
+  "claim": "Rigorous foundational treatment of FEM approximation and weak-form assembly."
+}
