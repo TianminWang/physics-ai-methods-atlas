@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.1.0",
+  "id": "method.physics-informed-diffusion",
+  "name": "Physics-Informed Diffusion Model",
+  "name_zh": "物理信息扩散生成模型",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Train diffusion-based generators with governing-equation loss terms to promote physical sample consistency.",
+  "summary_zh": "在扩散生成训练中加入基于第一性原理的物理残差损失。",
+  "core_idea": "Augment generative training with equation and inequality residual penalties for generated physical fields.",
+  "innovation": "Addresses a common gap between visually plausible generative outputs and governing-equation consistency.",
+  "limitations": [
+    "Soft residual losses do not prove exact physical validity.",
+    "Differential residual evaluation can increase training cost."
+  ],
+  "background_topics": [
+    "Diffusion objectives",
+    "PDE residuals",
+    "Constrained learning"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.bastek-2025-physics-diffusion",
+      "why": "Direct physics-informed diffusion method validated on scientific examples.",
+      "focus": "Physical training loss, generated-field residuals and problem scope."
+    }
+  ],
+  "curation_note": "Bibliographic identity verified against authoritative proceedings; downstream physical inverse validity must be separately evaluated."
+}

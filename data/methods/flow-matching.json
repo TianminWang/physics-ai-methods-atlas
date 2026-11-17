@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.1.0",
+  "id": "method.flow-matching",
+  "name": "Flow Matching for Generative Modeling",
+  "name_zh": "流匹配生成建模（Flow Matching）",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Learn a continuous transport vector field by regressing conditional probability-path velocities.",
+  "summary_zh": "通过条件概率路径的速度场回归训练连续可逆流，不必在训练时反复仿真轨迹。",
+  "core_idea": "Regress vector fields along fixed conditional paths rather than backpropagate through expensive CNF integration.",
+  "innovation": "Enables scalable probability-path modeling including diffusion-like and transport paths.",
+  "limitations": [
+    "Sampling still involves numerical ODE integration.",
+    "A learned transport flow does not automatically encode PDE physics."
+  ],
+  "background_topics": [
+    "Continuous normalizing flows",
+    "Vector fields",
+    "Optimal transport paths"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.lipman-2023-flow-matching",
+      "why": "ICLR method paper introducing conditional vector-field regression.",
+      "focus": "Conditional probability paths and simulation-free flow matching loss."
+    }
+  ],
+  "curation_note": "Bibliographic identity verified against authoritative proceedings; downstream physical inverse validity must be separately evaluated."
+}

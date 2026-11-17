@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.1.0",
+  "id": "method.normalizing-flow",
+  "name": "Normalizing Flow Density Models",
+  "name_zh": "归一化流密度模型",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Learn an explicit probability density through a sequence of invertible transformations.",
+  "summary_zh": "使用可逆变换和变量替换公式实现精确可计算密度的生成模型。",
+  "core_idea": "Compose invertible transformations with tractable Jacobian determinants for density and sampling.",
+  "innovation": "Supplies expressive probability models for priors and amortized posterior estimation.",
+  "limitations": [
+    "Density computation constrains admissible invertible architectures.",
+    "A tractable likelihood does not guarantee a correct physical posterior."
+  ],
+  "background_topics": [
+    "Change-of-variables formula",
+    "Jacobian determinant",
+    "Invertible maps"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.dinh-2017-real-nvp",
+      "why": "Concrete, influential invertible coupling-layer construction.",
+      "focus": "Coupling transforms and exact change-of-variables density."
+    }
+  ],
+  "curation_note": "Bibliographic identity verified against authoritative proceedings; downstream physical inverse validity must be separately evaluated."
+}

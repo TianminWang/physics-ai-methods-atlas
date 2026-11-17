@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.1.0",
+  "id": "method.generative-range-prior",
+  "name": "Inverse Reconstruction with a Learned Generative Prior",
+  "name_zh": "基于学习型生成先验的反演",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Constrain inverse reconstructions to the range or plausible manifold of a pretrained generator.",
+  "summary_zh": "利用预训练生成模型的输出空间约束欠定逆问题的候选解。",
+  "core_idea": "Optimize latent inputs of a learned generator instead of an unconstrained high-dimensional physical variable.",
+  "innovation": "Provides a nontraditional structural prior for inverse reconstruction when true solutions lie near training distribution.",
+  "limitations": [
+    "The generator may exclude physically valid solutions outside its training support.",
+    "Latent inversion can be nonconvex and the induced prior may be hard to characterize."
+  ],
+  "background_topics": [
+    "Inverse problems",
+    "Generator range",
+    "Latent optimization"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.bora-2017-gen-prior",
+      "why": "Landmark theoretical result for generative-range compressed sensing.",
+      "focus": "Measurement model, generator range assumption and recovery guarantee."
+    }
+  ],
+  "curation_note": "Bibliographic identity verified against authoritative proceedings; downstream physical inverse validity must be separately evaluated."
+}
