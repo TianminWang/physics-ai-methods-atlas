@@ -1,0 +1,15 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-inverse-calibration--uses-method--method-diffusion-posterior-sampling",
+  "source_id": "stage.inverse-calibration",
+  "target_id": "method.diffusion-posterior-sampling",
+  "type": "uses_method",
+  "claim": "For inverse-calibration, using approximate diffusion posterior guidance for general noisy inverse reconstructions.",
+  "claim_zh": "在“inverse-calibration”环节：使用扩散后验引导处理一般含噪反问题，但不保证是精确后验。",
+  "role": "using approximate diffusion posterior guidance for general noisy inverse reconstructions",
+  "role_zh": "使用扩散后验引导处理一般含噪反问题，但不保证是精确后验",
+  "evidence_scope": "literature_supported",
+  "evidence_paper_ids": [
+    "paper.chung-2023-dps"
+  ]
+}

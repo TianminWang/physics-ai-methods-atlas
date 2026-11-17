@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-continual-update--uses-method--family-sbi-methods",
+  "source_id": "stage.continual-update",
+  "target_id": "family.sbi-methods",
+  "type": "uses_method",
+  "claim": "For continual-update, re-estimating simulation parameters from repeated measurements when feasible.",
+  "claim_zh": "在“continual-update”环节：在新观测到来后重新估计仿真器参数。",
+  "role": "re-estimating simulation parameters from repeated measurements when feasible",
+  "role_zh": "在新观测到来后重新估计仿真器参数",
+  "evidence_scope": "hypothesis"
+}

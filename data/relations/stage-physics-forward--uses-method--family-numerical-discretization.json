@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-physics-forward--uses-method--family-numerical-discretization",
+  "source_id": "stage.physics-forward",
+  "target_id": "family.numerical-discretization",
+  "type": "uses_method",
+  "claim": "For physics-forward, discretizing ODE/PDE physical laws into executable equations.",
+  "claim_zh": "在“physics-forward”环节：将ODE/PDE控制方程离散成可计算方程。",
+  "role": "discretizing ODE/PDE physical laws into executable equations",
+  "role_zh": "将ODE/PDE控制方程离散成可计算方程",
+  "evidence_scope": "conceptual"
+}

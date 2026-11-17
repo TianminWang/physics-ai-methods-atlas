@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-continual-update--uses-method--family-bayesian-computation",
+  "source_id": "stage.continual-update",
+  "target_id": "family.bayesian-computation",
+  "type": "uses_method",
+  "claim": "For continual-update, updating posterior beliefs when longitudinal measurements arrive.",
+  "claim_zh": "在“continual-update”环节：随着后续观测更新未知量的后验分布。",
+  "role": "updating posterior beliefs when longitudinal measurements arrive",
+  "role_zh": "随着后续观测更新未知量的后验分布",
+  "evidence_scope": "conceptual"
+}

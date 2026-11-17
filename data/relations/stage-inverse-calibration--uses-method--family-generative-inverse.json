@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-inverse-calibration--uses-method--family-generative-inverse",
+  "source_id": "stage.inverse-calibration",
+  "target_id": "family.generative-inverse",
+  "type": "uses_method",
+  "claim": "For inverse-calibration, constraining inverse solutions with learned priors or posterior samplers.",
+  "claim_zh": "在“inverse-calibration”环节：利用学习型先验或生成式采样约束欠定反演。",
+  "role": "constraining inverse solutions with learned priors or posterior samplers",
+  "role_zh": "利用学习型先验或生成式采样约束欠定反演",
+  "evidence_scope": "conceptual"
+}

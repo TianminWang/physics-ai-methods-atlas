@@ -1,0 +1,15 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-inverse-calibration--uses-method--method-simulation-based-inference",
+  "source_id": "stage.inverse-calibration",
+  "target_id": "method.simulation-based-inference",
+  "type": "uses_method",
+  "claim": "For inverse-calibration, treating simulator outputs as the basis of likelihood-free parameter inference.",
+  "claim_zh": "在“inverse-calibration”环节：在似然无法直接计算时通过模拟输出进行参数推断。",
+  "role": "treating simulator outputs as the basis of likelihood-free parameter inference",
+  "role_zh": "在似然无法直接计算时通过模拟输出进行参数推断",
+  "evidence_scope": "literature_supported",
+  "evidence_paper_ids": [
+    "paper.cranmer-2020-sbi"
+  ]
+}

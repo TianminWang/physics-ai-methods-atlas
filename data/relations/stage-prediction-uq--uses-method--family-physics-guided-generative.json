@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-prediction-uq--uses-method--family-physics-guided-generative",
+  "source_id": "stage.prediction-uq",
+  "target_id": "family.physics-guided-generative",
+  "type": "uses_method",
+  "claim": "For prediction-uq, using physics-regularized generative samples for predictive scenarios.",
+  "claim_zh": "在“prediction-uq”环节：利用含物理约束的生成样本分析可能的预测情形。",
+  "role": "using physics-regularized generative samples for predictive scenarios",
+  "role_zh": "利用含物理约束的生成样本分析可能的预测情形",
+  "evidence_scope": "conceptual"
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-inverse-calibration--uses-method--family-sbi-methods",
+  "source_id": "stage.inverse-calibration",
+  "target_id": "family.sbi-methods",
+  "type": "uses_method",
+  "claim": "For inverse-calibration, inferring parameters from simulators when likelihood evaluation is unavailable.",
+  "claim_zh": "在“inverse-calibration”环节：利用可生成模拟数据但难以计算似然的模型进行参数推断。",
+  "role": "inferring parameters from simulators when likelihood evaluation is unavailable",
+  "role_zh": "利用可生成模拟数据但难以计算似然的模型进行参数推断",
+  "evidence_scope": "conceptual"
+}

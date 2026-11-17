@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-prediction-uq--uses-method--family-diffusion-score-models",
+  "source_id": "stage.prediction-uq",
+  "target_id": "family.diffusion-score-models",
+  "type": "uses_method",
+  "claim": "For prediction-uq, generating conditional physical-field samples only with separately validated physical constraints.",
+  "claim_zh": "在“prediction-uq”环节：在另行验证物理条件后生成条件物理场样本。",
+  "role": "generating conditional physical-field samples only with separately validated physical constraints",
+  "role_zh": "在另行验证物理条件后生成条件物理场样本",
+  "evidence_scope": "hypothesis"
+}
