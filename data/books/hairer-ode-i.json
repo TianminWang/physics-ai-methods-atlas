@@ -1,0 +1,14 @@
+{
+  "schema_version": "2.1.0",
+  "id": "book.hairer-ode-i",
+  "title": "Solving Ordinary Differential Equations I: Nonstiff Problems",
+  "authors": [
+    "Ernst Hairer",
+    "Syvert P. Nørsett",
+    "Gerhard Wanner"
+  ],
+  "year": 1993,
+  "publisher": "Springer, 2nd edition",
+  "url": "https://doi.org/10.1007/978-3-540-78862-1",
+  "summary": "Reference for Runge–Kutta, extrapolation and multistep integration with error and stability analysis."
+}
