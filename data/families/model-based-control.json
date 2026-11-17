@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "family.model-based-control",
+  "name": "Model-predictive control and model-based policy learning",
+  "name_zh": "模型预测控制与模型化策略学习",
+  "summary": "Use predictive dynamics to plan or train action policies under finite resources and constraints.",
+  "summary_zh": "利用已知或学习的动力学开展滚动优化及基于模型的策略训练。",
+  "coverage_status": "populated",
+  "scope_note": "Initial verified canonical method/reference set only; this branch is not claimed exhaustive.",
+  "scope_note_zh": "已加入经核实的代表方法与文献，但并不表示该领域的研究谱系已经穷尽。"
+}

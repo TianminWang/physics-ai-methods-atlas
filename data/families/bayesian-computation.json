@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "family.bayesian-computation",
+  "name": "Computational Bayesian inference",
+  "name_zh": "计算贝叶斯推断",
+  "summary": "Sampling and optimization algorithms that approximate posterior distributions.",
+  "summary_zh": "利用采样或优化近似后验分布的计算方法。",
+  "coverage_status": "populated",
+  "scope_note": "Initial verified canonical method/reference set only; this branch is not claimed exhaustive.",
+  "scope_note_zh": "已加入经核实的代表方法与文献，但并不表示该领域的研究谱系已经穷尽。"
+}

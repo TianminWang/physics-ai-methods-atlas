@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "family.learned-mesh-simulation",
+  "name": "Learned mesh and graph simulation",
+  "name_zh": "网格图学习模拟",
+  "summary": "Graph-based learned state transitions on meshes, which are not automatically operator-convergent models.",
+  "summary_zh": "在物理网格图上学习动力学更新，不与具备离散无关性证明的神经算子混同。",
+  "coverage_status": "populated",
+  "scope_note": "Initial verified canonical method/reference set only; this branch is not claimed exhaustive.",
+  "scope_note_zh": "已加入经核实的代表方法与文献，但并不表示该领域的研究谱系已经穷尽。"
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "family.offline-reinforcement-learning",
+  "name": "Offline reinforcement learning",
+  "name_zh": "离线强化学习",
+  "summary": "Learn decision policies from logged data without online exploration, emphasizing distribution-shift hazards.",
+  "summary_zh": "不进行线上探索，仅用历史数据训练策略，必须考虑分布外动作与价值高估。",
+  "coverage_status": "populated",
+  "scope_note": "Initial verified canonical method/reference set only; this branch is not claimed exhaustive.",
+  "scope_note_zh": "已加入经核实的代表方法与文献，但并不表示该领域的研究谱系已经穷尽。"
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "family.generative-inverse",
+  "name": "Generative priors and posterior inversion",
+  "name_zh": "生成式先验与后验反演",
+  "summary": "Learned generative constraints and conditional sampling schemes for incomplete noisy inverse observations.",
+  "summary_zh": "将学习型先验、观测约束及条件采样用于欠定或含噪反问题。",
+  "coverage_status": "populated",
+  "scope_note": "Initial verified canonical method/reference set only; this branch is not claimed exhaustive.",
+  "scope_note_zh": "已加入经核实的代表方法与文献，但并不表示该领域的研究谱系已经穷尽。"
+}

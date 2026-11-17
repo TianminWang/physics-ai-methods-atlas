@@ -5,7 +5,7 @@
   "name_zh": "可微物理模拟",
   "summary": "Differentiable solvers and sensitivity-consistent computational physics.",
   "summary_zh": "研究可微求解器、离散伴随和物理计算中的梯度传播。",
-  "coverage_status": "planned",
-  "scope_note": "Adjoints exist in the catalogue; unified differentiable solver lineage remains to be curated.",
-  "scope_note_zh": "已有伴随敏感性方法，但可微模拟的完整谱系仍待整理。"
+  "coverage_status": "populated",
+  "scope_note": "Representative method nodes are now present; the scholarly family is not exhaustively mapped.",
+  "scope_note_zh": "已包含首批代表方法，但尚未宣称所有方法谱系均已覆盖。"
 }
