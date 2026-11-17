@@ -38,7 +38,17 @@ The expansion adds 31 distinct reusable method nodes across **finite differences
 
 **Evidence scope:** virtual coronary intervention planning is a research application hypothesis, not clinically established by general world-model or offline-RL papers. The atlas is a curated foundation, not a completed scientific encyclopedia.
 
-## v0.5 interactive layout prototype
+## v0.6 unified method graph prototype (new)
+
+[How to review v0.6](viewer-v06/README.md) · [Viewer source](viewer-v06/index.html)
+
+The new prototype removes v0.5's separate method genealogy tabs. **All 61 methods live on one shared graph**; workflow stages now explicitly map to families or specific methods through documented functional-role edges.
+
+Selecting a workflow stage highlights directly linked methods and method-family derived candidates at different strengths, while other methods remain visible but muted. Six visual zones aid navigation without imposing a unique scholarly parent.
+
+Download the **atlas-unified-v06** offline HTML from [GitHub Actions](https://github.com/TianminWang/physics-ai-methods-atlas/actions/workflows/validate.yml), unzip, and open `index.html`. This is a reviewable prototype, not yet the complete deployed GitHub Pages experience.
+
+## v0.5 interactive layout prototype (historical)
 
 A working three-branch layout is available for classical inversion, neural operators and generative inverse problems. The preview derives from the canonical Atlas and includes stage/family roles, evidence-backed method evolution, compact/full node disclosure, citation panels, bilingual switching, searching and mobile navigation.
 
