@@ -2,79 +2,57 @@
 
 **[简体中文（default）](README.md) | [English](README.en.md)**
 
-> A research-workflow-centered, evidence-linked **method genealogy knowledge graph** for ODE/PDE inverse problems, scientific ML, coronary hemodynamics, patient-specific digital twins and intervention planning.
+> A growing, evidence-linked knowledge graph of **ODE/PDE inverse problems, scientific ML, neural operators, coronary hemodynamics, personalized digital twins and world models**.
 
-The goal is to understand **which capabilities the research workflow needs, what each method contributes, how successors differ from predecessors, and which sources are worth reading first**, not to consume every paper.
+The current design is **one three-phase research axis plus one global method-evolution DAG**. The research axis describes scientific capabilities; the DAG describes documented technical development and its targeted bottlenecks.
 
-## One research axis, reusable method families
+## Three research phases
 
-The shared research workflow contains six stages:
+| Phase | Main question | Child capabilities |
+|---|---|---|
+| **I. Physical modeling & forward problems** | How do physical laws, parameters and conditions produce states and measurements? | Governing and forward models; observations and data acquisition |
+| **II. Inverse problems & inference** | What unknown information can be recovered from sparse noisy observations? | Parameter inference, state estimation, regularization and identifiability |
+| **III. Personalized prediction, intervention & updating** | How can individualized models forecast, evaluate interventions and update from new data? | Prediction, counterfactual decision-making, continual assimilation |
 
-1. Physical representation and forward modeling
-2. Observation and measurement modeling
-3. Individualized inversion and state estimation
-4. Trustworthy prediction and uncertainty propagation
-5. Counterfactual intervention and decision planning
-6. Continual assimilation and model updating
+Digital twins and world models are relevant system-level directions, not synonyms for the entire third phase. Physical validity, uncertainty, model error and generalization are cross-cutting concerns. Feedback may revise both inference and forward models.
 
-Physical and observation models both feed inversion. New measurements can update modeling, inference, and prediction. The axis represents **functional dependencies**, not a rigid temporal recipe.
+## A relationship-ranked global method graph
 
-Research stages point to **method families or methods** through directed links explaining the functional role. An operator-learning family can support forward solutions, inversion as a surrogate, and prediction without being duplicated under three stages.
+The viewer no longer forces methods into six category rectangles. **Graphviz ranks every indexed method from actual `extends`, `combines` and neutral `specializes` relations.** Disconnected components are legitimate; no artificial scholarly genealogy is added.
 
-Method families contain taxonomic and method-evolution DAGs: `specializes` means classification, `extends` an evidence-backed modification, `combines` a documented fusion, and `depends_on` a learning prerequisite. Evolution links record the **technical change, target bottleneck, tradeoffs, supporting paper, and affected research stages**. The primary affected stage supplies the link color; secondary stages remain recorded.
+**Node color = technical paradigm:** classical numerics/optimization, statistical/probabilistic, machine/deep learning, or physics–data hybrid. The color is a primary visual tag, not a unique scholarly parent; nonexclusive method-family memberships remain intact.
 
-Physical consistency, identifiability, numerical/model error, uncertainty calibration, and generalization are explicit cross-cutting concerns.
+**Directed edge color = target research phase:** I blue, II purple, III teal, or neutral when unresolved. Extensions and combinations have different line patterns. Taxonomic and comparison links cannot be mistaken for demonstrated improvements.
 
-## v0.4 scope — first literature-backed expansion
+Nodes and SVG links are equally selectable. Their details show mechanisms, original method-family memberships, actual bottlenecks, trade-offs, source papers, contextual Landmark roles and optional Start Here readings. Stage-to-family relevance remains distinct from method-specific empirical evidence.
 
-| Component | Current records |
-|---|---:|
-| Workflow stages / cross-cutting concerns | 6 / 5 |
-| Method families / methods | **34 / 61** |
-| Scholarly papers / monographs | **58 / 12** |
-| Research problems / typed links | **15 / 530** |
+## v0.7 interactive prototype
 
-The expansion adds 31 distinct reusable method nodes across **finite differences/volumes/elements and ODE integrators**, identifiability and Bayesian computation (MCMC/NUTS, VI, SBI), **generative modeling and inverse diffusion**, graph/attention operator architectures, differentiable physical simulation, and latent world models and planning (PlaNet/Dreamer/MPC/MBPO/offline RL). Landmark roles are contextual and linked to source papers; starting reading references remain optional.
+[Design specification](docs/en/THREE_PHASE_DAG_V07.md) · [中文说明](docs/zh/THREE_PHASE_DAG_V07.md)
 
-**Evidence scope:** virtual coronary intervention planning is a research application hypothesis, not clinically established by general world-model or offline-RL papers. The atlas is a curated foundation, not a completed scientific encyclopedia.
+From [GitHub Actions → latest successful Validate atlas data → Artifacts](https://github.com/TianminWang/physics-ai-methods-atlas/actions/workflows/validate.yml), download `atlas-global-dag-v07`, unzip it and open `index.html`. You do not need Graphviz or a web server to view the generated artifact.
 
-## v0.6 unified method graph prototype (new)
+This is an **offline testable prototype**, not yet the final GitHub Pages deployment.
 
-[How to review v0.6](viewer-v06/README.md) · [Viewer source](viewer-v06/index.html)
+## Indexed academic content and reading strategy
 
-The new prototype removes v0.5's separate method genealogy tabs. **All 61 methods live on one shared graph**; workflow stages now explicitly map to families or specific methods through documented functional-role edges.
+Current Atlas: approximately **61 methods, 34 families, 58 paper records, 12 books and 15 scientific problems**, plus typed relationships. The method map is not claimed exhaustive.
 
-Selecting a workflow stage highlights directly linked methods and method-family derived candidates at different strengths, while other methods remain visible but muted. Six visual zones aid navigation without imposing a unique scholarly parent.
-
-Download the **atlas-unified-v06** offline HTML from [GitHub Actions](https://github.com/TianminWang/physics-ai-methods-atlas/actions/workflows/validate.yml), unzip, and open `index.html`. This is a reviewable prototype, not yet the complete deployed GitHub Pages experience.
-
-## v0.5 interactive layout prototype (historical)
-
-A working three-branch layout is available for classical inversion, neural operators and generative inverse problems. The preview derives from the canonical Atlas and includes stage/family roles, evidence-backed method evolution, compact/full node disclosure, citation panels, bilingual switching, searching and mobile navigation.
-
-[Prototype instructions](prototype/README.md) · [Offline HTML artifact from the latest successful validation](https://github.com/TianminWang/physics-ai-methods-atlas/actions/workflows/validate.yml) · [Browser screenshots](https://github.com/TianminWang/physics-ai-methods-atlas/actions/workflows/prototype-ui.yml).
-
-This is a focused validation release, not the deployed full GitHub Pages experience. Full progressive-disclosure browsing follows prototype approval.
-
-## Navigate
-
-- [Unified graph architecture (English)](docs/en/UNIFIED_GRAPH.md)
-- [中文架构说明](docs/zh/UNIFIED_GRAPH.md)
-- [v0.4 method genealogy and verified reading tracks](docs/en/METHOD_GENEALOGY_V04.md)
-- [Historical first-30-method index](docs/METHOD_CATALOG.md)
+- [Method genealogy v0.4 (English)](docs/en/METHOD_GENEALOGY_V04.md)
 - [Minimal reading guide](docs/READING_GUIDE.md)
 - [Project roadmap](docs/ROADMAP.md)
 
-**Landmark** is contextual to a publication's contribution to a method. **Start Here** is optional reading guidance with no mandatory paper quota. Scientific facts have one canonical source; translations are display layers, not separate databases.
+Landmark significance is contextual to a paper's contribution to a specific method. **Start Here is optional** and has no compulsory paper quota.
 
-## Validate and export (Python 3.11+)
+## Development
+
+Canonical scholarship lives in `data/`; presentation metadata in `config/v07.json`, builder in `scripts/build_v07.py`, and viewer source in `viewer-v07/`.
 
 ```bash
 python -m pip install -r requirements-dev.txt
 python -m scripts.validate
 python -m pytest -q
-python -m scripts.export_unified --lang zh --output build/unified-zh.json
-python -m scripts.export_unified --lang en --output build/unified-en.json
+python -m scripts.build_v07 --site build/viewer-v07
 ```
 
-Canonical records live in `data/{stages,families,methods,relations,concerns,papers,books,problems,areas}/`. The bilingual, graph-ready projection is produced by `scripts/export_unified.py`. Full interactive GitHub Pages visualization is planned after the method genealogy and literature are curated.
+Graphviz `dot` and a CJK font are needed to **build**, but not to open the generated offline viewer. Historical [v0.6](viewer-v06/README.md) and [v0.5](prototype/README.md) prototypes remain accessible.

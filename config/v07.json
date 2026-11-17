@@ -1,0 +1,196 @@
+{
+  "version": "0.7.0",
+  "note": "Phases and primary paradigm colors are view semantics, not exclusive scholarly family membership. All source methods/edges remain in data/.",
+  "phases": [
+    {
+      "id": "modeling",
+      "number": "Ⅰ",
+      "name": {
+        "zh": "物理系统建模与正向问题",
+        "en": "Physical modeling & forward problems"
+      },
+      "short": {
+        "zh": "建模与正问题",
+        "en": "Forward modeling"
+      },
+      "summary": {
+        "zh": "建立控制方程、参数化、初始边界条件、正向求解器与观测模型，定义从物理状态到可观测数据的映射。",
+        "en": "Define governing equations, parameterization, boundary conditions, forward solvers and observation operators."
+      },
+      "color": "#2563EB",
+      "stage_ids": [
+        "stage.physics-forward",
+        "stage.observation"
+      ]
+    },
+    {
+      "id": "inference",
+      "number": "Ⅱ",
+      "name": {
+        "zh": "反问题求解与未知信息推断",
+        "en": "Inverse problems & inference"
+      },
+      "short": {
+        "zh": "反演与推断",
+        "en": "Inverse inference"
+      },
+      "summary": {
+        "zh": "结合有限含噪观测、正向模型与先验，估计未知参数和隐含状态；正则化与可辨识性是关键问题。",
+        "en": "Infer unknown parameters and states using partial observations, forward models, priors, and regularization."
+      },
+      "color": "#7C3AED",
+      "stage_ids": [
+        "stage.inverse-calibration"
+      ]
+    },
+    {
+      "id": "twin",
+      "number": "Ⅲ",
+      "name": {
+        "zh": "个体化预测、干预与闭环更新",
+        "en": "Personalized prediction, intervention & updating"
+      },
+      "short": {
+        "zh": "预测与闭环",
+        "en": "Prediction & closed loop"
+      },
+      "summary": {
+        "zh": "利用个体化模型预测自然演化与假设干预的结果，支持决策，并通过后续观测持续更新模型。数字孪生与世界模型是相关的系统能力与目标。",
+        "en": "Use individualized models for forecasting, counterfactual interventions, planning, and continual model updates."
+      },
+      "color": "#0D9488",
+      "stage_ids": [
+        "stage.prediction-uq",
+        "stage.intervention-planning",
+        "stage.continual-update"
+      ]
+    }
+  ],
+  "paradigms": [
+    {
+      "id": "traditional",
+      "label": {
+        "zh": "传统数值与优化",
+        "en": "Classical numerics & optimization"
+      },
+      "color": "#5E7FA4",
+      "fill": "#EBF2F9"
+    },
+    {
+      "id": "statistical",
+      "label": {
+        "zh": "统计与概率推断",
+        "en": "Statistical & probabilistic inference"
+      },
+      "color": "#8C6CC2",
+      "fill": "#F2ECFB"
+    },
+    {
+      "id": "learned",
+      "label": {
+        "zh": "机器学习与深度学习",
+        "en": "Machine & deep learning"
+      },
+      "color": "#218A80",
+      "fill": "#E9F7F3"
+    },
+    {
+      "id": "hybrid",
+      "label": {
+        "zh": "物理–数据混合方法",
+        "en": "Physics–data hybrid methods"
+      },
+      "color": "#C77A37",
+      "fill": "#FFF1E5"
+    }
+  ],
+  "method_paradigm": {
+    "method.adjoint-sensitivity": "traditional",
+    "method.difftaichi": "traditional",
+    "method.finite-difference": "traditional",
+    "method.finite-element": "traditional",
+    "method.finite-volume": "traditional",
+    "method.gauss-newton": "traditional",
+    "method.levenberg-marquardt": "traditional",
+    "method.model-predictive-control": "traditional",
+    "method.nonlinear-least-squares": "traditional",
+    "method.pde-constrained-optimization": "traditional",
+    "method.proper-orthogonal-decomposition": "traditional",
+    "method.runge-kutta-integration": "traditional",
+    "method.structured-tree-outflow": "traditional",
+    "method.tikhonov-regularization": "traditional",
+    "method.windkessel": "traditional",
+    "method.bayesian-experimental-design": "statistical",
+    "method.bayesian-inverse-problems": "statistical",
+    "method.bayesian-model-discrepancy": "statistical",
+    "method.ensemble-kalman-filter": "statistical",
+    "method.ensemble-kalman-inversion": "statistical",
+    "method.four-d-var": "statistical",
+    "method.kalman-filter": "statistical",
+    "method.markov-chain-monte-carlo": "statistical",
+    "method.no-u-turn-sampler": "statistical",
+    "method.polynomial-chaos-expansion": "statistical",
+    "method.profile-likelihood-identifiability": "statistical",
+    "method.simulation-based-inference": "statistical",
+    "method.variational-inference": "statistical",
+    "method.conservative-q-learning": "learned",
+    "method.deeponet": "learned",
+    "method.derivative-informed-operator": "learned",
+    "method.diffusion-probabilistic-model": "learned",
+    "method.dreamer-latent-imagination": "learned",
+    "method.flow-matching": "learned",
+    "method.fno": "learned",
+    "method.galerkin-transformer": "learned",
+    "method.generative-adversarial-network": "learned",
+    "method.geo-fno": "learned",
+    "method.meshgraphnets": "learned",
+    "method.model-based-policy-optimization": "learned",
+    "method.multipole-graph-neural-operator": "learned",
+    "method.neural-ode": "learned",
+    "method.neural-operator": "learned",
+    "method.normalizing-flow": "learned",
+    "method.planet-latent-planning": "learned",
+    "method.score-based-sde": "learned",
+    "method.sequential-neural-posterior": "learned",
+    "method.sindy": "learned",
+    "method.variational-autoencoder": "learned",
+    "method.bi-variational-pino": "hybrid",
+    "method.deep-galerkin": "hybrid",
+    "method.deep-ritz": "hybrid",
+    "method.diffusion-posterior-sampling": "hybrid",
+    "method.direct-inverse-operator": "hybrid",
+    "method.generative-range-prior": "hybrid",
+    "method.learned-forward-inversion": "hybrid",
+    "method.operator-inference": "hybrid",
+    "method.physics-informed-deeponet": "hybrid",
+    "method.physics-informed-diffusion": "hybrid",
+    "method.pinn": "hybrid",
+    "method.pino": "hybrid"
+  },
+  "substage_overrides": {
+    "stage.prediction-uq": {
+      "zh": "个体化预测与状态演化",
+      "en": "Individualized prediction & evolution"
+    },
+    "stage.continual-update": {
+      "zh": "新观测反馈与模型更新",
+      "en": "Feedback and model updating"
+    },
+    "stage.physics-forward": {
+      "zh": "物理建模与正向求解",
+      "en": "Physical modeling & forward solving"
+    },
+    "stage.observation": {
+      "zh": "观测建模与数据获取",
+      "en": "Observation and data acquisition"
+    },
+    "stage.inverse-calibration": {
+      "zh": "参数反演与状态推断",
+      "en": "Parameter inversion & state estimation"
+    },
+    "stage.intervention-planning": {
+      "zh": "反事实模拟与决策优化",
+      "en": "Counterfactual simulation & decision optimization"
+    }
+  }
+}

@@ -19,9 +19,19 @@ jobs:
           python-version: '3.11'
       - run: python -m pip install -r requirements-dev.txt
       - run: python -m scripts.validate
+      - name: Install Graphviz and CJK fonts
+        run: sudo apt-get update && sudo apt-get install -y graphviz fonts-noto-cjk
       - run: python -m pytest -q
       - run: python -m scripts.export_unified --lang zh --output build/unified-zh.json
       - run: python -m scripts.export_unified --lang en --output build/unified-en.json
+      - run: python -m scripts.build_v07 --site build/viewer-v07
+      - run: node --check viewer-v07/app.js
+      - name: Upload three-phase global DAG viewer
+        uses: actions/upload-artifact@v4
+        with:
+          name: atlas-global-dag-v07
+          path: build/viewer-v07/
+          if-no-files-found: error
       - run: python -m scripts.export_graph
       - run: python -m scripts.build_v06 --site build/viewer-v06
       - run: node --check viewer-v06/app.js

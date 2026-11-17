@@ -2,121 +2,75 @@
 
 **[简体中文（默认）](README.md) | [English](README.en.md)**
 
-> 一张以**科学研究闭环为主轴、方法演化 DAG 为分支**的动态知识图谱，服务于 ODE/PDE 反问题、物理 AI、冠脉血流动力学、患者特异数字孪生与反事实决策。
+> 面向 **ODE/PDE 反问题、物理 AI、冠脉血流动力学、患者特异性数字孪生与世界模型**，构建一套能够不断生长、追溯方法演化、关联里程碑论文与专著的知识图谱。
 
-我们关注的不是尽可能多地收藏论文，而是：**链路需要什么能力？方法提供什么功能？新方法相对前驱改变了什么、解决了什么瓶颈？哪些论文最值得先读？**
+**当前方案：三阶段研究主轴 + 一张统一的方法演化 DAG。** 研究主轴回答“要解决什么”，方法图回答“算法怎样发展、针对什么瓶颈”，两者通过带有明确说明的功能映射联系。
 
-## 一、统一研究主轴
+## 一、三阶段研究主轴
 
 ```mermaid
 flowchart LR
-  A["① 物理表征与正向模拟"] --> C["③ 个体化反演与状态估计"]
-  B["② 观测与数据建模"] --> C
-  C --> D["④ 可信预测与不确定性传播"]
-  D --> E["⑤ 反事实干预与决策规划"]
-  B --> F["⑥ 持续观测、同化与模型更新"]
-  F -. "更新参数和状态" .-> C
-  F -. "修正模型" .-> A
-  F -. "更新预测" .-> D
-  style A fill:#DBEAFE,stroke:#2563EB,color:#1E3A8A
-  style B fill:#CFFAFE,stroke:#0891B2,color:#164E63
-  style C fill:#EDE9FE,stroke:#7C3AED,color:#4C1D95
-  style D fill:#FEF3C7,stroke:#B45309,color:#78350F
-  style E fill:#FCE7F3,stroke:#BE185D,color:#831843
-  style F fill:#DCFCE7,stroke:#15803D,color:#14532D
+    A["Ⅰ 物理系统建模与正向问题"] --> B["Ⅱ 反问题求解与未知信息推断"]
+    B --> C["Ⅲ 个体化预测、干预与闭环更新"]
+    C -. 新观测与模型修正 .-> B
+    C -. 必要时修正物理模型 .-> A
+    style A fill:#DBEAFE,stroke:#2563EB,color:#1E3A8A
+    style B fill:#F1EAFE,stroke:#7C3AED,color:#4C1D95
+    style C fill:#DBF5EF,stroke:#0D9488,color:#115E59
 ```
 
-主轴表示**研究能力的逻辑关系**，不是固定执行顺序：正向模拟可能在反演、预测和干预中被反复调用，而新观测会触发反馈更新。
+| 阶段 | 研究重点 | 原六项能力的对应关系 |
+|---|---|---|
+| **Ⅰ 物理系统建模与正向问题** | 控制方程、模型参数化、初始边界条件、正向求解器、观测模型 | 物理表征与正向模拟 + 观测与数据建模 |
+| **Ⅱ 反问题求解与未知信息推断** | 从有限含噪观测反演参数、状态与边界条件；正则化、可辨识性 | 个体化反演与状态估计 |
+| **Ⅲ 个体化预测、干预与闭环更新** | 个体化预测、反事实模拟、决策优化及新数据反馈；数字孪生和世界模型相关能力 | 预测 + 干预 + 持续更新 |
 
-## 二、主轴与方法演化 DAG 的关系
+它们是**研究能力的逻辑组织**，不是必须机械执行的三道手续。物理一致性、模型误差、不确定性、可辨识性和外部验证贯穿整个体系。
 
-**方法家族不属于某个唯一环节。** 各研究环节通过有向**功能边**指向相关方法家族或具体方法，边上说明它们承担的作用。
+## 二、统一方法 DAG 的配色与关系
 
-例如，正向模拟环节使用神经算子学习参数到物理解的映射；反演环节可以把神经算子用作可微正向代理；预测环节可以在验证过的输入分布内利用它快速预测。三个环节指向的是**同一个神经算子家族**，不是三个重复实体。
+**不再把方法强制摆放在六个矩形区域里。** 全部方法共同进入 Graphviz 分层 DAG，由真实的扩展、融合与分类关系决定节点位置，允许多个独立连通分量存在。
 
-方法家族内部是分类树/演化 DAG。分类（`specializes`）、方法改进（`extends`）、融合（`combines`）和学习依赖（`depends_on`）使用不同关系。对于真正的改进/融合边，记录：
+- **节点颜色：** 传统数值与优化（蓝灰）、统计与概率推断（紫）、机器与深度学习（青绿）、物理–数据混合（橙）。
+- **有向演进边颜色：** 主要解决阶段Ⅰ问题为蓝、阶段Ⅱ为紫、阶段Ⅲ为青绿；没有明确主阶段的关系用中性灰。
+- **线型：** 扩展用实线、融合用虚线、分类用中性点线。分类和对照不能被误认为方法进步。
+- **节点与连线都可以点击：** 查看核心机制、具体创新、解决的技术瓶颈、局限、证据论文及相关研究阶段。
 
-- **改变了什么**（技术机制）
-- **解决什么瓶颈**（研究动机）
-- **代价与适用边界**
-- **直接支撑的论文**
-- **对应哪些研究环节**，并用主要环节的颜色表示边的关注方向
+一个方法可以属于多个家族，只采用一种**主要显示颜色**，不等于学术上只能归一个类。一个研究环节指向整个方法家族时，属于**家族级研究线索**，不会被假装成每个方法都有独立应用验证。
 
-物理一致性、可辨识性、数值/模型误差、不确定性校准和外部泛化是**跨环节质量关注点**，不是又一个线性步骤。
+## 三、v0.7 可交互原型
 
-## 三、v0.4 学术内容补强（2026-11-17）
+**[v0.7 三阶段 DAG 架构说明（中文）](docs/zh/THREE_PHASE_DAG_V07.md)** · [English design](docs/en/THREE_PHASE_DAG_V07.md)
 
-| 数据内容 | 当前规模 |
-|---|---:|
-| 研究主轴 / 跨环节关注点 | 6 / 5 |
-| 方法家族 / 具体方法 | **34 / 61** |
-| 论文记录 / 专著 | **58 / 12** |
-| 研究问题 / 有类型关系 | **15 / 530** |
+原型支持三个研究阶段点击筛选、方法范式筛选、搜索、缩放与平移，以及节点/演进边的详情与论文阅读入口，默认中文、可切换英文。
 
-v0.4 在原先30个方法基础上新增了31个节点，并保留同一数据源与文献证据关系：
+[从 GitHub Actions 下载离线交互网页](https://github.com/TianminWang/physics-ai-methods-atlas/actions/workflows/validate.yml)：打开最近成功运行的 **Artifacts**，下载 `atlas-global-dag-v07`，解压后双击 `index.html` 即可。Graphviz 只在构建时需要；查看时无需安装。
 
-- **传统数值计算**：有限差分、有限体积、有限元、Runge–Kutta，使用权威教材作学习入口。
-- **反问题与贝叶斯计算**：可辨识性、MCMC、NUTS、变分推断、仿真驱动推断（SBI）、模型失配。
-- **神经算子新架构**：多极图神经算子、Galerkin Transformer，以及独立的 MeshGraphNets 学习型模拟分支。
-- **生成式物理 AI / 生成式反问题**：VAE、GAN、归一化流、扩散、Score-SDE、Flow Matching、扩散后验采样、物理信息扩散等。
-- **世界模型与干预规划**：PlaNet、Dreamer、MPC、MBPO、离线 RL 的 CQL；对应的冠脉干预用途目前只是**候选研究方向，不代表临床验证**。
-- **可信性与观测设计**：多项式混沌不确定性传播、贝叶斯模型失配、贝叶斯实验设计。
+**当前尚未部署正式 GitHub Pages。** 原型先用实际方法与浏览器截图验证布局，再决定是否将它作为 v1.0 的正式界面。
 
-**这是一套首批有代表性论文支撑的方法谱系，不是宣称物理 AI 已全面覆盖。** 冠脉0D/1D/3D耦合模型、临床观测机制、严谨的后验校准与干预验证仍待补充。
+## 四、知识库内容与阅读负担
 
-## 四、v0.6：统一方法网络设计原型（新）
+目前收录约 **61个方法、34个方法家族、58条论文记录、12本专著、15个研究问题**，并关联其分类、应用与部分证据支持的方法演进关系。这里的“全部方法”是当前已收录的范围，不代表相关领域已经穷尽。
 
-**[查看 v0.6 使用说明](viewer-v06/README.md)** · [统一图谱的页面源码](viewer-v06/index.html)
+- [v0.4 中文方法谱系综述](docs/zh/METHOD_GENEALOGY_V04.md)
+- [最小阅读路径](docs/READING_GUIDE.md)
+- [已有方法目录（v0.2历史节点）](docs/METHOD_CATALOG.md)
+- [路线图](docs/ROADMAP.md)
 
-根据原型反馈，已从 v0.5 的三条独立谱系切换为**同一张方法图，所有61个方法只出现一次**。每个研究环节现在有明确的 **“环节 → 方法家族/具体方法 → 功能说明”** 映射区，选择环节后，全局图中直接相关和家族级关联的方法采用不同高亮，其余节点淡化但不消失。
+**Landmark 是论文对具体方法的学术贡献；Start Here 是可选的优先阅读建议，绝非每个节点必须阅读1–2篇的强制规则。** 我们追求全面的知识结构，而不是全面增加阅读负担。
 
-六个浅色区域只是帮助导航，**不决定方法的唯一家族**。跨区演化边、分类 DAG、多重家族标签、Landmark、Start Here 和证据仍然基于原始数据。
+## 五、开发与验证
 
-最新成功构建的 **离线交互预览**可从 [GitHub Actions · Validate atlas data](https://github.com/TianminWang/physics-ai-methods-atlas/actions/workflows/validate.yml) 的 Artifacts 下载 `atlas-unified-v06`，解压后直接打开 `index.html`。
-
-**现阶段请重点评估：** 主轴与方法的映射是否足够清楚；方法分区是否合理；图谱过密时折叠、聚焦和展开是否易用。尚未发布正式 GitHub Pages。
-
-## 五、v0.5：交互式布局验证原型（历史版本）
-
-**[原型使用说明](prototype/README.md)** · [界面源文件](prototype/index.html)
-
-已为**传统反问题、神经算子、生成式反问题**三条真实谱系构建交互原型。它从权威知识库导出方法和文献，支持研究环节筛选、精简/完整节点展开、方法演化边的瓶颈说明、Landmark 引用、中英文切换、搜索及手机端拖动。
-
-最新成功构建的离线预览，可从 **[GitHub Actions · Validate atlas data](https://github.com/TianminWang/physics-ai-methods-atlas/actions/workflows/validate.yml)** 的 Artifacts 下载 `atlas-interactive-layout-v05`，解压后直接双击 `index.html`。浏览器截图见 **[Prototype UI smoke](https://github.com/TianminWang/physics-ai-methods-atlas/actions/workflows/prototype-ui.yml)**。
-
-**本阶段验证的是布局与交互，不是完整 GitHub Pages 网站。** 全量知识图谱的交互网站将在确认原型可读后扩展。
-
-## 六、从这里开始
-
-- **[统一图谱架构（中文）](docs/zh/UNIFIED_GRAPH.md)**：主轴、方法家族、功能边、演化边、颜色及边界。
-- **[v0.4 方法谱系综述（中文）](docs/zh/METHOD_GENEALOGY_V04.md)**：传统、生成式、神经算子、反演及世界模型的代表方法与学术关系。
-- **[v0.2 初始30节点目录](docs/METHOD_CATALOG.md)**：历史起点的节点索引，新增31个方法见 v0.4 谱系综述。
-- **[最小阅读路径](docs/READING_GUIDE.md)**：优先少量 Landmark 或优质教材章节，不设强制数量。
-- **[建设路线图](docs/ROADMAP.md)**：搭建架构 → 补全方法和文献 → 用小图验证 → 正式交互可视化。
-
-Landmark 是论文**对具体方法的学术贡献关系**，Start Here 只是**可选的优先阅读建议**。
-
-## 七、数据与检查
-
-```text
-data/stages/         研究主轴（环节自有颜色）
-data/families/       方法家族与分类 DAG
-data/methods/        具体方法；不因跨环节复用而复制
-data/relations/      功能角色、演化机制、瓶颈及文献证据
-data/concerns/       跨环节质量问题
-data/{papers,books,problems,areas}/  原有资料与研究问题
-locales/zh-CN.json   原方法名称中文翻译（不复制学术事实）
-scripts/export_unified.py           为未来界面生成中英文投影
-```
+权威资料位于 `data/`；三阶段和视觉范式映射位于 `config/v07.json`；交互代码位于 `viewer-v07/`；全局 DAG 构建器为 `scripts/build_v07.py`。
 
 ```bash
 python -m pip install -r requirements-dev.txt
 python -m scripts.validate
 python -m pytest -q
-python -m scripts.export_unified --lang zh --output build/unified-zh.json
-python -m scripts.export_unified --lang en --output build/unified-en.json
+# 需要 Graphviz dot（构建阶段）
+python -m scripts.build_v07 --site build/viewer-v07
 ```
 
-目前尚未完成交互式 GitHub Pages；上述 Mermaid 只是研究主轴示意。已完成第一批文献与方法谱系补强，下一步是小规模图谱布局核验（v0.5），再开发正式交互可视化。
+请优先使用从构建中生成的 `build/viewer-v07/index.html` 或 GitHub Actions 附件，而不是直接双击未经嵌入图谱数据的源码模板。
 
-[完整架构说明](docs/zh/UNIFIED_GRAPH.md) · [English architecture](docs/en/UNIFIED_GRAPH.md) · [维护规范](docs/CONTRIBUTING.md)
+历史版本 [v0.6](viewer-v06/README.md) 和 [v0.5](prototype/README.md) 仍保留以便追踪设计变化。

@@ -1,0 +1,36 @@
+name: v0.7 DAG browser visual review
+
+on:
+  pull_request:
+    paths:
+      - 'viewer-v07/**'
+      - 'scripts/build_v07.py'
+      - 'tests/ui_v07.py'
+      - 'config/v07.json'
+      - '.github/workflows/v07-ui.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  chromium:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Graphviz and Chinese fonts
+        run: sudo apt-get update && sudo apt-get install -y graphviz fonts-noto-cjk
+      - run: python -m pip install -r requirements-dev.txt playwright
+      - run: python -m playwright install chromium --with-deps
+      - run: python -m scripts.build_v07 --site build/viewer-v07
+      - run: python tests/ui_v07.py
+      - name: Save desktop/mobile screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: atlas-v07-dag-screenshots
+          path: build/v07-screenshots/
+          if-no-files-found: ignore
