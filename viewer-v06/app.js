@@ -181,6 +181,7 @@
       });
       b.style.setProperty("--stage",s.color);
       b.style.setProperty("--stage-soft",s.color+"15");
+      b.dataset.stageId=s.id;
       b.setAttribute("aria-pressed",String(active));
       b.title=tr(s.summary);
       b.append(textEl("div","stage-index",String(s.order).padStart(2,"0")));
@@ -220,6 +221,7 @@
         refresh(true);
       });
       b.style.setProperty("--focus",stage.color);
+      b.dataset.roleId=rel.id;
       b.append(textEl("strong","",name(rel.target)));
       const meaning=tr(rel.role);b.append(textEl("span","",meaning.length>82?meaning.slice(0,82)+"…":meaning));
       const scope=rel.type==="family"?t("roleFamily"):t("roleDirect");
@@ -365,7 +367,8 @@
           grade==="direct"?t("direct"):grade==="family"?t("family"):grade==="ancestor"?t("ancestor"):"—"
         ):m.families.length+" "+t("family")));
         b.append(textEl("i","status-dot",""));
-        b.setAttribute("aria-label",tr(m.label));b.title=tr(m.summary);
+        b.dataset.methodId=mid;
+      b.setAttribute("aria-label",tr(m.label));b.title=tr(m.summary);
         nodes.append(b);
       });
     });
@@ -388,6 +391,7 @@
       if(state.selected?.kind==="edge"&&state.selected.id===edge.id)path.classList.add("selected");
       lines.append(path);
       const hit=svg("path");hit.setAttribute("d",shape.d);hit.classList.add("edge-hit");
+      hit.dataset.edgeId=edge.id;
       hit.addEventListener("click",()=>select("edge",edge.id));lines.append(hit);
       if(edge.type==="extends"||edge.type==="combines"){
         if(state.stage&&!edge.stages.includes(state.stage)&&state.selected?.id!==edge.id)return;
@@ -399,6 +403,7 @@
         b.style.left=shape.mx+"px";b.style.top=(shape.my-9)+"px";
         b.style.setProperty("--edge-color",color);
         b.title=tr(edge.innovation);
+        b.dataset.edgeId=edge.id;
         edges.append(b);
       }
     });
