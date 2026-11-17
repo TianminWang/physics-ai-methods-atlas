@@ -39,7 +39,8 @@ def test_unified_views_are_bilingual_and_deterministic():
 def test_no_duplicate_method_nodes_with_multiple_family_memberships():
     projection = export_unified()
     methods = [n for n in projection["nodes"] if n["kind"] == "method"]
-    assert len({n["id"] for n in methods}) == len(methods) == 30
+    assert len({n["id"] for n in methods}) == len(methods)
+    assert len(methods) == len(list((ROOT / "data" / "methods").glob("*.json")))
     family_links = [e for e in projection["edges"]
                     if e["type"] == "member_of_family" and e["source"] == "method.pino"]
     assert len(family_links) >= 2
