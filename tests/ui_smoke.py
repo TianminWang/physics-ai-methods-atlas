@@ -53,12 +53,19 @@ def main() -> None:
         page.locator("#show-all").uncheck()
 
         # A genuine evolution edge exposes its methodological improvement and bottleneck.
-        page.locator(".graph-edge-btn").first.click()
+        page.locator('.graph-edge-btn[aria-label*="FNO"][aria-label*="PINO"]').first.click()
         assert "→" in page.locator("#detail-content h3").inner_text()
-        if "分类" not in page.locator("#detail-content").inner_text():
-            assert "方法变化" in page.locator("#detail-content").inner_text()
+        assert "针对的技术瓶颈" in page.locator("#detail-content").inner_text()
+        assert "证据论文" in page.locator("#detail-content").inner_text()
+        assert page.locator("#detail-content a[href^='https://']").count() >= 1
 
         # Stage selection must visually identify a research capability.
+        # Zoom controls must change and restore actual graph transforms.
+        initial_transform=page.locator("#diagram").get_attribute("style")
+        page.locator("#zoom-in").click()
+        assert page.locator("#diagram").get_attribute("style") != initial_transform
+        page.locator("#fit-view").click()
+
         page.locator("#stages .stage").nth(2).click()
         assert page.locator("#stages .stage[aria-pressed='true']").count() == 1
 
