@@ -540,4 +540,292 @@
       b.title=component.method_ids.map(name).join(" · ");root.append(b);
     }
   }
-  // APPEND_MORE_V08
+  
+  function attachGraph(){
+    svg=$("atlas-dag");
+    if(!svg)throw Error("Missing Graphviz SVG");
+    for(const g of svg.querySelectorAll("g.atlas-node[data-method-id]")){
+      const id=g.dataset.methodId;nodes.set(id,g);
+      g.addEventListener("click",e=>{e.stopPropagation();selectMethod(id);});
+      g.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();selectMethod(id);}});
+    }
+    for(const g of svg.querySelectorAll("g.atlas-edge[data-edge-id]")){
+      const id=g.dataset.edgeId;if(!edgeById[id])continue;
+      edgeEls.set(id,g);
+      const path=g.querySelector("path");
+      if(path){
+        const hit=path.cloneNode(false);
+        hit.classList.add("edge-hit");
+        hit.setAttribute("style","fill:none;stroke:transparent;stroke-width:17");
+        hit.setAttribute("pointer-events","stroke");g.append(hit);
+      }
+      g.addEventListener("click",e=>{e.stopPropagation();selectEdge(id);});
+      g.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();selectEdge(id);}});
+    }
+    if(nodes.size!==graph.core_method_ids.length){
+      throw Error("Missing or duplicated methods on the evolution-linked SVG canvas");
+    }
+    const box=svg.getBoundingClientRect();
+    natural={w:box.width,h:box.height};
+    $("board").style.width=natural.w+"px";
+    $("board").style.height=natural.h+"px";
+    calculateRects();
+  }
+  function calculateRects(){
+    const board=$("board").getBoundingClientRect();
+    rects.clear();
+    for(const [id,g] of nodes){
+      const box=g.getBoundingClientRect();
+      rects.set(id,{
+        x:(box.left-board.left)/state.zoom,y:(box.top-board.top)/state.zoom,
+        w:box.width/state.zoom,h:box.height/state.zoom
+      });
+    }
+  }
+  function applyTransform(){
+    $("board").style.transform="translate("+state.x+"px,"+state.y+"px) scale("+state.zoom+")";
+    drawMinimap();
+  }
+  function fitAll(){
+    const view=$("viewport");
+    state.zoom=Math.max(.11,Math.min(1.12,
+      (view.clientWidth-30)/natural.w,(view.clientHeight-30)/natural.h));
+    state.x=(view.clientWidth-natural.w*state.zoom)/2;
+    state.y=(view.clientHeight-natural.h*state.zoom)/2;
+    applyTransform();
+  }
+  function centerAt(x,y,scale){
+    const view=$("viewport");
+    if(scale!==undefined)state.zoom=Math.max(.11,Math.min(2.5,scale));
+    state.x=view.clientWidth/2-x*state.zoom;
+    state.y=view.clientHeight/2-y*state.zoom;
+    applyTransform();
+  }
+  function focusIds(ids){
+    const boxes=ids.map(id=>rects.get(id)).filter(Boolean);
+    if(!boxes.length)return;
+    const minX=Math.min(...boxes.map(b=>b.x));
+    const maxX=Math.max(...boxes.map(b=>b.x+b.w));
+    const minY=Math.min(...boxes.map(b=>b.y));
+    const maxY=Math.max(...boxes.map(b=>b.y+b.h));
+    const view=$("viewport"),pad=95;
+    const scale=Math.min(1.13,(view.clientWidth-pad)/(maxX-minX+20),
+      (view.clientHeight-pad)/(maxY-minY+20));
+    centerAt((minX+maxX)/2,(minY+maxY)/2,scale);
+  }
+  function focusNode(id){
+    const rect=rects.get(id);if(!rect)return;
+    centerAt(rect.x+rect.w/2,rect.y+rect.h/2,
+      $("viewport").clientWidth<520?.95:1.09);
+  }
+  function focusPhase(){
+    if(state.selected?.kind==="node"&&nodes.has(state.selected.id)){
+      focusNode(state.selected.id);return;
+    }
+    if(state.phase){
+      const ids=graph.core_method_ids.filter(id=>degree(id)>=3);
+      if(ids.length){focusIds(ids.slice(0,15));return;}
+    }
+    fitAll();
+  }
+  function zoom(ratio){
+    const view=$("viewport"),cx=view.clientWidth/2,cy=view.clientHeight/2;
+    const next=Math.max(.11,Math.min(2.5,state.zoom*ratio));
+    const factor=next/state.zoom;
+    state.x=cx-(cx-state.x)*factor;
+    state.y=cy-(cy-state.y)*factor;
+    state.zoom=next;applyTransform();
+  }
+  function drawMinimap(){
+    if(!state.mini||!$("mini-canvas"))return;
+    const canvas=$("mini-canvas"),ctx=canvas.getContext("2d");
+    if(!ctx)return;
+    const W=canvas.width,H=canvas.height,p=10;
+    ctx.clearRect(0,0,W,H);
+    const scale=Math.min((W-2*p)/natural.w,(H-2*p)/natural.h);
+    const ox=(W-natural.w*scale)/2,oy=(H-natural.h*scale)/2;
+    miniInfo={scale,ox,oy};
+    ctx.save();ctx.translate(ox,oy);ctx.scale(scale,scale);
+    ctx.strokeStyle="#BFCBD7";ctx.lineWidth=Math.max(1/scale,1);
+    for(const edge of graph.method_edges){
+      if(edge.type!=="extends"&&edge.type!=="combines")continue;
+      const a=rects.get(edge.source),b=rects.get(edge.target);
+      if(!a||!b)continue;
+      ctx.beginPath();ctx.moveTo(a.x+a.w/2,a.y+a.h/2);
+      ctx.lineTo(b.x+b.w/2,b.y+b.h/2);ctx.stroke();
+    }
+    for(const [id,rect] of rects){
+      ctx.fillStyle=paradigmById[nodeById[id].paradigm].color;
+      ctx.globalAlpha=state.phase&&degree(id)===0?.25:1;
+      ctx.fillRect(rect.x,rect.y,Math.max(10,rect.w),Math.max(5,rect.h));
+    }
+    ctx.globalAlpha=1;ctx.restore();
+    const v=$("viewport"),left=-state.x/state.zoom,top=-state.y/state.zoom;
+    ctx.strokeStyle="#155786";ctx.lineWidth=2;
+    ctx.strokeRect(ox+left*scale,oy+top*scale,
+      v.clientWidth/state.zoom*scale,v.clientHeight/state.zoom*scale);
+  }
+  function miniNavigate(e){
+    const canvas=$("mini-canvas"),b=canvas.getBoundingClientRect();
+    const x=(e.clientX-b.left)*canvas.width/b.width;
+    const y=(e.clientY-b.top)*canvas.height/b.height;
+    centerAt((x-miniInfo.ox)/miniInfo.scale,
+      (y-miniInfo.oy)/miniInfo.scale);
+  }
+  function toggleMini(show){
+    state.mini=show;
+    $("mini").hidden=!show;$("restore-mini").hidden=show;
+    if(show)drawMinimap();
+  }
+  function toggleFullscreen(force){
+    state.fullscreen=typeof force==="boolean"?force:!state.fullscreen;
+    $("graph-card").classList.toggle("is-fullscreen",state.fullscreen);
+    document.body.classList.toggle("graph-fullscreen",state.fullscreen);
+    translate();
+    requestAnimationFrame(()=>{
+      if(state.selected?.kind==="node"&&nodes.has(state.selected.id))focusNode(state.selected.id);
+      else fitAll();
+    });
+  }
+  function setupEvents(){
+    $("language").addEventListener("click",()=>{
+      state.lang=state.lang==="zh"?"en":"zh";
+      renderUI();renderSearch();renderUnlinked();
+    });
+    $("clear-phase").addEventListener("click",()=>{
+      state.phase=null;state.component=null;
+      closeDrawer();renderUI();fitAll();
+    });
+    $("mapping-more").addEventListener("click",()=>{
+      state.rolesAll=!state.rolesAll;renderMapping();
+    });
+    $("taxonomy").addEventListener("change",e=>{
+      state.taxonomy=e.target.checked;refreshHighlight();
+    });
+    $("comparisons").addEventListener("change",e=>{
+      state.comparisons=e.target.checked;refreshHighlight();
+    });
+    $("search").addEventListener("input",e=>{
+      state.search=e.target.value;state.selected=null;state.pathFocus=false;
+      refreshHighlight();renderSearch();
+    });
+    $("search").addEventListener("keydown",e=>{
+      if(e.key==="Enter"){
+        const first=$("search-results").querySelector(".search-result[data-method-id]");
+        if(first){e.preventDefault();first.click();}
+      }else if(e.key==="Escape")$("search-results").hidden=true;
+    });
+    document.addEventListener("pointerdown",e=>{
+      if(!e.target.closest(".search-wrap"))$("search-results").hidden=true;
+    });
+    $("reset-focus").addEventListener("click",()=>{
+      state.component=null;state.paradigm=null;state.search="";
+      $("search").value="";closeDrawer();renderUI();fitAll();
+    });
+    $("lineage-focus").addEventListener("click",()=>{
+      if(!state.selected)return;
+      state.pathFocus=!state.pathFocus;refreshHighlight();
+    });
+    $("zoom-in").addEventListener("click",()=>zoom(1.2));
+    $("zoom-out").addEventListener("click",()=>zoom(.83));
+    $("fit-all").addEventListener("click",fitAll);
+    $("focus-map").addEventListener("click",focusPhase);
+    $("fullscreen").addEventListener("click",()=>toggleFullscreen());
+    $("pin-drawer").addEventListener("click",()=>{
+      state.pinned=!state.pinned;openDrawer();translate();
+      requestAnimationFrame(()=>{
+        if(state.selected?.kind==="node"&&nodes.has(state.selected.id))focusNode(state.selected.id);
+        else drawMinimap();
+      });
+    });
+    $("close-drawer").addEventListener("click",clearSelection);
+    $("toggle-unlinked").addEventListener("click",()=>toggleShelf());
+    $("hide-mini").addEventListener("click",()=>toggleMini(false));
+    $("restore-mini").addEventListener("click",()=>toggleMini(true));
+    const canvas=$("mini-canvas");let navigating=false;
+    canvas.addEventListener("pointerdown",e=>{
+      navigating=true;canvas.setPointerCapture(e.pointerId);miniNavigate(e);
+    });
+    canvas.addEventListener("pointermove",e=>{if(navigating)miniNavigate(e);});
+    const endMini=e=>{
+      navigating=false;
+      if(canvas.hasPointerCapture(e.pointerId))canvas.releasePointerCapture(e.pointerId);
+    };
+    canvas.addEventListener("pointerup",endMini);
+    canvas.addEventListener("pointercancel",endMini);
+    canvas.addEventListener("keydown",e=>{
+      if(["ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].includes(e.key)){
+        e.preventDefault();
+        const step=43;
+        if(e.key==="ArrowUp")state.y+=step;
+        if(e.key==="ArrowDown")state.y-=step;
+        if(e.key==="ArrowLeft")state.x+=step;
+        if(e.key==="ArrowRight")state.x-=step;
+        applyTransform();
+      }
+    });
+    const view=$("viewport");let drag=null;
+    view.addEventListener("pointerdown",e=>{
+      if(e.button!==0||e.target.closest('g[role="button"],button,a,canvas'))return;
+      drag={x:e.clientX,y:e.clientY,ox:state.x,oy:state.y};
+      view.classList.add("dragging");view.setPointerCapture(e.pointerId);
+    });
+    view.addEventListener("pointermove",e=>{
+      if(!drag)return;
+      state.x=drag.ox+(e.clientX-drag.x);
+      state.y=drag.oy+(e.clientY-drag.y);
+      applyTransform();
+    });
+    const release=e=>{
+      drag=null;view.classList.remove("dragging");
+      if(view.hasPointerCapture(e.pointerId))view.releasePointerCapture(e.pointerId);
+    };
+    view.addEventListener("pointerup",release);
+    view.addEventListener("pointercancel",release);
+    view.addEventListener("wheel",e=>{
+      e.preventDefault();zoom(e.deltaY<0?1.12:.89);
+    },{passive:false});
+    document.addEventListener("keydown",e=>{
+      if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==="k"){
+        e.preventDefault();$("search").focus();
+      }else if(e.key==="Escape"){
+        if(state.fullscreen)toggleFullscreen(false);
+        else if(!state.pinned)clearSelection();
+        $("search-results").hidden=true;
+      }
+    });
+    window.addEventListener("resize",drawMinimap);
+  }
+  function renderUI(){
+    translate();renderPhases();renderMapping();renderParadigms();
+    renderComponents();renderUnlinked();refreshHighlight();
+    if(state.selected){openDrawer();renderDrawer();}
+  }
+  function init(){
+    try{
+      const source=$("atlas-data");
+      if(!source)throw Error("Missing embedded canonical Atlas data");
+      graph=JSON.parse(source.textContent);
+      nodeById=Object.fromEntries(graph.methods.map(m=>[m.id,m]));
+      edgeById=Object.fromEntries(graph.method_edges.map(e=>[e.id,e]));
+      roleById=Object.fromEntries(graph.functional.map(r=>[r.id,r]));
+      phaseById=Object.fromEntries(graph.phases.map(p=>[p.id,p]));
+      paradigmById=Object.fromEntries(graph.paradigms.map(p=>[p.id,p]));
+      phaseRoles=graph.phase_roles;
+      if(Object.keys(nodeById).length!==graph.methods.length)throw Error("Duplicate scholarly methods");
+      for(const edge of graph.method_edges.filter(e=>e.type==="extends"||e.type==="combines")){
+        if(!forward.has(edge.source))forward.set(edge.source,new Set());
+        if(!backward.has(edge.target))backward.set(edge.target,new Set());
+        forward.get(edge.source).add(edge.target);
+        backward.get(edge.target).add(edge.source);
+      }
+      state.lang=new URLSearchParams(location.search).get("lang")==="en"?"en":"zh";
+      attachGraph();setupEvents();renderUI();
+      requestAnimationFrame(fitAll);
+    }catch(error){
+      console.error("Atlas v0.8 init failed",error);
+      $("graph-status").textContent=String(error);
+    }
+  }
+  init();
+})();
