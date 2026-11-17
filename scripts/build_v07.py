@@ -149,6 +149,7 @@ def build_payload(base: dict, config: dict) -> dict:
             "name": config["substage_overrides"].get(stage["id"], stage["name"]),
         } for stage in base["stages"]],
         "paradigms": config["paradigms"],
+        "families": base["families"],
         "methods": enriched,
         "method_edges": edges,
         "functional": base["functional"],
@@ -191,19 +192,19 @@ def create_dot(payload: dict) -> tuple[str, dict[str, str], dict[str, str]]:
             f'color={_dot_quote(cat["color"])}, fontcolor="#253D54"];'
         )
     for edge in payload["method_edges"]:
-        if edge["type"] == "contrasts_with":
-            continue  # non-genealogical comparisons are opt-in UI relations
         t = edge["type"]
-        color = "#B9C3CE" if t == "specializes" else edge["color"]
-        style = "dotted" if t == "specializes" else (
+        color = "#B9C3CE" if t in {"specializes", "contrasts_with"} else edge["color"]
+        style = "dotted" if t in {"specializes", "contrasts_with"} else (
             "dashed" if t == "combines" else "solid"
         )
-        weight = 3 if t == "specializes" else 8
+        weight = 0 if t == "contrasts_with" else (3 if t == "specializes" else 8)
         parts.append(
             f'{_dot_quote(edge["source"])} -> {_dot_quote(edge["target"])} '
             f'[id={_dot_quote(edge_ids[edge["id"]])}, color={_dot_quote(color)}, '
             f'style={style}, weight={weight}, minlen=1, '
-            f'penwidth={1.2 if t=="specializes" else 2.5}];'
+            f'constraint={str(t!="contrasts_with").lower()}, '
+            f'arrowhead={"none" if t=="contrasts_with" else "normal"}, '
+            f'penwidth={1.2 if t in {"specializes","contrasts_with"} else 2.5}];'
         )
     parts.append("}")
     return "\n".join(parts), node_ids, edge_ids
