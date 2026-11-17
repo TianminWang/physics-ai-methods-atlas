@@ -152,7 +152,7 @@ def build_prototype(root: Path = ROOT) -> dict:
             "kind": kind,
             "label": {"zh": display_zh["label"], "en": display_en["label"]},
             "summary": {
-                "zh": record.get("summary_zh", record.get("summary", "")),
+                "zh": record.get("summary_zh", translations.get("summaries", {}).get(entity_id, record.get("summary", ""))),
                 "en": record.get("summary", ""),
             },
             "core_idea": {

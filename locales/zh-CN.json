@@ -93,5 +93,23 @@
     "method.diffusion-posterior-sampling": "生成的通常是近似后验样本，需检验可靠性。",
     "method.physics-informed-diffusion": "软残差惩罚不意味着严格满足全部守恒方程。",
     "method.generative-range-prior": "生成器范围之外的真实解可能无法恢复。"
+  },
+  "summaries": {
+    "method.nonlinear-least-squares": "由观测和物理正向模型构成残差，利用平方和目标估计未知参数。",
+    "method.gauss-newton": "面向非线性最小二乘的局部线性化优化算法。",
+    "method.levenberg-marquardt": "结合阻尼与Gauss–Newton型更新的非线性最小二乘算法。",
+    "method.tikhonov-regularization": "通过附加结构性惩罚稳定不适定反问题。",
+    "method.adjoint-sensitivity": "适用于高维未知参数的物理模型梯度计算方法。",
+    "method.pde-constrained-optimization": "把PDE控制方程作为状态约束来优化参数或设计变量。",
+    "method.bayesian-inverse-problems": "根据含噪观测估计物理参数或状态的后验分布。",
+    "method.learned-forward-inversion": "以学习到的正向模拟代理加速传统优化或概率反演。",
+    "method.neural-operator": "学习函数空间之间可跨实例复用的映射，而非一次性解函数。",
+    "method.deeponet": "利用Branch和Trunk两个网络构造可学习的非线性算子。",
+    "method.fno": "利用傅里叶空间的可学习核变换近似参数化PDE解算子。",
+    "method.pinn": "以PDE残差和边界/观测约束训练神经解函数。",
+    "method.physics-informed-deeponet": "将物理残差监督融入DeepONet的多实例算子学习。",
+    "method.pino": "结合跨实例神经算子与物理约束训练的PDE求解方法。",
+    "method.geo-fno": "通过学习坐标变换拓展FNO对复杂几何的适用性。",
+    "method.derivative-informed-operator": "在训练神经算子时增加导数监督，提升反问题所需的敏感度精度。"
   }
 }
