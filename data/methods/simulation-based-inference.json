@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.1.0",
+  "id": "method.simulation-based-inference",
+  "name": "Simulation-Based Inference (SBI)",
+  "name_zh": "仿真驱动推断（SBI）",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Infer simulator parameters when generating synthetic data is feasible but evaluating the likelihood is difficult.",
+  "summary_zh": "利用可调用的随机或复杂仿真器生成数据，在似然不可直接计算时进行参数推断。",
+  "core_idea": "Use simulated parameter-observation pairs to approximate posteriors, likelihoods or likelihood ratios.",
+  "innovation": "Connects classical inverse statistics with neural conditional density estimation and likelihood-free workflows.",
+  "limitations": [
+    "Simulation budgets can be large.",
+    "Posterior validity depends on simulator faithfulness and calibration."
+  ],
+  "background_topics": [
+    "Bayesian inference",
+    "Stochastic simulators",
+    "Neural density estimation"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.cranmer-2020-sbi",
+      "why": "High-level authoritative overview connecting scientific simulators and likelihood-free inference.",
+      "focus": "Three approaches: posterior, likelihood and likelihood-ratio estimation."
+    }
+  ],
+  "curation_note": "Representative primary or authoritative scholarly source has been checked; the suggested starting reference is optional, not a required reading quota."
+}

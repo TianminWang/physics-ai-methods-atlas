@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.1.0",
+  "id": "method.runge-kutta-integration",
+  "name": "Runge–Kutta Time Integration",
+  "name_zh": "龙格–库塔时间积分",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Propagate ODE and method-of-lines semidiscrete PDE states using staged derivative evaluations.",
+  "summary_zh": "通过多个内部阶段计算导数，再组合更新下一时间步的状态。",
+  "core_idea": "Compute one time step from a weighted collection of intermediate vector-field evaluations.",
+  "innovation": "Provides an explicit/implicit high-order time discretization family for dynamical state prediction.",
+  "limitations": [
+    "Explicit methods can be unstable for stiff dynamics.",
+    "Tolerance and step size matter for differentiated trajectories."
+  ],
+  "background_topics": [
+    "ODE initial-value problems",
+    "Local truncation error",
+    "Stability regions"
+  ],
+  "start_here": [
+    {
+      "reference_id": "book.hairer-ode-i",
+      "why": "Comprehensive derivation of RK families and step-size/stability principles.",
+      "focus": "Runge–Kutta and extrapolation methods (selected chapters)."
+    }
+  ],
+  "curation_note": "Representative primary or authoritative scholarly source has been checked; the suggested starting reference is optional, not a required reading quota."
+}

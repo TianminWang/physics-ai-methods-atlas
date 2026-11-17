@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.1.0",
+  "id": "method.finite-volume",
+  "name": "Finite Volume Method (FVM)",
+  "name_zh": "有限体积法",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Discretize integral conservation laws through flux balance on control volumes.",
+  "summary_zh": "在控制体上积分守恒方程，通过界面通量构造离散守恒关系。",
+  "core_idea": "Integrate each conservation law over cells and balance numerical face fluxes.",
+  "innovation": "Offers natural local conservation control for advection, flow and hemodynamic PDEs.",
+  "limitations": [
+    "Flux design and mesh quality affect accuracy.",
+    "Different schemes may require limiting and nonlinear stabilization."
+  ],
+  "background_topics": [
+    "Integral conservation laws",
+    "Control volumes",
+    "Numerical fluxes"
+  ],
+  "start_here": [
+    {
+      "reference_id": "book.leveque-finite-volume",
+      "why": "Canonical text for conservative finite-volume discretization and flux reasoning.",
+      "focus": "Integral form, Riemann fluxes, stability of hyperbolic problems."
+    }
+  ],
+  "curation_note": "Representative primary or authoritative scholarly source has been checked; the suggested starting reference is optional, not a required reading quota."
+}

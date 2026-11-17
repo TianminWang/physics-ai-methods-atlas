@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.1.0",
+  "id": "method.sequential-neural-posterior",
+  "name": "Sequential Neural Posterior Estimation (APT)",
+  "name_zh": "序贯神经后验估计（APT）",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Focus expensive likelihood-free simulation proposals near relevant parameter regions while maintaining posterior correction.",
+  "summary_zh": "通过序贯模拟提议分布及自动后验变换，对条件后验密度进行高效学习。",
+  "core_idea": "Correct learned conditional posterior estimates when simulation proposal distributions are adapted.",
+  "innovation": "Improves simulation efficiency for certain expensive likelihood-free inference settings.",
+  "limitations": [
+    "Proposal design and density estimation can introduce bias.",
+    "Training and evaluation depend on representative simulator coverage."
+  ],
+  "background_topics": [
+    "SBI",
+    "Conditional density estimation",
+    "Normalizing flows"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.greenberg-2019-apt",
+      "why": "Peer-reviewed APT method for proposal-corrected sequential neural posterior estimation.",
+      "focus": "Automatic posterior transformation and simulation proposal correction."
+    }
+  ],
+  "curation_note": "Representative primary or authoritative scholarly source has been checked; the suggested starting reference is optional, not a required reading quota."
+}

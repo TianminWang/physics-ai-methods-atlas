@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.1.0",
+  "id": "method.variational-inference",
+  "name": "Variational Inference (VI)",
+  "name_zh": "变分推断",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Approximate difficult posteriors through optimization over a tractable probability family.",
+  "summary_zh": "选取参数化分布族，通过优化ELBO或散度近似目标后验。",
+  "core_idea": "Replace direct posterior integration with optimized distributional approximation.",
+  "innovation": "Can amortize or accelerate uncertainty inference relative to sampling at the cost of approximation bias.",
+  "limitations": [
+    "Variational family can miss multiple modes or underestimate uncertainty.",
+    "Optimization of ELBO may be sensitive to parameterization."
+  ],
+  "background_topics": [
+    "KL divergence",
+    "ELBO",
+    "Optimization"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.blei-2017-vi",
+      "why": "Readable peer-reviewed synthesis of variational inference foundations and trade-offs.",
+      "focus": "ELBO derivation and comparisons with sampling."
+    }
+  ],
+  "curation_note": "Representative primary or authoritative scholarly source has been checked; the suggested starting reference is optional, not a required reading quota."
+}
