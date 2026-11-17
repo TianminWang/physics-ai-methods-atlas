@@ -339,4 +339,205 @@
       graph.summary.unlinked_methods+" "+t("unlinkedMethods");
     drawMinimap();
   }
-  // APPEND_V08
+  
+  function openDrawer(){
+    $("drawer").hidden=false;
+    $("graph-layout").classList.toggle("is-pinned",state.pinned);
+    $("pin-drawer").setAttribute("aria-pressed",String(state.pinned));
+  }
+  function closeDrawer(){
+    state.selected=null;state.pathFocus=false;state.pinned=false;
+    $("drawer").hidden=true;$("graph-layout").classList.remove("is-pinned");
+    refreshHighlight();
+  }
+  function clearSelection(){closeDrawer();renderMapping();}
+
+  function renderDrawer(){
+    const root=$("details-body");root.replaceChildren();
+    const selected=state.selected;
+    if(!selected){
+      root.append(make("div","empty-symbol","↗"));
+      root.append(make("h3","",t("selectTitle")));
+      root.append(make("p","",t("selectText")));
+      return;
+    }
+    if(selected.kind==="node"){
+      const method=nodeById[selected.id];
+      const paradigm=paradigmById[method.paradigm];
+      root.append(make("span","eyelabel",t("selectedNode")));
+      root.append(make("h3","",tr(method.label)));
+      const banner=make("div","note",tr(paradigm.label));
+      banner.style.setProperty("--line-color",paradigm.color);
+      banner.style.setProperty("--bg-color",paradigm.fill);
+      root.append(banner);
+      root.append(make("p","",tr(method.summary)));
+      if(!nodes.has(method.id))root.append(make("p","drawer-note",t("unlinkedStatus")));
+      field(root,"core",tr(method.core));
+      field(root,"limits",(method.limitations[state.lang]||[]).slice(0,3).join(" · "));
+      root.append(make("div","section-label",t("families")));
+      for(const fid of method.families)chip(root,familyName(fid));
+      root.append(make("div","section-label",t("phaseTag")));
+      let found=false;
+      for(const phase of graph.phases){
+        const roles=phaseRoles[phase.id]?.[method.id]||[];
+        if(!roles.length)continue;
+        found=true;
+        const role=roles.find(r=>r.level==="direct")||
+          roles.find(r=>r.level==="family")||roles[0];
+        const note=make("div","note");
+        note.style.setProperty("--line-color",phase.color);
+        note.style.setProperty("--bg-color",phase.color+"10");
+        note.append(make("strong","",tr(phase.name)+" · "+
+          t(role.level==="direct"?"direct":role.level==="family"?"family":"ancestor")));
+        note.append(make("p","",tr(role.role)));
+        if(role.level!=="direct")note.append(make("small","",t("familyCaution")));
+        root.append(note);
+      }
+      if(!found)root.append(make("p","",t("noMapping")));
+      const adjacent=graph.method_edges.filter(e=>
+        (e.type==="extends"||e.type==="combines") &&
+        (e.source===method.id||e.target===method.id));
+      if(adjacent.length){
+        root.append(make("div","section-label",t("earlier")+" / "+t("later")));
+        for(const edge of adjacent){
+          const related=edge.source===method.id?edge.target:edge.source;
+          const b=button("related-button",name(related)+" · "+edge.type,()=>selectMethod(related));
+          root.append(b);
+        }
+      }
+      root.append(make("div","section-label",t("reading")));
+      if(!method.readings.length)root.append(make("p","",t("noEvidence")));
+      for(const item of method.readings)root.append(sourceLink(item.url,item.title,item.focus));
+      const landmarks=method.sources.filter(p=>p.landmark);
+      if(landmarks.length){
+        root.append(make("div","section-label",t("landmark")));
+        for(const paper of landmarks.slice(0,6))
+          root.append(sourceLink(paper.url,paper.title,String(paper.year)+" · "+paper.role+" · Landmark"));
+      }
+      root.append(sourceLink(repository+method.source_path,t("source")));
+    }else if(selected.kind==="edge"){
+      const edge=edgeById[selected.id];
+      root.append(make("span","eyelabel",t("selectedEdge")+" · "+edge.type));
+      root.append(make("h3","",name(edge.source)+" → "+name(edge.target)));
+      field(root,"innovation",tr(edge.innovation));
+      field(root,"bottleneck",tr(edge.bottleneck));
+      field(root,"tradeoff",tr(edge.tradeoff));
+      root.append(make("div","section-label",t("phaseTag")));
+      if(!edge.phase_ids.length)root.append(make("p","",t("stageNoEvidence")));
+      for(const pid of edge.phase_ids)chip(root,tr(phaseById[pid].name),phaseById[pid].color);
+      if(edge.evidence.length){
+        root.append(make("div","section-label",t("evidence")));
+        for(const paper of edge.evidence)root.append(sourceLink(paper.url,paper.title));
+      }else if(edge.type==="specializes"){
+        root.append(make("p","",t("roleInfo")));
+      }
+      root.append(sourceLink(repository+edge.source_path,t("source")));
+    }else if(selected.kind==="role"){
+      const role=roleById[selected.id],phase=phaseById[state.phase];
+      root.append(make("span","eyelabel",t("selectedRole")));
+      root.append(make("h3","",tr(phase.name)+" → "+
+        (role.type==="family"?familyName(role.target):name(role.target))));
+      const box=make("div","note");
+      box.style.setProperty("--line-color",phase.color);
+      box.style.setProperty("--bg-color",phase.color+"12");
+      box.append(make("strong","",role.type==="family"?t("familyRole"):t("directRole")));
+      box.append(make("p","",tr(role.role)));root.append(box);
+      field(root,"phaseTag",t("scope_"+role.scope));
+      if(role.type==="family")root.append(make("p","",t("familyCaution")));
+      root.append(make("div","section-label",t("methods")));
+      const ids=roleMethods(role);
+      for(const id of ids.slice(0,14))chip(root,name(id));
+      if(ids.length>14)root.append(make("p","", "+"+String(ids.length-14)));
+      if(role.evidence.length){
+        root.append(make("div","section-label",t("evidence")));
+        for(const paper of role.evidence)root.append(sourceLink(paper.url,paper.title));
+      }
+    }
+  }
+  function selectMethod(id){
+    if(!nodeById[id])return;
+    state.selected={kind:"node",id};state.pathFocus=false;
+    openDrawer();renderDrawer();refreshHighlight();
+    if(nodes.has(id))focusNode(id);
+    else{
+      if(!state.shelf)toggleShelf(true);
+      const b=Array.from($("unlinked-list").querySelectorAll("[data-method-id]"))
+        .find(item=>item.dataset.methodId===id);
+      if(b)b.classList.add("selected");
+    }
+  }
+  function selectEdge(id){
+    if(!edgeById[id])return;
+    state.selected={kind:"edge",id};state.pathFocus=false;
+    openDrawer();renderDrawer();refreshHighlight();
+  }
+  function renderUnlinked(){
+    const root=$("unlinked-list");root.replaceChildren();
+    $("unlinked-count").textContent=graph.summary.unlinked_methods+" "+t("memberCount");
+    $("toggle-unlinked").setAttribute("aria-expanded",String(state.shelf));
+    root.hidden=!state.shelf;
+    if(!state.shelf)return;
+    for(const paradigm of graph.paradigms){
+      const ids=graph.unlinked_method_ids.filter(id=>nodeById[id].paradigm===paradigm.id);
+      if(!ids.length)continue;
+      const group=make("section","unlinked-group");
+      group.append(make("h3","",tr(paradigm.label)+" · "+ids.length));
+      const list=make("div","unlinked-items");
+      for(const id of ids){
+        const method=nodeById[id];
+        const b=button("unlinked-item"+(state.selected?.id===id?" selected":""),"",()=>selectMethod(id));
+        b.dataset.methodId=id;b.style.setProperty("--item-color",paradigm.color);
+        b.style.setProperty("--item-bg",paradigm.fill);
+        b.append(make("span","",tr(method.label)));
+        b.append(make("small","",method.sources.length+" "+t("links")));
+        list.append(b);
+      }
+      group.append(list);root.append(group);
+    }
+  }
+  function toggleShelf(on){
+    state.shelf=typeof on==="boolean"?on:!state.shelf;
+    renderUnlinked();
+  }
+  function renderSearch(){
+    const root=$("search-results");root.replaceChildren();
+    const query=state.search.trim().toLowerCase();
+    if(!query){root.hidden=true;return;}
+    const hits=graph.methods.filter(method=>
+      (tr(method.label)+" "+method.label.en+" "+method.id+" "+tr(method.summary))
+        .toLowerCase().includes(query)).slice(0,12);
+    for(const method of hits){
+      const b=button("search-result","",()=>{
+        $("search").value="";state.search="";root.hidden=true;
+        selectMethod(method.id);
+      });
+      b.dataset.methodId=method.id;
+      b.append(make("span","",tr(method.label)));
+      b.append(make("small","",nodes.has(method.id)?t("matchedCore"):t("matchedShelf")));
+      root.append(b);
+    }
+    if(!hits.length)root.append(make("div","search-result",t("missing")));
+    root.hidden=false;
+  }
+  function renderComponents(){
+    const root=$("component-nav");root.replaceChildren();
+    root.append(make("span","component-label",t("components")+"："));
+    for(const component of graph.components){
+      const first=component.method_ids[0];
+      const label=name(first);
+      const caption=label.length>12?label.slice(0,12)+"…":label;
+      const active=state.component===component.id;
+      const b=button("component-chip"+(active?" active":""),"",()=>{
+        state.component=active?null:component.id;
+        state.selected=null;state.pathFocus=false;closeDrawer();
+        refreshHighlight();
+        if(!active)focusIds(component.method_ids);
+        renderComponents();
+      });
+      b.dataset.componentId=component.id;
+      b.append(make("span","",caption+" "));
+      b.append(make("small","",String(component.size)));
+      b.title=component.method_ids.map(name).join(" · ");root.append(b);
+    }
+  }
+  // APPEND_MORE_V08
