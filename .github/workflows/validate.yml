@@ -23,6 +23,14 @@ jobs:
       - run: python -m scripts.export_unified --lang zh --output build/unified-zh.json
       - run: python -m scripts.export_unified --lang en --output build/unified-en.json
       - run: python -m scripts.export_graph
+      - run: python -m scripts.build_v06 --site build/viewer-v06
+      - run: node --check viewer-v06/app.js
+      - name: Upload v0.6 unified offline viewer
+        uses: actions/upload-artifact@v4
+        with:
+          name: atlas-unified-v06
+          path: build/viewer-v06/
+          if-no-files-found: error
       - run: python -m scripts.build_prototype --output build/prototype/data/preview.json --site build/prototype
       - run: node --check prototype/app.js
       - name: Upload interactive prototype artifact
