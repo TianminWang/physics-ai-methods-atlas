@@ -223,7 +223,9 @@ def main() -> int:
         # Standalone ZIP can be opened directly from file:// without a server.
         json_blob = json.dumps(payload, ensure_ascii=False).replace("</", "<\\/")
         embedded = '<script id="atlas-embedded-data" type="application/json">' + json_blob + '</script>'
-        source_html = source_html.replace("</body>", embedded + "\\n</body>")
+        if "</body>" not in source_html:
+            raise ValueError("Prototype HTML is missing a closing body tag")
+        source_html = source_html.replace("</body>", embedded + chr(10) + "</body>")
         (args.site / "index.html").write_text(source_html, encoding="utf-8")
         for asset in ("style.css", "app.js"):
             copyfile(ROOT / "prototype" / asset, args.site / asset)
