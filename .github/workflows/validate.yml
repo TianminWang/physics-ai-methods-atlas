@@ -19,11 +19,11 @@ jobs:
           python-version: '3.11'
       - run: python -m pip install -r requirements-dev.txt
       - run: python -m scripts.validate
+      - name: Install Graphviz and CJK fonts
+        run: sudo apt-get update && sudo apt-get install -y graphviz fonts-noto-cjk
       - run: python -m pytest -q
       - run: python -m scripts.export_unified --lang zh --output build/unified-zh.json
       - run: python -m scripts.export_unified --lang en --output build/unified-en.json
-      - name: Install Graphviz and CJK fonts
-        run: sudo apt-get update && sudo apt-get install -y graphviz fonts-noto-cjk
       - run: python -m scripts.build_v07 --site build/viewer-v07
       - run: node --check viewer-v07/app.js
       - name: Upload three-phase global DAG viewer

@@ -392,7 +392,9 @@
       $("taxonomy").addEventListener("change",e=>{st.taxonomy=e.target.checked;highlight();});
       $("contrasts").addEventListener("change",e=>{st.contrasts=e.target.checked;highlight();});
       $("search").addEventListener("input",e=>{
-        st.search=e.target.value;highlight();
+        // A new query replaces a previous local node/edge focus.
+        st.selected=null;
+        st.search=e.target.value;highlight();inspect();
         const q=st.search.trim().toLowerCase();
         if(q){const match=graph.methods.find(m=>(tr(m.label)+" "+m.label.en+" "+m.id).toLowerCase().includes(q));if(match)focusId(match.id);}
       });
