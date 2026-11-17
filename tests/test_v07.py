@@ -62,6 +62,13 @@ def test_combined_structural_edges_are_dag_and_no_fabricated_connectors():
     assert all(e["type"] in LAYOUT_TYPES for e in structural)
     assert len(result["method_edges"])==43
 
+def test_parenthesized_acronyms_remain_intact_when_wrapping():
+    from scripts.build_v07 import _wrap_label
+    label = _wrap_label("物理信息神经算子（PINO）")
+    assert "（PINO）" in label
+    assert "PINO\n" not in label
+
+
 def test_graphviz_layout_contains_all_clickable_unique_methods_and_evolution_edges():
     result=_data()
     svg=build_svg(result)

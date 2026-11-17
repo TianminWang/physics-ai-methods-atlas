@@ -26,7 +26,13 @@ CONFIG = ROOT / "config" / "v07.json"
 
 
 def _wrap_label(label: str, limit: int = 19) -> str:
-    """Split human-readable labels without breaking Asian and Latin glyph widths."""
+    """Split long labels while keeping common parenthesized method acronyms intact."""
+    def display_width(text: str) -> int:
+        return sum(2 if unicodedata.east_asian_width(c) in "WF" else 1 for c in text)
+    # A name like 傅里叶神经算子（FNO） must not become FNO\n）.
+    match = re.fullmatch(r"(.+?)([（(][A-Za-z0-9+_.-]{2,15}[）)])", label)
+    if match and display_width(match.group(1)) <= limit:
+        return match.group(1).strip() + "\n" + match.group(2)
     # Short bilingual labels preserve the method's original identity.
     if len(label) <= 22 and sum(
         2 if unicodedata.east_asian_width(c) in "WF" else 1 for c in label
