@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-variational-autoencoder--addresses--problem-generative-pde-inference",
+  "source_id": "method.variational-autoencoder",
+  "target_id": "problem.generative-pde-inference",
+  "type": "addresses",
+  "claim": "Pretrained latent generator may encode a coefficient-field prior; outside-support solutions remain unrecoverable."
+}

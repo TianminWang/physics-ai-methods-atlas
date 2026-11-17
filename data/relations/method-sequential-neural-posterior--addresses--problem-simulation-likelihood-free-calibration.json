@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-sequential-neural-posterior--addresses--problem-simulation-likelihood-free-calibration",
+  "source_id": "method.sequential-neural-posterior",
+  "target_id": "problem.simulation-likelihood-free-calibration",
+  "type": "addresses",
+  "claim": "Fits sequential conditional posterior densities using simulation proposals and proposal corrections."
+}

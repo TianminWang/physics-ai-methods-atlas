@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-generative-range-prior--addresses--problem-generative-pde-inference",
+  "source_id": "method.generative-range-prior",
+  "target_id": "problem.generative-pde-inference",
+  "type": "addresses",
+  "claim": "Optimizes within a pretrained generator range for undersampled inverse reconstruction."
+}

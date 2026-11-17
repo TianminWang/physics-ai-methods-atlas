@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-flow-matching--addresses--problem-physics-field-sample-generation",
+  "source_id": "method.flow-matching",
+  "target_id": "problem.physics-field-sample-generation",
+  "type": "addresses",
+  "claim": "Can learn a distribution over physical field samples; additional PDE constraints and external tests are necessary."
+}

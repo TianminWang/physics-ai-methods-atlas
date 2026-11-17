@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-diffusion-probabilistic-model--addresses--problem-physics-field-sample-generation",
+  "source_id": "method.diffusion-probabilistic-model",
+  "target_id": "problem.physics-field-sample-generation",
+  "type": "addresses",
+  "claim": "Generic diffusion can generate learned field samples but physics compliance is not automatic."
+}

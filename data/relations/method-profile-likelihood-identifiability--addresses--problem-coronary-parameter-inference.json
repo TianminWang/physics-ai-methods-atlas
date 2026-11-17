@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-profile-likelihood-identifiability--addresses--problem-coronary-parameter-inference",
+  "source_id": "method.profile-likelihood-identifiability",
+  "target_id": "problem.coronary-parameter-inference",
+  "type": "addresses",
+  "claim": "Could diagnose compensating parameters in coronary flow-model calibration, provided the likelihood and forward model are valid."
+}

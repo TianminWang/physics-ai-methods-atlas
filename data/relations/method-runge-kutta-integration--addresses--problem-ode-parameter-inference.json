@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-runge-kutta-integration--addresses--problem-ode-parameter-inference",
+  "source_id": "method.runge-kutta-integration",
+  "target_id": "problem.ode-parameter-inference",
+  "type": "addresses",
+  "claim": "Propagates ODE dynamics during parameter fitting; inference requires an additional optimization or posterior method."
+}

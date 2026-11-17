@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-model-predictive-control--addresses--problem-action-conditioned-forecast",
+  "source_id": "method.model-predictive-control",
+  "target_id": "problem.action-conditioned-forecast",
+  "type": "addresses",
+  "claim": "Uses predictive trajectories to optimize actions over a receding horizon, under model and control constraints."
+}

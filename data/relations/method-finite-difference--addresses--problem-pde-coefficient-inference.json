@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-finite-difference--addresses--problem-pde-coefficient-inference",
+  "source_id": "method.finite-difference",
+  "target_id": "problem.pde-coefficient-inference",
+  "type": "addresses",
+  "claim": "Provides a discretized PDE forward map inside inverse optimization; not itself a parameter inversion algorithm."
+}

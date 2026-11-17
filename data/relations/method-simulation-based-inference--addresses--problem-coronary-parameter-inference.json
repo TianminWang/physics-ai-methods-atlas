@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-simulation-based-inference--addresses--problem-coronary-parameter-inference",
+  "source_id": "method.simulation-based-inference",
+  "target_id": "problem.coronary-parameter-inference",
+  "type": "addresses",
+  "claim": "A possible framework if a credible patient-specific flow simulator and informative summary observations exist; clinical validation remains unverified."
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-difftaichi--addresses--problem-pde-coefficient-inference",
+  "source_id": "method.difftaichi",
+  "target_id": "problem.pde-coefficient-inference",
+  "type": "addresses",
+  "claim": "Differentiable simulated physics can provide gradients for PDE-constrained inverse parameter updates where numerical assumptions permit."
+}

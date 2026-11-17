@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-profile-likelihood-identifiability--addresses--problem-ode-parameter-inference",
+  "source_id": "method.profile-likelihood-identifiability",
+  "target_id": "problem.ode-parameter-inference",
+  "type": "addresses",
+  "claim": "Diagnoses structural versus practical parameter identifiability from partially observed ODE trajectories."
+}
