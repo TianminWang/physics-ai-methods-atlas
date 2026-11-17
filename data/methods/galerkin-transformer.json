@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.1.0",
+  "id": "method.galerkin-transformer",
+  "name": "Galerkin Transformer for PDE Operator Learning",
+  "name_zh": "Galerkin Transformer：注意力算子学习",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Learn PDE operators using a modified self-attention mechanism interpreted via projection in function spaces.",
+  "summary_zh": "通过修改注意力运算和归一化，将注意力层解释为函数空间中的投影近似。",
+  "core_idea": "Design Fourier/Galerkin-type attention mechanisms suited to Hilbert-space operator approximation.",
+  "innovation": "Addresses the efficiency and interpretation limitations of standard softmax attention in operator learning.",
+  "limitations": [
+    "Attention models still require representative operator training data.",
+    "Formal projection interpretations rely on mathematical assumptions."
+  ],
+  "background_topics": [
+    "Attention",
+    "Hilbert-space projections",
+    "PDE operators"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.cao-2021-galerkin-transformer",
+      "why": "NeurIPS method paper, especially relevant to operator architecture alternatives.",
+      "focus": "Softmax-free attention and Petrov–Galerkin interpretation."
+    }
+  ],
+  "curation_note": "Representative publication checked; recommendations are advisory and application-specific clinical claims require separate evidence."
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-intervention-planning--uses-method--family-latent-world-models",
+  "source_id": "stage.intervention-planning",
+  "target_id": "family.latent-world-models",
+  "type": "uses_method",
+  "claim": "For intervention-planning, simulating action-conditioned latent futures for planning.",
+  "claim_zh": "在“intervention-planning”环节：模拟假设行动条件下的隐状态未来演化。",
+  "role": "simulating action-conditioned latent futures for planning",
+  "role_zh": "模拟假设行动条件下的隐状态未来演化",
+  "evidence_scope": "hypothesis"
+}

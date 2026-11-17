@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-finite-volume--addresses--problem-pde-coefficient-inference",
+  "source_id": "method.finite-volume",
+  "target_id": "problem.pde-coefficient-inference",
+  "type": "addresses",
+  "claim": "Enforces discrete flux conservation in physical forward-model evaluations inside PDE coefficient inversion."
+}

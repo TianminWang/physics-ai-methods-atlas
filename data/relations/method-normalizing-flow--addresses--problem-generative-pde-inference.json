@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-normalizing-flow--addresses--problem-generative-pde-inference",
+  "source_id": "method.normalizing-flow",
+  "target_id": "problem.generative-pde-inference",
+  "type": "addresses",
+  "claim": "Normalizing-flow densities can represent coefficient priors or approximate inverse posteriors."
+}

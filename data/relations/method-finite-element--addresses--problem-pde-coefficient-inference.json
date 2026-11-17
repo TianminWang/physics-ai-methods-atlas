@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-finite-element--addresses--problem-pde-coefficient-inference",
+  "source_id": "method.finite-element",
+  "target_id": "problem.pde-coefficient-inference",
+  "type": "addresses",
+  "claim": "Supplies weak-form PDE forward simulation and sensitivity equations for inverse coefficient estimation."
+}

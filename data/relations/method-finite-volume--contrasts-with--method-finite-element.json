@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-finite-volume--contrasts-with--method-finite-element",
+  "source_id": "method.finite-volume",
+  "target_id": "method.finite-element",
+  "type": "contrasts_with",
+  "claim": "FVM enforces discrete control-volume flux balance, while FEM typically begins from a weak variational form.",
+  "claim_zh": "FVM 强调控制体通量平衡，FEM 通常从弱变分形式构造离散系统。"
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.1.0",
+  "id": "method.bayesian-model-discrepancy",
+  "name": "Bayesian Model Discrepancy Calibration",
+  "name_zh": "贝叶斯模型失配校准",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Calibrate simulator parameters while explicitly modeling structural discrepancy between the physical simulator and observations.",
+  "summary_zh": "在校准物理参数时显式引入模型失配项，避免把所有观测偏差都解释成参数误差。",
+  "core_idea": "Jointly infer uncertain simulator parameters and a statistical discrepancy function with an observation likelihood.",
+  "innovation": "Accounts for structural misspecification rather than forcing parameters to absorb all systematic measurement mismatch.",
+  "limitations": [
+    "Parameter and discrepancy contributions can be weakly identifiable.",
+    "Prior choices and limited observations can dominate predictions."
+  ],
+  "background_topics": [
+    "Bayesian calibration",
+    "Gaussian process discrepancy",
+    "Parameter identifiability"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.kennedy-2001-model-discrepancy",
+      "why": "Classic model-calibration framework incorporating simulator bias.",
+      "focus": "Parameter calibration, discrepancy process and prediction uncertainty."
+    }
+  ],
+  "curation_note": "Authoritative journal source checked; the proposed starting reference is optional."
+}

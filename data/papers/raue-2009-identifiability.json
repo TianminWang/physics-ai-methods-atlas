@@ -1,0 +1,24 @@
+{
+  "schema_version": "2.1.0",
+  "id": "paper.raue-2009-identifiability",
+  "title": "Structural and practical identifiability analysis of partially observed dynamical models by exploiting the profile likelihood",
+  "authors": [
+    "Andreas Raue",
+    "Christian Kreutz",
+    "Thomas Maiwald",
+    "Julie Bachmann",
+    "Marcel Schilling",
+    "Ursula Klingmüller",
+    "Jens Timmer"
+  ],
+  "year": 2009,
+  "venue": "Bioinformatics",
+  "publication_status": "peer_reviewed",
+  "url": "https://doi.org/10.1093/bioinformatics/btp358",
+  "identifiers": {
+    "doi": "10.1093/bioinformatics/btp358"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://pubmed.ncbi.nlm.nih.gov/19505944/",
+  "summary": "Uses profile likelihood to distinguish structural versus practical parameter nonidentifiability under partial observations."
+}

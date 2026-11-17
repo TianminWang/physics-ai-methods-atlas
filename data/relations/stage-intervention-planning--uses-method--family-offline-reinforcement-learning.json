@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-intervention-planning--uses-method--family-offline-reinforcement-learning",
+  "source_id": "stage.intervention-planning",
+  "target_id": "family.offline-reinforcement-learning",
+  "type": "uses_method",
+  "claim": "For intervention-planning, learning candidate policies from recorded trajectories without risky online exploration.",
+  "claim_zh": "在“intervention-planning”环节：从历史轨迹学习候选策略而不依赖高风险在线探索。",
+  "role": "learning candidate policies from recorded trajectories without risky online exploration",
+  "role_zh": "从历史轨迹学习候选策略而不依赖高风险在线探索",
+  "evidence_scope": "hypothesis"
+}

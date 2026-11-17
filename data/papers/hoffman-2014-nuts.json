@@ -1,0 +1,19 @@
+{
+  "schema_version": "2.1.0",
+  "id": "paper.hoffman-2014-nuts",
+  "title": "The No-U-Turn Sampler: Adaptively Setting Path Lengths in Hamiltonian Monte Carlo",
+  "authors": [
+    "Matthew D. Hoffman",
+    "Andrew Gelman"
+  ],
+  "year": 2014,
+  "venue": "Journal of Machine Learning Research",
+  "publication_status": "peer_reviewed",
+  "url": "https://arxiv.org/abs/1111.4246",
+  "identifiers": {
+    "arxiv": "1111.4246"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://www.jmlr.org/papers/v15/hoffman14a.html",
+  "summary": "Proposes adaptive HMC trajectory lengths that reduce manual tuning in Bayesian posterior sampling."
+}

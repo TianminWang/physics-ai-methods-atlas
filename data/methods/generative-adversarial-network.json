@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.1.0",
+  "id": "method.generative-adversarial-network",
+  "name": "Generative Adversarial Network (GAN)",
+  "name_zh": "生成对抗网络（GAN）",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Learn a generative distribution by adversarially training a generator and a discriminator.",
+  "summary_zh": "通过生成器与判别器的对抗优化学习数据分布。",
+  "core_idea": "Minimize an adversarial two-player objective instead of an explicit normalized likelihood.",
+  "innovation": "Provides a flexible implicit generative prior that can represent complicated data manifolds.",
+  "limitations": [
+    "Training stability and mode collapse remain challenges.",
+    "Sample quality does not imply physics preservation or posterior calibration."
+  ],
+  "background_topics": [
+    "Minimax optimization",
+    "Implicit density models",
+    "Adversarial learning"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.goodfellow-2014-gan",
+      "why": "Foundational adversarial generative-model proposal and training objective.",
+      "focus": "Adversarial game, generator/discriminator roles and limitations."
+    }
+  ],
+  "curation_note": "Representative publication checked; recommendations are advisory and application-specific clinical claims require separate evidence."
+}

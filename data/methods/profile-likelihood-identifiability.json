@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.1.0",
+  "id": "method.profile-likelihood-identifiability",
+  "name": "Profile-Likelihood Identifiability Analysis",
+  "name_zh": "剖面似然可辨识性分析",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Assess whether observed trajectories constrain model parameters uniquely or only weakly.",
+  "summary_zh": "通过固定单个参数并重优化其他参数构造剖面似然，区分结构与实践不可辨识性。",
+  "core_idea": "Optimize nuisance parameters along slices of a selected parameter and examine likelihood profiles.",
+  "innovation": "Separates structural and data-limited identifiability limitations beyond optimizer convergence.",
+  "limitations": [
+    "Computationally expensive for many parameters.",
+    "Depends on a valid observation/noise model."
+  ],
+  "background_topics": [
+    "Likelihood",
+    "Optimization",
+    "Local/global identifiability"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.raue-2009-identifiability",
+      "why": "Classical accessible example of practical versus structural identifiability with partial observations.",
+      "focus": "Profile construction and interpretation of flat/unbounded directions."
+    }
+  ],
+  "curation_note": "Representative primary or authoritative scholarly source has been checked; the suggested starting reference is optional, not a required reading quota."
+}

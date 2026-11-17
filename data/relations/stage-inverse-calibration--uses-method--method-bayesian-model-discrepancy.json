@@ -1,0 +1,15 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-inverse-calibration--uses-method--method-bayesian-model-discrepancy",
+  "source_id": "stage.inverse-calibration",
+  "target_id": "method.bayesian-model-discrepancy",
+  "type": "uses_method",
+  "claim": "For inverse-calibration, representing physical simulator bias separately from uncertain calibration parameters.",
+  "claim_zh": "在inverse-calibration环节中：在反演中将物理模型失配与未知参数区分建模。",
+  "role": "representing physical simulator bias separately from uncertain calibration parameters",
+  "role_zh": "在反演中将物理模型失配与未知参数区分建模",
+  "evidence_scope": "literature_supported",
+  "evidence_paper_ids": [
+    "paper.kennedy-2001-model-discrepancy"
+  ]
+}

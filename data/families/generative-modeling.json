@@ -5,7 +5,7 @@
   "name_zh": "物理系统的生成式建模",
   "summary": "Model physical states, priors or trajectories as learnable distributions.",
   "summary_zh": "学习参数、物理场和轨迹的概率分布，服务生成式先验、反演与预测。",
-  "coverage_status": "planned",
-  "scope_note": "VAE, normalizing flows, diffusion and flow matching require separate literature review.",
-  "scope_note_zh": "VAE、归一化流、扩散和流匹配等具体分支等待核对文献。"
+  "coverage_status": "populated",
+  "scope_note": "Representative method nodes are now present; the scholarly family is not exhaustively mapped.",
+  "scope_note_zh": "已包含首批代表方法，但尚未宣称所有方法谱系均已覆盖。"
 }

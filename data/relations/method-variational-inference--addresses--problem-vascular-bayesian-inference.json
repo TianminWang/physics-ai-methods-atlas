@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-variational-inference--addresses--problem-vascular-bayesian-inference",
+  "source_id": "method.variational-inference",
+  "target_id": "problem.vascular-bayesian-inference",
+  "type": "addresses",
+  "claim": "Can approximate parameter posteriors when full MCMC is too costly, with variational calibration limits."
+}

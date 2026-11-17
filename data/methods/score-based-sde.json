@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.1.0",
+  "id": "method.score-based-sde",
+  "name": "Score-Based Generative Modeling with SDEs",
+  "name_zh": "基于随机微分方程的得分生成建模",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Represent perturbation and generative processes with forward/reverse SDEs and learned score fields.",
+  "summary_zh": "通过扰动分布的得分函数构造反向时间SDE与概率流ODE进行生成。",
+  "core_idea": "Learn time-dependent score gradients and use reverse-time SDE or probability-flow ODE sampling.",
+  "innovation": "Unifies score-based models with stochastic continuous-time generative dynamics, including paths related to diffusion models.",
+  "limitations": [
+    "Reverse integration and score approximation introduce numerical errors.",
+    "Sampling physical fields requires additional validity checks."
+  ],
+  "background_topics": [
+    "Score matching",
+    "SDE/ODE solvers",
+    "Probability gradients"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.song-2021-score-sde",
+      "why": "Foundational SDE view connecting score models and diffusion.",
+      "focus": "Reverse-time SDE, probability-flow ODE and score estimation."
+    }
+  ],
+  "curation_note": "Bibliographic identity verified against authoritative proceedings; downstream physical inverse validity must be separately evaluated."
+}

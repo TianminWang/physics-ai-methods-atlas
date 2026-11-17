@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-simulation-based-inference--addresses--problem-simulation-likelihood-free-calibration",
+  "source_id": "method.simulation-based-inference",
+  "target_id": "problem.simulation-likelihood-free-calibration",
+  "type": "addresses",
+  "claim": "General inverse framework for simulator-only observations when tractable likelihoods are unavailable."
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": "2.1.0",
+  "id": "paper.bora-2017-gen-prior",
+  "title": "Compressed Sensing using Generative Models",
+  "authors": [
+    "Ashish Bora",
+    "Ajil Jalal",
+    "Eric Price",
+    "Alexandros G. Dimakis"
+  ],
+  "year": 2017,
+  "venue": "International Conference on Machine Learning (ICML)",
+  "publication_status": "peer_reviewed",
+  "url": "https://arxiv.org/abs/1703.03208",
+  "identifiers": {
+    "arxiv": "1703.03208"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://proceedings.mlr.press/v70/bora17a.html",
+  "summary": "Establishes inverse reconstruction guarantees under learned generative-range assumptions rather than sparsity alone."
+}

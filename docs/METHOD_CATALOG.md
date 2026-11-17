@@ -1,4 +1,6 @@
-# Method Catalogue · v0.2 初始方法目录
+# Method Catalogue · v0.2 初始30方法目录
+
+> **历史索引：** 本页只记录 v0.2 最早的30个方法，并非当前全部方法。当前 v0.4 已扩充至61个方法；请参阅 [中文方法谱系综述](zh/METHOD_GENEALOGY_V04.md) 或 [English](en/METHOD_GENEALOGY_V04.md)，后续交互式图谱将从同一份数据自动生成完整目录。
 
 This is an **editorial index of the first 30 methods**, grouped by the role they play in scientific inverse problems. It is **not** a unique-parent historical tree: a method may belong to multiple areas and have more than one methodological predecessor. The source of truth is in [data/methods](../data/methods) and [data/relations](../data/relations).
 

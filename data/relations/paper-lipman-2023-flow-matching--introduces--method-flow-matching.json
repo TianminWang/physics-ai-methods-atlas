@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.paper-lipman-2023-flow-matching--introduces--method-flow-matching",
+  "source_id": "paper.lipman-2023-flow-matching",
+  "target_id": "method.flow-matching",
+  "type": "introduces",
+  "claim": "Introduces simulation-free conditional path vector-field regression for continuous normalizing flows.",
+  "significance": "landmark",
+  "significance_reason": "Introduces simulation-free conditional path vector-field regression for continuous normalizing flows."
+}

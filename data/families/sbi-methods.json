@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "family.sbi-methods",
+  "name": "Simulation-based and likelihood-free inference",
+  "name_zh": "仿真驱动与似然自由推断",
+  "summary": "Inference by simulations and learned density/ratio estimators when likelihood evaluations are unavailable.",
+  "summary_zh": "在可以生成模拟数据但难以计算似然时使用仿真与密度学习进行推断。",
+  "coverage_status": "populated",
+  "scope_note": "Initial verified canonical method/reference set only; this branch is not claimed exhaustive.",
+  "scope_note_zh": "已加入经核实的代表方法与文献，但并不表示该领域的研究谱系已经穷尽。"
+}

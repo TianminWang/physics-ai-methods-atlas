@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.paper-bastek-2025-physics-diffusion--applies--method-diffusion-probabilistic-model",
+  "source_id": "paper.bastek-2025-physics-diffusion",
+  "target_id": "method.diffusion-probabilistic-model",
+  "type": "applies",
+  "claim": "Adds governing-equation residual losses to denoising diffusion training in physical field examples.",
+  "significance": "supporting"
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": "2.1.0",
+  "id": "book.brenner-scott-fem",
+  "title": "The Mathematical Theory of Finite Element Methods",
+  "authors": [
+    "Susanne C. Brenner",
+    "L. Ridgway Scott"
+  ],
+  "year": 2008,
+  "publisher": "Springer, 3rd edition",
+  "url": "https://doi.org/10.1007/978-0-387-75934-0",
+  "summary": "Mathematical treatment of weak formulations, finite-element spaces, approximation and error control."
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": "2.1.0",
+  "id": "paper.janner-2019-mbpo",
+  "title": "When to Trust Your Model: Model-Based Policy Optimization",
+  "authors": [
+    "Michael Janner",
+    "Justin Fu",
+    "Marvin Zhang",
+    "Sergey Levine"
+  ],
+  "year": 2019,
+  "venue": "Advances in Neural Information Processing Systems (NeurIPS)",
+  "publication_status": "peer_reviewed",
+  "url": "https://arxiv.org/abs/1906.08253",
+  "identifiers": {
+    "arxiv": "1906.08253"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://proceedings.neurips.cc/paper/2019/hash/5faf461eff3099671ad63c6f3f094f7f-Abstract.html",
+  "summary": "Introduces short model rollouts to limit compounding model error in model-based reinforcement-learning policy updates."
+}

@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-variational-autoencoder--belongs-to--area-physics-ai",
+  "source_id": "method.variational-autoencoder",
+  "target_id": "area.physics-ai",
+  "type": "belongs_to",
+  "claim": "Navigation membership of variational-autoencoder in physics-ai; this is not a scientific ancestry claim.",
+  "claim_zh": "导航索引：variational-autoencoder与physics-ai相关，不代表任何方法发展方向。"
+}

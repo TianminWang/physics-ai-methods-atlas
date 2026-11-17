@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-intervention-planning--uses-method--family-model-based-control",
+  "source_id": "stage.intervention-planning",
+  "target_id": "family.model-based-control",
+  "type": "uses_method",
+  "claim": "For intervention-planning, optimizing prospective actions using simulated dynamical consequences.",
+  "claim_zh": "在“intervention-planning”环节：基于模拟的动态结果优化未来动作与干预策略。",
+  "role": "optimizing prospective actions using simulated dynamical consequences",
+  "role_zh": "基于模拟的动态结果优化未来动作与干预策略",
+  "evidence_scope": "conceptual"
+}

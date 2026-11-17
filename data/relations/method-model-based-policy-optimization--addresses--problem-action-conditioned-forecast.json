@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-model-based-policy-optimization--addresses--problem-action-conditioned-forecast",
+  "source_id": "method.model-based-policy-optimization",
+  "target_id": "problem.action-conditioned-forecast",
+  "type": "addresses",
+  "claim": "Model-based RL generates short latent/model rollouts to inform policy updates rather than directly calibrate physical states."
+}

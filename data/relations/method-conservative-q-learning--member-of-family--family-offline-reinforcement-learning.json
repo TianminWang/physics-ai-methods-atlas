@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-conservative-q-learning--member-of-family--family-offline-reinforcement-learning",
+  "source_id": "method.conservative-q-learning",
+  "target_id": "family.offline-reinforcement-learning",
+  "type": "member_of_family",
+  "claim": "The conservative-q-learning technique is classified under offline-reinforcement-learning for genealogical navigation.",
+  "claim_zh": "方法“conservative-q-learning”归入“offline-reinforcement-learning”分类，但它仍可能服务多个研究环节。"
+}

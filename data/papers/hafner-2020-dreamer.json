@@ -1,0 +1,21 @@
+{
+  "schema_version": "2.1.0",
+  "id": "paper.hafner-2020-dreamer",
+  "title": "Dream to Control: Learning Behaviors by Latent Imagination",
+  "authors": [
+    "Danijar Hafner",
+    "Timothy Lillicrap",
+    "Jimmy Ba",
+    "Mohammad Norouzi"
+  ],
+  "year": 2020,
+  "venue": "International Conference on Learning Representations (ICLR)",
+  "publication_status": "peer_reviewed",
+  "url": "https://arxiv.org/abs/1912.01603",
+  "identifiers": {
+    "arxiv": "1912.01603"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://research.google/pubs/dream-to-control-learning-behaviors-by-latent-imagination/",
+  "summary": "Introduces Dreamer behavior learning from differentiable imagined trajectories in a latent world model."
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": "2.1.0",
+  "id": "problem.generative-pde-inference",
+  "name": "Generative inference of uncertain PDE coefficients",
+  "name_zh": "PDE未知系数的生成式反演",
+  "summary": "Approximate distributions over unknown PDE coefficients or physical states from sparse noisy measurements using learned generative priors or guided samplers.",
+  "unknowns": [
+    "Unknown coefficient fields",
+    "Potentially multimodal inverse solutions"
+  ],
+  "observables": [
+    "Sparse noisy physical measurements"
+  ],
+  "constraints": [
+    "PDE and boundary conditions",
+    "Prior/simulator fidelity",
+    "Observation likelihood"
+  ]
+}

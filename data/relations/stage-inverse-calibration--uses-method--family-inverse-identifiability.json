@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-inverse-calibration--uses-method--family-inverse-identifiability",
+  "source_id": "stage.inverse-calibration",
+  "target_id": "family.inverse-identifiability",
+  "type": "uses_method",
+  "claim": "For inverse-calibration, checking whether observations truly determine unknown parameters.",
+  "claim_zh": "在“inverse-calibration”环节：检查有限观测是否足以辨识未知参数。",
+  "role": "checking whether observations truly determine unknown parameters",
+  "role_zh": "检查有限观测是否足以辨识未知参数",
+  "evidence_scope": "conceptual"
+}

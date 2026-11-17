@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-no-u-turn-sampler--specializes--method-markov-chain-monte-carlo",
+  "source_id": "method.no-u-turn-sampler",
+  "target_id": "method.markov-chain-monte-carlo",
+  "type": "specializes",
+  "claim": "NUTS is an adaptive Hamiltonian Monte Carlo algorithm within the wider MCMC family.",
+  "claim_zh": "NUTS 是 MCMC 下的自适应哈密顿采样方法。"
+}

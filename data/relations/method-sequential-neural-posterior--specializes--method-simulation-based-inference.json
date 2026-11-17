@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-sequential-neural-posterior--specializes--method-simulation-based-inference",
+  "source_id": "method.sequential-neural-posterior",
+  "target_id": "method.simulation-based-inference",
+  "type": "specializes",
+  "claim": "Automatic Posterior Transformation is one sequential neural inference approach within SBI.",
+  "claim_zh": "APT 是仿真驱动推断中一种序贯神经后验估计方法。"
+}

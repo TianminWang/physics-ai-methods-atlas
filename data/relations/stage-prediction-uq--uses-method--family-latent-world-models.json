@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-prediction-uq--uses-method--family-latent-world-models",
+  "source_id": "stage.prediction-uq",
+  "target_id": "family.latent-world-models",
+  "type": "uses_method",
+  "claim": "For prediction-uq, rolling out learned latent state transitions for future outcomes.",
+  "claim_zh": "在“prediction-uq”环节：利用学习型隐状态转移展开未来预测。",
+  "role": "rolling out learned latent state transitions for future outcomes",
+  "role_zh": "利用学习型隐状态转移展开未来预测",
+  "evidence_scope": "conceptual"
+}

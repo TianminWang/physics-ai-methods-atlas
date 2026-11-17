@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-model-based-policy-optimization--member-of-family--family-model-based-control",
+  "source_id": "method.model-based-policy-optimization",
+  "target_id": "family.model-based-control",
+  "type": "member_of_family",
+  "claim": "The model-based-policy-optimization technique is classified under model-based-control for genealogical navigation.",
+  "claim_zh": "方法“model-based-policy-optimization”归入“model-based-control”分类，但它仍可能服务多个研究环节。"
+}

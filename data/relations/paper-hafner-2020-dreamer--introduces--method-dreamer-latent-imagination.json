@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.paper-hafner-2020-dreamer--introduces--method-dreamer-latent-imagination",
+  "source_id": "paper.hafner-2020-dreamer",
+  "target_id": "method.dreamer-latent-imagination",
+  "type": "introduces",
+  "claim": "Introduces Dreamer actor–critic optimization using imagined trajectories.",
+  "significance": "landmark",
+  "significance_reason": "Introduces Dreamer actor–critic optimization using imagined trajectories."
+}

@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-model-predictive-control--belongs-to--area-world-models-planning",
+  "source_id": "method.model-predictive-control",
+  "target_id": "area.world-models-planning",
+  "type": "belongs_to",
+  "claim": "Navigation membership of model-predictive-control in world-models-planning; this is not a scientific ancestry claim.",
+  "claim_zh": "导航索引：model-predictive-control与world-models-planning相关，不代表任何方法发展方向。"
+}

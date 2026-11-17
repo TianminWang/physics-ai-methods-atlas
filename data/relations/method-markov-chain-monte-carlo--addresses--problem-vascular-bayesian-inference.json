@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-markov-chain-monte-carlo--addresses--problem-vascular-bayesian-inference",
+  "source_id": "method.markov-chain-monte-carlo",
+  "target_id": "problem.vascular-bayesian-inference",
+  "type": "addresses",
+  "claim": "Samples vascular parameter posteriors when a reliable forward model and observation likelihood are available."
+}

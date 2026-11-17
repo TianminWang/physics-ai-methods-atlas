@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-diffusion-probabilistic-model--member-of-family--family-diffusion-score-models",
+  "source_id": "method.diffusion-probabilistic-model",
+  "target_id": "family.diffusion-score-models",
+  "type": "member_of_family",
+  "claim": "The diffusion-probabilistic-model technique is classified under diffusion-score-models for genealogical navigation.",
+  "claim_zh": "方法“diffusion-probabilistic-model”归入“diffusion-score-models”分类，但它仍可能服务多个研究环节。"
+}

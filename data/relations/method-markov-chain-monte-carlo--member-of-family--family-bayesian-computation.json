@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-markov-chain-monte-carlo--member-of-family--family-bayesian-computation",
+  "source_id": "method.markov-chain-monte-carlo",
+  "target_id": "family.bayesian-computation",
+  "type": "member_of_family",
+  "claim": "The markov-chain-monte-carlo technique is classified under bayesian-computation for genealogical navigation.",
+  "claim_zh": "方法“markov-chain-monte-carlo”归入“bayesian-computation”分类，但它仍可能服务多个研究环节。"
+}

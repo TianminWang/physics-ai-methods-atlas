@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "family.normalizing-flows",
+  "name": "Invertible normalizing flows",
+  "name_zh": "可逆归一化流",
+  "summary": "Invertible transformations that support tractable density evaluation or learnable transport.",
+  "summary_zh": "以可逆变换和连续流构造可采样、可估计密度的概率模型。",
+  "coverage_status": "populated",
+  "scope_note": "Initial verified canonical method/reference set only; this branch is not claimed exhaustive.",
+  "scope_note_zh": "已加入经核实的代表方法与文献，但并不表示该领域的研究谱系已经穷尽。"
+}

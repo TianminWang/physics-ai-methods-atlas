@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-score-based-sde--addresses--problem-physics-field-sample-generation",
+  "source_id": "method.score-based-sde",
+  "target_id": "problem.physics-field-sample-generation",
+  "type": "addresses",
+  "claim": "Reverse SDE sampling provides a generative field model subject to distribution and physics validation."
+}

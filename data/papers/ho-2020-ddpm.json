@@ -1,0 +1,20 @@
+{
+  "schema_version": "2.1.0",
+  "id": "paper.ho-2020-ddpm",
+  "title": "Denoising Diffusion Probabilistic Models",
+  "authors": [
+    "Jonathan Ho",
+    "Ajay Jain",
+    "Pieter Abbeel"
+  ],
+  "year": 2020,
+  "venue": "Advances in Neural Information Processing Systems (NeurIPS)",
+  "publication_status": "peer_reviewed",
+  "url": "https://arxiv.org/abs/2006.11239",
+  "identifiers": {
+    "arxiv": "2006.11239"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://proceedings.neurips.cc/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html",
+  "summary": "Develops DDPM training and reverse denoising-based probabilistic generation."
+}

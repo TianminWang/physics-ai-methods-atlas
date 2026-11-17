@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.1.0",
+  "id": "method.finite-difference",
+  "name": "Finite Difference Method (FDM)",
+  "name_zh": "有限差分法",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Discretize spatial or temporal derivatives on sample points to obtain algebraic approximations of ODE/PDEs.",
+  "summary_zh": "通过差分近似把导数替换成网格节点上的代数运算。",
+  "core_idea": "Approximate derivatives using consistency-order stencils and assemble discrete equations.",
+  "innovation": "Provides a direct differential-form discretization and numerical reference baseline.",
+  "limitations": [
+    "Structured grids can be inconvenient for complex vessel geometries.",
+    "Stability and boundary handling require separate numerical analysis."
+  ],
+  "background_topics": [
+    "Taylor expansion",
+    "Grid discretization",
+    "Consistency and stability"
+  ],
+  "start_here": [
+    {
+      "reference_id": "book.leveque-finite-difference",
+      "why": "Authoritative derivation and stability background for this classical numerical family.",
+      "focus": "Derivative stencils, consistency, stability, convergence."
+    }
+  ],
+  "curation_note": "Representative primary or authoritative scholarly source has been checked; the suggested starting reference is optional, not a required reading quota."
+}

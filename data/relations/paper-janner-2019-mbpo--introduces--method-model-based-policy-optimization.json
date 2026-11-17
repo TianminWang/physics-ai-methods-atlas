@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.paper-janner-2019-mbpo--introduces--method-model-based-policy-optimization",
+  "source_id": "paper.janner-2019-mbpo",
+  "target_id": "method.model-based-policy-optimization",
+  "type": "introduces",
+  "claim": "Introduces model-based policy optimization using short branched synthetic rollouts.",
+  "significance": "landmark",
+  "significance_reason": "Introduces model-based policy optimization using short branched synthetic rollouts."
+}

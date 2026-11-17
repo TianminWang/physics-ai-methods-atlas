@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-meshgraphnets--member-of-family--family-learned-mesh-simulation",
+  "source_id": "method.meshgraphnets",
+  "target_id": "family.learned-mesh-simulation",
+  "type": "member_of_family",
+  "claim": "The meshgraphnets technique is classified under learned-mesh-simulation for genealogical navigation.",
+  "claim_zh": "方法“meshgraphnets”归入“learned-mesh-simulation”分类，但它仍可能服务多个研究环节。"
+}

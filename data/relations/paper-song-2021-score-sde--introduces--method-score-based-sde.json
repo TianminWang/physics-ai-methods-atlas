@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.paper-song-2021-score-sde--introduces--method-score-based-sde",
+  "source_id": "paper.song-2021-score-sde",
+  "target_id": "method.score-based-sde",
+  "type": "introduces",
+  "claim": "Develops continuous SDE and probability-flow ODE interpretations of score-based generation.",
+  "significance": "landmark",
+  "significance_reason": "Develops continuous SDE and probability-flow ODE interpretations of score-based generation."
+}

@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.paper-song-2021-score-sde--analyzes--method-diffusion-probabilistic-model",
+  "source_id": "paper.song-2021-score-sde",
+  "target_id": "method.diffusion-probabilistic-model",
+  "type": "analyzes",
+  "claim": "Connects discrete diffusion modeling and reverse-time stochastic processes in a unified score/SDE framework.",
+  "significance": "supporting"
+}

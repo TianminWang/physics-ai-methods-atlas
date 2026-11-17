@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-difftaichi--member-of-family--family-differentiable-simulation",
+  "source_id": "method.difftaichi",
+  "target_id": "family.differentiable-simulation",
+  "type": "member_of_family",
+  "claim": "The difftaichi technique is classified under differentiable-simulation for genealogical navigation.",
+  "claim_zh": "方法“difftaichi”归入“differentiable-simulation”分类，但它仍可能服务多个研究环节。"
+}

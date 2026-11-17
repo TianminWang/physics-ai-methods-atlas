@@ -5,7 +5,7 @@
   "name_zh": "物理约束生成与生成式反问题",
   "summary": "Condition generative models on observations or physics constraints to sample plausible inverse or forward solutions.",
   "summary_zh": "在生成模型中加入观测与物理信息，用于生成解场、先验或反问题条件样本。",
-  "coverage_status": "planned",
-  "scope_note": "Do not claim calibrated posterior samples without method-specific evidence.",
-  "scope_note_zh": "不能因为生成了多样样本就声称后验分布已校准。"
+  "coverage_status": "populated",
+  "scope_note": "Representative method nodes are now present; the scholarly family is not exhaustively mapped.",
+  "scope_note_zh": "已包含首批代表方法，但尚未宣称所有方法谱系均已覆盖。"
 }

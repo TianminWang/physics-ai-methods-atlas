@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-flow-matching--extends--method-normalizing-flow",
+  "source_id": "method.flow-matching",
+  "target_id": "method.normalizing-flow",
+  "type": "extends",
+  "claim": "Trains continuous normalizing flows by regressing vector fields along conditional probability paths without simulated training trajectories.",
+  "claim_zh": "利用条件概率路径的速度场回归训练连续归一化流，减少训练阶段对轨迹仿真的依赖。",
+  "innovation_detail": "Trains continuous normalizing flows by regressing vector fields along conditional probability paths without simulated training trajectories.",
+  "innovation_detail_zh": "利用条件概率路径的速度场回归训练连续归一化流，减少训练阶段对轨迹仿真的依赖。",
+  "bottleneck": "Maximum-likelihood training of continuous normalizing flows can require costly ODE solve differentiation.",
+  "bottleneck_zh": "传统连续归一化流的似然训练往往需要昂贵的ODE轨迹求解与求导。",
+  "stage_ids": [
+    "stage.prediction-uq",
+    "stage.inverse-calibration"
+  ],
+  "primary_stage_id": "stage.prediction-uq",
+  "tradeoff": "Sampling still requires solving the learned transport ODE and probability coverage must be checked.",
+  "evidence_paper_ids": [
+    "paper.lipman-2023-flow-matching"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-dreamer-latent-imagination--addresses--problem-action-conditioned-forecast",
+  "source_id": "method.dreamer-latent-imagination",
+  "target_id": "problem.action-conditioned-forecast",
+  "type": "addresses",
+  "claim": "Uses latent world model imagined futures for learning actions; not a validated medical treatment model."
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.1.0",
+  "id": "method.diffusion-probabilistic-model",
+  "name": "Denoising Diffusion Probabilistic Model (DDPM)",
+  "name_zh": "去噪扩散概率模型（DDPM）",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Model a data distribution through a forward noising chain and learned reverse denoising dynamics.",
+  "summary_zh": "构建加噪过程，并学习其逐步去噪的反向生成转移。",
+  "core_idea": "Learn reverse denoising transitions using a tractable reparameterized training loss.",
+  "innovation": "Provides a flexible prior over complex fields or images for later conditional or inverse tasks.",
+  "limitations": [
+    "Iterative sampling can be computationally expensive.",
+    "Generated samples may violate governing equations without further constraints."
+  ],
+  "background_topics": [
+    "Markov processes",
+    "Denoising objectives",
+    "Probability models"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.ho-2020-ddpm",
+      "why": "Canonical diffusion generative baseline with simple losses.",
+      "focus": "Noise schedule, reverse sampling and training objective."
+    }
+  ],
+  "curation_note": "Bibliographic identity verified against authoritative proceedings; downstream physical inverse validity must be separately evaluated."
+}

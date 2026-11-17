@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.1.0",
+  "id": "method.difftaichi",
+  "name": "DiffTaichi Differentiable Physical Simulation",
+  "name_zh": "DiffTaichi 可微物理模拟",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Differentiate through procedural simulation programs using source-level transformations and reverse-mode tapes.",
+  "summary_zh": "通过程序级变换及反向传播记录，在物理模拟计算中高效计算梯度。",
+  "core_idea": "Provide differentiable high-performance physical simulation infrastructure for gradients through time-stepping programs.",
+  "innovation": "Makes gradient-based inverse design and parameter optimization more practical in simulated physics.",
+  "limitations": [
+    "Discontinuities and solver approximations can spoil gradients.",
+    "Differentiation does not alone guarantee physical-model accuracy."
+  ],
+  "background_topics": [
+    "Automatic differentiation",
+    "Numerical simulation",
+    "Reverse-mode gradients"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.hu-2020-difftaichi",
+      "why": "ICLR differentiable simulation framework and representative applications.",
+      "focus": "Program transformations and physical gradient computation."
+    }
+  ],
+  "curation_note": "Representative publication checked; recommendations are advisory and application-specific clinical claims require separate evidence."
+}

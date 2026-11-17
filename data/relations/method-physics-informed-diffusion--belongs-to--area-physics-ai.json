@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-physics-informed-diffusion--belongs-to--area-physics-ai",
+  "source_id": "method.physics-informed-diffusion",
+  "target_id": "area.physics-ai",
+  "type": "belongs_to",
+  "claim": "Navigation membership of physics-informed-diffusion in physics-ai; this is not a scientific ancestry claim.",
+  "claim_zh": "导航索引：physics-informed-diffusion与physics-ai相关，不代表任何方法发展方向。"
+}

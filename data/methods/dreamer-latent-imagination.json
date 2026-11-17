@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.1.0",
+  "id": "method.dreamer-latent-imagination",
+  "name": "Dreamer: Behavior Learning by Latent Imagination",
+  "name_zh": "Dreamer 潜在想象轨迹强化学习",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Optimize policies and values on trajectories imagined within a learned latent world model.",
+  "summary_zh": "在学习得到的潜在动力学模型中展开想象轨迹，并反向传播以优化行为策略。",
+  "core_idea": "Train actor/critic behaviors through imagined trajectories rather than planning every action only by search.",
+  "innovation": "Improves data-efficiency for some partially observed visual control tasks using learned models.",
+  "limitations": [
+    "Imagined rollouts can amplify model bias.",
+    "Clinical intervention decisions require separate prospective safety validation."
+  ],
+  "background_topics": [
+    "Latent world models",
+    "Actor–critic methods",
+    "Imagined rollouts"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.hafner-2020-dreamer",
+      "why": "ICLR 2020 introduction of Dreamer policy optimization in imagination.",
+      "focus": "Model imagination, actor-critic training, gradients through latent rollouts."
+    }
+  ],
+  "curation_note": "Representative publication checked; recommendations are advisory and application-specific clinical claims require separate evidence."
+}

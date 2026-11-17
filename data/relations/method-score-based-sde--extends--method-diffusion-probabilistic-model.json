@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-score-based-sde--extends--method-diffusion-probabilistic-model",
+  "source_id": "method.score-based-sde",
+  "target_id": "method.diffusion-probabilistic-model",
+  "type": "extends",
+  "claim": "Formulates score-based/noise diffusion generation as continuous-time reverse SDEs with equivalent probability-flow ODE dynamics.",
+  "claim_zh": "把逐步加噪/去噪的生成过程扩展到连续时间反向SDE及对应的概率流ODE。",
+  "innovation_detail": "Formulates score-based/noise diffusion generation as continuous-time reverse SDEs with equivalent probability-flow ODE dynamics.",
+  "innovation_detail_zh": "把逐步加噪/去噪的生成过程扩展到连续时间反向SDE及对应的概率流ODE。",
+  "bottleneck": "Discrete diffusion procedures and continuous score-based models previously lacked a unified formulation of reverse stochastic dynamics.",
+  "bottleneck_zh": "离散扩散过程与连续得分模型缺乏统一的反向随机动力学框架。",
+  "stage_ids": [
+    "stage.prediction-uq",
+    "stage.physics-forward"
+  ],
+  "primary_stage_id": "stage.prediction-uq",
+  "tradeoff": "Continuous stochastic integration introduces solver and score estimation errors.",
+  "evidence_paper_ids": [
+    "paper.song-2021-score-sde"
+  ]
+}

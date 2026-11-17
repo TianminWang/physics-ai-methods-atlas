@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-bayesian-model-discrepancy--member-of-family--family-uncertainty-quantification",
+  "source_id": "method.bayesian-model-discrepancy",
+  "target_id": "family.uncertainty-quantification",
+  "type": "member_of_family",
+  "claim": "Classifies bayesian-model-discrepancy within the uncertainty-quantification methodological family.",
+  "claim_zh": "方法“bayesian-model-discrepancy”归入“uncertainty-quantification”相关家族。"
+}

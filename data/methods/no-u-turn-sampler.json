@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.1.0",
+  "id": "method.no-u-turn-sampler",
+  "name": "No-U-Turn Sampler (NUTS)",
+  "name_zh": "无回头采样器（NUTS）",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Adapt HMC integration path lengths to reduce manual tuning for posterior sampling.",
+  "summary_zh": "利用轨迹折返判据自动决定哈密顿蒙特卡洛的积分长度。",
+  "core_idea": "Adapt Hamiltonian trajectory length using a turning criterion and step-size adaptation.",
+  "innovation": "Reduces a major tuning burden in gradient-based MCMC, often valuable for moderately dimensional inverses.",
+  "limitations": [
+    "Requires differentiable log-posterior gradients.",
+    "Still expensive when each potential energy gradient requires a PDE solve."
+  ],
+  "background_topics": [
+    "Hamiltonian Monte Carlo",
+    "Leapfrog integration",
+    "Posterior gradients"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.hoffman-2014-nuts",
+      "why": "Definitive NUTS paper explaining adaptive path length and HMC tuning.",
+      "focus": "Turning criterion, trajectory construction and adaptation."
+    }
+  ],
+  "curation_note": "Representative primary or authoritative scholarly source has been checked; the suggested starting reference is optional, not a required reading quota."
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.1.0",
+  "id": "method.meshgraphnets",
+  "name": "MeshGraphNets: Learned Mesh-Based Simulation",
+  "name_zh": "MeshGraphNets 网格图学习模拟",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Predict evolving physical states on simulation meshes using graph-network message passing.",
+  "summary_zh": "在空间网格图上通过消息传递学习物理状态演化。",
+  "core_idea": "Train graph networks over mesh connectivity for rollout predictions and adaptive mesh representation.",
+  "innovation": "Provides learning-based physical simulation on irregular meshes, complementary to traditional discretizations.",
+  "limitations": [
+    "Accumulated rollout error can harm long-term predictions.",
+    "Graph simulation does not automatically imply a mesh-independent neural operator."
+  ],
+  "background_topics": [
+    "Mesh graphs",
+    "Message passing",
+    "Time stepping"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.pfaff-2021-meshgraphnets",
+      "why": "Foundational mesh-based simulation benchmark paper.",
+      "focus": "Graph representation, physical rollout and mesh adaptation."
+    }
+  ],
+  "curation_note": "Representative publication checked; recommendations are advisory and application-specific clinical claims require separate evidence."
+}

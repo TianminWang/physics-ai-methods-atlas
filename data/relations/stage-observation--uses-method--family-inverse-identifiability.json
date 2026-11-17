@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-observation--uses-method--family-inverse-identifiability",
+  "source_id": "stage.observation",
+  "target_id": "family.inverse-identifiability",
+  "type": "uses_method",
+  "claim": "For observation, assessing which observables carry information about model parameters.",
+  "claim_zh": "在“observation”环节：评估哪些可观测量包含足以区分参数的信息。",
+  "role": "assessing which observables carry information about model parameters",
+  "role_zh": "评估哪些可观测量包含足以区分参数的信息",
+  "evidence_scope": "conceptual"
+}

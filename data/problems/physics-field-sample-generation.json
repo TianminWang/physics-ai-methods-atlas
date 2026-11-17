@@ -1,0 +1,18 @@
+{
+  "schema_version": "2.1.0",
+  "id": "problem.physics-field-sample-generation",
+  "name": "Generating plausible physics-constrained fields",
+  "name_zh": "生成满足物理约束的场样本",
+  "summary": "Generate samples of physical fields under prescribed inputs and governing constraints for downstream analysis.",
+  "unknowns": [
+    "Physical field distribution"
+  ],
+  "observables": [
+    "Boundary and parameter conditions",
+    "Optional field samples"
+  ],
+  "constraints": [
+    "Governing-equation consistency",
+    "Out-of-distribution checks"
+  ]
+}

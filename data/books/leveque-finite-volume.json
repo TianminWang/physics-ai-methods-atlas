@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "book.leveque-finite-volume",
+  "title": "Finite Volume Methods for Hyperbolic Problems",
+  "authors": [
+    "Randall J. LeVeque"
+  ],
+  "year": 2002,
+  "publisher": "Cambridge University Press",
+  "url": "https://doi.org/10.1017/CBO9780511791253",
+  "summary": "Classic finite-volume treatment emphasizing conservative fluxes, Riemann problems and hyperbolic systems."
+}

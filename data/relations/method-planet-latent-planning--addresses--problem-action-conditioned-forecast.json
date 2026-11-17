@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-planet-latent-planning--addresses--problem-action-conditioned-forecast",
+  "source_id": "method.planet-latent-planning",
+  "target_id": "problem.action-conditioned-forecast",
+  "type": "addresses",
+  "claim": "Learns observation-conditioned latent dynamics to forecast consequences of action sequences in tested control environments."
+}

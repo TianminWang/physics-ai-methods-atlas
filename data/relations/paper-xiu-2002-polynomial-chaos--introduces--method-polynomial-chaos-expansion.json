@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.paper-xiu-2002-polynomial-chaos--introduces--method-polynomial-chaos-expansion",
+  "source_id": "paper.xiu-2002-polynomial-chaos",
+  "target_id": "method.polynomial-chaos-expansion",
+  "type": "introduces",
+  "claim": "Establishes generalized Wiener–Askey polynomial chaos expansions for uncertain differential equations.",
+  "significance": "landmark",
+  "significance_reason": "Establishes generalized Wiener–Askey polynomial chaos expansions for uncertain differential equations."
+}

@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.paper-chaloner-1995-bayesian-design--surveys--method-bayesian-experimental-design",
+  "source_id": "paper.chaloner-1995-bayesian-design",
+  "target_id": "method.bayesian-experimental-design",
+  "type": "surveys",
+  "claim": "Influential overview of Bayesian utility-based experimental design, not the origin of all optimal design methods.",
+  "significance": "representative"
+}

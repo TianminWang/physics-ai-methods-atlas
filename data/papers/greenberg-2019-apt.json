@@ -1,0 +1,20 @@
+{
+  "schema_version": "2.1.0",
+  "id": "paper.greenberg-2019-apt",
+  "title": "Automatic Posterior Transformation for Likelihood-Free Inference",
+  "authors": [
+    "David Greenberg",
+    "Marcel Nonnenmacher",
+    "Jakob Macke"
+  ],
+  "year": 2019,
+  "venue": "International Conference on Machine Learning (ICML)",
+  "publication_status": "peer_reviewed",
+  "url": "https://arxiv.org/abs/1905.07488",
+  "identifiers": {
+    "arxiv": "1905.07488"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://proceedings.mlr.press/v97/greenberg19a.html",
+  "summary": "Introduces automatic posterior transformation for sequential neural posterior estimation with changing simulation proposals."
+}

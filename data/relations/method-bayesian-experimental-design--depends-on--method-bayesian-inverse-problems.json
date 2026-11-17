@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-bayesian-experimental-design--depends-on--method-bayesian-inverse-problems",
+  "source_id": "method.bayesian-experimental-design",
+  "target_id": "method.bayesian-inverse-problems",
+  "type": "depends_on",
+  "claim": "Learning experimental design benefits from Bayesian priors, likelihoods and posterior inference.",
+  "claim_zh": "学习贝叶斯实验设计前需要理解先验、似然及后验推断。"
+}

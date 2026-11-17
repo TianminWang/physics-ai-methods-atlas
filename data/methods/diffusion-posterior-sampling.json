@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.1.0",
+  "id": "method.diffusion-posterior-sampling",
+  "name": "Diffusion Posterior Sampling (DPS)",
+  "name_zh": "扩散后验采样（DPS）",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Use a pretrained diffusion score model with measurement guidance for approximate noisy inverse reconstruction.",
+  "summary_zh": "把观测似然梯度引入扩散去噪过程，生成近似符合含噪观测的逆问题样本。",
+  "core_idea": "Insert an approximate likelihood/measurement gradient into diffusion-based reverse sampling.",
+  "innovation": "Makes nonlinear noisy inverse reconstruction possible with learned image priors and an explicit observation model.",
+  "limitations": [
+    "The produced distribution is an approximate posterior, not generally exact.",
+    "Forward operator mismatch and costly sampling can distort uncertainty."
+  ],
+  "background_topics": [
+    "Score-based generative models",
+    "Likelihood gradients",
+    "Noisy inverse problems"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.chung-2023-dps",
+      "why": "Canonical peer-reviewed diffusion-guided noisy inverse sampler.",
+      "focus": "Likelihood guidance, posterior approximation and nonlinear measurement experiments."
+    }
+  ],
+  "curation_note": "Bibliographic identity verified against authoritative proceedings; downstream physical inverse validity must be separately evaluated."
+}

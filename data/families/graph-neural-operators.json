@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "family.graph-neural-operators",
+  "name": "Graph-based neural operators",
+  "name_zh": "图神经算子",
+  "summary": "Kernel/operator approximation using graph interactions, often with mesh hierarchy and long-range connections.",
+  "summary_zh": "在网格图上构建多尺度或长距离信息交互以学习PDE解算子。",
+  "coverage_status": "populated",
+  "scope_note": "Initial verified canonical method/reference set only; this branch is not claimed exhaustive.",
+  "scope_note_zh": "已加入经核实的代表方法与文献，但并不表示该领域的研究谱系已经穷尽。"
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "book.leveque-finite-difference",
+  "title": "Finite Difference Methods for Ordinary and Partial Differential Equations: Steady-State and Time-Dependent Problems",
+  "authors": [
+    "Randall J. LeVeque"
+  ],
+  "year": 2007,
+  "publisher": "SIAM",
+  "url": "https://doi.org/10.1137/1.9780898717839",
+  "summary": "Authoritative finite-difference textbook on spatial discretization, stability, consistency and time-dependent PDEs."
+}

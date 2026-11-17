@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-generative-range-prior--member-of-family--family-generative-inverse",
+  "source_id": "method.generative-range-prior",
+  "target_id": "family.generative-inverse",
+  "type": "member_of_family",
+  "claim": "The generative-range-prior technique is classified under generative-inverse for genealogical navigation.",
+  "claim_zh": "方法“generative-range-prior”归入“generative-inverse”分类，但它仍可能服务多个研究环节。"
+}

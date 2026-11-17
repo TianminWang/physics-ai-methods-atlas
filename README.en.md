@@ -25,18 +25,25 @@ Method families contain taxonomic and method-evolution DAGs: `specializes` means
 
 Physical consistency, identifiability, numerical/model error, uncertainty calibration, and generalization are explicit cross-cutting concerns.
 
-## v0.3 scope
+## v0.4 scope — first literature-backed expansion
 
-- **6 workflow stages**, **20 method families/subfamilies**, **5 cross-cutting concerns**.
-- Preserves **30 existing methods**, **32 paper/chapter records**, **8 books**, and **10 research problems** without duplicating source records.
-- All **10 previously recorded extends/combines links** now explain their targeted bottlenecks and stage-color mappings.
-- Unpopulated major branches — generative modeling, classical numerical schemes, differentiable simulation and decision/control — are marked **planned**, not presented as already verified literature.
+| Component | Current records |
+|---|---:|
+| Workflow stages / cross-cutting concerns | 6 / 5 |
+| Method families / methods | **34 / 61** |
+| Scholarly papers / monographs | **58 / 12** |
+| Research problems / typed links | **15 / 530** |
+
+The expansion adds 31 distinct reusable method nodes across **finite differences/volumes/elements and ODE integrators**, identifiability and Bayesian computation (MCMC/NUTS, VI, SBI), **generative modeling and inverse diffusion**, graph/attention operator architectures, differentiable physical simulation, and latent world models and planning (PlaNet/Dreamer/MPC/MBPO/offline RL). Landmark roles are contextual and linked to source papers; starting reading references remain optional.
+
+**Evidence scope:** virtual coronary intervention planning is a research application hypothesis, not clinically established by general world-model or offline-RL papers. The atlas is a curated foundation, not a completed scientific encyclopedia.
 
 ## Navigate
 
 - [Unified graph architecture (English)](docs/en/UNIFIED_GRAPH.md)
 - [中文架构说明](docs/zh/UNIFIED_GRAPH.md)
-- [Method catalogue](docs/METHOD_CATALOG.md)
+- [v0.4 method genealogy and verified reading tracks](docs/en/METHOD_GENEALOGY_V04.md)
+- [Historical first-30-method index](docs/METHOD_CATALOG.md)
 - [Minimal reading guide](docs/READING_GUIDE.md)
 - [Project roadmap](docs/ROADMAP.md)
 

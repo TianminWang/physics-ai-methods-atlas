@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-multipole-graph-neural-operator--addresses--problem-geometry-dependent-forward-surrogate",
+  "source_id": "method.multipole-graph-neural-operator",
+  "target_id": "problem.geometry-dependent-forward-surrogate",
+  "type": "addresses",
+  "claim": "Graph hierarchy approximates PDE operators with long-range mesh interactions under training distribution assumptions."
+}

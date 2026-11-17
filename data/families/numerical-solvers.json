@@ -5,7 +5,7 @@
   "name_zh": "传统 ODE/PDE 数值求解",
   "summary": "Time integration, finite difference, finite volume, finite element and coupled solvers.",
   "summary_zh": "包括常微分方程时间积分、有限差分、有限体积、有限元和耦合数值求解。",
-  "coverage_status": "planned",
-  "scope_note": "Family scaffold only; methods and citations await Phase v0.4.",
-  "scope_note_zh": "目前仅建立方法家族占位，具体方法及代表论文将在后续补充。"
+  "coverage_status": "populated",
+  "scope_note": "Representative method nodes are now present; the scholarly family is not exhaustively mapped.",
+  "scope_note_zh": "已包含首批代表方法，但尚未宣称所有方法谱系均已覆盖。"
 }

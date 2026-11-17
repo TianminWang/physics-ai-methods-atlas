@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "family.latent-world-models",
+  "name": "Latent world models and imagination",
+  "name_zh": "潜在世界模型与想象轨迹",
+  "summary": "Learn compact dynamics from observations to predict states and actions for planning.",
+  "summary_zh": "从观测学习隐状态动力学，并在模型中展开轨迹用于规划和学习控制。",
+  "coverage_status": "populated",
+  "scope_note": "Initial verified canonical method/reference set only; this branch is not claimed exhaustive.",
+  "scope_note_zh": "已加入经核实的代表方法与文献，但并不表示该领域的研究谱系已经穷尽。"
+}

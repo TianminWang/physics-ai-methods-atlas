@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.paper-dinh-2017-real-nvp--applies--method-normalizing-flow",
+  "source_id": "paper.dinh-2017-real-nvp",
+  "target_id": "method.normalizing-flow",
+  "type": "applies",
+  "claim": "Introduces Real NVP invertible coupling layers as an influential normalizing-flow construction, not the origin of all flows.",
+  "significance": "landmark",
+  "significance_reason": "Introduces Real NVP invertible coupling layers as an influential normalizing-flow construction, not the origin of all flows."
+}

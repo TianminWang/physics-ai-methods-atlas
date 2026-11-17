@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-profile-likelihood-identifiability--member-of-family--family-inverse-identifiability",
+  "source_id": "method.profile-likelihood-identifiability",
+  "target_id": "family.inverse-identifiability",
+  "type": "member_of_family",
+  "claim": "The profile-likelihood-identifiability technique is classified under inverse-identifiability for genealogical navigation.",
+  "claim_zh": "方法“profile-likelihood-identifiability”归入“inverse-identifiability”分类，但它仍可能服务多个研究环节。"
+}

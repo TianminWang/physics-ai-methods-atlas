@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.1.0",
+  "id": "method.polynomial-chaos-expansion",
+  "name": "Generalized Polynomial Chaos Expansion (gPCE)",
+  "name_zh": "广义多项式混沌展开（gPCE）",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Approximate random physical model outputs using orthogonal polynomial functions of uncertain input variables.",
+  "summary_zh": "以输入随机变量的正交多项式展开近似模型输出，传播参数不确定性。",
+  "core_idea": "Project stochastic responses on distribution-adapted polynomial bases, often with Galerkin or nonintrusive fitting.",
+  "innovation": "Can efficiently approximate uncertainty propagation for relatively low-dimensional smooth stochastic inputs.",
+  "limitations": [
+    "High input dimension or nonsmooth dependence degrades efficiency.",
+    "Polynomial truncation and quadrature require accuracy checks."
+  ],
+  "background_topics": [
+    "Probability distributions",
+    "Orthogonal polynomials",
+    "Galerkin projection"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.xiu-2002-polynomial-chaos",
+      "why": "Generalized polynomial-chaos formulation with stochastic differential equation examples.",
+      "focus": "Orthogonal bases, spectral projection and convergence limits."
+    }
+  ],
+  "curation_note": "Authoritative journal source checked; the proposed starting reference is optional."
+}

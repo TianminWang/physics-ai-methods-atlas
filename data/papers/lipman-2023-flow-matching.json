@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.1.0",
+  "id": "paper.lipman-2023-flow-matching",
+  "title": "Flow Matching for Generative Modeling",
+  "authors": [
+    "Yaron Lipman",
+    "Ricky T. Q. Chen",
+    "Heli Ben-Hamu",
+    "Maximilian Nickel",
+    "Matthew Le"
+  ],
+  "year": 2023,
+  "venue": "International Conference on Learning Representations (ICLR)",
+  "publication_status": "peer_reviewed",
+  "url": "https://arxiv.org/abs/2210.02747",
+  "identifiers": {
+    "arxiv": "2210.02747"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://mlanthology.org/iclr/2023/lipman2023iclr-flow/",
+  "summary": "Introduces simulation-free vector-field regression for continuous normalizing flows on conditional probability paths."
+}

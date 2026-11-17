@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.paper-bora-2017-gen-prior--introduces--method-generative-range-prior",
+  "source_id": "paper.bora-2017-gen-prior",
+  "target_id": "method.generative-range-prior",
+  "type": "introduces",
+  "claim": "Establishes generator-range assumptions and recovery analysis for compressed sensing with generative priors.",
+  "significance": "landmark",
+  "significance_reason": "Establishes generator-range assumptions and recovery analysis for compressed sensing with generative priors."
+}

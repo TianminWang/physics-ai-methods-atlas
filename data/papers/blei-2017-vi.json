@@ -1,0 +1,20 @@
+{
+  "schema_version": "2.1.0",
+  "id": "paper.blei-2017-vi",
+  "title": "Variational Inference: A Review for Statisticians",
+  "authors": [
+    "David M. Blei",
+    "Alp Kucukelbir",
+    "Jon D. McAuliffe"
+  ],
+  "year": 2017,
+  "venue": "Journal of the American Statistical Association",
+  "publication_status": "peer_reviewed",
+  "url": "https://doi.org/10.1080/01621459.2017.1285773",
+  "identifiers": {
+    "doi": "10.1080/01621459.2017.1285773"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://www.tandfonline.com/doi/full/10.1080/01621459.2017.1285773",
+  "summary": "Reviews optimization-based posterior approximation and its statistical trade-offs relative to sampling."
+}

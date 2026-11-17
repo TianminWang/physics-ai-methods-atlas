@@ -1,0 +1,17 @@
+{
+  "schema_version": "2.1.0",
+  "id": "problem.pde-uncertainty-propagation",
+  "name": "Uncertain-input propagation through an ODE/PDE model",
+  "name_zh": "不确定参数在ODE/PDE模型中的传播",
+  "summary": "Predict distributions or moments of physical states under uncertain inputs or parameters without assuming all inverse uncertainty is already resolved.",
+  "unknowns": [
+    "Distribution or moments of PDE solution outputs"
+  ],
+  "observables": [
+    "Uncertain model parameters and boundary-condition distributions"
+  ],
+  "constraints": [
+    "Governing ODE/PDE",
+    "Numerical and approximation error control"
+  ]
+}

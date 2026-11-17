@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-bayesian-experimental-design--member-of-family--family-inverse-identifiability",
+  "source_id": "method.bayesian-experimental-design",
+  "target_id": "family.inverse-identifiability",
+  "type": "member_of_family",
+  "claim": "Classifies bayesian-experimental-design within the inverse-identifiability methodological family.",
+  "claim_zh": "方法“bayesian-experimental-design”归入“inverse-identifiability”相关家族。"
+}

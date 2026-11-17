@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.paper-greenberg-2019-apt--introduces--method-sequential-neural-posterior",
+  "source_id": "paper.greenberg-2019-apt",
+  "target_id": "method.sequential-neural-posterior",
+  "type": "introduces",
+  "claim": "Introduces automatic posterior transformation for sequential neural posterior inference.",
+  "significance": "landmark",
+  "significance_reason": "Introduces automatic posterior transformation for sequential neural posterior inference."
+}

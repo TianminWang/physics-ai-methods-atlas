@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.1.0",
+  "id": "method.model-predictive-control",
+  "name": "Model Predictive Control (MPC)",
+  "name_zh": "模型预测控制（MPC）",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Optimize controls over a finite receding horizon using a predictive state-transition model.",
+  "summary_zh": "在有限未来时域内求解控制优化，并随新观测滚动重规划。",
+  "core_idea": "Repeatedly optimize constrained future actions, execute an initial part, then replan.",
+  "innovation": "Provides a transparent decision interface between model predictions and control actions.",
+  "limitations": [
+    "Optimization can be computationally expensive.",
+    "Performance depends on model accuracy, constraints and planning horizon."
+  ],
+  "background_topics": [
+    "Optimal control",
+    "Dynamic optimization",
+    "Forecast models"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.qin-2003-mpc",
+      "why": "Influential peer-reviewed survey of MPC design and implementation.",
+      "focus": "Receding horizon, constraints and computational tradeoffs."
+    }
+  ],
+  "curation_note": "Representative publication checked; recommendations are advisory and application-specific clinical claims require separate evidence."
+}

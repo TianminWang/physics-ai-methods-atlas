@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-physics-informed-diffusion--addresses--problem-generative-pde-inference",
+  "source_id": "method.physics-informed-diffusion",
+  "target_id": "problem.generative-pde-inference",
+  "type": "addresses",
+  "claim": "Potential PDE inverse-prior component; the cited physical-generation paper does not establish calibrated parameter posteriors."
+}

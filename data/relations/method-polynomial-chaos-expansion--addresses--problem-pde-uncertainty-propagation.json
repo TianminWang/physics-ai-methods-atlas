@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-polynomial-chaos-expansion--addresses--problem-pde-uncertainty-propagation",
+  "source_id": "method.polynomial-chaos-expansion",
+  "target_id": "problem.pde-uncertainty-propagation",
+  "type": "addresses",
+  "claim": "Provides a spectral approximation to uncertainty propagation for low-dimensional smooth random PDE inputs."
+}

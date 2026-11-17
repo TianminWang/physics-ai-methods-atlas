@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-bayesian-model-discrepancy--addresses--problem-coronary-parameter-inference",
+  "source_id": "method.bayesian-model-discrepancy",
+  "target_id": "problem.coronary-parameter-inference",
+  "type": "addresses",
+  "claim": "Can model systematic discrepancy in coronary simulator calibration; separation from parameter effects requires identifiability checks."
+}

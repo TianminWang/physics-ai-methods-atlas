@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.1.0",
+  "id": "method.markov-chain-monte-carlo",
+  "name": "Markov Chain Monte Carlo (MCMC)",
+  "name_zh": "马尔可夫链蒙特卡洛",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Approximate Bayesian posteriors by constructing a Markov chain with the desired stationary distribution.",
+  "summary_zh": "构造以目标后验为平稳分布的马尔可夫链，以样本近似积分或不确定性。",
+  "core_idea": "Use reversible or invariant stochastic transition kernels to explore posterior probability.",
+  "innovation": "Enables distribution-level inverse uncertainty quantification beyond a single point estimate.",
+  "limitations": [
+    "Large PDE forward-model cost can make chains expensive.",
+    "Convergence/mixing must be diagnosed rather than assumed."
+  ],
+  "background_topics": [
+    "Bayesian posterior",
+    "Markov chain",
+    "Monte Carlo integration"
+  ],
+  "start_here": [
+    {
+      "reference_id": "book.kaipio-statistical-inverse",
+      "why": "Inverse-problem-centered treatment of posterior computation and sampling.",
+      "focus": "Posterior inference and Monte Carlo computation."
+    }
+  ],
+  "curation_note": "Representative primary or authoritative scholarly source has been checked; the suggested starting reference is optional, not a required reading quota."
+}

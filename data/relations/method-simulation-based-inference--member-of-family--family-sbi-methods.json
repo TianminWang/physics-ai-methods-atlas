@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-simulation-based-inference--member-of-family--family-sbi-methods",
+  "source_id": "method.simulation-based-inference",
+  "target_id": "family.sbi-methods",
+  "type": "member_of_family",
+  "claim": "The simulation-based-inference technique is classified under sbi-methods for genealogical navigation.",
+  "claim_zh": "方法“simulation-based-inference”归入“sbi-methods”分类，但它仍可能服务多个研究环节。"
+}

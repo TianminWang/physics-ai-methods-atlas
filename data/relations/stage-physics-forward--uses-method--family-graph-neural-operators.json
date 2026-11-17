@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-physics-forward--uses-method--family-graph-neural-operators",
+  "source_id": "stage.physics-forward",
+  "target_id": "family.graph-neural-operators",
+  "type": "uses_method",
+  "claim": "For physics-forward, learning mesh-aware long-range solution operators.",
+  "claim_zh": "在“physics-forward”环节：学习具备网格关系和长程信息传递的正向解算子。",
+  "role": "learning mesh-aware long-range solution operators",
+  "role_zh": "学习具备网格关系和长程信息传递的正向解算子",
+  "evidence_scope": "conceptual"
+}

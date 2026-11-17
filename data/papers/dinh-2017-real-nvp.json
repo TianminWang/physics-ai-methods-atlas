@@ -1,0 +1,20 @@
+{
+  "schema_version": "2.1.0",
+  "id": "paper.dinh-2017-real-nvp",
+  "title": "Density estimation using Real NVP",
+  "authors": [
+    "Laurent Dinh",
+    "Jascha Sohl-Dickstein",
+    "Samy Bengio"
+  ],
+  "year": 2017,
+  "venue": "International Conference on Learning Representations (ICLR)",
+  "publication_status": "peer_reviewed",
+  "url": "https://arxiv.org/abs/1605.08803",
+  "identifiers": {
+    "arxiv": "1605.08803"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://research.google/pubs/density-estimation-using-real-nvp/",
+  "summary": "Introduces Real NVP coupling transformations for exact-likelihood invertible generative density modeling."
+}

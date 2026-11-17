@@ -1,0 +1,18 @@
+{
+  "schema_version": "2.1.0",
+  "id": "problem.simulation-likelihood-free-calibration",
+  "name": "Likelihood-free parameter calibration with a complex simulator",
+  "name_zh": "复杂仿真器的似然自由参数校准",
+  "summary": "Infer parameters from simulator-generated observations when the exact likelihood cannot be evaluated efficiently.",
+  "unknowns": [
+    "Simulator parameter posterior"
+  ],
+  "observables": [
+    "Observed summary statistics, time series or images"
+  ],
+  "constraints": [
+    "Validated simulator",
+    "Simulation budget",
+    "Calibration tests"
+  ]
+}

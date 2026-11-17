@@ -1,0 +1,20 @@
+{
+  "schema_version": "2.1.0",
+  "id": "paper.bastek-2025-physics-diffusion",
+  "title": "Physics-Informed Diffusion Models",
+  "authors": [
+    "Jan-Hendrik Bastek",
+    "WaiChing Sun",
+    "Dennis M. Kochmann"
+  ],
+  "year": 2025,
+  "venue": "International Conference on Learning Representations (ICLR)",
+  "publication_status": "peer_reviewed",
+  "url": "https://arxiv.org/abs/2403.14404",
+  "identifiers": {
+    "arxiv": "2403.14404"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/096347b4efc264ae7f07742fea34af1f-Abstract-Conference.html",
+  "summary": "Adds governing-equation residual constraints to generative diffusion training for physically compatible samples."
+}

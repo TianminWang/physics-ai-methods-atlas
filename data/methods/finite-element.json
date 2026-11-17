@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.1.0",
+  "id": "method.finite-element",
+  "name": "Finite Element Method (FEM)",
+  "name_zh": "有限元法",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Approximate PDE weak formulations in finite-dimensional function spaces over a mesh.",
+  "summary_zh": "利用弱形式、试探函数与测试函数构造离散方程。",
+  "core_idea": "Construct weak form integrals and approximate solution functions with local basis functions.",
+  "innovation": "Supports geometric flexibility and weak-form treatment of many PDE systems.",
+  "limitations": [
+    "Solution spaces and stabilization must match the PDE.",
+    "Numerical integration and meshing can dominate modeling quality."
+  ],
+  "background_topics": [
+    "Weak formulations",
+    "Basis functions",
+    "Numerical integration"
+  ],
+  "start_here": [
+    {
+      "reference_id": "book.brenner-scott-fem",
+      "why": "Strong reference for the mathematical mechanism and finite element error analysis.",
+      "focus": "Weak formulations, finite-element spaces, interpolation and approximation."
+    }
+  ],
+  "curation_note": "Representative primary or authoritative scholarly source has been checked; the suggested starting reference is optional, not a required reading quota."
+}

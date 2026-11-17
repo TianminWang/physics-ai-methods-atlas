@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.1.0",
+  "id": "family.inverse-identifiability",
+  "name": "Identifiability and inverse information analysis",
+  "name_zh": "可辨识性与逆问题信息分析",
+  "summary": "Methods that diagnose whether available measurements contain enough information to recover unknown parameters.",
+  "summary_zh": "研究有限观测对未知参数的约束程度，区分不可辨识性与优化困难。",
+  "coverage_status": "populated",
+  "scope_note": "Initial verified canonical method/reference set only; this branch is not claimed exhaustive.",
+  "scope_note_zh": "已加入经核实的代表方法与文献，但并不表示该领域的研究谱系已经穷尽。"
+}

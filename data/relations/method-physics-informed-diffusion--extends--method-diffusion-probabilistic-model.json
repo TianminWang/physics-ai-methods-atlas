@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-physics-informed-diffusion--extends--method-diffusion-probabilistic-model",
+  "source_id": "method.physics-informed-diffusion",
+  "target_id": "method.diffusion-probabilistic-model",
+  "type": "extends",
+  "claim": "Adds governing-equation or other first-principles residual penalties to diffusion model training for physical outputs.",
+  "claim_zh": "在扩散模型训练中加入控制方程或第一性原理残差约束，提高生成样本的物理相容性。",
+  "innovation_detail": "Adds governing-equation or other first-principles residual penalties to diffusion model training for physical outputs.",
+  "innovation_detail_zh": "在扩散模型训练中加入控制方程或第一性原理残差约束，提高生成样本的物理相容性。",
+  "bottleneck": "Conventional diffusion objectives do not explicitly enforce conservation laws or physical PDE constraints.",
+  "bottleneck_zh": "常规扩散训练目标并不直接保证守恒规律与PDE约束得到满足。",
+  "stage_ids": [
+    "stage.physics-forward",
+    "stage.prediction-uq"
+  ],
+  "primary_stage_id": "stage.physics-forward",
+  "tradeoff": "Soft physical losses require weighting and do not establish exact physical validity.",
+  "evidence_paper_ids": [
+    "paper.bastek-2025-physics-diffusion"
+  ]
+}

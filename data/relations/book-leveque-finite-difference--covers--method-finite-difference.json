@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.book-leveque-finite-difference--covers--method-finite-difference",
+  "source_id": "book.leveque-finite-difference",
+  "target_id": "method.finite-difference",
+  "type": "covers",
+  "locator": "Finite difference approximations and related stability chapters",
+  "claim": "Foundational explanation of finite-difference stencils and consistency/stability for ODE/PDEs."
+}

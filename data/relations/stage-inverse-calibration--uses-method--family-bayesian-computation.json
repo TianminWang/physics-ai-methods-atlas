@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-inverse-calibration--uses-method--family-bayesian-computation",
+  "source_id": "stage.inverse-calibration",
+  "target_id": "family.bayesian-computation",
+  "type": "uses_method",
+  "claim": "For inverse-calibration, sampling or optimizing approximations to uncertain parameter posteriors.",
+  "claim_zh": "在“inverse-calibration”环节：通过采样与变分方法近似未知参数的后验分布。",
+  "role": "sampling or optimizing approximations to uncertain parameter posteriors",
+  "role_zh": "通过采样与变分方法近似未知参数的后验分布",
+  "evidence_scope": "conceptual"
+}

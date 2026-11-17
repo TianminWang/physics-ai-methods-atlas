@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.paper-bora-2017-gen-prior--applies--method-variational-autoencoder",
+  "source_id": "paper.bora-2017-gen-prior",
+  "target_id": "method.variational-autoencoder",
+  "type": "applies",
+  "claim": "Uses pretrained VAE-type generators among examples for learning inverse-problem priors.",
+  "significance": "supporting"
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-prediction-uq--uses-method--method-polynomial-chaos-expansion",
+  "source_id": "stage.prediction-uq",
+  "target_id": "method.polynomial-chaos-expansion",
+  "type": "uses_method",
+  "claim": "For prediction-uq, approximating moments and distributions of PDE outputs under uncertain inputs.",
+  "claim_zh": "在prediction-uq环节中：用正交多项式展开估计不确定输入下的PDE输出分布。",
+  "role": "approximating moments and distributions of PDE outputs under uncertain inputs",
+  "role_zh": "用正交多项式展开估计不确定输入下的PDE输出分布",
+  "evidence_scope": "literature_supported",
+  "evidence_paper_ids": [
+    "paper.xiu-2002-polynomial-chaos"
+  ]
+}

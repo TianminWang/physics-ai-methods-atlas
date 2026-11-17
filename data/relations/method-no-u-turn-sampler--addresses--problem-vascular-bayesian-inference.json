@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-no-u-turn-sampler--addresses--problem-vascular-bayesian-inference",
+  "source_id": "method.no-u-turn-sampler",
+  "target_id": "problem.vascular-bayesian-inference",
+  "type": "addresses",
+  "claim": "Potential gradient-based posterior sampler where vascular-model log-posterior derivatives are computationally accessible."
+}

@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.paper-cao-2021-galerkin-transformer--introduces--method-galerkin-transformer",
+  "source_id": "paper.cao-2021-galerkin-transformer",
+  "target_id": "method.galerkin-transformer",
+  "type": "introduces",
+  "claim": "Introduces Galerkin/Fourier-style attention mechanisms to approximate PDE operators.",
+  "significance": "landmark",
+  "significance_reason": "Introduces Galerkin/Fourier-style attention mechanisms to approximate PDE operators."
+}

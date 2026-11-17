@@ -1,0 +1,19 @@
+{
+  "schema_version": "2.1.0",
+  "id": "paper.kingma-2014-vae",
+  "title": "Auto-Encoding Variational Bayes",
+  "authors": [
+    "Diederik P. Kingma",
+    "Max Welling"
+  ],
+  "year": 2014,
+  "venue": "International Conference on Learning Representations (ICLR)",
+  "publication_status": "peer_reviewed",
+  "url": "https://arxiv.org/abs/1312.6114",
+  "identifiers": {
+    "arxiv": "1312.6114"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://mlanthology.org/iclr/2014/kingma2014iclr-auto/",
+  "summary": "Establishes variational autoencoding using the reparameterization gradient and amortized latent inference."
+}

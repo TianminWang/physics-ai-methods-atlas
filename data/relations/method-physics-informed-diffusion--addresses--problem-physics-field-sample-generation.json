@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-physics-informed-diffusion--addresses--problem-physics-field-sample-generation",
+  "source_id": "method.physics-informed-diffusion",
+  "target_id": "problem.physics-field-sample-generation",
+  "type": "addresses",
+  "claim": "Uses equation-based training penalties to improve physical compatibility of generated fields."
+}

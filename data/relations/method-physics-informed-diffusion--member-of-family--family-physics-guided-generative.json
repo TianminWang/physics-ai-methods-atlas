@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-physics-informed-diffusion--member-of-family--family-physics-guided-generative",
+  "source_id": "method.physics-informed-diffusion",
+  "target_id": "family.physics-guided-generative",
+  "type": "member_of_family",
+  "claim": "The physics-informed-diffusion technique is classified under physics-guided-generative for genealogical navigation.",
+  "claim_zh": "方法“physics-informed-diffusion”归入“physics-guided-generative”分类，但它仍可能服务多个研究环节。"
+}
