@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.family-learned-mesh-simulation--subfamily-of--family-scientific-ml",
+  "source_id": "family.learned-mesh-simulation",
+  "target_id": "family.scientific-ml",
+  "type": "subfamily_of",
+  "claim": "Conceptual taxonomy: learned-mesh-simulation is a subfamily of scientific-ml, not an assertion of direct historical descent.",
+  "claim_zh": "“learned-mesh-simulation”属于“scientific-ml”的概念分类，不代表二者构成直接历史继承。"
+}

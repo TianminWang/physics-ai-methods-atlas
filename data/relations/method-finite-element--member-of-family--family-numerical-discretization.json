@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-finite-element--member-of-family--family-numerical-discretization",
+  "source_id": "method.finite-element",
+  "target_id": "family.numerical-discretization",
+  "type": "member_of_family",
+  "claim": "The finite-element technique is classified under numerical-discretization for genealogical navigation.",
+  "claim_zh": "方法“finite-element”归入“numerical-discretization”分类，但它仍可能服务多个研究环节。"
+}

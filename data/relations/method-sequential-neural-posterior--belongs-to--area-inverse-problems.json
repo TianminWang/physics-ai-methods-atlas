@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-sequential-neural-posterior--belongs-to--area-inverse-problems",
+  "source_id": "method.sequential-neural-posterior",
+  "target_id": "area.inverse-problems",
+  "type": "belongs_to",
+  "claim": "Navigation membership of sequential-neural-posterior in inverse-problems; this is not a scientific ancestry claim.",
+  "claim_zh": "导航索引：sequential-neural-posterior与inverse-problems相关，不代表任何方法发展方向。"
+}

@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-normalizing-flow--belongs-to--area-physics-ai",
+  "source_id": "method.normalizing-flow",
+  "target_id": "area.physics-ai",
+  "type": "belongs_to",
+  "claim": "Navigation membership of normalizing-flow in physics-ai; this is not a scientific ancestry claim.",
+  "claim_zh": "导航索引：normalizing-flow与physics-ai相关，不代表任何方法发展方向。"
+}

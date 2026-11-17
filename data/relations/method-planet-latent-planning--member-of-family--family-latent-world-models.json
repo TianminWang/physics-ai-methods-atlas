@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-planet-latent-planning--member-of-family--family-latent-world-models",
+  "source_id": "method.planet-latent-planning",
+  "target_id": "family.latent-world-models",
+  "type": "member_of_family",
+  "claim": "The planet-latent-planning technique is classified under latent-world-models for genealogical navigation.",
+  "claim_zh": "方法“planet-latent-planning”归入“latent-world-models”分类，但它仍可能服务多个研究环节。"
+}

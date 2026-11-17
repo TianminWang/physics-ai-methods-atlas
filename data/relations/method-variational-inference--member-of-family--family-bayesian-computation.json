@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-variational-inference--member-of-family--family-bayesian-computation",
+  "source_id": "method.variational-inference",
+  "target_id": "family.bayesian-computation",
+  "type": "member_of_family",
+  "claim": "The variational-inference technique is classified under bayesian-computation for genealogical navigation.",
+  "claim_zh": "方法“variational-inference”归入“bayesian-computation”分类，但它仍可能服务多个研究环节。"
+}

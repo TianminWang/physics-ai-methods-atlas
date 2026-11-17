@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-flow-matching--member-of-family--family-normalizing-flows",
+  "source_id": "method.flow-matching",
+  "target_id": "family.normalizing-flows",
+  "type": "member_of_family",
+  "claim": "The flow-matching technique is classified under normalizing-flows for genealogical navigation.",
+  "claim_zh": "方法“flow-matching”归入“normalizing-flows”分类，但它仍可能服务多个研究环节。"
+}
