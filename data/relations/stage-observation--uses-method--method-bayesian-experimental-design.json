@@ -1,0 +1,15 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.stage-observation--uses-method--method-bayesian-experimental-design",
+  "source_id": "stage.observation",
+  "target_id": "method.bayesian-experimental-design",
+  "type": "uses_method",
+  "claim": "For observation, selecting informative observation configurations under uncertainty.",
+  "claim_zh": "在observation环节中：通过信息增益或期望效用选择有价值的观测设计。",
+  "role": "selecting informative observation configurations under uncertainty",
+  "role_zh": "通过信息增益或期望效用选择有价值的观测设计",
+  "evidence_scope": "literature_supported",
+  "evidence_paper_ids": [
+    "paper.chaloner-1995-bayesian-design"
+  ]
+}

@@ -5,7 +5,7 @@
   "name_zh": "不确定性量化与模型校准",
   "summary": "Assess uncertainty sources and calibration of predictive claims.",
   "summary_zh": "研究预测不确定性来源、传播、校准和模型差异。",
-  "coverage_status": "planned",
-  "scope_note": "Cross-cutting concern nodes exist; detailed UQ methods are not yet populated.",
-  "scope_note_zh": "已建立跨环节质量关注点，尚未整理完整 UQ 算法树。"
+  "coverage_status": "populated",
+  "scope_note": "Initial verified methodological seeds exist; still far from a complete treatment.",
+  "scope_note_zh": "已加入具备文献依据的起始方法，整体分支仍需后续扩展。"
 }

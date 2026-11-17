@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-bayesian-model-discrepancy--addresses--problem-vascular-bayesian-inference",
+  "source_id": "method.bayesian-model-discrepancy",
+  "target_id": "problem.vascular-bayesian-inference",
+  "type": "addresses",
+  "claim": "Extends vascular Bayesian calibration by accounting for systematic simulator mismatch."
+}

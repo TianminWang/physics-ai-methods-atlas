@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-bayesian-experimental-design--member-of-family--family-observation-modeling",
+  "source_id": "method.bayesian-experimental-design",
+  "target_id": "family.observation-modeling",
+  "type": "member_of_family",
+  "claim": "Classifies bayesian-experimental-design within the observation-modeling methodological family.",
+  "claim_zh": "方法“bayesian-experimental-design”归入“observation-modeling”相关家族。"
+}

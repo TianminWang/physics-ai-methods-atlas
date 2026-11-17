@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.paper-kennedy-2001-model-discrepancy--introduces--method-bayesian-model-discrepancy",
+  "source_id": "paper.kennedy-2001-model-discrepancy",
+  "target_id": "method.bayesian-model-discrepancy",
+  "type": "introduces",
+  "claim": "Foundational computer-model Bayesian calibration with an explicit model discrepancy term.",
+  "significance": "landmark",
+  "significance_reason": "Foundational computer-model Bayesian calibration with an explicit model discrepancy term."
+}

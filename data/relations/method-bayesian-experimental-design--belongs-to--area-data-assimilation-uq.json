@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-bayesian-experimental-design--belongs-to--area-data-assimilation-uq",
+  "source_id": "method.bayesian-experimental-design",
+  "target_id": "area.data-assimilation-uq",
+  "type": "belongs_to",
+  "claim": "Navigation relation: bayesian-experimental-design supports data-assimilation-uq research.",
+  "claim_zh": "导航归属：bayesian-experimental-design可服务data-assimilation-uq方向。"
+}

@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.method-bayesian-model-discrepancy--specializes--method-bayesian-inverse-problems",
+  "source_id": "method.bayesian-model-discrepancy",
+  "target_id": "method.bayesian-inverse-problems",
+  "type": "specializes",
+  "claim": "Calibration with a discrepancy process is a specific Bayesian inverse-modeling framework.",
+  "claim_zh": "带模型失配项的校准属于贝叶斯反问题的具体框架。"
+}
