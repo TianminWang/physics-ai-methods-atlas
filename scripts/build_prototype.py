@@ -96,6 +96,7 @@ def build_prototype(root: Path = ROOT) -> dict:
     zh = export_unified(root, "zh")
     en = export_unified(root, "en")
     records, _ = load_catalog(root)
+    translations = json.loads((root / "locales" / "zh-CN.json").read_text(encoding="utf-8"))
     zh_index = {n["id"]: n for n in zh["nodes"]}
     en_index = {n["id"]: n for n in en["nodes"]}
     method_ids = {
@@ -154,8 +155,14 @@ def build_prototype(root: Path = ROOT) -> dict:
                 "zh": record.get("summary_zh", record.get("summary", "")),
                 "en": record.get("summary", ""),
             },
-            "core_idea": record.get("core_idea", ""),
-            "limitations": record.get("limitations", []),
+            "core_idea": {
+                "zh": translations.get("core_ideas", {}).get(entity_id, record.get("core_idea_zh", record.get("core_idea", ""))),
+                "en": record.get("core_idea", ""),
+            },
+            "limitations": {
+                "zh": [translations["limitations_summary"][entity_id]] if entity_id in translations.get("limitations_summary", {}) else record.get("limitations", []),
+                "en": record.get("limitations", []),
+            },
             "color": record.get("color"),
             "order": record.get("order"),
             "status": display_en.get("status"),

@@ -277,10 +277,11 @@
       root.append(elem("span","detail-status",phrase("method")));
       root.append(elem("h3","",n.label[state.lang]));
       desc(root,n.summary[state.lang]||n.summary.en);
-      if(n.core_idea){header(root,phrase("coreIdea"));desc(root,n.core_idea);}
-      if(n.limitations.length){
+      if(n.core_idea[state.lang]){header(root,phrase("coreIdea"));desc(root,n.core_idea[state.lang]);}
+      const limits=n.limitations[state.lang]||n.limitations.en||[];
+      if(limits.length){
         header(root,phrase("tradeoff"));
-        n.limitations.slice(0,3).forEach(x=>desc(root,"• "+x));
+        limits.slice(0,3).forEach(x=>desc(root,"• "+x));
       }
       const group=db.edges.filter(e=>e.type==="member_of_family"&&e.source===n.id);
       if(group.length){
