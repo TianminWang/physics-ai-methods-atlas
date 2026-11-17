@@ -1,0 +1,19 @@
+{
+  "schema_version": "2.1.0",
+  "id": "problem.action-conditioned-forecast",
+  "name": "Action-conditioned counterfactual state forecasts",
+  "name_zh": "动作条件下的反事实状态预测",
+  "summary": "Predict alternative future state trajectories under interventions or control actions, distinct from making a clinical treatment recommendation.",
+  "unknowns": [
+    "Future state trajectories under hypothetical actions"
+  ],
+  "observables": [
+    "Initial or latent state",
+    "Candidate actions"
+  ],
+  "constraints": [
+    "Reliable transition dynamics",
+    "Action feasibility",
+    "Uncertainty assessment"
+  ]
+}
