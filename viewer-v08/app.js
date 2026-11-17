@@ -236,6 +236,25 @@
     const mapped=phaseMappings();
     $("mapping-more").disabled=!mapped.length;
     $("mapping-more").textContent=state.rolesAll?t("lessMapping"):t("moreMapping");
+    if(!state.phase){
+      // Make the research axis -> methods relationship visible on first load.
+      // Counts and example roles are derived from existing functional links.
+      for(const ph of graph.phases){
+        const rels=graph.functional.filter(r=>ph.stage_ids.includes(r.stage));
+        const example=rels.find(r=>r.type==="direct_method")||rels[0];
+        const b=button("mapping-card","",()=>{
+          state.phase=ph.id;state.selected=null;state.component=null;
+          state.pathFocus=false;closeDrawer();renderUI();focusPhase();
+        });
+        b.dataset.phaseId=ph.id;
+        b.style.setProperty("--phase",ph.color);
+        b.append(make("strong","",tr(ph.name)));
+        b.append(make("span","role",example?tr(example.role):t("noMapping")));
+        b.append(make("span","meta",String(rels.length)+" "+t("links")));
+        links.append(b);
+      }
+      return;
+    }
     if(!mapped.length){links.append(make("p","",t("noMapping")));return;}
     for(const rel of (state.rolesAll?mapped:mapped.slice(0,5))){
       const isFamily=rel.type==="family";
@@ -470,6 +489,8 @@
     if(!edgeById[id])return;
     state.selected={kind:"edge",id};state.pathFocus=false;
     openDrawer();renderDrawer();refreshHighlight();
+    const edge=edgeById[id];
+    focusIds([edge.source,edge.target]);
   }
   function renderUnlinked(){
     const root=$("unlinked-list");root.replaceChildren();
@@ -594,10 +615,16 @@
     state.y=(view.clientHeight-natural.h*state.zoom)/2;
     applyTransform();
   }
+  function drawerOcclusion(){
+    const view=$("viewport");
+    if($("drawer").hidden||state.pinned||view.clientWidth<700)return 0;
+    return Math.min($("drawer").getBoundingClientRect().width,view.clientWidth*.4);
+  }
   function centerAt(x,y,scale){
     const view=$("viewport");
     if(scale!==undefined)state.zoom=Math.max(.11,Math.min(2.5,scale));
-    state.x=view.clientWidth/2-x*state.zoom;
+    // Keep selected lineage visible in the uncovered part of the canvas.
+    state.x=(view.clientWidth-drawerOcclusion())/2-x*state.zoom;
     state.y=view.clientHeight/2-y*state.zoom;
     applyTransform();
   }
@@ -609,7 +636,7 @@
     const minY=Math.min(...boxes.map(b=>b.y));
     const maxY=Math.max(...boxes.map(b=>b.y+b.h));
     const view=$("viewport"),pad=95;
-    const scale=Math.min(1.13,(view.clientWidth-pad)/(maxX-minX+20),
+    const scale=Math.min(1.13,(view.clientWidth-drawerOcclusion()-pad)/(maxX-minX+20),
       (view.clientHeight-pad)/(maxY-minY+20));
     centerAt((minX+maxX)/2,(minY+maxY)/2,scale);
   }
@@ -821,7 +848,10 @@
       }
       state.lang=new URLSearchParams(location.search).get("lang")==="en"?"en":"zh";
       attachGraph();setupEvents();renderUI();
-      requestAnimationFrame(fitAll);
+      requestAnimationFrame(()=>{
+        if($("viewport").clientWidth<580)focusNode("method.fno");
+        else fitAll();
+      });
     }catch(error){
       console.error("Atlas v0.8 init failed",error);
       $("graph-status").textContent=String(error);
