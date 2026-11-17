@@ -1,9 +1,0 @@
-{
-  "schema_version": "2.1.0",
-  "id": "relation.paper-janner-2019-mbpo--compares--method-model-predictive-control",
-  "source_id": "paper.janner-2019-mbpo",
-  "target_id": "method.model-predictive-control",
-  "type": "compares",
-  "claim": "Contrasts learned-model policy updates with explicit receding-horizon planning in model-based decision making.",
-  "significance": "supporting"
-}
