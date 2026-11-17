@@ -1,0 +1,24 @@
+{
+  "schema_version": "2.1.0",
+  "id": "paper.hafner-2019-planet",
+  "title": "Learning Latent Dynamics for Planning from Pixels",
+  "authors": [
+    "Danijar Hafner",
+    "Timothy Lillicrap",
+    "Ian Fischer",
+    "Ruben Villegas",
+    "David Ha",
+    "Honglak Lee",
+    "James Davidson"
+  ],
+  "year": 2019,
+  "venue": "International Conference on Machine Learning (ICML)",
+  "publication_status": "peer_reviewed",
+  "url": "https://arxiv.org/abs/1811.04551",
+  "identifiers": {
+    "arxiv": "1811.04551"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://proceedings.mlr.press/v97/hafner19a.html",
+  "summary": "Introduces PlaNet latent stochastic dynamics and online planning from image observations."
+}

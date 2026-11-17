@@ -1,0 +1,24 @@
+{
+  "schema_version": "2.1.0",
+  "id": "paper.li-2020-mgno",
+  "title": "Multipole Graph Neural Operator for Parametric Partial Differential Equations",
+  "authors": [
+    "Zongyi Li",
+    "Nikola Kovachki",
+    "Kamyar Azizzadenesheli",
+    "Burigede Liu",
+    "Andrew Stuart",
+    "Kaushik Bhattacharya",
+    "Anima Anandkumar"
+  ],
+  "year": 2020,
+  "venue": "Advances in Neural Information Processing Systems (NeurIPS)",
+  "publication_status": "peer_reviewed",
+  "url": "https://arxiv.org/abs/2006.09535",
+  "identifiers": {
+    "arxiv": "2006.09535"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://proceedings.neurips.cc/paper/2020/hash/4b21cf96d4cf612f239a6c322b10c8fe-Abstract.html",
+  "summary": "Uses multipole-inspired multilevel graph interactions to approximate PDE operators over mesh hierarchies."
+}

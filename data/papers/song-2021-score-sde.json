@@ -1,0 +1,23 @@
+{
+  "schema_version": "2.1.0",
+  "id": "paper.song-2021-score-sde",
+  "title": "Score-Based Generative Modeling through Stochastic Differential Equations",
+  "authors": [
+    "Yang Song",
+    "Jascha Sohl-Dickstein",
+    "Diederik P. Kingma",
+    "Abhishek Kumar",
+    "Stefano Ermon",
+    "Ben Poole"
+  ],
+  "year": 2021,
+  "venue": "International Conference on Learning Representations (ICLR)",
+  "publication_status": "peer_reviewed",
+  "url": "https://arxiv.org/abs/2011.13456",
+  "identifiers": {
+    "arxiv": "2011.13456"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://research.google/pubs/score-based-generative-modeling-through-stochastic-differential-equations/",
+  "summary": "Relates score generative models and diffusion to reverse-time SDEs and probability flow ODEs."
+}

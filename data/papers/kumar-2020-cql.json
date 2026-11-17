@@ -1,0 +1,21 @@
+{
+  "schema_version": "2.1.0",
+  "id": "paper.kumar-2020-cql",
+  "title": "Conservative Q-Learning for Offline Reinforcement Learning",
+  "authors": [
+    "Aviral Kumar",
+    "Aurick Zhou",
+    "George Tucker",
+    "Sergey Levine"
+  ],
+  "year": 2020,
+  "venue": "Advances in Neural Information Processing Systems (NeurIPS)",
+  "publication_status": "peer_reviewed",
+  "url": "https://arxiv.org/abs/2006.04779",
+  "identifiers": {
+    "arxiv": "2006.04779"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://proceedings.neurips.cc/paper/2020/hash/0d2b2061826a5df3221116a5085a6052-Abstract.html",
+  "summary": "Addresses Q-value overestimation for offline RL under distribution shift through conservative value regularization."
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": "2.1.0",
+  "id": "paper.cao-2021-galerkin-transformer",
+  "title": "Choose a Transformer: Fourier or Galerkin",
+  "authors": [
+    "Shuhao Cao"
+  ],
+  "year": 2021,
+  "venue": "Advances in Neural Information Processing Systems (NeurIPS)",
+  "publication_status": "peer_reviewed",
+  "url": "https://arxiv.org/abs/2105.14995",
+  "identifiers": {
+    "arxiv": "2105.14995"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://papers.nips.cc/paper_files/paper/2021/hash/d0921d442ee91b896ad95059d13df618-Abstract.html",
+  "summary": "Adapts attention with Hilbert-space projection interpretations to neural operator learning."
+}

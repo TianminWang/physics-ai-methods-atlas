@@ -1,0 +1,20 @@
+{
+  "schema_version": "2.1.0",
+  "id": "paper.cranmer-2020-sbi",
+  "title": "The frontier of simulation-based inference",
+  "authors": [
+    "Kyle Cranmer",
+    "Johann Brehmer",
+    "Gilles Louppe"
+  ],
+  "year": 2020,
+  "venue": "Proceedings of the National Academy of Sciences",
+  "publication_status": "peer_reviewed",
+  "url": "https://doi.org/10.1073/pnas.1912789117",
+  "identifiers": {
+    "doi": "10.1073/pnas.1912789117"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7720103/",
+  "summary": "Reviews likelihood-free and simulation-based inference when simulators are accessible but tractable likelihoods are not."
+}

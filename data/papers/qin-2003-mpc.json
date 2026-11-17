@@ -1,0 +1,19 @@
+{
+  "schema_version": "2.1.0",
+  "id": "paper.qin-2003-mpc",
+  "title": "A survey of industrial model predictive control technology",
+  "authors": [
+    "S. Joe Qin",
+    "Thomas A. Badgwell"
+  ],
+  "year": 2003,
+  "venue": "Control Engineering Practice",
+  "publication_status": "peer_reviewed",
+  "url": "https://doi.org/10.1016/S0967-0661(02)00186-7",
+  "identifiers": {
+    "doi": "10.1016/S0967-0661(02)00186-7"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://www.sciencedirect.com/science/article/pii/S0967066102001867",
+  "summary": "Classic industrial MPC synthesis, predictive optimization and receding-horizon control."
+}

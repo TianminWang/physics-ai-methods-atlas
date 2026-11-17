@@ -1,0 +1,21 @@
+{
+  "schema_version": "2.1.0",
+  "id": "paper.pfaff-2021-meshgraphnets",
+  "title": "Learning Mesh-Based Simulation with Graph Networks",
+  "authors": [
+    "Tobias Pfaff",
+    "Meire Fortunato",
+    "Alvaro Sanchez-Gonzalez",
+    "Peter W. Battaglia"
+  ],
+  "year": 2021,
+  "venue": "International Conference on Learning Representations (ICLR)",
+  "publication_status": "peer_reviewed",
+  "url": "https://arxiv.org/abs/2010.03409",
+  "identifiers": {
+    "arxiv": "2010.03409"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://sites.google.com/view/meshgraphnets",
+  "summary": "Introduces graph-network mesh simulation models with learned dynamical updates; not equivalent to generic neural operator convergence claims."
+}
