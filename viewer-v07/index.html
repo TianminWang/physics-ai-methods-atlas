@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light"><title>Physics AI Methods Atlas · v0.7</title>
+<meta name="description" content="Three-stage scientific workflow and one evidence-backed methods DAG">
+<link rel="stylesheet" href="./style.css"><script src="./app.js" defer></script></head>
+<body>
+<a class="skip" href="#dag-title">跳转到方法谱系</a>
+<header class="top"><div class="logo"><div class="mark">◎</div><div><strong>PHYSICS AI <em>ATLAS</em></strong><small data-i18n="brand">科学计算与物理 AI 方法谱系</small></div></div>
+<nav><a href="https://github.com/TianminWang/physics-ai-methods-atlas" target="_blank" rel="noopener noreferrer" data-i18n="repo">GitHub 仓库</a><button class="lang" id="language" type="button">EN</button></nav></header>
+<main class="wrap">
+<section class="intro">
+  <div class="eyebrow">SCIENTIFIC WORKFLOW <span>×</span> METHOD GENEALOGY</div>
+  <h1 data-i18n="title">从正问题，到反问题，再到数字孪生。</h1>
+  <p data-i18n="subtitle">三阶段研究主轴解释“要解决什么”，统一方法 DAG 展示“方法如何演变”。节点颜色代表技术范式，有色演进边代表它主要针对的研究阶段。</p>
+  <div class="minor"><span class="edition">INTERACTIVE PROTOTYPE · v0.7</span><span id="total-count"></span></div>
+</section>
+<section class="axis panel">
+ <div class="section-head"><div><div class="kicker">01 / RESEARCH AXIS</div><h2 data-i18n="axisTitle">研究主轴</h2></div><button class="link-btn" type="button" id="clear-phase" data-i18n="clearStage">取消阶段筛选</button></div>
+ <div class="phases" id="phases" role="group" aria-label="Three research phases"></div>
+ <div class="axis-bottom"><span data-i18n="axisNote">物理模型与观测是反问题基础；个体化模型可继续预测和干预，并由新数据反馈更新。</span><span data-i18n="concerns">横向要求：物理一致性 · 可辨识性 · 数值误差 · 不确定性 · 外部验证</span></div>
+</section>
+<section class="mapping panel">
+ <div class="section-head"><div><div class="kicker">02 / FUNCTIONAL LINKS</div><h2 data-i18n="mappingTitle">阶段如何使用这些方法？</h2></div>
+ <button class="link-btn" type="button" id="mapping-more" data-i18n="moreMappings">查看全部映射</button></div>
+ <div class="mapping-line"><div class="mapping-origin" id="phase-origin"></div><span class="mapping-arrow" aria-hidden="true">⟶</span><div class="mapping-links" id="mapping-links"></div></div>
+ <p class="footnote" data-i18n="mappingNote">功能映射可能指向一个方法家族，不能因此宣称家族的所有方法都已单独验证；点击卡片查看具体作用与证据。</p>
+</section>
+<div class="workspace">
+<section class="graph-panel panel">
+ <div class="section-head"><div><div class="kicker">03 / GLOBAL METHOD DAG</div><h2 id="dag-title" data-i18n="dagTitle">统一方法演化图</h2></div><div class="zoom">
+ <button id="zoom-out" type="button" aria-label="缩小">−</button><button id="zoom-in" type="button" aria-label="放大">＋</button>
+ <button id="fit-all" type="button" class="link-btn" data-i18n="fitAll">查看全图</button><button id="focus-map" type="button" class="link-btn" data-i18n="readingZoom">阅读比例</button>
+ </div></div>
+ <div class="controls">
+ <label class="search"><span>⌕</span><input id="search" type="search" autocomplete="off" placeholder="搜索方法或英文名称…" aria-label="Search methods"></label>
+ <label class="check"><input id="taxonomy" type="checkbox" checked><span data-i18n="taxonomy">显示分类关系</span></label>
+ <label class="check"><input id="contrasts" type="checkbox"><span data-i18n="comparisons">显示对照关系</span></label>
+ <button id="clear-focus" type="button" class="link-btn" data-i18n="clearFocus">清除局部聚焦</button>
+ </div>
+ <div id="paradigm-filters" class="paradigm-filters" role="group" aria-label="Method paradigm filters"></div>
+ <div class="graph-status"><span id="graph-status" aria-live="polite"></span><span data-i18n="canvasTip">拖动画布平移；点击节点或有向边查看详情</span></div>
+ <div class="viewport" id="viewport" aria-label="Graphviz layered method DAG">
+  <div class="board" id="board"><div id="dag-slot"></div></div>
+  <div class="canvas-corner" data-i18n="graphNote">位置由真实方法关系计算 · 灰虚线为分类，不代表历史改进</div>
+ </div>
+ <div class="legend">
+  <span><i class="line-sample evolutionary"></i><b data-i18n="legendExtends">扩展／演进</b></span>
+  <span><i class="line-sample fusion"></i><b data-i18n="legendCombines">技术融合</b></span>
+  <span><i class="line-sample taxonomy"></i><b data-i18n="legendTaxonomy">分类联系</b></span>
+  <span><i class="line-sample muted"></i><b data-i18n="legendMuted">当前未聚焦</b></span>
+ </div>
+ <p class="footnote" data-i18n="dagNote">允许多个不连通的 DAG 分量；不会为连通画面编造方法继承边。阅读方法的论文、背景和限制请点击节点或连线。</p>
+</section>
+<aside class="inspector panel"><div class="inspector-head"><div class="kicker">04 / EVIDENCE & CONTEXT</div><h2 data-i18n="details">方法与证据</h2></div><div id="details-body" class="details-body" aria-live="polite"></div></aside>
+</div>
+<div class="closing"><strong data-i18n="prototype">v0.7 为真实数据驱动的布局验证版本。</strong> <span data-i18n="prototypeDesc">保留全部原始论文、专著、方法与关系，未将3个阶段理解成互斥的方法分类。</span></div>
+</main><noscript>请启用 JavaScript 以浏览交互式图谱。</noscript>
+</body></html>
