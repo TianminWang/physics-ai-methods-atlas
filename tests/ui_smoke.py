@@ -31,8 +31,9 @@ def main() -> None:
         page.wait_for_selector(".graph-node")
         assert page.locator(".stage").count() == 6
         assert page.locator("#tracks button").count() == 3
-        assert page.locator(".graph-node").count() >= 9
+        assert page.locator(".graph-node").count() >= 7
         assert page.locator(".graph-edge-btn").count() >= 4
+        assert page.locator("#show-all").is_checked() is False
         assert "研究" in page.locator("#page-title").inner_text()
 
         # A real node exposes optional reading and authorial source links.
@@ -40,6 +41,16 @@ def main() -> None:
         assert "优先阅读" in page.locator("#detail-content").inner_text()
         assert page.locator("#detail-content a[href^='https://']").count() >= 1
         page.screenshot(path=str(SCREENSHOTS / "operator-desktop-zh.png"), full_page=True)
+        # Expand the branch and verify the same method is not duplicated.
+        compact_count=page.locator(".graph-node").count()
+        page.locator("#show-all").check()
+        assert page.locator(".graph-node").count()>compact_count
+        ids=page.locator(".graph-node").evaluate_all(
+            "nodes => nodes.map(n => n.title)"
+        )
+        assert len(ids)==len(set(ids))
+        page.screenshot(path=str(SCREENSHOTS / "operator-expanded-zh.png"), full_page=True)
+        page.locator("#show-all").uncheck()
 
         # A genuine evolution edge exposes its methodological improvement and bottleneck.
         page.locator(".graph-edge-btn").first.click()
@@ -54,7 +65,7 @@ def main() -> None:
         # English and generated family views share node IDs and functional data.
         page.locator("#lang-toggle").click()
         assert "research" in page.locator("#page-title").inner_text().lower()
-        assert page.locator(".graph-node").count() >= 9
+        assert page.locator(".graph-node").count() >= 7
         page.screenshot(path=str(SCREENSHOTS / "operator-desktop-en.png"), full_page=True)
 
         # Generative case includes a different scientific lineage and explicit search.
@@ -62,7 +73,7 @@ def main() -> None:
         page.locator("#search").fill("DPS")
         assert page.locator(".graph-node:not(.dimmed)").count() >= 1
         page.locator("#search").fill("")
-        assert page.locator(".graph-node").count() >= 9
+        assert page.locator(".graph-node").count() >= 7
         page.screenshot(path=str(SCREENSHOTS / "generative-desktop-en.png"), full_page=True)
 
         # Mobile layout must remain functional without page-wide overflow.

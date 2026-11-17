@@ -74,3 +74,13 @@ def test_preview_is_deterministic_and_json_serializable():
     right = build_prototype()
     assert left == right
     assert json.loads(json.dumps(left, ensure_ascii=False)) == left
+
+
+def test_featured_subgraph_is_a_true_subset_of_the_canonical_track():
+    data = build_prototype()
+    for tr in data["tracks"]:
+        assert tr["featured_ids"]
+        assert set(tr["featured_ids"]).issubset(set(tr["method_ids"]))
+        assert len(tr["featured_ids"]) < len(tr["method_ids"])
+    graph_edges = [e for e in data["edges"] if e["type"] in {"extends", "combines"}]
+    assert any(e["short_label"] for e in graph_edges)
