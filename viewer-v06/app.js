@@ -193,7 +193,7 @@
   }
   function rolesForStage(){
     return graph.functional.filter(r=>r.stage===state.stage)
-      .sort((a,b)=>Number(a.target.startsWith("method."))-Number(b.target.startsWith("method."))
+      .sort((a,b)=>Number(b.target.startsWith("method."))-Number(a.target.startsWith("method."))
             || name(a.target).localeCompare(name(b.target)));
   }
   function mappedMethodsForRelation(rel){
@@ -396,6 +396,11 @@
       if(edge.type==="extends"||edge.type==="combines"){
         if(state.stage&&!edge.stages.includes(state.stage)&&state.selected?.id!==edge.id)return;
         if(state.role&&edgeFaded(edge))return;
+        const overlapsMethod=Object.values(layout.positions).some(p=>
+          shape.mx>p.x-53 && shape.mx<p.x+NODE_W+53 &&
+          shape.my-9>p.y-14 && shape.my-9<p.y+NODE_H+14
+        );
+        if(overlapsMethod)return;
         const label=(edge.type==="combines"?(state.lang==="zh"?"融合：":"Fusion: "):"")
           +(tr(edge.innovation).slice(0,state.lang==="zh"?10:16));
         const b=button("edge-mini"+(edgeFaded(edge)?" dimmed":"")+
@@ -584,6 +589,10 @@
       funcById=Object.fromEntries(graph.functional.map(f=>[f.id,f]));
       if(Object.keys(methodById).length!==graph.methods.length)throw Error("Duplicate method IDs");
       state.lang=new URLSearchParams(location.search).get("lang")==="en"?"en":"zh";
+      const exampleRole=graph.functional.find(f=>
+        f.stage==="stage.inverse-calibration" && f.target==="family.optimization-regularization"
+      );
+      if(exampleRole)state.selected={kind:"role",id:exampleRole.id};
       $("lang").addEventListener("click",()=>{
         state.lang=state.lang==="zh"?"en":"zh";refresh();
       });
