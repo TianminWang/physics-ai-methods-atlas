@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.paper-hoffman-2014-nuts--introduces--method-no-u-turn-sampler",
+  "source_id": "paper.hoffman-2014-nuts",
+  "target_id": "method.no-u-turn-sampler",
+  "type": "introduces",
+  "claim": "Introduces the No-U-Turn Sampler and adaptive trajectory length selection for HMC.",
+  "significance": "landmark",
+  "significance_reason": "Introduces the No-U-Turn Sampler and adaptive trajectory length selection for HMC."
+}

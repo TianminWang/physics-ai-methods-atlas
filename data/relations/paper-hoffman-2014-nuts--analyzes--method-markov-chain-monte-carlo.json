@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.paper-hoffman-2014-nuts--analyzes--method-markov-chain-monte-carlo",
+  "source_id": "paper.hoffman-2014-nuts",
+  "target_id": "method.markov-chain-monte-carlo",
+  "type": "analyzes",
+  "claim": "Shows how Hamiltonian Monte Carlo adapts within broader MCMC sampling methods.",
+  "significance": "representative"
+}

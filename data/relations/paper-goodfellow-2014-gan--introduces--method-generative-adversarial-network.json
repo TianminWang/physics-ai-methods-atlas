@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.paper-goodfellow-2014-gan--introduces--method-generative-adversarial-network",
+  "source_id": "paper.goodfellow-2014-gan",
+  "target_id": "method.generative-adversarial-network",
+  "type": "introduces",
+  "claim": "Introduces adversarial generator–discriminator generative modeling.",
+  "significance": "landmark",
+  "significance_reason": "Introduces adversarial generator–discriminator generative modeling."
+}

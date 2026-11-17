@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.paper-cranmer-2020-sbi--surveys--method-simulation-based-inference",
+  "source_id": "paper.cranmer-2020-sbi",
+  "target_id": "method.simulation-based-inference",
+  "type": "surveys",
+  "claim": "Authoritative overview of likelihood-free statistical inference using simulators.",
+  "significance": "representative"
+}

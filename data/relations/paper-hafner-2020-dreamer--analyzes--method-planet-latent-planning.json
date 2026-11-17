@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.paper-hafner-2020-dreamer--analyzes--method-planet-latent-planning",
+  "source_id": "paper.hafner-2020-dreamer",
+  "target_id": "method.planet-latent-planning",
+  "type": "analyzes",
+  "claim": "Develops behavior learning in a latent world model related to the earlier PlaNet modeling and planning framework.",
+  "significance": "supporting"
+}

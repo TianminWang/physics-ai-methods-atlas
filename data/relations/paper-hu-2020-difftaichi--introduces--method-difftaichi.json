@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.paper-hu-2020-difftaichi--introduces--method-difftaichi",
+  "source_id": "paper.hu-2020-difftaichi",
+  "target_id": "method.difftaichi",
+  "type": "introduces",
+  "claim": "Introduces differentiable source-transformed physical simulation programming.",
+  "significance": "landmark",
+  "significance_reason": "Introduces differentiable source-transformed physical simulation programming."
+}

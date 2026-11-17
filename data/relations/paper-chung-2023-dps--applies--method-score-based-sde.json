@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.paper-chung-2023-dps--applies--method-score-based-sde",
+  "source_id": "paper.chung-2023-dps",
+  "target_id": "method.score-based-sde",
+  "type": "applies",
+  "claim": "Uses learned score-based reverse dynamics with measurement guidance in noisy inverse reconstruction.",
+  "significance": "supporting"
+}

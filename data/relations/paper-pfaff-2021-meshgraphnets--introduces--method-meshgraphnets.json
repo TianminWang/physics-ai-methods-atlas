@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.paper-pfaff-2021-meshgraphnets--introduces--method-meshgraphnets",
+  "source_id": "paper.pfaff-2021-meshgraphnets",
+  "target_id": "method.meshgraphnets",
+  "type": "introduces",
+  "claim": "Introduces MeshGraphNets for message-passing learned mesh simulations.",
+  "significance": "landmark",
+  "significance_reason": "Introduces MeshGraphNets for message-passing learned mesh simulations."
+}

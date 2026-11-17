@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.paper-bora-2017-gen-prior--applies--method-generative-adversarial-network",
+  "source_id": "paper.bora-2017-gen-prior",
+  "target_id": "method.generative-adversarial-network",
+  "type": "applies",
+  "claim": "Uses GAN-type pretrained generators as alternatives for inverse reconstruction priors.",
+  "significance": "supporting"
+}

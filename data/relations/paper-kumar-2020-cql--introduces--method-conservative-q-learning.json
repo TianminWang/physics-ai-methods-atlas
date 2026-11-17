@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.paper-kumar-2020-cql--introduces--method-conservative-q-learning",
+  "source_id": "paper.kumar-2020-cql",
+  "target_id": "method.conservative-q-learning",
+  "type": "introduces",
+  "claim": "Introduces conservative Q-value regularization to mitigate offline policy distribution-shift bias.",
+  "significance": "landmark",
+  "significance_reason": "Introduces conservative Q-value regularization to mitigate offline policy distribution-shift bias."
+}

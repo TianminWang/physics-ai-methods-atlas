@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.paper-hafner-2019-planet--introduces--method-planet-latent-planning",
+  "source_id": "paper.hafner-2019-planet",
+  "target_id": "method.planet-latent-planning",
+  "type": "introduces",
+  "claim": "Introduces PlaNet recurrent stochastic latent dynamics and online imagination planning.",
+  "significance": "landmark",
+  "significance_reason": "Introduces PlaNet recurrent stochastic latent dynamics and online imagination planning."
+}

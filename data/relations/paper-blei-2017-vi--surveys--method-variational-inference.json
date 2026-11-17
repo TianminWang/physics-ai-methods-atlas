@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.paper-blei-2017-vi--surveys--method-variational-inference",
+  "source_id": "paper.blei-2017-vi",
+  "target_id": "method.variational-inference",
+  "type": "surveys",
+  "claim": "Influential rigorous tutorial of VI objectives, statistical assumptions, and limitations.",
+  "significance": "representative"
+}

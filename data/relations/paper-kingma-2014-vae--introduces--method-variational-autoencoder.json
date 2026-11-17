@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.paper-kingma-2014-vae--introduces--method-variational-autoencoder",
+  "source_id": "paper.kingma-2014-vae",
+  "target_id": "method.variational-autoencoder",
+  "type": "introduces",
+  "claim": "Introduces reparameterized stochastic variational learning with an amortized encoder for VAEs.",
+  "significance": "landmark",
+  "significance_reason": "Introduces reparameterized stochastic variational learning with an amortized encoder for VAEs."
+}

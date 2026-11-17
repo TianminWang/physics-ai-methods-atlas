@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.paper-bastek-2025-physics-diffusion--introduces--method-physics-informed-diffusion",
+  "source_id": "paper.bastek-2025-physics-diffusion",
+  "target_id": "method.physics-informed-diffusion",
+  "type": "introduces",
+  "claim": "Introduces first-principles constraint losses for diffusion generation of physical fields.",
+  "significance": "landmark",
+  "significance_reason": "Introduces first-principles constraint losses for diffusion generation of physical fields."
+}

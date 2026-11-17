@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.paper-ho-2020-ddpm--introduces--method-diffusion-probabilistic-model",
+  "source_id": "paper.ho-2020-ddpm",
+  "target_id": "method.diffusion-probabilistic-model",
+  "type": "introduces",
+  "claim": "Introduces the influential DDPM denoising model and associated tractable training objective.",
+  "significance": "landmark",
+  "significance_reason": "Introduces the influential DDPM denoising model and associated tractable training objective."
+}

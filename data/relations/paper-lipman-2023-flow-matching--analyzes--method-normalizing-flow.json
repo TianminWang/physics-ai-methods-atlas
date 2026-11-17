@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.paper-lipman-2023-flow-matching--analyzes--method-normalizing-flow",
+  "source_id": "paper.lipman-2023-flow-matching",
+  "target_id": "method.normalizing-flow",
+  "type": "analyzes",
+  "claim": "Develops an efficient training framework for the continuous normalizing flow subclass.",
+  "significance": "supporting"
+}

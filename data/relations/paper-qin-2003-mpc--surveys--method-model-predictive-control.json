@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.paper-qin-2003-mpc--surveys--method-model-predictive-control",
+  "source_id": "paper.qin-2003-mpc",
+  "target_id": "method.model-predictive-control",
+  "type": "surveys",
+  "claim": "Influential review of established industrial MPC algorithms; not the original invention of MPC.",
+  "significance": "representative"
+}

@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.paper-raue-2009-identifiability--analyzes--method-profile-likelihood-identifiability",
+  "source_id": "paper.raue-2009-identifiability",
+  "target_id": "method.profile-likelihood-identifiability",
+  "type": "analyzes",
+  "claim": "Widely used profile-likelihood analysis distinguishing structural and practical identifiability; it does not invent likelihood profiling.",
+  "significance": "representative"
+}

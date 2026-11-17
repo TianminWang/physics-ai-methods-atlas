@@ -1,0 +1,10 @@
+{
+  "schema_version": "2.1.0",
+  "id": "relation.paper-li-2020-mgno--introduces--method-multipole-graph-neural-operator",
+  "source_id": "paper.li-2020-mgno",
+  "target_id": "method.multipole-graph-neural-operator",
+  "type": "introduces",
+  "claim": "Introduces multipole-inspired hierarchical graph kernel operators for parametric PDEs.",
+  "significance": "landmark",
+  "significance_reason": "Introduces multipole-inspired hierarchical graph kernel operators for parametric PDEs."
+}
