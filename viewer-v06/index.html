@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Physics AI Methods Atlas · Unified v0.6</title>
+<link rel="stylesheet" href="./style.css"><script src="./app.js" defer></script>
+</head><body>
+<a class="skip" href="#graph-title">跳转到统一方法图谱</a>
+<header class="topbar">
+  <div class="brand"><span class="brand-logo">◎</span><div><strong>PHYSICS AI <span>ATLAS</span></strong><small data-t="brandNote">统一方法图谱 · v0.6 设计原型</small></div></div>
+  <nav><a href="https://github.com/TianminWang/physics-ai-methods-atlas" target="_blank" rel="noopener noreferrer" data-t="repo">GitHub 仓库</a><button type="button" id="lang" class="lang-btn">EN</button></nav>
+</header>
+<main class="page">
+  <section class="hero">
+    <div class="eyebrow">RESEARCH WORKFLOW <span>×</span> METHOD EVOLUTION</div>
+    <h1 data-t="heading">一条研究主轴，一张方法图谱。</h1>
+    <p data-t="lead">选择一个科学研究环节，查看它如何连接不同的方法家族；方法演进边则说明针对这一环节解决了什么技术瓶颈。</p>
+    <div class="hero-meta"><span class="edition">v0.6 · UNIFIED LENS</span><span id="meta" class="meta"></span></div>
+  </section>
+  <section class="axis panel">
+    <div class="section-head"><div><div class="section-kicker">01 / SCIENTIFIC WORKFLOW</div><h2 data-t="axisTitle">研究主轴</h2></div>
+      <button type="button" id="clear-stage" class="text-btn" data-t="allStages">清除环节筛选</button>
+    </div>
+    <div id="stage-cards" class="stages" role="group" aria-label="Workflow stages"></div>
+    <div class="axis-note" data-t="axisNote">研究环节是功能链路，不是方法的分类父节点。选择环节后，下方仍保留完整方法图。</div>
+  </section>
+  <section class="bridge panel" aria-labelledby="map-title">
+    <div class="section-head">
+      <div><div class="section-kicker">02 / FUNCTIONAL MAPPING</div><h2 id="map-title" data-t="mapTitle">研究环节如何调用方法？</h2></div>
+      <button type="button" class="text-btn" id="more-roles" data-t="moreRoles">查看全部映射</button>
+    </div>
+    <div class="bridge-content">
+      <div id="bridge-source" class="bridge-source"><small data-t="selectedStage">当前研究环节</small><strong id="source-stage-name"></strong><span id="source-stage-count"></span></div>
+      <div id="bridge-arrow" class="bridge-arrow"><span></span><i>→</i></div>
+      <div class="bridge-destination"><div class="bridge-label" data-t="mappedMethodFamilies">相关方法家族与直接方法</div><div id="role-cards" class="role-cards"></div></div>
+    </div>
+    <p class="bridge-disclaimer" data-t="scopeNote">虚线表示用途映射，不代表历史演化。家族级关联是研究线索，不等同于每个子方法都经单独验证。</p>
+  </section>
+  <section class="workspace">
+    <div class="board-panel panel">
+      <div class="section-head board-heading"><div><div class="section-kicker">03 / ONE SHARED METHOD GRAPH</div>
+        <h2 id="graph-title" data-t="graphTitle">统一方法网络</h2></div>
+        <div class="zoom-actions">
+          <button type="button" id="zoom-minus" aria-label="缩小图谱" title="Zoom out">−</button>
+          <button type="button" id="zoom-plus" aria-label="放大图谱" title="Zoom in">＋</button>
+          <button type="button" id="zoom-fit" data-t="fit" class="text-btn">阅读比例</button><button type="button" id="zoom-all" data-t="overviewFit" class="text-btn">查看全图</button>
+        </div>
+      </div>
+      <div class="controls">
+        <label class="search"><span>⌕</span><input type="search" id="search" autocomplete="off" placeholder="搜索方法、中英文术语…" aria-label="Search methods"></label>
+        <div class="divider-vertical"></div>
+        <label class="choice"><input id="show-taxonomy" type="checkbox"><span data-t="taxonomy">显示分类边</span></label>
+        <label class="choice"><input id="show-contrasts" type="checkbox"><span data-t="contrast">显示对照边</span></label>
+        <button type="button" id="toggle-all" class="small-btn" data-t="expandAll">展开全部方法</button>
+      </div>
+      <div class="status-row"><div id="lens-info" aria-live="polite"></div><div id="display-count"></div></div>
+      <div id="zone-nav" class="zone-nav" aria-label="Graph regions"></div>
+      <div class="viewport" id="viewport" aria-label="Unified method genealogy canvas">
+        <div class="scene" id="scene">
+          <svg id="graph-lines" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"></svg>
+          <div id="zone-layer" class="zone-layer"></div>
+          <div id="edge-layer" class="edge-layer"></div>
+          <div id="method-layer" class="method-layer"></div>
+        </div>
+        <div class="viewport-help" data-t="panHint">拖动平移 · 滚轮缩放 · 点击方法或关系</div>
+      </div>
+      <div class="legend">
+        <span><i class="legend-node direct"></i><b data-t="legendDirect">直接关联</b></span>
+        <span><i class="legend-node family"></i><b data-t="legendInherited">家族级关联</b></span>
+        <span><i class="legend-node muted"></i><b data-t="legendMuted">其他方法（淡化）</b></span>
+        <span><i class="legend-edge evolution"></i><b data-t="legendEvolution">方法扩展</b></span>
+        <span><i class="legend-edge fusion"></i><b data-t="legendFusion">方法融合</b></span>
+        <span><i class="legend-edge taxonomy"></i><b data-t="legendTaxonomy">分类联系</b></span>
+      </div>
+      <p class="map-footnote" data-t="visualNote">分区只帮助定位，绝不限定方法唯一的学术归属；它的所有家族标签及跨区关系均被保留。</p>
+    </div>
+    <aside class="inspector panel">
+      <div class="inspector-head"><div class="section-kicker">04 / EXPLANATION & EVIDENCE</div><h2 data-t="inspectorTitle">关系与证据</h2></div>
+      <div id="inspect" class="inspect" aria-live="polite"></div>
+    </aside>
+  </section>
+  <div class="bottom-note"><strong data-t="prototypeDisclaimer">v0.6 为全局布局验证版本。</strong> <span data-t="prototypeMore">所有方法和关系来自同一份权威数据，但仍需评估大图布局及真实研究阅读体验；尚未替代正式网站。</span></div>
+</main>
+<noscript>该原型需要启用 JavaScript。</noscript>
+</body></html>
