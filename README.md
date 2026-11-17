@@ -64,7 +64,17 @@ v0.4 在原先30个方法基础上新增了31个节点，并保留同一数据�
 
 **这是一套首批有代表性论文支撑的方法谱系，不是宣称物理 AI 已全面覆盖。** 冠脉0D/1D/3D耦合模型、临床观测机制、严谨的后验校准与干预验证仍待补充。
 
-## 四、从这里开始
+## 四、v0.5：交互式布局验证原型
+
+**[原型使用说明](prototype/README.md)** · [界面源文件](prototype/index.html)
+
+已为**传统反问题、神经算子、生成式反问题**三条真实谱系构建交互原型。它从权威知识库导出方法和文献，支持研究环节筛选、精简/完整节点展开、方法演化边的瓶颈说明、Landmark 引用、中英文切换、搜索及手机端拖动。
+
+最新成功构建的离线预览，可从 **[GitHub Actions · Validate atlas data](https://github.com/TianminWang/physics-ai-methods-atlas/actions/workflows/validate.yml)** 的 Artifacts 下载 `atlas-interactive-layout-v05`，解压后直接双击 `index.html`。浏览器截图见 **[Prototype UI smoke](https://github.com/TianminWang/physics-ai-methods-atlas/actions/workflows/prototype-ui.yml)**。
+
+**本阶段验证的是布局与交互，不是完整 GitHub Pages 网站。** 全量知识图谱的交互网站将在确认原型可读后扩展。
+
+## 五、从这里开始
 
 - **[统一图谱架构（中文）](docs/zh/UNIFIED_GRAPH.md)**：主轴、方法家族、功能边、演化边、颜色及边界。
 - **[v0.4 方法谱系综述（中文）](docs/zh/METHOD_GENEALOGY_V04.md)**：传统、生成式、神经算子、反演及世界模型的代表方法与学术关系。
@@ -74,7 +84,7 @@ v0.4 在原先30个方法基础上新增了31个节点，并保留同一数据�
 
 Landmark 是论文**对具体方法的学术贡献关系**，Start Here 只是**可选的优先阅读建议**。
 
-## 五、数据与检查
+## 六、数据与检查
 
 ```text
 data/stages/         研究主轴（环节自有颜色）

@@ -23,3 +23,11 @@ jobs:
       - run: python -m scripts.export_unified --lang zh --output build/unified-zh.json
       - run: python -m scripts.export_unified --lang en --output build/unified-en.json
       - run: python -m scripts.export_graph
+      - run: python -m scripts.build_prototype --output build/prototype/data/preview.json --site build/prototype
+      - run: node --check prototype/app.js
+      - name: Upload interactive prototype artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: atlas-interactive-layout-v05
+          path: build/prototype/
+          if-no-files-found: error

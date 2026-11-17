@@ -38,6 +38,14 @@ The expansion adds 31 distinct reusable method nodes across **finite differences
 
 **Evidence scope:** virtual coronary intervention planning is a research application hypothesis, not clinically established by general world-model or offline-RL papers. The atlas is a curated foundation, not a completed scientific encyclopedia.
 
+## v0.5 interactive layout prototype
+
+A working three-branch layout is available for classical inversion, neural operators and generative inverse problems. The preview derives from the canonical Atlas and includes stage/family roles, evidence-backed method evolution, compact/full node disclosure, citation panels, bilingual switching, searching and mobile navigation.
+
+[Prototype instructions](prototype/README.md) · [Offline HTML artifact from the latest successful validation](https://github.com/TianminWang/physics-ai-methods-atlas/actions/workflows/validate.yml) · [Browser screenshots](https://github.com/TianminWang/physics-ai-methods-atlas/actions/workflows/prototype-ui.yml).
+
+This is a focused validation release, not the deployed full GitHub Pages experience. Full progressive-disclosure browsing follows prototype approval.
+
 ## Navigate
 
 - [Unified graph architecture (English)](docs/en/UNIFIED_GRAPH.md)
