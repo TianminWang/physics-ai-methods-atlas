@@ -1,0 +1,19 @@
+{
+  "schema_version": "2.1.0",
+  "id": "paper.chaloner-1995-bayesian-design",
+  "title": "Bayesian Experimental Design: A Review",
+  "authors": [
+    "Kathryn Chaloner",
+    "Isabella Verdinelli"
+  ],
+  "year": 1995,
+  "venue": "Statistical Science",
+  "publication_status": "peer_reviewed",
+  "url": "https://doi.org/10.1214/ss/1177009939",
+  "identifiers": {
+    "doi": "10.1214/ss/1177009939"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://www.tandfonline.com/doi/10.1214/ss/1177009939",
+  "summary": "Foundational Bayesian decision-theoretic review of utility-based experimental design and observation selection."
+}

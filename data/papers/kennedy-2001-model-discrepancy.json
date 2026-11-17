@@ -1,0 +1,19 @@
+{
+  "schema_version": "2.1.0",
+  "id": "paper.kennedy-2001-model-discrepancy",
+  "title": "Bayesian Calibration of Computer Models",
+  "authors": [
+    "Marc C. Kennedy",
+    "Anthony O'Hagan"
+  ],
+  "year": 2001,
+  "venue": "Journal of the Royal Statistical Society: Series B",
+  "publication_status": "peer_reviewed",
+  "url": "https://doi.org/10.1111/1467-9868.00294",
+  "identifiers": {
+    "doi": "10.1111/1467-9868.00294"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://academic.oup.com/jrsssb/article-abstract/63/3/425/7083367",
+  "summary": "Joint Bayesian calibration and explicit model discrepancy accounting for imperfect forward simulators."
+}

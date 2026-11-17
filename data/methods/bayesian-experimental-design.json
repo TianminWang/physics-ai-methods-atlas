@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.1.0",
+  "id": "method.bayesian-experimental-design",
+  "name": "Bayesian Experimental Design",
+  "name_zh": "贝叶斯实验与观测设计",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Select measurements or experiments to maximize expected information or decision utility under uncertain parameters.",
+  "summary_zh": "通过期望效用或信息增益选择更有价值的观测位置、测量方案与实验设置。",
+  "core_idea": "Optimize observation configurations using an expected Bayesian utility under prior and likelihood models.",
+  "innovation": "Connects observation design directly to identifiability and expected reduction of parameter uncertainty.",
+  "limitations": [
+    "Expected utility optimization may require expensive nested inference.",
+    "Design quality depends on simulator, prior and observation assumptions."
+  ],
+  "background_topics": [
+    "Bayesian posterior",
+    "Expected utility",
+    "Observation models"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.chaloner-1995-bayesian-design",
+      "why": "Foundational survey linking Bayesian decision theory to optimal measurement design.",
+      "focus": "Expected utility criteria and nonlinear experimental design."
+    }
+  ],
+  "curation_note": "Authoritative journal source checked; the proposed starting reference is optional."
+}

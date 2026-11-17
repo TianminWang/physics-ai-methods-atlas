@@ -1,0 +1,19 @@
+{
+  "schema_version": "2.1.0",
+  "id": "paper.xiu-2002-polynomial-chaos",
+  "title": "The Wiener–Askey Polynomial Chaos for Stochastic Differential Equations",
+  "authors": [
+    "Dongbin Xiu",
+    "George Em Karniadakis"
+  ],
+  "year": 2002,
+  "venue": "SIAM Journal on Scientific Computing",
+  "publication_status": "peer_reviewed",
+  "url": "https://doi.org/10.1137/S1064827501387826",
+  "identifiers": {
+    "doi": "10.1137/S1064827501387826"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://epubs.siam.org/doi/10.1137/S1064827501387826",
+  "summary": "Generalized polynomial chaos expansion using orthogonal polynomial bases to propagate stochastic input uncertainty."
+}
