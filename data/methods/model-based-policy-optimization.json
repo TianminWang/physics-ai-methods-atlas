@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.1.0",
+  "id": "method.model-based-policy-optimization",
+  "name": "Model-Based Policy Optimization (MBPO)",
+  "name_zh": "基于模型的策略优化（MBPO）",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Use short learned-model rollouts to generate extra training data for reinforcement learning policies.",
+  "summary_zh": "使用从真实数据出发的短模型滚动轨迹，在控制模型偏差的同时提升训练样本效率。",
+  "core_idea": "Shorten model-generated rollout horizons to reduce compounding dynamics-model bias.",
+  "innovation": "Balances model usage and policy learning to improve some model-based RL sample-efficiency regimes.",
+  "limitations": [
+    "Still depends on sufficient true-environment coverage.",
+    "Predictive rollout reliability under unseen clinical interventions is unproven."
+  ],
+  "background_topics": [
+    "Model-based RL",
+    "Dynamics model bias",
+    "Policy optimization"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.janner-2019-mbpo",
+      "why": "NeurIPS source motivating short model-generated rollouts.",
+      "focus": "Model bias, rollout horizon and real-data branching."
+    }
+  ],
+  "curation_note": "Representative publication checked; recommendations are advisory and application-specific clinical claims require separate evidence."
+}

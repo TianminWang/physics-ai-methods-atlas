@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.1.0",
+  "id": "method.multipole-graph-neural-operator",
+  "name": "Multipole Graph Neural Operator (MGNO)",
+  "name_zh": "多极图神经算子（MGNO）",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Approximate parametric PDE operators on graph meshes using multilevel long-range interactions.",
+  "summary_zh": "使用多层级图交互与类多极分解，在网格上近似全局算子。",
+  "core_idea": "Use multipole-inspired hierarchy to capture far-field graph messages with favorable scaling.",
+  "innovation": "Reduces the cost of capturing long-range interactions in graph-based PDE solution operator learning.",
+  "limitations": [
+    "Performance depends on multilevel graph construction.",
+    "Accuracy for arbitrary patient-specific meshes needs separate validation."
+  ],
+  "background_topics": [
+    "Graph message passing",
+    "PDE solution operators",
+    "Multiresolution approximation"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.li-2020-mgno",
+      "why": "Original graph-operator multi-scale architecture.",
+      "focus": "Graph hierarchy, long-range kernels and complexity."
+    }
+  ],
+  "curation_note": "Representative publication checked; recommendations are advisory and application-specific clinical claims require separate evidence."
+}

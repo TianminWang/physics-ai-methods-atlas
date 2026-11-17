@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.1.0",
+  "id": "method.conservative-q-learning",
+  "name": "Conservative Q-Learning (CQL)",
+  "name_zh": "保守 Q 学习（CQL）",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Learn offline reinforcement learning policies under dataset-to-policy action distribution shift.",
+  "summary_zh": "通过保守价值正则化抑制离线数据分布外动作的Q值高估。",
+  "core_idea": "Regularize Q-values to discourage overoptimistic estimates on unsupported actions.",
+  "innovation": "Addresses severe offline-RL extrapolation errors when new risky exploration is unavailable.",
+  "limitations": [
+    "Can become overly conservative.",
+    "A policy learned from historical clinical data needs strong confounding and safety assessment."
+  ],
+  "background_topics": [
+    "Offline RL",
+    "Bellman updates",
+    "Distribution shift"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.kumar-2020-cql",
+      "why": "Landmark conservative offline RL value-learning algorithm.",
+      "focus": "Conservative Q regularizer and distribution shift motivation."
+    }
+  ],
+  "curation_note": "Representative publication checked; recommendations are advisory and application-specific clinical claims require separate evidence."
+}

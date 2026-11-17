@@ -1,0 +1,25 @@
+{
+  "schema_version": "2.1.0",
+  "id": "paper.goodfellow-2014-gan",
+  "title": "Generative Adversarial Nets",
+  "authors": [
+    "Ian J. Goodfellow",
+    "Jean Pouget-Abadie",
+    "Mehdi Mirza",
+    "Bing Xu",
+    "David Warde-Farley",
+    "Sherjil Ozair",
+    "Aaron Courville",
+    "Yoshua Bengio"
+  ],
+  "year": 2014,
+  "venue": "Advances in Neural Information Processing Systems (NeurIPS)",
+  "publication_status": "peer_reviewed",
+  "url": "https://arxiv.org/abs/1406.2661",
+  "identifiers": {
+    "arxiv": "1406.2661"
+  },
+  "verification_status": "verified",
+  "verification_url": "https://papers.neurips.cc/paper/2014/hash/f033ed80deb0234979a61f95710dbe25-Abstract.html",
+  "summary": "Introduces adversarial generator–discriminator training as a generative density-modeling paradigm, relevant as a source of learned physical priors."
+}

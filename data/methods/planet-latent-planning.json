@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.1.0",
+  "id": "method.planet-latent-planning",
+  "name": "PlaNet: Latent Dynamics Planning",
+  "name_zh": "PlaNet 潜在动力学规划",
+  "aliases": [],
+  "status": "curated",
+  "summary": "Learn a recurrent stochastic latent dynamics model from observations and plan future actions in latent space.",
+  "summary_zh": "由高维观测学习隐状态的随机动力学，并在潜在空间搜索动作。",
+  "core_idea": "Combine learned latent transitions, multi-step prediction, and online model-based planning.",
+  "innovation": "Makes planning feasible when image-level physical state is partially observed.",
+  "limitations": [
+    "Latent model errors compound during multi-step rollout.",
+    "A learned control environment is not a validated patient-specific clinical twin."
+  ],
+  "background_topics": [
+    "State-space models",
+    "Latent variables",
+    "Model predictive planning"
+  ],
+  "start_here": [
+    {
+      "reference_id": "paper.hafner-2019-planet",
+      "why": "Influential model-based world-model planning from pixels.",
+      "focus": "Latent state model, observation inference, online planning."
+    }
+  ],
+  "curation_note": "Representative publication checked; recommendations are advisory and application-specific clinical claims require separate evidence."
+}
