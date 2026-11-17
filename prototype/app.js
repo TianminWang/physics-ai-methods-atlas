@@ -364,9 +364,14 @@
   }
   async function init(){
     try{
-      const result=await fetch("./data/preview.json",{cache:"no-store"});
-      if(!result.ok)throw Error("Data HTTP "+result.status);
-      db=await result.json();
+      const embedded=document.getElementById("atlas-embedded-data");
+      if(embedded){
+        db=JSON.parse(embedded.textContent);
+      }else{
+        const result=await fetch("./data/preview.json",{cache:"no-store"});
+        if(!result.ok)throw Error("Data HTTP "+result.status);
+        db=await result.json();
+      }
       nodes=Object.fromEntries(db.nodes.map(n=>[n.id,n]));
       edges=Object.fromEntries(db.edges.map(e=>[e.id,e]));
       if(Object.keys(nodes).length!==db.nodes.length)throw Error("Duplicate nodes");

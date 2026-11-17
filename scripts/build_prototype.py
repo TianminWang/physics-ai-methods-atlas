@@ -211,10 +211,23 @@ def build_prototype(root: Path = ROOT) -> dict:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=ROOT / "prototype" / "data" / "preview.json")
+    parser.add_argument("--site", type=Path, default=None, help="Build a portable standalone HTML preview directory")
     args = parser.parse_args()
     payload = build_prototype()
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    if args.site is not None:
+        from shutil import copyfile
+        args.site.mkdir(parents=True, exist_ok=True)
+        source_html = (ROOT / "prototype" / "index.html").read_text(encoding="utf-8")
+        # Standalone ZIP can be opened directly from file:// without a server.
+        json_blob = json.dumps(payload, ensure_ascii=False).replace("</", "<\\/")
+        embedded = '<script id="atlas-embedded-data" type="application/json">' + json_blob + '</script>'
+        source_html = source_html.replace("</body>", embedded + "\\n</body>")
+        (args.site / "index.html").write_text(source_html, encoding="utf-8")
+        for asset in ("style.css", "app.js"):
+            copyfile(ROOT / "prototype" / asset, args.site / asset)
+        print(f"Portable static preview: {args.site}")
     print(
         f"Prototype built: {len(payload['nodes'])} unique nodes, "
         f"{len(payload['edges'])} typed links, {len(payload['tracks'])} tracks -> {args.output}"
