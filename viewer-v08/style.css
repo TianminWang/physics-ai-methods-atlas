@@ -1,0 +1,108 @@
+/* v0.8 presentation: v0.7 common typography is prepended at build time. */
+:root{--ink:#1b3047;--soft-shadow:0 18px 46px rgba(14,39,70,.07)}
+.wrap{max-width:1880px;padding:25px clamp(14px,2.2vw,38px) 38px}
+.intro{margin-bottom:13px}.intro h1{font-size:clamp(26px,2.65vw,38px);margin:7px 0 7px}.intro p{font-size:13px}
+.minor{margin:10px 0 17px}.axis,.mapping{padding:13px 17px;margin-bottom:12px}
+.axis .section-head,.mapping .section-head{margin-bottom:9px}
+.axis .section-head h2,.mapping .section-head h2{font-size:15px}.phase-card{min-height:90px;padding:9px 12px}
+.phase-card strong{font-size:12px;margin:5px 0 3px}.phase-card .substeps{font-size:10px}.phase-card .substeps i{padding:2px 4px;margin:3px 3px 0 0}
+.axis-bottom{margin-top:8px;font-size:10px}.mapping-line{align-items:center}.mapping-origin{padding:10px 12px;flex-basis:190px;gap:2px}
+.mapping-origin strong{font-size:11px}.mapping-origin span{font-size:9px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.mapping-card{flex:0 0 215px;padding:7px 10px}.mapping-card strong{font-size:11px}.mapping-card .role{margin:4px 0;font-size:9.5px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.mapping .footnote{margin:5px 0 0;font-size:10px}
+.graph-card{padding:17px 18px 14px;width:100%;max-width:none;position:relative;min-width:0}
+.graph-toolbar{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:12px}
+.graph-toolbar h2{font-size:21px;margin:3px 0}.graph-subtitle{margin:2px 0 0;color:#8395a9;font-size:10px}
+.graph-actions{display:flex;align-items:center;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.full-btn{background:#214f72;color:#fff;border:0;border-radius:8px;padding:8px 13px;font-size:11px;font-weight:750;white-space:nowrap}
+.full-btn:hover{background:#173d5a}.icon-button{display:inline-grid;place-items:center;width:32px;height:32px;border:1px solid #d5e0e8;background:#fff;border-radius:8px;color:#35617e;font-size:17px;padding:0}
+.icon-button:hover{background:#eef5fa}
+.graph-controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:11px}
+.search-wrap{position:relative;flex:1 1 300px;max-width:440px;z-index:16}.search{min-width:0;max-width:none;display:flex;border-radius:9px}
+.search-results{position:absolute;top:calc(100% + 5px);left:0;right:0;background:#fff;box-shadow:0 12px 30px rgba(25,56,84,.16);border:1px solid #dce7f0;border-radius:10px;padding:6px;max-height:300px;overflow-y:auto}
+.search-results[hidden]{display:none}.search-result{display:flex;justify-content:space-between;align-items:center;gap:7px;width:100%;text-align:left;padding:9px;border:0;border-radius:7px;background:#fff;color:#375c7a;font-size:11px}
+.search-result:hover,.search-result:focus-visible{background:#e9f3fa}.search-result small{font-size:9px;color:#8798a8}
+.paradigm-filters{margin:0;flex:1 1 auto}.paradigm-pill{font-size:10px}
+.graph-controls .check{white-space:nowrap}.graph-controls .link-btn{white-space:nowrap}
+.graph-status{margin:0 0 8px;display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:11px}
+.graph-layout{position:relative;min-width:0}.graph-layout .graph-surface{min-width:0}
+.graph-card .viewport{height:78vh;min-height:650px;max-height:1180px;width:100%;border-radius:12px;overflow:hidden;position:relative}
+.graph-card .board{z-index:1}.graph-card .atlas-dag{display:block;max-width:none}
+.graph-card .atlas-dag g.atlas-node{cursor:pointer}.graph-card .atlas-dag g.atlas-edge{cursor:pointer}
+.graph-card .atlas-dag g.dimmed{opacity:.10}.graph-card .atlas-dag g.context{opacity:.47}
+.graph-card .atlas-dag g.selected{opacity:1!important}.graph-card .atlas-dag g.selected.node polygon,.graph-card .atlas-dag g.selected.node path{stroke-width:4}
+.graph-card .atlas-dag g.selected.edge path:not(.edge-hit){stroke-width:4.5}
+.graph-card .atlas-dag g.edge.hidden-edge{opacity:0!important;pointer-events:none}
+.graph-card .atlas-dag .edge-hit{fill:none!important;stroke:transparent!important;stroke-width:17!important;pointer-events:stroke!important;cursor:pointer}
+.graph-card .atlas-dag g.atlas-node:focus-visible{outline:none}.graph-card .atlas-dag g.atlas-node:focus-visible polygon{stroke-width:3}
+.graph-card .canvas-corner{right:12px;bottom:10px;z-index:3}
+.graph-bottom{display:flex;gap:16px;justify-content:space-between;align-items:center;flex-wrap:wrap;margin:12px 2px}
+.graph-bottom .legend{margin:0}
+.component-nav{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.component-nav .component-label{font-size:10px;color:#8396aa;margin-right:3px}
+.component-chip{background:#fff;border:1px solid #dfe8f0;border-radius:20px;padding:5px 10px;color:#506b84;font-size:10px}
+.component-chip:hover,.component-chip.active{border-color:#8eafc9;background:#edf5fb}
+.component-chip small{color:#94a5b6}
+.unlinked-section{border-top:1px solid #e6edf3;margin-top:10px;padding-top:7px}
+.unlinked-toggle{background:none;border:0;width:100%;padding:10px 2px;display:flex;align-items:center;justify-content:space-between;text-align:left;color:#385774}
+.unlinked-toggle strong{font-size:12px}.unlinked-toggle small{font-size:10px;color:#899caf;margin-left:12px}
+.unlinked-toggle #unlinked-chevron{font-size:20px;color:#7a9ab3;transition:transform .15s}
+.unlinked-toggle[aria-expanded=true] #unlinked-chevron{transform:rotate(180deg)}
+.unlinked-list[hidden]{display:none}.unlinked-list{background:#f8fafc;border:1px solid #e5edf3;border-radius:10px;padding:14px;display:grid;gap:13px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.unlinked-group h3{font-size:11px;color:#3f627d;margin:0 0 8px}
+.unlinked-group .unlinked-items{display:flex;flex-wrap:wrap;gap:6px}
+.unlinked-item{border:1px solid var(--item-color);border-left:3px solid var(--item-color);background:var(--item-bg);padding:6px 9px;border-radius:7px;color:#415b70;font-size:10px;text-align:left}
+.unlinked-item:hover{filter:brightness(.97);box-shadow:0 2px 8px #23466a16}
+.unlinked-item small{display:block;color:#8a9cac;font-size:9px}
+.unlinked-section .footnote{margin-top:5px}
+.mini{position:absolute;bottom:18px;left:18px;width:250px;z-index:4;background:#ffffffef;border:1px solid #d5e1ec;box-shadow:0 8px 22px rgba(16,40,63,.15);border-radius:11px;padding:8px;backdrop-filter:blur(4px)}
+.mini-top{display:flex;align-items:center;justify-content:space-between;font-size:10px;color:#57738c;font-weight:750;margin:0 4px 3px}
+.mini-top button{border:0;background:transparent;color:#7e96a8;font-size:15px;width:22px;height:22px}
+#mini-canvas{display:block;width:100%;height:143px;cursor:crosshair;border-radius:6px;background:#f7fafc;touch-action:none}
+.restore-mini{position:absolute;bottom:16px;left:16px;z-index:5;background:#fff;border:1px solid #cbdce8;color:#45728f;border-radius:7px;padding:7px 10px;font-size:10px}
+.restore-mini[hidden]{display:none}
+.graph-layout .drawer[hidden]{display:none!important}
+.graph-layout .drawer{position:absolute;z-index:12;right:0;top:0;bottom:0;width:min(410px,96%);background:#fff;border:1px solid #dce6ef;border-radius:12px;box-shadow:-14px 0 38px rgba(18,43,70,.15);display:flex;flex-direction:column;min-height:0}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;gap:7px;padding:16px 17px;border-bottom:1px solid #e3ebf3}
+.drawer-head h2{margin:4px 0 0;font-size:17px}
+.drawer-actions{display:flex;align-items:center;gap:6px}.drawer-actions #pin-drawer{font-size:11px;width:auto;padding:0 9px}
+.drawer-actions #pin-drawer[aria-pressed=true]{background:#e7f2fa;border-color:#8db5d4}
+.drawer .details-body{padding:16px;flex:1;max-height:none;overflow-y:auto}
+.graph-layout.is-pinned{display:grid;grid-template-columns:minmax(0,1fr) min(380px,32%);gap:10px}
+.graph-layout.is-pinned .drawer{position:relative;z-index:2;right:auto;top:auto;bottom:auto;width:100%;height:100%;box-shadow:none}
+.graph-card.is-fullscreen{position:fixed!important;inset:0!important;z-index:1000!important;width:100vw!important;height:100vh!important;max-width:none;border-radius:0;padding:14px 16px;display:flex;flex-direction:column;background:#fff;overflow:hidden}
+.graph-card.is-fullscreen .graph-toolbar{flex-shrink:0}
+.graph-card.is-fullscreen .graph-controls{flex-shrink:0}.graph-card.is-fullscreen .graph-status{flex-shrink:0}
+.graph-card.is-fullscreen .graph-layout{flex:1;min-height:0}
+.graph-card.is-fullscreen .graph-surface{height:100%;min-height:0}
+.graph-card.is-fullscreen .viewport{height:100%!important;max-height:none!important;min-height:0!important}
+.graph-card.is-fullscreen .graph-bottom,.graph-card.is-fullscreen .unlinked-section{display:none}
+body.graph-fullscreen{overflow:hidden}
+@media(max-width:1100px){
+  .graph-card .viewport{height:73vh;min-height:550px}
+  .graph-layout.is-pinned{grid-template-columns:minmax(0,1fr) min(320px,37%)}
+  .graph-toolbar{align-items:flex-start}.graph-actions{max-width:55%}
+}
+@media(max-width:850px){
+  .graph-card .viewport{height:70vh;min-height:470px}
+  .graph-layout.is-pinned{display:block}
+  .graph-layout.is-pinned .drawer{position:absolute;right:0;top:0;width:min(385px,100%);height:100%;box-shadow:-12px 0 30px rgba(18,43,70,.16)}
+  .graph-controls{gap:7px}
+  .graph-toolbar h2{font-size:18px}
+}
+@media(max-width:560px){
+  .wrap{padding:17px 12px 30px}.intro{margin-bottom:11px}.intro h1{font-size:25px}
+  .axis,.mapping{padding:12px}.phase-card{min-height:75px}.phase-card strong{font-size:12px}
+  .mapping-origin{flex-basis:auto}.mapping-card{flex-basis:180px}
+  .graph-card{padding:12px}.graph-toolbar{display:block}.graph-actions{justify-content:flex-start;max-width:none;margin-top:10px}
+  .graph-controls .search-wrap{flex-basis:100%;max-width:none}
+  .graph-card .viewport{height:72vh;min-height:420px;max-height:none}
+  .graph-status{flex-direction:column;align-items:flex-start}
+  .mini{left:8px;bottom:8px;width:170px;padding:5px}
+  #mini-canvas{height:95px}
+  .mini-top{font-size:9px}
+  .unlinked-list{grid-template-columns:1fr}
+  .graph-layout .drawer{width:100%;border-radius:10px}
+  .graph-card.is-fullscreen{padding:8px}.graph-card.is-fullscreen .graph-toolbar h2{font-size:16px}
+  .graph-card.is-fullscreen .graph-controls .paradigm-filters{display:none}
+}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important}}
