@@ -24,6 +24,14 @@ jobs:
       - run: python -m pytest -q
       - run: python -m scripts.export_unified --lang zh --output build/unified-zh.json
       - run: python -m scripts.export_unified --lang en --output build/unified-en.json
+      - run: python -m scripts.build_v08 --site build/viewer-v08
+      - run: node --check viewer-v08/app.js
+      - name: Upload full-width v0.8 offline DAG
+        uses: actions/upload-artifact@v4
+        with:
+          name: atlas-fullwidth-dag-v08
+          path: build/viewer-v08/
+          if-no-files-found: error
       - run: python -m scripts.build_v07 --site build/viewer-v07
       - run: node --check viewer-v07/app.js
       - name: Upload three-phase global DAG viewer

@@ -29,7 +29,7 @@ flowchart LR
 
 ## 二、统一方法 DAG 的配色与关系
 
-**不再把方法强制摆放在六个矩形区域里。** 全部方法共同进入 Graphviz 分层 DAG，由真实的扩展、融合与分类关系决定节点位置，允许多个独立连通分量存在。
+**不再把方法强制摆放在矩形区域里。** 默认主画布优先展示存在真实扩展／融合关系的方法，由 Graphviz 根据这些证据进行紧凑 DAG 布局；其他尚未记录演进关系的方法保留在可搜索、可展开的谱系待完善区域，**不删除节点，也不编造连接**。
 
 - **节点颜色：** 传统数值与优化（蓝灰）、统计与概率推断（紫）、机器与深度学习（青绿）、物理–数据混合（橙）。
 - **有向演进边颜色：** 主要解决阶段Ⅰ问题为蓝、阶段Ⅱ为紫、阶段Ⅲ为青绿；没有明确主阶段的关系用中性灰。
@@ -38,7 +38,19 @@ flowchart LR
 
 一个方法可以属于多个家族，只采用一种**主要显示颜色**，不等于学术上只能归一个类。一个研究环节指向整个方法家族时，属于**家族级研究线索**，不会被假装成每个方法都有独立应用验证。
 
-## 三、v0.7 可交互原型
+## 三、v0.8 全宽交互式 DAG（当前）
+
+**[v0.8 中文设计与使用说明](docs/zh/LAYOUT_V08.md)** · [English](docs/en/LAYOUT_V08.md) · [查看界面源码](viewer-v08/index.html)
+
+现在 DAG 占满内容宽度，画布高度随浏览器窗口变化，支持**全屏查看、可点击定位的小地图、演化分支导航、前驱／后继路径聚焦**。节点与关系都可以打开论文证据详情。详情面板默认覆盖在画布右侧，可以关闭，也可以选择固定停靠。
+
+当前61个方法全部存在同一套知识数据中；其中24个已具备明确的扩展／融合关系、构成8个演化分支，37个方法暂时放在“谱系待完善”折叠区（也可用搜索直接打开）。**这只是证据密度驱动的可视化折叠，不表示这37个方法没有代表性论文或学术价值。**
+
+[下载离线 HTML 原型：GitHub Actions → 最新成功构建 → Artifacts](https://github.com/TianminWang/physics-ai-methods-atlas/actions/workflows/validate.yml)，选择 `atlas-fullwidth-dag-v08`，解压后打开 `index.html` 即可体验。
+
+这仍是正式 GitHub Pages 上线前的交互原型，请重点体验画布布局、全屏、小地图、孤立节点管理和可固定的证据抽屉。
+
+## 四、v0.7 历史原型
 
 **[v0.7 三阶段 DAG 架构说明（中文）](docs/zh/THREE_PHASE_DAG_V07.md)** · [English design](docs/en/THREE_PHASE_DAG_V07.md)
 
@@ -48,7 +60,7 @@ flowchart LR
 
 **当前尚未部署正式 GitHub Pages。** 原型先用实际方法与浏览器截图验证布局，再决定是否将它作为 v1.0 的正式界面。
 
-## 四、知识库内容与阅读负担
+## 五、知识库内容与阅读负担
 
 目前收录约 **61个方法、34个方法家族、58条论文记录、12本专著、15个研究问题**，并关联其分类、应用与部分证据支持的方法演进关系。这里的“全部方法”是当前已收录的范围，不代表相关领域已经穷尽。
 
@@ -59,18 +71,18 @@ flowchart LR
 
 **Landmark 是论文对具体方法的学术贡献；Start Here 是可选的优先阅读建议，绝非每个节点必须阅读1–2篇的强制规则。** 我们追求全面的知识结构，而不是全面增加阅读负担。
 
-## 五、开发与验证
+## 六、开发与验证
 
-权威资料位于 `data/`；三阶段和视觉范式映射位于 `config/v07.json`；交互代码位于 `viewer-v07/`；全局 DAG 构建器为 `scripts/build_v07.py`。
+权威资料位于 `data/`；三阶段和视觉范式映射位于 `config/v07.json`；最新交互代码位于 `viewer-v08/`；布局构建器为 `scripts/build_v08.py`。历史 v0.7 仍保留。
 
 ```bash
 python -m pip install -r requirements-dev.txt
 python -m scripts.validate
 python -m pytest -q
 # 需要 Graphviz dot（构建阶段）
-python -m scripts.build_v07 --site build/viewer-v07
+python -m scripts.build_v08 --site build/viewer-v08
 ```
 
-请优先使用从构建中生成的 `build/viewer-v07/index.html` 或 GitHub Actions 附件，而不是直接双击未经嵌入图谱数据的源码模板。
+请优先使用从构建中生成的 `build/viewer-v08/index.html` 或 GitHub Actions 附件，而不是直接双击未经嵌入图谱数据的源码模板。
 
 历史版本 [v0.6](viewer-v06/README.md) 和 [v0.5](prototype/README.md) 仍保留以便追踪设计变化。

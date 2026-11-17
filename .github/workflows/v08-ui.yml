@@ -1,0 +1,35 @@
+name: v0.8 full-width DAG browser review
+
+on:
+  pull_request:
+    paths:
+      - 'viewer-v08/**'
+      - 'scripts/build_v08.py'
+      - 'tests/ui_v08.py'
+      - '.github/workflows/v08-ui.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  chromium:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Graphviz and CJK fonts
+        run: sudo apt-get update && sudo apt-get install -y graphviz fonts-noto-cjk
+      - run: python -m pip install -r requirements-dev.txt playwright
+      - run: python -m playwright install chromium --with-deps
+      - run: python -m scripts.build_v08 --site build/viewer-v08
+      - run: python tests/ui_v08.py
+      - name: Upload desktop and mobile screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: atlas-v08-layout-screenshots
+          path: build/v08-screenshots/
+          if-no-files-found: ignore

@@ -26,7 +26,17 @@ The viewer no longer forces methods into six category rectangles. **Graphviz ran
 
 Nodes and SVG links are equally selectable. Their details show mechanisms, original method-family memberships, actual bottlenecks, trade-offs, source papers, contextual Landmark roles and optional Start Here readings. Stage-to-family relevance remains distinct from method-specific empirical evidence.
 
-## v0.7 interactive prototype
+## v0.8 full-width evidence-first graph (current)
+
+[Design / usage (English)](docs/en/LAYOUT_V08.md) · [中文版](docs/zh/LAYOUT_V08.md)
+
+The graph now uses nearly the whole page width and a viewport-relative height, with fullscreen mode, an interactive minimap, evolution-component navigation, upstream/downstream focus, global search, and a closeable/pinnable evidence drawer.
+
+The main SVG prioritizes methods with **documented extends/combines evidence**; methods without a recorded evolution link remain in a collapsible, searchable shelf. This is a UI organization decision, **not a claim that those methods lack scientific references**. No artificial edges were added to force a connected graph.
+
+[Download the portable v0.8 viewer from the latest successful GitHub Actions run](https://github.com/TianminWang/physics-ai-methods-atlas/actions/workflows/validate.yml) (artifact: `atlas-fullwidth-dag-v08`). Unzip and open `index.html` offline.
+
+## v0.7 interactive prototype (historical)
 
 [Design specification](docs/en/THREE_PHASE_DAG_V07.md) · [中文说明](docs/zh/THREE_PHASE_DAG_V07.md)
 
@@ -46,13 +56,13 @@ Landmark significance is contextual to a paper's contribution to a specific meth
 
 ## Development
 
-Canonical scholarship lives in `data/`; presentation metadata in `config/v07.json`, builder in `scripts/build_v07.py`, and viewer source in `viewer-v07/`.
+Canonical scholarship lives in `data/`; presentation metadata in `config/v07.json`, latest builder in `scripts/build_v08.py`, and viewer source in `viewer-v08/`. Previous releases remain available.
 
 ```bash
 python -m pip install -r requirements-dev.txt
 python -m scripts.validate
 python -m pytest -q
-python -m scripts.build_v07 --site build/viewer-v07
+python -m scripts.build_v08 --site build/viewer-v08
 ```
 
 Graphviz `dot` and a CJK font are needed to **build**, but not to open the generated offline viewer. Historical [v0.6](viewer-v06/README.md) and [v0.5](prototype/README.md) prototypes remain accessible.
