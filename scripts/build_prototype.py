@@ -18,6 +18,11 @@ from scripts.validate import ROOT, load_catalog, validate_catalog
 TRACKS = (
     {
         "id": "inverse",
+        "featured": (
+            "nonlinear-least-squares", "gauss-newton", "levenberg-marquardt",
+            "tikhonov-regularization", "bayesian-inverse-problems",
+            "bayesian-model-discrepancy", "learned-forward-inversion",
+        ),
         "title": {"zh": "传统与概率反问题", "en": "Classical & probabilistic inversion"},
         "description": {"zh": "从最小二乘、正则化到贝叶斯与代理反演", "en": "Least squares, regularization, Bayesian and surrogate inversion"},
         "families": ("optimization-regularization", "probabilistic-inference", "learned-inverse"),
@@ -30,6 +35,10 @@ TRACKS = (
     },
     {
         "id": "operator",
+        "featured": (
+            "neural-operator", "pinn", "deeponet", "fno",
+            "physics-informed-deeponet", "pino", "geo-fno",
+        ),
         "title": {"zh": "神经算子与物理约束", "en": "Neural operators & physics"},
         "description": {"zh": "算子家族、频谱/基展开与物理约束融合", "en": "Operator families, spectral bases, physics-guided training"},
         "families": ("operator-learning", "physics-informed-learning", "graph-neural-operators"),
@@ -42,6 +51,11 @@ TRACKS = (
     },
     {
         "id": "generative",
+        "featured": (
+            "variational-inference", "variational-autoencoder",
+            "normalizing-flow", "flow-matching", "diffusion-probabilistic-model",
+            "score-based-sde", "diffusion-posterior-sampling", "physics-informed-diffusion",
+        ),
         "title": {"zh": "生成式建模与反问题", "en": "Generative models & inverse problems"},
         "description": {"zh": "从生成模型与概率路径到条件反演和物理约束", "en": "Generative priors, probabilistic paths, inverse guidance"},
         "families": ("generative-modeling", "generative-inverse", "diffusion-score-models", "physics-guided-generative"),
@@ -53,6 +67,22 @@ TRACKS = (
         ),
     },
 )
+EDGE_CAPTIONS = {
+    "relation.levenberg-marquardt--extends--gauss-newton": ("阻尼稳定化", "Damped steps"),
+    "relation.bayesian-model-discrepancy--specializes--bayesian-inverse-problems": ("模型失配", "Model discrepancy"),
+    "relation.physics-informed-deeponet--extends--deeponet": ("PDE 残差监督", "PDE residuals"),
+    "relation.physics-informed-deeponet--combines--pinn": ("融合 PINN 约束", "PINN constraint"),
+    "relation.pino--extends--fno": ("加入物理约束", "Physics constraints"),
+    "relation.pino--combines--pinn": ("融合 PINN 损失", "PINN losses"),
+    "relation.geo-fno--extends--fno": ("适应复杂几何", "General geometry"),
+    "relation.derivative-informed-operator--extends--neural-operator": ("导数监督", "Derivative targets"),
+    "relation.score-based-sde--extends--diffusion-probabilistic-model": ("连续时间 SDE", "Continuous SDE"),
+    "relation.diffusion-posterior-sampling--extends--score-based-sde": ("观测引导采样", "Data guidance"),
+    "relation.physics-informed-diffusion--extends--diffusion-probabilistic-model": ("物理残差损失", "Physics residuals"),
+    "relation.flow-matching--extends--normalizing-flow": ("速度场回归", "Vector-field fitting"),
+    "relation.variational-autoencoder--combines--variational-inference": ("摊销变分推断", "Amortized inference"),
+}
+
 EDGE_TYPES = {
     "feeds_into", "feeds_back_to", "uses_method", "member_of_family",
     "subfamily_of", "specializes", "extends", "combines", "contrasts_with",
@@ -156,6 +186,10 @@ def build_prototype(root: Path = ROOT) -> dict:
                 "en": "",  # assigned from English projection below
             },
             "color": edge["stroke"], "line_style": edge["line_style"],
+            "short_label": {
+                "zh": EDGE_CAPTIONS[edge["id"]][0],
+                "en": EDGE_CAPTIONS[edge["id"]][1],
+            } if edge["id"] in EDGE_CAPTIONS else None,
             "stage_ids": edge.get("stage_ids", []),
             "primary_stage_id": edge.get("primary_stage_id"),
             "role": {
@@ -196,6 +230,7 @@ def build_prototype(root: Path = ROOT) -> dict:
                 "description": track["description"],
                 "family_ids": ["family." + x for x in track["families"]],
                 "method_ids": ["method." + x for x in track["methods"]],
+                "featured_ids": ["method." + x for x in track["featured"]],
             }
             for track in TRACKS
         ],

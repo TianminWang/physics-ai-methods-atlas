@@ -9,7 +9,7 @@
       prototypeFlag:"交互布局验证原型",axisTitle:"研究主轴",clearStage:"显示全部环节",
       stageHint:"点击环节，高亮相关功能和方法演进边。颜色代表研究问题，而非方法优劣。",
       graphTitle:"方法演化图谱",fitView:"适应窗口",searchLabel:"搜索方法",
-      taxonomyToggle:"显示分类边",panHint:"拖动画布 · 点击节点或连线 · 缩放",
+      taxonomyToggle:"显示分类边",showAll:"展开全部节点",panHint:"拖动画布 · 点击节点或连线 · 缩放",
       legendEvolution:"方法改进",legendFusion:"技术融合",legendTaxonomy:"分类/特殊化",legendFunction:"环节 → 方法功能",
       detailTitle:"方法与证据",emptyTitle:"选择方法或关系",emptyText:"点击方法节点或演化连线，查看核心思想、技术瓶颈和代表论文。",
       scopeTitle:"原型范围",scopeText:"仅展示三个真实方法分支以验证布局和信息层级。学术数据来自仓库权威记录；原型不是完整知识库。",
@@ -29,7 +29,7 @@
       prototypeFlag:"Interactive layout prototype",axisTitle:"Research workflow",clearStage:"Show all stages",
       stageHint:"Select a stage to highlight relevant roles and improvements. Colors encode research functions, not rankings.",
       graphTitle:"Method genealogy",fitView:"Fit view",searchLabel:"Search methods",
-      taxonomyToggle:"Show taxonomy edges",panHint:"Drag canvas · click a node or edge · zoom",
+      taxonomyToggle:"Show taxonomy edges",showAll:"Show all nodes",panHint:"Drag canvas · click a node or edge · zoom",
       legendEvolution:"Method extension",legendFusion:"Method fusion",legendTaxonomy:"Classification",legendFunction:"Stage → method role",
       detailTitle:"Methods & evidence",emptyTitle:"Select a method or relation",emptyText:"Click a method node or evolution edge to inspect the core idea, technical bottleneck and references.",
       scopeTitle:"Prototype scope",scopeText:"Only three real method lineages are shown to validate layout and information hierarchy; source facts remain in the main Atlas.",
@@ -51,7 +51,7 @@
     "stage.intervention-planning":["干预规划","Intervention"],
     "stage.continual-update":["持续更新","Model updating"]
   };
-  const state={lang:"zh",track:"operator",stage:null,family:null,query:"",taxonomy:true,chosen:null,scale:1,panX:0,panY:0};
+  const state={lang:"zh",track:"operator",stage:null,family:null,query:"",taxonomy:true,showAll:false,chosen:null,scale:1,panX:0,panY:0};
   let db, nodes, edges,layout;
   const repo="https://github.com/TianminWang/physics-ai-methods-atlas/blob/main/";
   function phrase(k){return txt[state.lang][k]||k;}
@@ -104,7 +104,7 @@
     const root=$("tracks");root.replaceChildren();
     db.tracks.forEach(tr=>{
       const b=btn("tab"+(tr.id===state.track?" active":""),tr.title[state.lang],()=>{
-        state.track=tr.id;state.family=null;state.query="";state.chosen=null;$("search").value="";
+        state.track=tr.id;state.family=null;state.query="";state.chosen=null;$("search").value="";state.showAll=false;$("show-all").checked=false;
         render();requestAnimationFrame(fit);
       });
       b.setAttribute("role","tab");
@@ -207,7 +207,8 @@
     $("diagram").style.transform="translate("+state.panX+"px,"+state.panY+"px) scale("+state.scale+")";
   }
   function draw(){
-    const ids=new Set(track().method_ids),rels=methodEdges(ids);
+    const visibleIds=(state.showAll||state.query.trim())?track().method_ids:track().featured_ids;
+    const ids=new Set(visibleIds),rels=methodEdges(ids);
     layout=layoutMethods(ids,rels);
     const container=$("diagram");container.style.width=layout.width+"px";container.style.height=layout.height+"px";
     const svg=$("lines"), nodeLayer=$("graph-nodes"),edgeLayer=$("graph-edge-labels");
@@ -237,8 +238,9 @@
       if(fadedEdge(e))path.classList.add("dimmed");
       svg.append(path);
       const full=e.innovation[state.lang]||e.label[state.lang];
+      const shortText=e.short_label?.[state.lang]||full;
       const abbreviated=e.type==="specializes"?txt[state.lang].type_specializes:
-        (full.length>15?full.slice(0,15)+"…":full);
+        (shortText.length>15?shortText.slice(0,15)+"…":shortText);
       const b=btn("graph-edge-btn"+(fadedEdge(e)?" dimmed":"")+
         (state.chosen?.kind==="edge"&&state.chosen.id===e.id?" selected":""),abbreviated,()=>select("edge",e.id));
       b.style.setProperty("--edge-color",color);
@@ -329,9 +331,17 @@
   function fit(){
     if(!layout)return;
     const v=$("viewport"),s=Math.min(1.12,(v.clientWidth-34)/layout.width,(v.clientHeight-34)/layout.height);
-    state.scale=Math.max(.33,s);
-    state.panX=Math.round((v.clientWidth-layout.width*state.scale)/2);
-    state.panY=Math.round((v.clientHeight-layout.height*state.scale)/2);
+    if(v.clientWidth<570){
+      // On phones, preserve legibility and explore by dragging instead of
+      // squeezing an entire DAG into a 300px-wide diagram.
+      state.scale=Math.max(.70,Math.min(1,s));
+      state.panX=12;
+      state.panY=18;
+    } else {
+      state.scale=Math.max(.43,s);
+      state.panX=Math.round((v.clientWidth-layout.width*state.scale)/2);
+      state.panY=Math.round((v.clientHeight-layout.height*state.scale)/2);
+    }
     transform();
   }
   function zoom(ratio){
@@ -380,6 +390,9 @@
         state.lang=state.lang==="zh"?"en":"zh";render();requestAnimationFrame(fit);
       });
       $("stage-clear").addEventListener("click",()=>{state.stage=null;render();});
+      $("show-all").addEventListener("change",event=>{
+        state.showAll=event.target.checked;draw();requestAnimationFrame(fit);
+      });
       $("show-taxonomy").addEventListener("change",event=>{
         state.taxonomy=event.target.checked;draw();requestAnimationFrame(fit);
       });
