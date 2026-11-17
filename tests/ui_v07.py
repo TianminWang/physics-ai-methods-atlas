@@ -29,6 +29,14 @@ def run():
         assert page.locator("g.atlas-node.dimmed").count()>0
         # Initial stage-II view and graph are retained simultaneously.
         assert "反问题" in page.locator("#dag-title").inner_text() or "方法" in page.locator("#dag-title").inner_text()
+        # The default focused solver must be actually visible in the graph viewport.
+        visible=page.locator('g.atlas-node[data-method-id="method.gauss-newton"]').evaluate(
+            """(el) => {
+                 const a=el.getBoundingClientRect(),v=document.getElementById('viewport').getBoundingClientRect();
+                 return a.width>5&&a.height>5&&a.left<v.right&&a.right>v.left&&a.top<v.bottom&&a.bottom>v.top;
+            }"""
+        )
+        assert visible,"Initial Graphviz focus must put an actual node inside the viewport"
         page.screenshot(path=str(SHOTS/"01-dag-inference-zh.png"),full_page=True)
 
         # The phase filter never swaps the graph or duplicates methods.

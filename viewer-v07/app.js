@@ -327,10 +327,17 @@
   }
   function focusId(id){
     const g=ng.get(id);if(!g)return;
-    const box=g.getBBox(),factor=sizes.width/sizes.svgWidth,v=$("viewport");
-    st.zoom=v.clientWidth<520?.84:.9;
-    st.x=v.clientWidth/2-(box.x+box.width/2)*factor*st.zoom;
-    st.y=v.clientHeight/2-(box.y+box.height/2)*factor*st.zoom;
+    // Graphviz nests SVG nodes under a graph-level translate/rotate group.
+    // getBBox() is in that group's local coordinates and CANNOT be used as
+    // root SVG pixels. Actual browser rectangles account for all transforms.
+    const before=g.getBoundingClientRect(),board=$("board").getBoundingClientRect();
+    const localX=(before.left+before.width/2-board.left)/st.zoom;
+    const localY=(before.top+before.height/2-board.top)/st.zoom;
+    const view=$("viewport");
+    const targetScale=view.clientWidth<520?.88:.95;
+    st.x=view.clientWidth/2-localX*targetScale;
+    st.y=view.clientHeight/2-localY*targetScale;
+    st.zoom=targetScale;
     transform();
   }
   function focusPhase(){
