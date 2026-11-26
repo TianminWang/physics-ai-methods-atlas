@@ -1,0 +1,264 @@
+{
+  "version": "0.9.0-audit-draft",
+  "scope": "Provisional scholarly concept roles for the 61 existing method.* entities; NO changes to canonical records",
+  "based_on_main_commit": "5591a85784cb526dfd6ce8044e4a409c0eff8621",
+  "vocabulary": {
+    "problem_formulation": "A mathematical objective/constraint/inference problem, not a concrete numerical algorithm",
+    "method_family": "A reusable broad class of computational methods and many possible implementations",
+    "algorithm": "A relatively specific computational procedure or update rule",
+    "numerical_scheme": "A class of numerical discretizations, approximation or integration schemes",
+    "model_family": "A distribution/model representation shared by many architectures or algorithms",
+    "model_architecture": "A relatively specific neural architecture or architectural variant",
+    "learning_strategy": "A training objective, supervision mechanism or learning procedure",
+    "inference_strategy": "An inverse-calibration/prediction workflow or conditioning strategy",
+    "diagnostic_or_design": "An analysis or design method assessing information, identifiability or measurements",
+    "physical_model": "An explicit mechanistic model or physical boundary-model construction",
+    "software_framework": "A programming/infrastructure framework that implements a class of methods"
+  },
+  "method_kinds": {
+    "method.adjoint-sensitivity": {
+      "primary_kind": "algorithm",
+      "review_note": null
+    },
+    "method.bayesian-experimental-design": {
+      "primary_kind": "diagnostic_or_design",
+      "review_note": null
+    },
+    "method.bayesian-inverse-problems": {
+      "primary_kind": "problem_formulation",
+      "review_note": "Broad inverse-problem formulation: retain as canonical entity but do not portray as peer to NUTS."
+    },
+    "method.bayesian-model-discrepancy": {
+      "primary_kind": "inference_strategy",
+      "review_note": null
+    },
+    "method.bi-variational-pino": {
+      "primary_kind": "model_architecture",
+      "review_note": "Paper-specific coronary architecture: distinguish generalizable method extension from a domain-specific application."
+    },
+    "method.conservative-q-learning": {
+      "primary_kind": "algorithm",
+      "review_note": null
+    },
+    "method.deep-galerkin": {
+      "primary_kind": "learning_strategy",
+      "review_note": "PDE neural solver training method (residual), not the classical Galerkin finite-element method."
+    },
+    "method.deep-ritz": {
+      "primary_kind": "learning_strategy",
+      "review_note": "Variational-energy neural solver training method, not identical to standard FEM."
+    },
+    "method.deeponet": {
+      "primary_kind": "model_architecture",
+      "review_note": null
+    },
+    "method.derivative-informed-operator": {
+      "primary_kind": "learning_strategy",
+      "review_note": "Primarily derivative/sensitivity-informed training; inspect whether separate architecture identity is warranted."
+    },
+    "method.difftaichi": {
+      "primary_kind": "software_framework",
+      "review_note": "Software implementation platform with an associated differentiation technique; not a standalone numerical PDE formulation."
+    },
+    "method.diffusion-posterior-sampling": {
+      "primary_kind": "inference_strategy",
+      "review_note": null
+    },
+    "method.diffusion-probabilistic-model": {
+      "primary_kind": "model_family",
+      "review_note": "DDPM denotes a family of diffusion modeling algorithms; not one fixed network architecture."
+    },
+    "method.direct-inverse-operator": {
+      "primary_kind": "model_architecture",
+      "review_note": null
+    },
+    "method.dreamer-latent-imagination": {
+      "primary_kind": "algorithm",
+      "review_note": null
+    },
+    "method.ensemble-kalman-filter": {
+      "primary_kind": "algorithm",
+      "review_note": null
+    },
+    "method.ensemble-kalman-inversion": {
+      "primary_kind": "algorithm",
+      "review_note": null
+    },
+    "method.finite-difference": {
+      "primary_kind": "numerical_scheme",
+      "review_note": null
+    },
+    "method.finite-element": {
+      "primary_kind": "numerical_scheme",
+      "review_note": null
+    },
+    "method.finite-volume": {
+      "primary_kind": "numerical_scheme",
+      "review_note": null
+    },
+    "method.flow-matching": {
+      "primary_kind": "learning_strategy",
+      "review_note": "Training strategy for continuous normalizing flows; literature relationship should not imply all normalizing flows descend from FM."
+    },
+    "method.fno": {
+      "primary_kind": "model_architecture",
+      "review_note": null
+    },
+    "method.four-d-var": {
+      "primary_kind": "algorithm",
+      "review_note": null
+    },
+    "method.galerkin-transformer": {
+      "primary_kind": "model_architecture",
+      "review_note": null
+    },
+    "method.gauss-newton": {
+      "primary_kind": "algorithm",
+      "review_note": null
+    },
+    "method.generative-adversarial-network": {
+      "primary_kind": "model_family",
+      "review_note": "GAN is a broad adversarial generative model class, not one network backbone."
+    },
+    "method.generative-range-prior": {
+      "primary_kind": "inference_strategy",
+      "review_note": null
+    },
+    "method.geo-fno": {
+      "primary_kind": "model_architecture",
+      "review_note": null
+    },
+    "method.kalman-filter": {
+      "primary_kind": "algorithm",
+      "review_note": null
+    },
+    "method.learned-forward-inversion": {
+      "primary_kind": "inference_strategy",
+      "review_note": "Workflow pattern: surrogate-assisted inversion can use many different architectures; consider a strategy node, not a specific algorithm."
+    },
+    "method.levenberg-marquardt": {
+      "primary_kind": "algorithm",
+      "review_note": null
+    },
+    "method.markov-chain-monte-carlo": {
+      "primary_kind": "method_family",
+      "review_note": "Broad sampler family; NUTS is one member through HMC rather than direct historic evolution from all MCMC."
+    },
+    "method.meshgraphnets": {
+      "primary_kind": "model_architecture",
+      "review_note": null
+    },
+    "method.model-based-policy-optimization": {
+      "primary_kind": "algorithm",
+      "review_note": null
+    },
+    "method.model-predictive-control": {
+      "primary_kind": "method_family",
+      "review_note": "Framework with many algorithms and dynamical-model choices; may be a family-level concept."
+    },
+    "method.multipole-graph-neural-operator": {
+      "primary_kind": "model_architecture",
+      "review_note": null
+    },
+    "method.neural-ode": {
+      "primary_kind": "model_family",
+      "review_note": null
+    },
+    "method.neural-operator": {
+      "primary_kind": "method_family",
+      "review_note": "Methodological family/function-space learning formulation, not a single architecture."
+    },
+    "method.no-u-turn-sampler": {
+      "primary_kind": "algorithm",
+      "review_note": null
+    },
+    "method.nonlinear-least-squares": {
+      "primary_kind": "problem_formulation",
+      "review_note": "Mathematical optimization problem, not itself an update algorithm; Gauss–Newton/LM address it."
+    },
+    "method.normalizing-flow": {
+      "primary_kind": "model_family",
+      "review_note": "Family of invertible probabilistic models; FM is a training technique for the continuous subclass."
+    },
+    "method.operator-inference": {
+      "primary_kind": "algorithm",
+      "review_note": null
+    },
+    "method.pde-constrained-optimization": {
+      "primary_kind": "problem_formulation",
+      "review_note": "Problem/formulation class; discretization and adjoint gradients are techniques used to solve it."
+    },
+    "method.physics-informed-deeponet": {
+      "primary_kind": "model_architecture",
+      "review_note": "Architecture with added physics-based training; review whether the apparent fusion and extension links encode distinct claims."
+    },
+    "method.physics-informed-diffusion": {
+      "primary_kind": "learning_strategy",
+      "review_note": "Physics-residual training strategy applied to a generative family; not a general guarantee of exact PDE satisfaction."
+    },
+    "method.pinn": {
+      "primary_kind": "method_family",
+      "review_note": "Family of neural physics-residual solution methods, not one universal architecture."
+    },
+    "method.pino": {
+      "primary_kind": "model_architecture",
+      "review_note": null
+    },
+    "method.planet-latent-planning": {
+      "primary_kind": "algorithm",
+      "review_note": null
+    },
+    "method.polynomial-chaos-expansion": {
+      "primary_kind": "numerical_scheme",
+      "review_note": null
+    },
+    "method.profile-likelihood-identifiability": {
+      "primary_kind": "diagnostic_or_design",
+      "review_note": null
+    },
+    "method.proper-orthogonal-decomposition": {
+      "primary_kind": "algorithm",
+      "review_note": null
+    },
+    "method.runge-kutta-integration": {
+      "primary_kind": "numerical_scheme",
+      "review_note": null
+    },
+    "method.score-based-sde": {
+      "primary_kind": "method_family",
+      "review_note": "Continuous-time unifying generative formulation; its relation to DDPM is not just a linear descendant."
+    },
+    "method.sequential-neural-posterior": {
+      "primary_kind": "algorithm",
+      "review_note": null
+    },
+    "method.simulation-based-inference": {
+      "primary_kind": "method_family",
+      "review_note": "Broad inference setting and family including posterior, likelihood and ratio estimation."
+    },
+    "method.sindy": {
+      "primary_kind": "algorithm",
+      "review_note": null
+    },
+    "method.structured-tree-outflow": {
+      "primary_kind": "physical_model",
+      "review_note": null
+    },
+    "method.tikhonov-regularization": {
+      "primary_kind": "inference_strategy",
+      "review_note": null
+    },
+    "method.variational-autoencoder": {
+      "primary_kind": "model_architecture",
+      "review_note": null
+    },
+    "method.variational-inference": {
+      "primary_kind": "method_family",
+      "review_note": "Family of posterior approximation/optimization methods; VAE uses VI, not necessarily an equal-level algorithm merge."
+    },
+    "method.windkessel": {
+      "primary_kind": "physical_model",
+      "review_note": "Physical lumped model and boundary-condition construction, not a numerical optimization algorithm."
+    }
+  }
+}
