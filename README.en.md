@@ -7,6 +7,13 @@
 **Current build principle: screen reliable papers and books first, derive and verify the knowledge structure, and then render it interactively.** The former three-phase research axis and global method-evolution DAG are reusable interface prototypes, **not a fixed scholarly ontology**.
 
 ## v0.9-B1 launched: bibliographic discovery (2026-11-26)
+## Current approved plan: full-domain Corpus-first (2026-11-26)
+
+The [Corpus-first protocol v1 (Chinese, authoritative)](docs/zh/CORPUS_FIRST_PROTOCOL_V1.md) supersedes the prior incremental search/build-graph sequence. **Search and screen the entire agreed methodological and biomedical scope, deduplicate and assess sources, audit coverage and freeze Scholarly Corpus v1 before designing the formal knowledge graph.** Internal search work units are for reproducibility, not separate ontology releases.
+
+The previous 61 methods, 34 families and 26 experimental B1 candidates are **legacy prototype artifacts, not mandatory scholarly seeds**. [Current independent discovery/coverage audit](research/corpus_v1/SEARCH_AND_COVERAGE_2026-11-26.md): 47 leads (38 papers/reviews, 9 books), **all pending quality review**. Neither exhaustive retrieval nor Corpus v1 nor a new graph has been completed.
+
+
 
 The **[approved execution plan (Chinese, authoritative)](docs/zh/EXECUTION_PLAN_V09.md)** establishes two orthogonal search facets: M1–M8 mathematical/computational methods and A1–A6 biomedical applications. The eventual interface will connect taxonomy, evidence-backed lineage, research problems and a scholarly library.
 
