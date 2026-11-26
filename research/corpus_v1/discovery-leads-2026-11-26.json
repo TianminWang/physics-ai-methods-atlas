@@ -2340,6 +2340,349 @@
       "bibliographic_review": "publisher_record_crosschecked",
       "scientific_quality_review": "not_performed",
       "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-123",
+      "kind": "paper",
+      "title": "A survey of industrial model predictive control technology",
+      "year": 2003,
+      "venue": "Control Engineering Practice",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S0967066102001867",
+      "doi": "10.1016/S0967-0661(02)00186-7",
+      "method_search_tags": [
+        "M7",
+        "M4"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Control synthesis source, review contextualizes industrial MPC and identification",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-124",
+      "kind": "paper",
+      "title": "Structural and practical identifiability analysis of partially observed dynamical models by exploiting the profile likelihood",
+      "year": 2009,
+      "venue": "Bioinformatics",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/19505944/",
+      "doi": "10.1093/bioinformatics/btp358",
+      "method_search_tags": [
+        "M2",
+        "M4"
+      ],
+      "biomedical_application_tags": [
+        "A4"
+      ],
+      "discovery_reason": "System identifiability diagnostic rooted in biological dynamical models",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-125",
+      "kind": "paper",
+      "title": "Neural Controlled Differential Equations for Irregular Time Series",
+      "year": 2020,
+      "venue": "NeurIPS",
+      "source_url": "https://proceedings.neurips.cc/paper/2020/hash/4a5876b450b45371f6cfe5047ac8cd45-Abstract.html",
+      "method_search_tags": [
+        "M4",
+        "M5",
+        "M7"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "CDE theory for irregular observations and continuous-time state estimation",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-126",
+      "kind": "paper",
+      "title": "Neural Ordinary Differential Equations",
+      "year": 2018,
+      "venue": "NeurIPS",
+      "source_url": "https://papers.neurips.cc/paper_files/paper/2018/hash/69386f6bb1dfed68692a24c8686939b9-Abstract.html",
+      "method_search_tags": [
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Neural latent dynamics and continuous-time training",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-127",
+      "kind": "paper",
+      "title": "An Introduction to the Adjoint Approach to Design",
+      "year": 2000,
+      "venue": "Flow, Turbulence and Combustion",
+      "source_url": "https://link.springer.com/article/10.1023/A:1011430410075",
+      "doi": "10.1023/A:1011430410075",
+      "method_search_tags": [
+        "M1",
+        "M2"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Adjoint sensitivity and PDE constrained optimization review",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-128",
+      "kind": "paper",
+      "title": "Diagnosis of ischemia-causing coronary stenoses by noninvasive fractional flow reserve computed from coronary computed tomographic angiograms: Results from the prospective multicenter DISCOVER-FLOW study",
+      "year": 2011,
+      "venue": "Journal of the American College of Cardiology",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/22032711/",
+      "doi": "10.1016/j.jacc.2011.06.066",
+      "method_search_tags": [],
+      "biomedical_application_tags": [
+        "A1",
+        "A3"
+      ],
+      "discovery_reason": "Clinical CT-FFR prospective multicenter validation",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-129",
+      "kind": "paper",
+      "title": "Computational fluid dynamics applied to cardiac computed tomography for noninvasive quantification of fractional flow reserve: scientific basis",
+      "year": 2013,
+      "venue": "Journal of the American College of Cardiology",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/23562923/",
+      "doi": "10.1016/j.jacc.2012.11.083",
+      "method_search_tags": [
+        "M1"
+      ],
+      "biomedical_application_tags": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "discovery_reason": "CFD FFRCT method theory review",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-130",
+      "kind": "paper",
+      "title": "Diagnostic Accuracy of Fast Computational Approaches to Derive Fractional Flow Reserve From Diagnostic Coronary Angiography: The International Multicenter FAVOR Pilot Study",
+      "year": 2016,
+      "venue": "JACC: Cardiovascular Interventions",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/27712739/",
+      "doi": "10.1016/j.jcin.2016.07.013",
+      "method_search_tags": [
+        "M1"
+      ],
+      "biomedical_application_tags": [
+        "A1",
+        "A3"
+      ],
+      "discovery_reason": "QFR technology pilot and diagnostic evaluation",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-131",
+      "kind": "paper",
+      "title": "Clinical Validation of a Virtual Planner for Coronary Interventions Based on Coronary CT Angiography",
+      "year": 2022,
+      "venue": "JACC: Cardiovascular Imaging",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/35798401/",
+      "doi": "10.1016/j.jcmg.2022.02.003",
+      "method_search_tags": [
+        "M1"
+      ],
+      "biomedical_application_tags": [
+        "A3",
+        "A5"
+      ],
+      "discovery_reason": "Multicenter clinical study virtual CT-based coronary planning",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-132",
+      "kind": "paper",
+      "title": "Diagnostic Accuracy of Coronary Angiography-Based Vessel Fractional Flow Reserve (vFFR) Virtual Stenting",
+      "year": 2022,
+      "venue": "International Journal of Cardiovascular Imaging",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/35268488/",
+      "method_search_tags": [
+        "M1"
+      ],
+      "biomedical_application_tags": [
+        "A3",
+        "A5"
+      ],
+      "discovery_reason": "Post-PCI vFFR prediction and physiology validation",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-133",
+      "kind": "paper",
+      "title": "Coronary Computed Tomography Angiography for Percutaneous Coronary Intervention: Initial United States Experience With FFRCT Based Virtual PCI",
+      "year": 2025,
+      "venue": "Cardiovascular Revascularization Medicine",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40571959/",
+      "method_search_tags": [],
+      "biomedical_application_tags": [
+        "A1",
+        "A3",
+        "A5"
+      ],
+      "discovery_reason": "Retrospective clinical experience with CT-FFR virtual PCI",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-134",
+      "kind": "paper",
+      "title": "Virtual Stenting Based on Fractional Flow Reserve Derived from Computed Tomography in Predicting Post-Percutaneous Coronary Intervention Functional Outcomes: A Retrospective Cohort Study",
+      "year": 2025,
+      "venue": "European Journal of Radiology",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41002652/",
+      "method_search_tags": [
+        "M1"
+      ],
+      "biomedical_application_tags": [
+        "A2",
+        "A3",
+        "A5"
+      ],
+      "discovery_reason": "Virtual-stenting FFRCT physiologic verification with 75 patient records",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-135",
+      "kind": "paper",
+      "title": "Computed Tomography Coronary Angiography and Computational Fluid Dynamics Based Fractional Flow Reserve Before and After Percutaneous Coronary Intervention",
+      "year": 2021,
+      "venue": "Frontiers in Cardiovascular Medicine",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/34557479/",
+      "method_search_tags": [
+        "M1"
+      ],
+      "biomedical_application_tags": [
+        "A2",
+        "A3",
+        "A5"
+      ],
+      "discovery_reason": "Reduced-order CFD boundary conditions before and after stent",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-136",
+      "kind": "paper",
+      "title": "Applied coronary physiology for planning and guidance of percutaneous coronary interventions: A clinical consensus statement from EAPCI",
+      "year": 2023,
+      "venue": "EuroIntervention",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/37171503/",
+      "doi": "10.4244/EIJ-D-23-00194",
+      "method_search_tags": [],
+      "biomedical_application_tags": [
+        "A3",
+        "A5"
+      ],
+      "discovery_reason": "Expert consensus; distinguish clinical guidelines from original algorithm",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-137",
+      "kind": "paper",
+      "title": "In silico comparison of two non-invasive pre-procedural virtual coronary revascularisation techniques for personalised cardiovascular medicine",
+      "year": 2025,
+      "venue": "Medical Engineering & Physics",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40902338/",
+      "method_search_tags": [
+        "M1",
+        "M2"
+      ],
+      "biomedical_application_tags": [
+        "A2",
+        "A3",
+        "A5"
+      ],
+      "discovery_reason": "Physical remodeling assumptions and prediction of geometry and functional effects",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-138",
+      "kind": "paper",
+      "title": "An Imaging Informatics Workflow for Angiography-Derived Coronary Physiology Profiling and Virtual PCI Simulation",
+      "year": 2026,
+      "venue": "Journal of Imaging Informatics in Medicine",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42649327/",
+      "method_search_tags": [
+        "M8",
+        "M1"
+      ],
+      "biomedical_application_tags": [
+        "A1",
+        "A3",
+        "A5"
+      ],
+      "discovery_reason": "Image-derived QFR multimodal workflow; external validation unknown",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-139",
+      "kind": "paper",
+      "title": "Noninvasive FFR Derived From Coronary CT Angiography: Management and Outcomes in the PROMISE Trial",
+      "year": 2017,
+      "venue": "JACC: Cardiovascular Imaging",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/28412436/",
+      "method_search_tags": [],
+      "biomedical_application_tags": [
+        "A1",
+        "A3",
+        "A5"
+      ],
+      "discovery_reason": "Exploratory FFRCT clinical prognostic study not prospective AI method development",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
     }
   ],
   "discovery_log_updates": [
@@ -2366,6 +2709,11 @@
       "date": "2026-11-26",
       "note": "Original 1944–1987 sources added and checked against AMS, SIAM, AIP, ASME and Oxford Academic publisher records. Does not imply scholarly admission.",
       "new_leads": 6
+    },
+    {
+      "date": "2026-11-26",
+      "note": "Added historical and modern M2/M4/M7 and A3/A5 targeted domain searches from official publishers, proceedings, PubMed; no scientific admission.",
+      "new_leads": 17
     }
   ]
 }
