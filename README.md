@@ -12,7 +12,7 @@
 
 **学术内容从零开始：旧61方法、34家族、58篇论文、12本专著及先前26条 B1 线索不作为新 Corpus 的固定种子、配额或知识结构。** 旧版数据/UI 保留为历史工程原型，不参与新学术基线的验收。
 
-[Corpus v1 当前检索与覆盖审计](research/corpus_v1/SEARCH_AND_COVERAGE_2026-11-26.md) · [最新独立发现线索](research/corpus_v1/discovery-leads-2026-11-26.json)：**63条（54篇论文/综述、9本专著），全部仍待质量审核**；这只是首次来源页面发现性扫描，**完整检索、Corpus v1、知识图谱都尚未完成**。
+[Corpus v1 当前检索与覆盖审计](research/corpus_v1/BREADTH_SCAN_REPORT_2026-11-26.md) · [最新独立发现线索](research/corpus_v1/discovery-leads-2026-11-26.json)：**147条（121篇论文/综述、26本专著），全部仍待质量审核**；这只是首次来源页面发现性扫描，**完整检索、Corpus v1、知识图谱都尚未完成**。
 
 > 下文 v0.9-B1 小批次探索记录与 v0.9-A 分类提案均属历史材料；当其执行顺序与最新 Corpus-first 协议冲突时，遵循最新协议。
 
