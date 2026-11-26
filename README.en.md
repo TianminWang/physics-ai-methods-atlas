@@ -6,6 +6,21 @@
 
 The current design is **one three-phase research axis plus one global method-evolution DAG**. The research axis describes scientific capabilities; the DAG describes documented technical development and its targeted bottlenecks.
 
+## v0.9 methodology structure audit (current research phase)
+
+**Audit the ontology before adding relationships or changing the browser.** The current catalog includes 61 methods, 34 families, 15 research problems and 530 typed links, but combines formulations, algorithm families, concrete numerical methods, model architectures, training strategies, physical models and software frameworks at the same `method.*` level.
+
+We propose a separate cross-application **Capability** layer to connect the three scientific phases to methods and problem scenarios, while preserving independent method-family taxonomy, evidence-backed evolution and the existing single source of scholarly truth.
+
+- [Methodological audit & ontology summary](docs/en/METHODOLOGY_AUDIT_V09.md)
+- [Detailed Chinese source-grounded audit](docs/zh/AUDIT_V09.md)
+- [Chinese ontology proposal](docs/zh/ONTOLOGY_V09.md)
+- [Provisional classification of all 61 methods](audits/v09/method-kind-proposals.json)
+- [19 candidate research capabilities](audits/v09/capability-layer-proposal.json)
+- [Literature-backed relation review queue](audits/v09/relation-review-queue.json)
+
+**No changes to canonical `data/`, relations, or v0.8 viewer in this phase.** v0.8 remains the latest interactive prototype.
+
 ## Three research phases
 
 | Phase | Main question | Child capabilities |
@@ -18,7 +33,7 @@ Digital twins and world models are relevant system-level directions, not synonym
 
 ## A relationship-ranked global method graph
 
-The viewer no longer forces methods into six category rectangles. **Graphviz ranks every indexed method from actual `extends`, `combines` and neutral `specializes` relations.** Disconnected components are legitimate; no artificial scholarly genealogy is added.
+The viewer no longer forces methods into six category rectangles. **The v0.8 main SVG ranks methods participating in documented `extends` or `combines` links; other canonical methods remain in a searchable shelf.** Disconnected components are legitimate; no artificial scholarly genealogy is added.
 
 **Node color = technical paradigm:** classical numerics/optimization, statistical/probabilistic, machine/deep learning, or physics–data hybrid. The color is a primary visual tag, not a unique scholarly parent; nonexclusive method-family memberships remain intact.
 
