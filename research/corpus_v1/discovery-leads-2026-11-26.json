@@ -2229,6 +2229,117 @@
       "scientific_quality_review": "not_performed",
       "retraction_and_correction_check": "not_performed",
       "discovery_reason": "Long-term follow-up outcomes distinguish trial reports from new original algorithms"
+    },
+    {
+      "candidate_id": "CV1-117",
+      "kind": "paper",
+      "title": "A method for the solution of certain non-linear problems in least squares",
+      "year": 1944,
+      "venue": "Quarterly of Applied Mathematics",
+      "source_url": "https://doi.org/10.1090/qam/10666",
+      "doi": "10.1090/qam/10666",
+      "method_search_tags": [
+        "M2"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Levenberg nonlinear least-squares iterative damping original; original journal record checked",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_record_crosschecked",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-118",
+      "kind": "paper",
+      "title": "Equation of State Calculations by Fast Computing Machines",
+      "year": 1953,
+      "venue": "Journal of Chemical Physics",
+      "source_url": "https://doi.org/10.1063/1.1699114",
+      "doi": "10.1063/1.1699114",
+      "method_search_tags": [
+        "M3"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Metropolis statistical-mechanical Monte Carlo sampling; original journal record checked",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_record_crosschecked",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-119",
+      "kind": "paper",
+      "title": "A New Approach to Linear Filtering and Prediction Problems",
+      "year": 1960,
+      "venue": "Journal of Basic Engineering",
+      "source_url": "https://doi.org/10.1115/1.3662552",
+      "doi": "10.1115/1.3662552",
+      "method_search_tags": [
+        "M3",
+        "M4",
+        "M7"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Kalman original state-space recursive filtering; ASME publication info checked",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_record_crosschecked",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-120",
+      "kind": "paper",
+      "title": "An Algorithm for Least-Squares Estimation of Nonlinear Parameters",
+      "year": 1963,
+      "venue": "Journal of the Society for Industrial and Applied Mathematics",
+      "source_url": "https://doi.org/10.1137/0111030",
+      "doi": "10.1137/0111030",
+      "method_search_tags": [
+        "M2"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Marquardt damping nonlinear least squares; SIAM original publication record checked",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_record_crosschecked",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-121",
+      "kind": "paper",
+      "title": "Monte Carlo sampling methods using Markov chains and their applications",
+      "year": 1970,
+      "venue": "Biometrika",
+      "source_url": "https://doi.org/10.1093/biomet/57.1.97",
+      "doi": "10.1093/biomet/57.1.97",
+      "method_search_tags": [
+        "M3"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Hastings generalizes Metropolis Markov chains; Oxford Academic official record checked",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_record_crosschecked",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-122",
+      "kind": "paper",
+      "title": "Turbulence and the dynamics of coherent structures. I. Coherent structures",
+      "year": 1987,
+      "venue": "Quarterly of Applied Mathematics",
+      "source_url": "https://doi.org/10.1090/qam/910462",
+      "doi": "10.1090/qam/910462",
+      "method_search_tags": [
+        "M1",
+        "M4"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Sirovich proper orthogonal decomposition and coherent structures; AMS official record checked",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_record_crosschecked",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
     }
   ],
   "discovery_log_updates": [
@@ -2250,6 +2361,11 @@
       "date": "2026-11-26",
       "note": "Publisher book catalogs and additional conference/clinical sources added after cross-domain retrieval. All quality decisions still pending.",
       "new_leads": 13
+    },
+    {
+      "date": "2026-11-26",
+      "note": "Original 1944–1987 sources added and checked against AMS, SIAM, AIP, ASME and Oxford Academic publisher records. Does not imply scholarly admission.",
+      "new_leads": 6
     }
   ]
 }
