@@ -1989,6 +1989,247 @@
       "bibliographic_review": "publisher_or_proceedings_source_page_located",
       "scientific_quality_review": "not_performed",
       "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-104",
+      "kind": "book",
+      "title": "Deep Learning",
+      "year": 2016,
+      "venue": "MIT Press",
+      "source_url": "https://mitpress.mit.edu/9780262337373/deep-learning/",
+      "method_search_tags": [
+        "M5",
+        "M6",
+        "M8"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Modern deep learning foundations and regularization",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-105",
+      "kind": "book",
+      "title": "Reinforcement Learning: An Introduction",
+      "year": 2018,
+      "venue": "MIT Press (second edition)",
+      "source_url": "https://mitpress.mit.edu/9780262039246/reinforcement-learning/",
+      "method_search_tags": [
+        "M7"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "RL foundations and classical algorithms",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-106",
+      "kind": "book",
+      "title": "Probabilistic Machine Learning: An Introduction",
+      "year": 2022,
+      "venue": "MIT Press",
+      "source_url": "https://mitpress.mit.edu/9780262046824/probabilistic-machine-learning/",
+      "method_search_tags": [
+        "M3",
+        "M5"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Probabilistic foundational modeling",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-107",
+      "kind": "book",
+      "title": "Probabilistic Machine Learning: Advanced Topics",
+      "year": 2023,
+      "venue": "MIT Press",
+      "source_url": "https://mitpress.mit.edu/9780262048439/probabilistic-machine-learning/",
+      "method_search_tags": [
+        "M3",
+        "M6",
+        "M7"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Advanced probabilistic inference, generation and decision making",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-108",
+      "kind": "book",
+      "title": "Multiple View Geometry in Computer Vision",
+      "year": 2004,
+      "venue": "Cambridge University Press (second edition)",
+      "source_url": "https://www.cambridge.org/core/books/multiple-view-geometry-in-computer-vision/0B6F289C78B2B23F596CAA76D3D43F7A",
+      "doi": "10.1017/CBO9780511811685",
+      "method_search_tags": [
+        "M8"
+      ],
+      "biomedical_application_tags": [
+        "A1"
+      ],
+      "discovery_reason": "Multiview projective reconstruction and calibration",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-109",
+      "kind": "book",
+      "title": "Deep Learning for Medical Image Analysis",
+      "year": 2017,
+      "venue": "Elsevier / Academic Press",
+      "source_url": "https://shop.elsevier.com/books/deep-learning-for-medical-image-analysis/zhou/978-0-12-810408-8",
+      "method_search_tags": [
+        "M8"
+      ],
+      "biomedical_application_tags": [
+        "A1",
+        "A4"
+      ],
+      "discovery_reason": "Edited academic methods text, version and chapter evaluation pending",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-110",
+      "kind": "book",
+      "title": "Dynamic Programming and Optimal Control, Vol I",
+      "year": 2017,
+      "venue": "Athena Scientific (fourth edition)",
+      "source_url": "https://www.mit.edu/~dimitrib/dpbook.html",
+      "method_search_tags": [
+        "M7"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Optimal control and dynamic programming authored bibliography",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-111",
+      "kind": "book",
+      "title": "Model Predictive Control: Theory, Computation, and Design",
+      "year": 2020,
+      "venue": "Nob Hill Publishing (second edition paperback)",
+      "source_url": "https://sites.engineering.ucsb.edu/~jbraw/mpc/index.html",
+      "method_search_tags": [
+        "M7"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Control theory, numerical methods and algorithmic implementation",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-112",
+      "kind": "paper",
+      "title": "Dream to Control: Learning Behaviors by Latent Imagination",
+      "year": 2020,
+      "venue": "ICLR",
+      "source_url": "https://mlanthology.org/iclr/2020/hafner2020iclr-dream/",
+      "method_search_tags": [
+        "M7",
+        "M4"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Dreamer latent imagination method research",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-113",
+      "kind": "paper",
+      "title": "When to Trust Your Model: Model-Based Policy Optimization",
+      "year": 2019,
+      "venue": "NeurIPS",
+      "source_url": "https://proceedings.neurips.cc/paper/2019/hash/5faf461eff3099671ad63c6f3f094f7f-Abstract.html",
+      "method_search_tags": [
+        "M7",
+        "M4"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Model-generated trajectories and model bias control",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-114",
+      "kind": "paper",
+      "title": "QFR-guided versus IVUS-guided with QFR confirmation for drug-coated balloon treatment of non-complex coronary lesions: a single-centre pilot randomised trial",
+      "year": 2026,
+      "venue": "BMC Cardiovascular Disorders",
+      "source_url": "https://link.springer.com/article/10.1186/s12872-026-07055-2",
+      "doi": "10.1186/s12872-026-07055-2",
+      "method_search_tags": [],
+      "biomedical_application_tags": [
+        "A3",
+        "A5"
+      ],
+      "discovery_reason": "Pilot RCT, not full clinical efficacy proof; threshold and eligibility under review",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-115",
+      "kind": "paper",
+      "title": "Left Main Coronary CT-Guided Percutaneous Coronary Intervention: Role of Virtual Planning and Wireless Physiology",
+      "year": 2024,
+      "venue": "JACC: Cardiovascular Interventions",
+      "source_url": "https://www.jacc.org/doi/full/10.1016/j.jcin.2024.09.034",
+      "doi": "10.1016/j.jcin.2024.09.034",
+      "method_search_tags": [],
+      "biomedical_application_tags": [
+        "A1",
+        "A3",
+        "A5"
+      ],
+      "discovery_reason": "Case report and clinical workflow; not to equate with independent external validation",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-116",
+      "kind": "paper",
+      "title": "Angiographic Quantitative Flow Ratio-Guided Coronary Intervention: 5-Year Follow-Up From the FAVOR III China Randomized Trial",
+      "year": 2026,
+      "venue": "Journal of the American College of Cardiology",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42268156/",
+      "method_search_tags": [
+        "A3",
+        "A5"
+      ],
+      "biomedical_application_tags": [
+        "Long-term follow-up outcomes distinguish trial reports from new original algorithms"
+      ],
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
     }
   ],
   "discovery_log_updates": [
@@ -2005,6 +2246,11 @@
       "note": "Expanded discovery using publisher/proceedings/CVF/PubMed primary bibliographic pages across all methodology and biomedical axes; exact duplicates were skipped; quality audit remains pending.",
       "new_leads": 40,
       "duplicates_skipped": 17
+    },
+    {
+      "date": "2026-11-26",
+      "note": "Publisher book catalogs and additional conference/clinical sources added after cross-domain retrieval. All quality decisions still pending.",
+      "new_leads": 13
     }
   ]
 }
