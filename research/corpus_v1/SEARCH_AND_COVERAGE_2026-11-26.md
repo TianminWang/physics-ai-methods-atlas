@@ -8,7 +8,7 @@
 
 ## 1. 检索实施方式
 
-本次首轮使用具备域名/关键词过滤的公开网页学术检索，重点限定在**可信出版社与正式会议论文集页面**（SIAM、Springer、Cambridge、JMLR、PMLR、ICML/NeurIPS/ICLR、Nature、Elsevier/MedIA、PubMed 索引等）。对若干关键结果已打开官方元数据/摘要页，记录永久链接和可见 DOI。
+本次首轮使用具备域名/关键词过滤的公开网页学术检索，重点限定在**可信出版社与正式会议论文集页面**（SIAM、Springer、Cambridge、JMLR、PMLR、ICML/NeurIPS/ICLR、Nature、Elsevier/MedIA、PubMed 索引等）。检索结果返回了官方来源的书目/摘要信息，并记录这些页面的永久链接与可见 DOI；未进行逐篇正式全文核验。
 
 尚**没有**开展下列完整步骤：在各出版社/数据库的可复现搜索 API 执行完整布尔检索；记录每个数据库的全量命中数、逐步排除数；全文阅读与学术质量终审；所有文献的正向/反向引文链检索；Crossref/PubMed/出版方更正撤稿全量核查；正式主会与预印本版本统一；书籍版次/作者全面核对。不得称为已完成“系统综述”或 Corpus v1。
 
