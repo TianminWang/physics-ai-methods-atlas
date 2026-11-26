@@ -10,7 +10,7 @@
 
 The [Corpus-first protocol v1 (Chinese, authoritative)](docs/zh/CORPUS_FIRST_PROTOCOL_V1.md) supersedes the prior incremental search/build-graph sequence. **Search and screen the entire agreed methodological and biomedical scope, deduplicate and assess sources, audit coverage and freeze Scholarly Corpus v1 before designing the formal knowledge graph.** Internal search work units are for reproducibility, not separate ontology releases.
 
-The previous 61 methods, 34 families and 26 experimental B1 candidates are **legacy prototype artifacts, not mandatory scholarly seeds**. [Current independent discovery/coverage audit](research/corpus_v1/SEARCH_AND_COVERAGE_2026-11-26.md): 47 leads (38 papers/reviews, 9 books), **all pending quality review**. Neither exhaustive retrieval nor Corpus v1 nor a new graph has been completed.
+The previous 61 methods, 34 families and 26 experimental B1 candidates are **legacy prototype artifacts, not mandatory scholarly seeds**. [Current independent discovery/coverage audit](research/corpus_v1/SEARCH_AND_COVERAGE_2026-11-26.md): 63 leads (54 papers/reviews, 9 books), **all pending quality review**. Neither exhaustive retrieval nor Corpus v1 nor a new graph has been completed.
 
 
 
