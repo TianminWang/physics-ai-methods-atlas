@@ -2683,6 +2683,154 @@
       "bibliographic_review": "publisher_or_PubMed_source_page_located",
       "scientific_quality_review": "not_performed",
       "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-140",
+      "kind": "paper",
+      "title": "Bayesian Inverse Problems Are Usually Well-Posed",
+      "year": 2023,
+      "venue": "SIAM Review",
+      "source_url": "https://epubs.siam.org/doi/10.1137/23M1556435",
+      "doi": "10.1137/23M1556435",
+      "method_search_tags": [
+        "M2",
+        "M3"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Review of modern posterior well-posedness assumptions and statistical distances",
+      "academic_admission": "pending",
+      "bibliographic_review": "official_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-141",
+      "kind": "paper",
+      "title": "Consistency of Variational Inference for Nonlinear Inverse Problems of Partial Differential Equations",
+      "year": 2026,
+      "venue": "SIAM Journal on Mathematical Analysis",
+      "source_url": "https://epubs.siam.org/doi/10.1137/25M1762725",
+      "doi": "10.1137/25M1762725",
+      "method_search_tags": [
+        "M2",
+        "M3"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Posterior approximation and contraction for nonlinear inverse PDE with VI",
+      "academic_admission": "pending",
+      "bibliographic_review": "official_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-142",
+      "kind": "paper",
+      "title": "Conditional neural control variates for variance reduction in Bayesian inverse problems",
+      "year": 2026,
+      "venue": "UAI (PMLR 337)",
+      "source_url": "https://proceedings.mlr.press/v337/siahkoohi26a.html",
+      "method_search_tags": [
+        "M3",
+        "M5"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Monte Carlo variance reduction for posterior expectations in high-dimensional PDE inverse problems",
+      "academic_admission": "pending",
+      "bibliographic_review": "official_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-143",
+      "kind": "paper",
+      "title": "Accelerating PDE-Constrained Optimization by the Derivative of Neural Operators",
+      "year": 2025,
+      "venue": "ICML (PMLR 267)",
+      "source_url": "https://proceedings.mlr.press/v267/cheng25f.html",
+      "method_search_tags": [
+        "M2",
+        "M5"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Operator-surrogate derivative accuracy for inverse/optimization",
+      "academic_admission": "pending",
+      "bibliographic_review": "official_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-144",
+      "kind": "paper",
+      "title": "Improved Operator Learning by Orthogonal Attention",
+      "year": 2024,
+      "venue": "ICML (PMLR 235)",
+      "source_url": "https://proceedings.mlr.press/v235/xiao24c.html",
+      "method_search_tags": [
+        "M5",
+        "M1"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Attention architecture, orthogonality and kernel integral for operators",
+      "academic_admission": "pending",
+      "bibliographic_review": "official_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-145",
+      "kind": "paper",
+      "title": "Model Reduction for Nonlinear Systems by Balanced Truncation of State and Gradient Covariance",
+      "year": 2023,
+      "venue": "SIAM Journal on Scientific Computing",
+      "source_url": "https://epubs.siam.org/doi/10.1137/22M1513228",
+      "doi": "10.1137/22M1513228",
+      "method_search_tags": [
+        "M1",
+        "M4"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "State-covariance and sensitivity-based nonlinear ROM",
+      "academic_admission": "pending",
+      "bibliographic_review": "official_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-146",
+      "kind": "paper",
+      "title": "Weighted Proper Orthogonal Decomposition for High-Dimensional Optimization",
+      "year": 2026,
+      "venue": "SIAM Journal on Scientific Computing",
+      "source_url": "https://epubs.siam.org/doi/10.1137/25M1779243",
+      "doi": "10.1137/25M1779243",
+      "method_search_tags": [
+        "M1",
+        "M2"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Error-estimated weighted POD for optimization applications, publication date before corpus cutoff",
+      "academic_admission": "pending",
+      "bibliographic_review": "official_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-147",
+      "kind": "paper",
+      "title": "Evaluation of Proper Orthogonal Decomposition-Based Decomposition Techniques Applied to Parameter-Dependent Nonturbulent Flows",
+      "year": 1999,
+      "venue": "SIAM Journal on Scientific Computing",
+      "source_url": "https://epubs.siam.org/doi/10.1137/S1064827598333181",
+      "doi": "10.1137/S1064827598333181",
+      "method_search_tags": [
+        "M1"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "ROM comparison and weighted-mode variant under flow parameterization",
+      "academic_admission": "pending",
+      "bibliographic_review": "official_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
     }
   ],
   "discovery_log_updates": [
@@ -2714,6 +2862,11 @@
       "date": "2026-11-26",
       "note": "Added historical and modern M2/M4/M7 and A3/A5 targeted domain searches from official publishers, proceedings, PubMed; no scientific admission.",
       "new_leads": 17
+    },
+    {
+      "date": "2026-11-26",
+      "note": "Additional focused SIAM, ICML and UAI discovery supporting cross-domain inverse PDE, ROM, surrogate optimization and Bayesian reliability topics; no substantive quality verdicts.",
+      "new_leads": 8
     }
   ]
 }
