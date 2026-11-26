@@ -1246,6 +1246,1591 @@
       "bibliographic_review": "source_page_located",
       "scientific_quality_review": "not_performed",
       "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-064",
+      "kind": "book",
+      "title": "Numerical Partial Differential Equations",
+      "year": 2024,
+      "venue": "SIAM",
+      "source_url": "https://epubs.siam.org/doi/10.1137/1.9781611978285",
+      "doi": "10.1137/1.9781611978285",
+      "method_search_tags": [
+        "M1"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "FDM/FEM/FVM及数值线性代数系统教材；出版年份待版次复核",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-065",
+      "kind": "book",
+      "title": "The Mathematical Theory of Finite Element Methods",
+      "year": 2008,
+      "venue": "Springer (3rd ed.)",
+      "source_url": "https://link.springer.com/book/10.1007/978-0-387-75934-0",
+      "doi": "10.1007/978-0-387-75934-0",
+      "method_search_tags": [
+        "M1"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "FEM函数空间理论与误差分析；按第三版认定",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-066",
+      "kind": "book",
+      "title": "Solving Ordinary Differential Equations I: Nonstiff Problems",
+      "year": 1993,
+      "venue": "Springer (2nd ed.)",
+      "source_url": "https://link.springer.com/book/10.1007/978-3-540-78862-1",
+      "doi": "10.1007/978-3-540-78862-1",
+      "method_search_tags": [
+        "M1",
+        "M4"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Runge-Kutta与多步法的系统专著；电子版日期与纸质版区分",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-067",
+      "kind": "book",
+      "title": "Numerical Solution of Partial Differential Equations: An Introduction",
+      "year": 2005,
+      "venue": "Cambridge University Press (2nd ed.)",
+      "source_url": "https://www.cambridge.org/core/books/numerical-solution-of-partial-differential-equations/EB8E5037C4A49F78D91C0AF7EE4CC7FA",
+      "method_search_tags": [
+        "M1"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "FDM、稳定性、FVM、multigrid等权威教材",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-068",
+      "kind": "book",
+      "title": "Optimization with PDE Constraints",
+      "year": 2009,
+      "venue": "Springer",
+      "source_url": "https://link.springer.com/book/10.1007/978-1-4020-8839-1",
+      "doi": "10.1007/978-1-4020-8839-1",
+      "method_search_tags": [
+        "M2",
+        "M1"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "PDE约束优化泛函理论、离散与算法",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-069",
+      "kind": "book",
+      "title": "Nonlinear Least Squares for Inverse Problems",
+      "year": 2010,
+      "venue": "Springer",
+      "source_url": "https://link.springer.com/book/10.1007/978-90-481-2785-6",
+      "doi": "10.1007/978-90-481-2785-6",
+      "method_search_tags": [
+        "M2"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "可辨识性、正则化与非线性最小二乘理论",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-070",
+      "kind": "book",
+      "title": "Model Reduction and Approximation: Theory and Algorithms",
+      "year": 2017,
+      "venue": "SIAM",
+      "source_url": "https://epubs.siam.org/doi/10.1137/1.9781611974829",
+      "doi": "10.1137/1.9781611974829",
+      "method_search_tags": [
+        "M1",
+        "M4"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "POD、reduced basis、balanced truncation综述性专著",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-071",
+      "kind": "book",
+      "title": "Approximation of Large-Scale Dynamical Systems",
+      "year": 2005,
+      "venue": "SIAM",
+      "source_url": "https://epubs.siam.org/doi/10.1137/1.9780898718713",
+      "doi": "10.1137/1.9780898718713",
+      "method_search_tags": [
+        "M1",
+        "M4",
+        "M7"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "SVD/POD与系统论降阶方法的经典理论",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-072",
+      "kind": "book",
+      "title": "Uncertainty Quantification: Theory, Implementation, and Applications",
+      "year": 2024,
+      "venue": "SIAM (2nd ed.)",
+      "source_url": "https://epubs.siam.org/doi/10.1137/1.9781611977844",
+      "doi": "10.1137/1.9781611977844",
+      "method_search_tags": [
+        "M3"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "UQ、灵敏度分析与代理建模",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-073",
+      "kind": "paper",
+      "title": "Inverse problems: A Bayesian perspective",
+      "year": 2010,
+      "venue": "Acta Numerica",
+      "source_url": "https://www.cambridge.org/core/journals/acta-numerica/article/abs/inverse-problems-a-bayesian-perspective/587A3A0D480A1A7C2B1B284BCEDF7E23",
+      "doi": "10.1017/S0962492910000061",
+      "method_search_tags": [
+        "M2",
+        "M3"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "函数空间贝叶斯反问题经典综述与发展线索",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-074",
+      "kind": "paper",
+      "title": "A Survey of Projection-Based Model Reduction Methods for Parametric Dynamical Systems",
+      "year": 2015,
+      "venue": "SIAM Review",
+      "source_url": "https://epubs.siam.org/doi/abs/10.1137/130932715",
+      "doi": "10.1137/130932715",
+      "method_search_tags": [
+        "M1",
+        "M4"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "降阶模型/参数化动力系统的理论与算法综述",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-075",
+      "kind": "paper",
+      "title": "Differentiable Programming for Differential Equations: A Review",
+      "year": 2026,
+      "venue": "SIAM Review",
+      "source_url": "https://epubs.siam.org/doi/10.1137/24M1669062",
+      "doi": "10.1137/24M1669062",
+      "method_search_tags": [
+        "M1",
+        "M2",
+        "M5"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "DE求导与adjoint的理论和软件综述，需核实具体在线发表日期",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-076",
+      "kind": "paper",
+      "title": "The Ensemble Kalman Filter: theoretical formulation and practical implementation",
+      "year": 2003,
+      "venue": "Ocean Dynamics",
+      "source_url": "https://doi.org/10.1007/s10236-003-0036-9",
+      "doi": "10.1007/s10236-003-0036-9",
+      "method_search_tags": [
+        "M4",
+        "M3"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "EnKF理论算法与模型误差的重要综述",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-077",
+      "kind": "paper",
+      "title": "A strategy for operational implementation of 4D-Var, using an incremental approach",
+      "year": 1994,
+      "venue": "Quarterly Journal of the Royal Meteorological Society",
+      "source_url": "https://rmets.onlinelibrary.wiley.com/doi/10.1002/qj.49712051912",
+      "doi": "10.1002/qj.49712051912",
+      "method_search_tags": [
+        "M4",
+        "M2"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "增量4DVar及同化计算成本的原始方法论",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-078",
+      "kind": "paper",
+      "title": "Ensemble Kalman methods for inverse problems",
+      "year": 2013,
+      "venue": "Inverse Problems",
+      "source_url": "https://doi.org/10.1088/0266-5611/29/4/045001",
+      "doi": "10.1088/0266-5611/29/4/045001",
+      "method_search_tags": [
+        "M3",
+        "M4",
+        "M2"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "迭代EnKF用于非线性反问题的原创数学构造",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-079",
+      "kind": "paper",
+      "title": "Discovering governing equations from data by sparse identification of nonlinear dynamical systems",
+      "year": 2016,
+      "venue": "PNAS",
+      "source_url": "https://doi.org/10.1073/pnas.1517384113",
+      "doi": "10.1073/pnas.1517384113",
+      "method_search_tags": [
+        "M4",
+        "M5"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "SINDy 稀疏动力学辨识源论文",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-080",
+      "kind": "paper",
+      "title": "Variational Inference: A Review for Statisticians",
+      "year": 2017,
+      "venue": "Journal of the American Statistical Association",
+      "source_url": "https://www.cs.columbia.edu/~blei/papers/BleiKucukelbirMcAuliffe2017.pdf",
+      "doi": "10.1080/01621459.2017.1285773",
+      "method_search_tags": [
+        "M3"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "VI概率推断综述与前沿问题",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-081",
+      "kind": "paper",
+      "title": "The Wiener--Askey Polynomial Chaos for Stochastic Differential Equations",
+      "year": 2002,
+      "venue": "SIAM Journal on Scientific Computing",
+      "source_url": "https://epubs.siam.org/doi/10.1137/S1064827501387826",
+      "doi": "10.1137/S1064827501387826",
+      "method_search_tags": [
+        "M3",
+        "M1"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "非侵入与侵入随机谱/多项式混沌源论文",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-082",
+      "kind": "paper",
+      "title": "The No-U-Turn Sampler: Adaptively Setting Path Lengths in Hamiltonian Monte Carlo",
+      "year": 2014,
+      "venue": "Journal of Machine Learning Research",
+      "source_url": "https://www.jmlr.org/papers/v15/hoffman14a.html",
+      "method_search_tags": [
+        "M3"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "NUTS 自适应HMC步数和步长",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-083",
+      "kind": "paper",
+      "title": "Sequential Neural Likelihood: Fast Likelihood-free Inference with Autoregressive Flows",
+      "year": 2019,
+      "venue": "AISTATS (PMLR 89)",
+      "source_url": "https://proceedings.mlr.press/v89/papamakarios19a",
+      "method_search_tags": [
+        "M3",
+        "M6"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "模拟驱动似然估计与流模型",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-084",
+      "kind": "paper",
+      "title": "Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations",
+      "year": 2019,
+      "venue": "Journal of Computational Physics",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0021999118307125",
+      "doi": "10.1016/j.jcp.2018.10.045",
+      "method_search_tags": [
+        "M5",
+        "M2"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "PINN正反PDE方法源流",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-085",
+      "kind": "paper",
+      "title": "Fourier Neural Operator for Parametric Partial Differential Equations",
+      "year": 2021,
+      "venue": "ICLR",
+      "source_url": "https://mlanthology.org/iclr/2021/li2021iclr-fourier/",
+      "method_search_tags": [
+        "M5",
+        "M1"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "FNO参数化PDE算子学习，正式ICLR记录",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-086",
+      "kind": "paper",
+      "title": "Learning Mesh-Based Simulation with Graph Networks",
+      "year": 2021,
+      "venue": "ICLR",
+      "source_url": "https://mlanthology.org/iclr/2021/pfaff2021iclr-learning/",
+      "method_search_tags": [
+        "M5",
+        "M4"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "MeshGraphNets可学习数值模拟框架",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-087",
+      "kind": "paper",
+      "title": "Physics-Informed Neural Operator for Learning Partial Differential Equations",
+      "year": 2024,
+      "venue": "Journal of Machine Learning Research",
+      "source_url": "https://authors.library.caltech.edu/records/06m4r-8jf10",
+      "method_search_tags": [
+        "M5",
+        "M2"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "PINO数据-物理混合算子研究，正式期刊/版本待核",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-088",
+      "kind": "paper",
+      "title": "Understanding and Mitigating Gradient Flow Pathologies in Physics-Informed Neural Networks",
+      "year": 2021,
+      "venue": "SIAM Journal on Scientific Computing",
+      "source_url": "https://epubs.siam.org/doi/10.1137/20M1318043",
+      "doi": "10.1137/20M1318043",
+      "method_search_tags": [
+        "M5",
+        "M2"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "PINN优化病态与改进",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-089",
+      "kind": "paper",
+      "title": "Learning the solution operator of parametric partial differential equations with physics-informed DeepONets",
+      "year": 2021,
+      "venue": "Science Advances",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/34586842/",
+      "doi": "10.1126/sciadv.abi8605",
+      "method_search_tags": [
+        "M5",
+        "M1"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "物理约束DeepONet及数据/无数据训练的源研究",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-090",
+      "kind": "paper",
+      "title": "Generative Adversarial Nets",
+      "year": 2014,
+      "venue": "NeurIPS",
+      "source_url": "https://proceedings.neurips.cc/paper/2014/hash/f033ed80deb0234979a61f95710dbe25-Abstract.html",
+      "method_search_tags": [
+        "M6"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "GAN原始研究",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-091",
+      "kind": "paper",
+      "title": "Flow Matching for Generative Modeling",
+      "year": 2023,
+      "venue": "ICLR",
+      "source_url": "https://openreview.net/pdf?id=PqvMRDCJT9t",
+      "method_search_tags": [
+        "M6"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "连续归一化流的向量场回归训练策略",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-092",
+      "kind": "paper",
+      "title": "Diffusion Posterior Sampling for General Noisy Inverse Problems",
+      "year": 2023,
+      "venue": "ICLR",
+      "source_url": "https://openreview.net/pdf/dd7f2e1f5581d91eb4c1ff34fec78b93d3dfa599.pdf",
+      "method_search_tags": [
+        "M6",
+        "M3",
+        "M2"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "非线性含噪逆问题后验近似采样",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-093",
+      "kind": "paper",
+      "title": "Ambient Diffusion: Learning Clean Distributions from Corrupted Data",
+      "year": 2023,
+      "venue": "NeurIPS",
+      "source_url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/012af729c5d14d279581fc8a5db975a1-Abstract-Conference.html",
+      "doi": "10.52202/075280-0015",
+      "method_search_tags": [
+        "M6",
+        "M8"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "从不完整损坏样本学习潜在干净分布",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-094",
+      "kind": "paper",
+      "title": "Learning Latent Dynamics for Planning from Pixels",
+      "year": 2019,
+      "venue": "ICML (PMLR 97)",
+      "source_url": "https://proceedings.mlr.press/v97/hafner19a.html",
+      "method_search_tags": [
+        "M7",
+        "M4"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "PlaNet潜在状态世界模型和规划",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-095",
+      "kind": "paper",
+      "title": "C2IQL: Constraint-Conditioned Implicit Q-learning for Safe Offline Reinforcement Learning",
+      "year": 2025,
+      "venue": "ICML (PMLR 267)",
+      "source_url": "https://proceedings.mlr.press/v267/liu25ai.html",
+      "method_search_tags": [
+        "M7"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "安全约束的离线RL方法",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-096",
+      "kind": "paper",
+      "title": "Masked Autoencoders Are Scalable Vision Learners",
+      "year": 2022,
+      "venue": "CVPR",
+      "source_url": "https://openaccess.thecvf.com/content/CVPR2022/html/He_Masked_Autoencoders_Are_Scalable_Vision_Learners_CVPR_2022_paper.html",
+      "method_search_tags": [
+        "M8"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "视觉自监督遮蔽学习/表示",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-097",
+      "kind": "paper",
+      "title": "Segment Anything",
+      "year": 2023,
+      "venue": "ICCV",
+      "source_url": "https://openaccess.thecvf.com/content/ICCV2023/html/Kirillov_Segment_Anything_ICCV_2023_paper.html",
+      "method_search_tags": [
+        "M8"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "基础分割模型与可提示式分割",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-098",
+      "kind": "paper",
+      "title": "Segment anything in medical images",
+      "year": 2024,
+      "venue": "Nature Communications",
+      "source_url": "https://www.nature.com/articles/s41467-024-44824-z",
+      "doi": "10.1038/s41467-024-44824-z",
+      "method_search_tags": [
+        "M8"
+      ],
+      "biomedical_application_tags": [
+        "A1",
+        "A4"
+      ],
+      "discovery_reason": "MedSAM多模态医学分割及外部验证",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-099",
+      "kind": "paper",
+      "title": "nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation",
+      "year": 2021,
+      "venue": "Nature Methods",
+      "source_url": "https://www.nature.com/articles/s41592-020-01008-z",
+      "doi": "10.1038/s41592-020-01008-z",
+      "method_search_tags": [
+        "M8"
+      ],
+      "biomedical_application_tags": [
+        "A1",
+        "A4"
+      ],
+      "discovery_reason": "自动配置医学分割基线",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-100",
+      "kind": "paper",
+      "title": "Fractional flow reserve versus angiography for guiding percutaneous coronary intervention",
+      "year": 2009,
+      "venue": "New England Journal of Medicine",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/19144937/",
+      "doi": "10.1056/NEJMoa0807611",
+      "method_search_tags": [],
+      "biomedical_application_tags": [
+        "A3",
+        "A5"
+      ],
+      "discovery_reason": "FAME RCT确立FFR指导介入的临床证据",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-101",
+      "kind": "paper",
+      "title": "Diagnostic Accuracy of Angiography-Based Quantitative Flow Ratio Measurements for Online Assessment of Coronary Stenosis",
+      "year": 2017,
+      "venue": "Journal of the American College of Cardiology",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/29101020/",
+      "doi": "10.1016/j.jacc.2017.10.035",
+      "method_search_tags": [],
+      "biomedical_application_tags": [
+        "A3",
+        "A1"
+      ],
+      "discovery_reason": "QFR诊断试验，学术角色是诊断验证",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-102",
+      "kind": "paper",
+      "title": "QFR-Based Virtual PCI or Conventional Angiography to Guide PCI: The AQVA Trial",
+      "year": 2023,
+      "venue": "JACC: Cardiovascular Interventions",
+      "source_url": "https://www.jacc.org/doi/10.1016/j.jcin.2022.10.054",
+      "doi": "10.1016/j.jcin.2022.10.054",
+      "method_search_tags": [],
+      "biomedical_application_tags": [
+        "A3",
+        "A5"
+      ],
+      "discovery_reason": "QFR虚拟PCI与常规造影指导的随机比较",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-103",
+      "kind": "paper",
+      "title": "Unlocking Virtual Physiology Guided PCI: Point-of-Care CT-FFR Performance",
+      "year": 2024,
+      "venue": "JACC: Cardiovascular Imaging",
+      "source_url": "https://www.jacc.org/doi/full/10.1016/j.jcmg.2024.06.018",
+      "doi": "10.1016/j.jcmg.2024.06.018",
+      "method_search_tags": [],
+      "biomedical_application_tags": [
+        "A3",
+        "A5"
+      ],
+      "discovery_reason": "CT-FFR虚拟支架结果预测的单中心初步验证",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-104",
+      "kind": "book",
+      "title": "Deep Learning",
+      "year": 2016,
+      "venue": "MIT Press",
+      "source_url": "https://mitpress.mit.edu/9780262337373/deep-learning/",
+      "method_search_tags": [
+        "M5",
+        "M6",
+        "M8"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Modern deep learning foundations and regularization",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-105",
+      "kind": "book",
+      "title": "Reinforcement Learning: An Introduction",
+      "year": 2018,
+      "venue": "MIT Press (second edition)",
+      "source_url": "https://mitpress.mit.edu/9780262039246/reinforcement-learning/",
+      "method_search_tags": [
+        "M7"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "RL foundations and classical algorithms",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-106",
+      "kind": "book",
+      "title": "Probabilistic Machine Learning: An Introduction",
+      "year": 2022,
+      "venue": "MIT Press",
+      "source_url": "https://mitpress.mit.edu/9780262046824/probabilistic-machine-learning/",
+      "method_search_tags": [
+        "M3",
+        "M5"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Probabilistic foundational modeling",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-107",
+      "kind": "book",
+      "title": "Probabilistic Machine Learning: Advanced Topics",
+      "year": 2023,
+      "venue": "MIT Press",
+      "source_url": "https://mitpress.mit.edu/9780262048439/probabilistic-machine-learning/",
+      "method_search_tags": [
+        "M3",
+        "M6",
+        "M7"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Advanced probabilistic inference, generation and decision making",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-108",
+      "kind": "book",
+      "title": "Multiple View Geometry in Computer Vision",
+      "year": 2004,
+      "venue": "Cambridge University Press (second edition)",
+      "source_url": "https://www.cambridge.org/core/books/multiple-view-geometry-in-computer-vision/0B6F289C78B2B23F596CAA76D3D43F7A",
+      "doi": "10.1017/CBO9780511811685",
+      "method_search_tags": [
+        "M8"
+      ],
+      "biomedical_application_tags": [
+        "A1"
+      ],
+      "discovery_reason": "Multiview projective reconstruction and calibration",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-109",
+      "kind": "book",
+      "title": "Deep Learning for Medical Image Analysis",
+      "year": 2017,
+      "venue": "Elsevier / Academic Press",
+      "source_url": "https://shop.elsevier.com/books/deep-learning-for-medical-image-analysis/zhou/978-0-12-810408-8",
+      "method_search_tags": [
+        "M8"
+      ],
+      "biomedical_application_tags": [
+        "A1",
+        "A4"
+      ],
+      "discovery_reason": "Edited academic methods text, version and chapter evaluation pending",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-110",
+      "kind": "book",
+      "title": "Dynamic Programming and Optimal Control, Vol I",
+      "year": 2017,
+      "venue": "Athena Scientific (fourth edition)",
+      "source_url": "https://www.mit.edu/~dimitrib/dpbook.html",
+      "method_search_tags": [
+        "M7"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Optimal control and dynamic programming authored bibliography",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-111",
+      "kind": "book",
+      "title": "Model Predictive Control: Theory, Computation, and Design",
+      "year": 2020,
+      "venue": "Nob Hill Publishing (second edition paperback)",
+      "source_url": "https://sites.engineering.ucsb.edu/~jbraw/mpc/index.html",
+      "method_search_tags": [
+        "M7"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Control theory, numerical methods and algorithmic implementation",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-112",
+      "kind": "paper",
+      "title": "Dream to Control: Learning Behaviors by Latent Imagination",
+      "year": 2020,
+      "venue": "ICLR",
+      "source_url": "https://mlanthology.org/iclr/2020/hafner2020iclr-dream/",
+      "method_search_tags": [
+        "M7",
+        "M4"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Dreamer latent imagination method research",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-113",
+      "kind": "paper",
+      "title": "When to Trust Your Model: Model-Based Policy Optimization",
+      "year": 2019,
+      "venue": "NeurIPS",
+      "source_url": "https://proceedings.neurips.cc/paper/2019/hash/5faf461eff3099671ad63c6f3f094f7f-Abstract.html",
+      "method_search_tags": [
+        "M7",
+        "M4"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Model-generated trajectories and model bias control",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-114",
+      "kind": "paper",
+      "title": "QFR-guided versus IVUS-guided with QFR confirmation for drug-coated balloon treatment of non-complex coronary lesions: a single-centre pilot randomised trial",
+      "year": 2026,
+      "venue": "BMC Cardiovascular Disorders",
+      "source_url": "https://link.springer.com/article/10.1186/s12872-026-07055-2",
+      "doi": "10.1186/s12872-026-07055-2",
+      "method_search_tags": [],
+      "biomedical_application_tags": [
+        "A3",
+        "A5"
+      ],
+      "discovery_reason": "Pilot RCT, not full clinical efficacy proof; threshold and eligibility under review",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-115",
+      "kind": "paper",
+      "title": "Left Main Coronary CT-Guided Percutaneous Coronary Intervention: Role of Virtual Planning and Wireless Physiology",
+      "year": 2024,
+      "venue": "JACC: Cardiovascular Interventions",
+      "source_url": "https://www.jacc.org/doi/full/10.1016/j.jcin.2024.09.034",
+      "doi": "10.1016/j.jcin.2024.09.034",
+      "method_search_tags": [],
+      "biomedical_application_tags": [
+        "A1",
+        "A3",
+        "A5"
+      ],
+      "discovery_reason": "Case report and clinical workflow; not to equate with independent external validation",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-116",
+      "kind": "paper",
+      "title": "Angiographic Quantitative Flow Ratio-Guided Coronary Intervention: 5-Year Follow-Up From the FAVOR III China Randomized Trial",
+      "year": 2026,
+      "venue": "Journal of the American College of Cardiology",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42268156/",
+      "method_search_tags": [],
+      "biomedical_application_tags": [
+        "A3",
+        "A5"
+      ],
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_proceedings_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed",
+      "discovery_reason": "Long-term follow-up outcomes distinguish trial reports from new original algorithms"
+    },
+    {
+      "candidate_id": "CV1-117",
+      "kind": "paper",
+      "title": "A method for the solution of certain non-linear problems in least squares",
+      "year": 1944,
+      "venue": "Quarterly of Applied Mathematics",
+      "source_url": "https://doi.org/10.1090/qam/10666",
+      "doi": "10.1090/qam/10666",
+      "method_search_tags": [
+        "M2"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Levenberg nonlinear least-squares iterative damping original; original journal record checked",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_record_crosschecked",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-118",
+      "kind": "paper",
+      "title": "Equation of State Calculations by Fast Computing Machines",
+      "year": 1953,
+      "venue": "Journal of Chemical Physics",
+      "source_url": "https://doi.org/10.1063/1.1699114",
+      "doi": "10.1063/1.1699114",
+      "method_search_tags": [
+        "M3"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Metropolis statistical-mechanical Monte Carlo sampling; original journal record checked",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_record_crosschecked",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-119",
+      "kind": "paper",
+      "title": "A New Approach to Linear Filtering and Prediction Problems",
+      "year": 1960,
+      "venue": "Journal of Basic Engineering",
+      "source_url": "https://doi.org/10.1115/1.3662552",
+      "doi": "10.1115/1.3662552",
+      "method_search_tags": [
+        "M3",
+        "M4",
+        "M7"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Kalman original state-space recursive filtering; ASME publication info checked",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_record_crosschecked",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-120",
+      "kind": "paper",
+      "title": "An Algorithm for Least-Squares Estimation of Nonlinear Parameters",
+      "year": 1963,
+      "venue": "Journal of the Society for Industrial and Applied Mathematics",
+      "source_url": "https://doi.org/10.1137/0111030",
+      "doi": "10.1137/0111030",
+      "method_search_tags": [
+        "M2"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Marquardt damping nonlinear least squares; SIAM original publication record checked",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_record_crosschecked",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-121",
+      "kind": "paper",
+      "title": "Monte Carlo sampling methods using Markov chains and their applications",
+      "year": 1970,
+      "venue": "Biometrika",
+      "source_url": "https://doi.org/10.1093/biomet/57.1.97",
+      "doi": "10.1093/biomet/57.1.97",
+      "method_search_tags": [
+        "M3"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Hastings generalizes Metropolis Markov chains; Oxford Academic official record checked",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_record_crosschecked",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-122",
+      "kind": "paper",
+      "title": "Turbulence and the dynamics of coherent structures. I. Coherent structures",
+      "year": 1987,
+      "venue": "Quarterly of Applied Mathematics",
+      "source_url": "https://doi.org/10.1090/qam/910462",
+      "doi": "10.1090/qam/910462",
+      "method_search_tags": [
+        "M1",
+        "M4"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Sirovich proper orthogonal decomposition and coherent structures; AMS official record checked",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_record_crosschecked",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-123",
+      "kind": "paper",
+      "title": "A survey of industrial model predictive control technology",
+      "year": 2003,
+      "venue": "Control Engineering Practice",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S0967066102001867",
+      "doi": "10.1016/S0967-0661(02)00186-7",
+      "method_search_tags": [
+        "M7",
+        "M4"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Control synthesis source, review contextualizes industrial MPC and identification",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-124",
+      "kind": "paper",
+      "title": "Structural and practical identifiability analysis of partially observed dynamical models by exploiting the profile likelihood",
+      "year": 2009,
+      "venue": "Bioinformatics",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/19505944/",
+      "doi": "10.1093/bioinformatics/btp358",
+      "method_search_tags": [
+        "M2",
+        "M4"
+      ],
+      "biomedical_application_tags": [
+        "A4"
+      ],
+      "discovery_reason": "System identifiability diagnostic rooted in biological dynamical models",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-125",
+      "kind": "paper",
+      "title": "Neural Controlled Differential Equations for Irregular Time Series",
+      "year": 2020,
+      "venue": "NeurIPS",
+      "source_url": "https://proceedings.neurips.cc/paper/2020/hash/4a5876b450b45371f6cfe5047ac8cd45-Abstract.html",
+      "method_search_tags": [
+        "M4",
+        "M5",
+        "M7"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "CDE theory for irregular observations and continuous-time state estimation",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-126",
+      "kind": "paper",
+      "title": "Neural Ordinary Differential Equations",
+      "year": 2018,
+      "venue": "NeurIPS",
+      "source_url": "https://papers.neurips.cc/paper_files/paper/2018/hash/69386f6bb1dfed68692a24c8686939b9-Abstract.html",
+      "method_search_tags": [
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Neural latent dynamics and continuous-time training",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-127",
+      "kind": "paper",
+      "title": "An Introduction to the Adjoint Approach to Design",
+      "year": 2000,
+      "venue": "Flow, Turbulence and Combustion",
+      "source_url": "https://link.springer.com/article/10.1023/A:1011430410075",
+      "doi": "10.1023/A:1011430410075",
+      "method_search_tags": [
+        "M1",
+        "M2"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Adjoint sensitivity and PDE constrained optimization review",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-128",
+      "kind": "paper",
+      "title": "Diagnosis of ischemia-causing coronary stenoses by noninvasive fractional flow reserve computed from coronary computed tomographic angiograms: Results from the prospective multicenter DISCOVER-FLOW study",
+      "year": 2011,
+      "venue": "Journal of the American College of Cardiology",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/22032711/",
+      "doi": "10.1016/j.jacc.2011.06.066",
+      "method_search_tags": [],
+      "biomedical_application_tags": [
+        "A1",
+        "A3"
+      ],
+      "discovery_reason": "Clinical CT-FFR prospective multicenter validation",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-129",
+      "kind": "paper",
+      "title": "Computational fluid dynamics applied to cardiac computed tomography for noninvasive quantification of fractional flow reserve: scientific basis",
+      "year": 2013,
+      "venue": "Journal of the American College of Cardiology",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/23562923/",
+      "doi": "10.1016/j.jacc.2012.11.083",
+      "method_search_tags": [
+        "M1"
+      ],
+      "biomedical_application_tags": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "discovery_reason": "CFD FFRCT method theory review",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-130",
+      "kind": "paper",
+      "title": "Diagnostic Accuracy of Fast Computational Approaches to Derive Fractional Flow Reserve From Diagnostic Coronary Angiography: The International Multicenter FAVOR Pilot Study",
+      "year": 2016,
+      "venue": "JACC: Cardiovascular Interventions",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/27712739/",
+      "doi": "10.1016/j.jcin.2016.07.013",
+      "method_search_tags": [
+        "M1"
+      ],
+      "biomedical_application_tags": [
+        "A1",
+        "A3"
+      ],
+      "discovery_reason": "QFR technology pilot and diagnostic evaluation",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-131",
+      "kind": "paper",
+      "title": "Clinical Validation of a Virtual Planner for Coronary Interventions Based on Coronary CT Angiography",
+      "year": 2022,
+      "venue": "JACC: Cardiovascular Imaging",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/35798401/",
+      "doi": "10.1016/j.jcmg.2022.02.003",
+      "method_search_tags": [
+        "M1"
+      ],
+      "biomedical_application_tags": [
+        "A3",
+        "A5"
+      ],
+      "discovery_reason": "Multicenter clinical study virtual CT-based coronary planning",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-132",
+      "kind": "paper",
+      "title": "Diagnostic Accuracy of Coronary Angiography-Based Vessel Fractional Flow Reserve (vFFR) Virtual Stenting",
+      "year": 2022,
+      "venue": "International Journal of Cardiovascular Imaging",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/35268488/",
+      "method_search_tags": [
+        "M1"
+      ],
+      "biomedical_application_tags": [
+        "A3",
+        "A5"
+      ],
+      "discovery_reason": "Post-PCI vFFR prediction and physiology validation",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-133",
+      "kind": "paper",
+      "title": "Coronary Computed Tomography Angiography for Percutaneous Coronary Intervention: Initial United States Experience With FFRCT Based Virtual PCI",
+      "year": 2025,
+      "venue": "Cardiovascular Revascularization Medicine",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40571959/",
+      "method_search_tags": [],
+      "biomedical_application_tags": [
+        "A1",
+        "A3",
+        "A5"
+      ],
+      "discovery_reason": "Retrospective clinical experience with CT-FFR virtual PCI",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-134",
+      "kind": "paper",
+      "title": "Virtual Stenting Based on Fractional Flow Reserve Derived from Computed Tomography in Predicting Post-Percutaneous Coronary Intervention Functional Outcomes: A Retrospective Cohort Study",
+      "year": 2025,
+      "venue": "European Journal of Radiology",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41002652/",
+      "method_search_tags": [
+        "M1"
+      ],
+      "biomedical_application_tags": [
+        "A2",
+        "A3",
+        "A5"
+      ],
+      "discovery_reason": "Virtual-stenting FFRCT physiologic verification with 75 patient records",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-135",
+      "kind": "paper",
+      "title": "Computed Tomography Coronary Angiography and Computational Fluid Dynamics Based Fractional Flow Reserve Before and After Percutaneous Coronary Intervention",
+      "year": 2021,
+      "venue": "Frontiers in Cardiovascular Medicine",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/34557479/",
+      "method_search_tags": [
+        "M1"
+      ],
+      "biomedical_application_tags": [
+        "A2",
+        "A3",
+        "A5"
+      ],
+      "discovery_reason": "Reduced-order CFD boundary conditions before and after stent",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-136",
+      "kind": "paper",
+      "title": "Applied coronary physiology for planning and guidance of percutaneous coronary interventions: A clinical consensus statement from EAPCI",
+      "year": 2023,
+      "venue": "EuroIntervention",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/37171503/",
+      "doi": "10.4244/EIJ-D-23-00194",
+      "method_search_tags": [],
+      "biomedical_application_tags": [
+        "A3",
+        "A5"
+      ],
+      "discovery_reason": "Expert consensus; distinguish clinical guidelines from original algorithm",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-137",
+      "kind": "paper",
+      "title": "In silico comparison of two non-invasive pre-procedural virtual coronary revascularisation techniques for personalised cardiovascular medicine",
+      "year": 2025,
+      "venue": "Medical Engineering & Physics",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40902338/",
+      "method_search_tags": [
+        "M1",
+        "M2"
+      ],
+      "biomedical_application_tags": [
+        "A2",
+        "A3",
+        "A5"
+      ],
+      "discovery_reason": "Physical remodeling assumptions and prediction of geometry and functional effects",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-138",
+      "kind": "paper",
+      "title": "An Imaging Informatics Workflow for Angiography-Derived Coronary Physiology Profiling and Virtual PCI Simulation",
+      "year": 2026,
+      "venue": "Journal of Imaging Informatics in Medicine",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42649327/",
+      "method_search_tags": [
+        "M8",
+        "M1"
+      ],
+      "biomedical_application_tags": [
+        "A1",
+        "A3",
+        "A5"
+      ],
+      "discovery_reason": "Image-derived QFR multimodal workflow; external validation unknown",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-139",
+      "kind": "paper",
+      "title": "Noninvasive FFR Derived From Coronary CT Angiography: Management and Outcomes in the PROMISE Trial",
+      "year": 2017,
+      "venue": "JACC: Cardiovascular Imaging",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/28412436/",
+      "method_search_tags": [],
+      "biomedical_application_tags": [
+        "A1",
+        "A3",
+        "A5"
+      ],
+      "discovery_reason": "Exploratory FFRCT clinical prognostic study not prospective AI method development",
+      "academic_admission": "pending",
+      "bibliographic_review": "publisher_or_PubMed_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-140",
+      "kind": "paper",
+      "title": "Bayesian Inverse Problems Are Usually Well-Posed",
+      "year": 2023,
+      "venue": "SIAM Review",
+      "source_url": "https://epubs.siam.org/doi/10.1137/23M1556435",
+      "doi": "10.1137/23M1556435",
+      "method_search_tags": [
+        "M2",
+        "M3"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Review of modern posterior well-posedness assumptions and statistical distances",
+      "academic_admission": "pending",
+      "bibliographic_review": "official_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-141",
+      "kind": "paper",
+      "title": "Consistency of Variational Inference for Nonlinear Inverse Problems of Partial Differential Equations",
+      "year": 2026,
+      "venue": "SIAM Journal on Mathematical Analysis",
+      "source_url": "https://epubs.siam.org/doi/10.1137/25M1762725",
+      "doi": "10.1137/25M1762725",
+      "method_search_tags": [
+        "M2",
+        "M3"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Posterior approximation and contraction for nonlinear inverse PDE with VI",
+      "academic_admission": "pending",
+      "bibliographic_review": "official_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-142",
+      "kind": "paper",
+      "title": "Conditional neural control variates for variance reduction in Bayesian inverse problems",
+      "year": 2026,
+      "venue": "UAI (PMLR 337)",
+      "source_url": "https://proceedings.mlr.press/v337/siahkoohi26a.html",
+      "method_search_tags": [
+        "M3",
+        "M5"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Monte Carlo variance reduction for posterior expectations in high-dimensional PDE inverse problems",
+      "academic_admission": "pending",
+      "bibliographic_review": "official_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-143",
+      "kind": "paper",
+      "title": "Accelerating PDE-Constrained Optimization by the Derivative of Neural Operators",
+      "year": 2025,
+      "venue": "ICML (PMLR 267)",
+      "source_url": "https://proceedings.mlr.press/v267/cheng25f.html",
+      "method_search_tags": [
+        "M2",
+        "M5"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Operator-surrogate derivative accuracy for inverse/optimization",
+      "academic_admission": "pending",
+      "bibliographic_review": "official_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-144",
+      "kind": "paper",
+      "title": "Improved Operator Learning by Orthogonal Attention",
+      "year": 2024,
+      "venue": "ICML (PMLR 235)",
+      "source_url": "https://proceedings.mlr.press/v235/xiao24c.html",
+      "method_search_tags": [
+        "M5",
+        "M1"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Attention architecture, orthogonality and kernel integral for operators",
+      "academic_admission": "pending",
+      "bibliographic_review": "official_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-145",
+      "kind": "paper",
+      "title": "Model Reduction for Nonlinear Systems by Balanced Truncation of State and Gradient Covariance",
+      "year": 2023,
+      "venue": "SIAM Journal on Scientific Computing",
+      "source_url": "https://epubs.siam.org/doi/10.1137/22M1513228",
+      "doi": "10.1137/22M1513228",
+      "method_search_tags": [
+        "M1",
+        "M4"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "State-covariance and sensitivity-based nonlinear ROM",
+      "academic_admission": "pending",
+      "bibliographic_review": "official_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-146",
+      "kind": "paper",
+      "title": "Weighted Proper Orthogonal Decomposition for High-Dimensional Optimization",
+      "year": 2026,
+      "venue": "SIAM Journal on Scientific Computing",
+      "source_url": "https://epubs.siam.org/doi/10.1137/25M1779243",
+      "doi": "10.1137/25M1779243",
+      "method_search_tags": [
+        "M1",
+        "M2"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Error-estimated weighted POD for optimization applications, publication date before corpus cutoff",
+      "academic_admission": "pending",
+      "bibliographic_review": "official_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-147",
+      "kind": "paper",
+      "title": "Evaluation of Proper Orthogonal Decomposition-Based Decomposition Techniques Applied to Parameter-Dependent Nonturbulent Flows",
+      "year": 1999,
+      "venue": "SIAM Journal on Scientific Computing",
+      "source_url": "https://epubs.siam.org/doi/10.1137/S1064827598333181",
+      "doi": "10.1137/S1064827598333181",
+      "method_search_tags": [
+        "M1"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "ROM comparison and weighted-mode variant under flow parameterization",
+      "academic_admission": "pending",
+      "bibliographic_review": "official_source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
     }
   ],
   "discovery_log_updates": [
@@ -1256,6 +2841,32 @@
     {
       "date": "2026-11-26",
       "note": "Targeted PubMed/publisher page checking corrected and completed 6 paper year/venue/DOI records. Scientific quality and retraction status remain unreviewed."
+    },
+    {
+      "date": "2026-11-26",
+      "note": "Expanded discovery using publisher/proceedings/CVF/PubMed primary bibliographic pages across all methodology and biomedical axes; exact duplicates were skipped; quality audit remains pending.",
+      "new_leads": 40,
+      "duplicates_skipped": 17
+    },
+    {
+      "date": "2026-11-26",
+      "note": "Publisher book catalogs and additional conference/clinical sources added after cross-domain retrieval. All quality decisions still pending.",
+      "new_leads": 13
+    },
+    {
+      "date": "2026-11-26",
+      "note": "Original 1944–1987 sources added and checked against AMS, SIAM, AIP, ASME and Oxford Academic publisher records. Does not imply scholarly admission.",
+      "new_leads": 6
+    },
+    {
+      "date": "2026-11-26",
+      "note": "Added historical and modern M2/M4/M7 and A3/A5 targeted domain searches from official publishers, proceedings, PubMed; no scientific admission.",
+      "new_leads": 17
+    },
+    {
+      "date": "2026-11-26",
+      "note": "Additional focused SIAM, ICML and UAI discovery supporting cross-domain inverse PDE, ROM, surrogate optimization and Bayesian reliability topics; no substantive quality verdicts.",
+      "new_leads": 8
     }
   ]
 }
