@@ -1,0 +1,297 @@
+{
+  "version": "0.9.0-proposal",
+  "status": "DESIGN_ONLY_DO_NOT_LOAD_AS_CANONICAL",
+  "architecture": "three phases -> reusable capability nodes -> typed methods; problem cases can support multiple capabilities",
+  "notes": [
+    "These are proposed capability definitions; not new stage, method, or genealogy records.",
+    "Method IDs listed are illustrative matches, not method-specific empirical validation.",
+    "Existing 15 problem.* records describe tasks/applications and remain separate from general capabilities.",
+    "General concerns such as physical validity, identifiability, numerical error and uncertainty remain cross-cutting; this catalog describes actionable capabilities."
+  ],
+  "capabilities": [
+    {
+      "id": "capability.model.physical-formulation",
+      "phase": "modeling",
+      "name_zh": "控制方程与物理模型定义",
+      "name": "Physical governing formulation",
+      "definition": "Specify governing equations, variables and model structure rather than choose one numerical solver.",
+      "illustrative_method_ids": [
+        "method.windkessel",
+        "method.structured-tree-outflow"
+      ]
+    },
+    {
+      "id": "capability.model.parameterization",
+      "phase": "modeling",
+      "name_zh": "参数化与初始边界条件",
+      "name": "Parameterization and boundary conditions",
+      "definition": "Represent unknown coefficients, constitutive laws and admissible boundary/initial conditions.",
+      "illustrative_method_ids": [
+        "method.windkessel",
+        "method.structured-tree-outflow"
+      ]
+    },
+    {
+      "id": "capability.model.numerical-forward",
+      "phase": "modeling",
+      "name_zh": "数值离散与正向求解",
+      "name": "Numerical forward simulation",
+      "definition": "Solve ODE/PDE forward dynamics using verified discretization and numerical integration.",
+      "illustrative_method_ids": [
+        "method.finite-volume",
+        "method.finite-element",
+        "method.runge-kutta-integration"
+      ]
+    },
+    {
+      "id": "capability.model.surrogate-forward",
+      "phase": "modeling",
+      "name_zh": "降阶、代理与算子学习",
+      "name": "Reduced and surrogate forward modeling",
+      "definition": "Approximate forward solution operators or states for repeated evaluation.",
+      "illustrative_method_ids": [
+        "method.proper-orthogonal-decomposition",
+        "method.fno",
+        "method.deeponet"
+      ]
+    },
+    {
+      "id": "capability.model.sensitivity",
+      "phase": "modeling",
+      "name_zh": "灵敏度与可微正向模拟",
+      "name": "Sensitivity and differentiability",
+      "definition": "Compute how predicted states or measurements change with model parameters.",
+      "illustrative_method_ids": [
+        "method.adjoint-sensitivity",
+        "method.difftaichi",
+        "method.derivative-informed-operator"
+      ]
+    },
+    {
+      "id": "capability.model.observation",
+      "phase": "modeling",
+      "name_zh": "观测算子、测量噪声与实验设计",
+      "name": "Observation modeling and design",
+      "definition": "Map latent physical states to data and model sensor configuration and measurement errors.",
+      "illustrative_method_ids": [
+        "method.bayesian-experimental-design"
+      ]
+    },
+    {
+      "id": "capability.inverse.formulation",
+      "phase": "inference",
+      "name_zh": "反问题建模与目标函数",
+      "name": "Inverse problem formulation",
+      "definition": "Define unknowns, observation residuals or likelihoods, constraints and solution criteria.",
+      "illustrative_method_ids": [
+        "method.nonlinear-least-squares",
+        "method.bayesian-inverse-problems",
+        "method.pde-constrained-optimization"
+      ]
+    },
+    {
+      "id": "capability.inverse.identifiability",
+      "phase": "inference",
+      "name_zh": "可辨识性与信息分析",
+      "name": "Identifiability and information analysis",
+      "definition": "Determine what observed data can uniquely or stably constrain about unknown parameters.",
+      "illustrative_method_ids": [
+        "method.profile-likelihood-identifiability"
+      ]
+    },
+    {
+      "id": "capability.inverse.regularization",
+      "phase": "inference",
+      "name_zh": "正则化与物理先验",
+      "name": "Regularization and priors",
+      "definition": "Stabilize weakly constrained inverse estimates through penalties or probabilistic priors.",
+      "illustrative_method_ids": [
+        "method.tikhonov-regularization",
+        "method.generative-range-prior"
+      ]
+    },
+    {
+      "id": "capability.inverse.deterministic",
+      "phase": "inference",
+      "name_zh": "确定性优化与梯度计算",
+      "name": "Deterministic optimization and gradients",
+      "definition": "Compute point estimates with gradient or derivative-free optimization.",
+      "illustrative_method_ids": [
+        "method.gauss-newton",
+        "method.levenberg-marquardt",
+        "method.adjoint-sensitivity"
+      ]
+    },
+    {
+      "id": "capability.inverse.posterior",
+      "phase": "inference",
+      "name_zh": "后验推断与概率计算",
+      "name": "Posterior inference and computation",
+      "definition": "Approximate conditional distributions and integrals over unknown parameters.",
+      "illustrative_method_ids": [
+        "method.markov-chain-monte-carlo",
+        "method.no-u-turn-sampler",
+        "method.variational-inference"
+      ]
+    },
+    {
+      "id": "capability.inverse.simulation-based",
+      "phase": "inference",
+      "name_zh": "仿真驱动与似然自由推断",
+      "name": "Likelihood-free simulation-based inference",
+      "definition": "Infer parameters from synthetic data if the likelihood is intractable but a simulator is available.",
+      "illustrative_method_ids": [
+        "method.simulation-based-inference",
+        "method.sequential-neural-posterior"
+      ]
+    },
+    {
+      "id": "capability.inverse.learned",
+      "phase": "inference",
+      "name_zh": "学习型／生成式反演",
+      "name": "Learned and generative inversion",
+      "definition": "Apply learned inverse mappings, forward surrogates or generative posterior conditioning.",
+      "illustrative_method_ids": [
+        "method.learned-forward-inversion",
+        "method.direct-inverse-operator",
+        "method.diffusion-posterior-sampling"
+      ]
+    },
+    {
+      "id": "capability.inverse.model-discrepancy",
+      "phase": "inference",
+      "name_zh": "模型失配与校准诊断",
+      "name": "Model discrepancy and calibration",
+      "definition": "Identify calibration uncertainty that stems from model inadequacy rather than parameters alone.",
+      "illustrative_method_ids": [
+        "method.bayesian-model-discrepancy"
+      ]
+    },
+    {
+      "id": "capability.twin.rollout",
+      "phase": "twin",
+      "name_zh": "状态演化与条件预测",
+      "name": "State evolution and conditional prediction",
+      "definition": "Roll out individualized dynamical states under known or hypothesized noninterventional conditions.",
+      "illustrative_method_ids": [
+        "method.neural-ode",
+        "method.planet-latent-planning",
+        "method.model-predictive-control"
+      ]
+    },
+    {
+      "id": "capability.twin.uncertainty",
+      "phase": "twin",
+      "name_zh": "预测不确定性与可靠性验证",
+      "name": "Predictive uncertainty and validation",
+      "definition": "Propagate uncertainty and evaluate reliability of future predictions.",
+      "illustrative_method_ids": [
+        "method.polynomial-chaos-expansion",
+        "method.bayesian-inverse-problems"
+      ]
+    },
+    {
+      "id": "capability.twin.counterfactual",
+      "phase": "twin",
+      "name_zh": "反事实模拟与干预效果预测",
+      "name": "Counterfactual intervention simulation",
+      "definition": "Simulate outcomes of modified anatomy, parameters or controlled inputs under explicit physical assumptions.",
+      "illustrative_method_ids": [
+        "method.model-predictive-control"
+      ]
+    },
+    {
+      "id": "capability.twin.planning",
+      "phase": "twin",
+      "name_zh": "最优控制与决策规划",
+      "name": "Decision optimization and planning",
+      "definition": "Choose actions using predictive models subject to objectives, constraints and safety requirements.",
+      "illustrative_method_ids": [
+        "method.model-predictive-control",
+        "method.dreamer-latent-imagination",
+        "method.conservative-q-learning"
+      ]
+    },
+    {
+      "id": "capability.twin.updating",
+      "phase": "twin",
+      "name_zh": "长期数据同化与模型更新",
+      "name": "Continual data assimilation and updating",
+      "definition": "Update individual parameters, latent states or model assumptions after follow-up observations.",
+      "illustrative_method_ids": [
+        "method.ensemble-kalman-filter",
+        "method.four-d-var",
+        "method.ensemble-kalman-inversion"
+      ]
+    }
+  ],
+  "candidate_problem_capabilities": {
+    "problem.action-conditioned-forecast": [
+      "capability.twin.rollout",
+      "capability.twin.counterfactual"
+    ],
+    "problem.coronary-ffr-curve": [
+      "capability.model.observation",
+      "capability.model.surrogate-forward",
+      "capability.inverse.formulation"
+    ],
+    "problem.coronary-parameter-inference": [
+      "capability.model.parameterization",
+      "capability.model.observation",
+      "capability.inverse.formulation",
+      "capability.inverse.identifiability",
+      "capability.inverse.deterministic"
+    ],
+    "problem.dynamic-state-assimilation": [
+      "capability.inverse.posterior",
+      "capability.twin.updating"
+    ],
+    "problem.generative-pde-inference": [
+      "capability.inverse.learned",
+      "capability.inverse.posterior"
+    ],
+    "problem.geometry-dependent-forward-surrogate": [
+      "capability.model.surrogate-forward",
+      "capability.model.numerical-forward"
+    ],
+    "problem.ode-parameter-inference": [
+      "capability.model.parameterization",
+      "capability.inverse.deterministic",
+      "capability.inverse.identifiability"
+    ],
+    "problem.online-digital-twin-update": [
+      "capability.twin.updating",
+      "capability.twin.rollout"
+    ],
+    "problem.pde-coefficient-inference": [
+      "capability.inverse.formulation",
+      "capability.inverse.regularization",
+      "capability.inverse.deterministic"
+    ],
+    "problem.pde-uncertainty-propagation": [
+      "capability.twin.uncertainty",
+      "capability.model.numerical-forward"
+    ],
+    "problem.physics-field-sample-generation": [
+      "capability.model.surrogate-forward",
+      "capability.twin.uncertainty"
+    ],
+    "problem.simulation-likelihood-free-calibration": [
+      "capability.inverse.simulation-based",
+      "capability.inverse.posterior"
+    ],
+    "problem.systemic-arterial-calibration": [
+      "capability.model.physical-formulation",
+      "capability.inverse.deterministic"
+    ],
+    "problem.vascular-bayesian-inference": [
+      "capability.inverse.posterior",
+      "capability.inverse.model-discrepancy"
+    ],
+    "problem.virtual-pci-counterfactual": [
+      "capability.twin.counterfactual",
+      "capability.twin.planning",
+      "capability.model.surrogate-forward"
+    ]
+  }
+}
