@@ -22,7 +22,7 @@
 | 经典数理 | `site:cambridge.org/core/journals/acta-numerica "Inverse problems: A Bayesian perspective" Stuart 2010` | Acta Numerica 2010 官方书目与摘要 |
 | 理论及数值专著 | `site:cambridge.org/core/books "Finite Volume Methods for Hyperbolic Problems" LeVeque` | Cambridge 图书页及版次 |
 | 最小二乘/统计反问题专著 | `site:link.springer.com/book "Nonlinear Least Squares for Inverse Problems" Chavent`; `site:link.springer.com/book "Statistical and Computational Inverse Problems" Kaipio Somersalo` | Springer 书目、章节与版本 |
-| 数据同化专著 | `site:epubs.siam.org "Data Assimilation" Asch Bocquet Nodet` | SIAM 书籍简介与章节（检索词的精确拼写可在后续搜索协议规范化） |
+| 数据同化专著 | `A Review of Data Assimilation and Uncertainty Quantification 4D Var EnKF SIAM official` | SIAM 书籍简介与章节 |
 | 现代方法 | `site:jmlr.org neural operator learning maps between function spaces survey Kovachki 2023`; `site:openreview.net "Flow Matching for Generative Modeling" Lipman` | JMLR 论文和 ICLR 正式论文 |
 | 生成/物理模拟 | `site:papers.nips.cc "Denoising Diffusion Probabilistic Models" Ho Jain Abbeel`; `site:proceedings.mlr.press "Learning to Simulate Complex Physics with Graph Networks"` | NeurIPS / ICML 正式记录 |
 | 医学 AI | `site:nature.com "nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation"`; `site:link.springer.com "U-Net: Convolutional Networks for Biomedical Image Segmentation"` | Nature Methods / MICCAI 官方记录 |
