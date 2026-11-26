@@ -2219,17 +2219,16 @@
       "year": 2026,
       "venue": "Journal of the American College of Cardiology",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/42268156/",
-      "method_search_tags": [
+      "method_search_tags": [],
+      "biomedical_application_tags": [
         "A3",
         "A5"
-      ],
-      "biomedical_application_tags": [
-        "Long-term follow-up outcomes distinguish trial reports from new original algorithms"
       ],
       "academic_admission": "pending",
       "bibliographic_review": "publisher_or_proceedings_source_page_located",
       "scientific_quality_review": "not_performed",
-      "retraction_and_correction_check": "not_performed"
+      "retraction_and_correction_check": "not_performed",
+      "discovery_reason": "Long-term follow-up outcomes distinguish trial reports from new original algorithms"
     }
   ],
   "discovery_log_updates": [
