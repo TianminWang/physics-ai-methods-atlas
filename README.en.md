@@ -6,7 +6,16 @@
 
 The current design is **one three-phase research axis plus one global method-evolution DAG**. The research axis describes scientific capabilities; the DAG describes documented technical development and its targeted bottlenecks.
 
-## v0.9 methodology structure audit (current research phase)
+## Evidence-first admission and rebuild (2026-11-26)
+
+**The current 61 methods, 34 families, 58 paper records and 12 books are exploratory seeds used to develop the data model and visualization, not a finalized scholarly canon.** The project will now screen reliable papers and books first, derive concepts and claims from admitted sources, and only then construct and visualize evidence-backed relationships. Existing nodes and counts are not guaranteed to survive unchanged.
+
+- [Scholarly paper and book admission policy v1.0 (Chinese, authoritative)](docs/zh/SOURCE_ADMISSION_POLICY.md): an academic quality threshold, with preferred venues, per-source review and strict exceptions; decisions are **admit / pending / exclude**, not paper A/B/C ratings.
+- [Evidence-first knowledge and interactive viewer rebuild plan (Chinese)](docs/zh/EVIDENCE_FIRST_REBUILD.md): updates the intended order of v0.9-B/C and preserves v0.8 as a reusable interface prototype.
+
+The original v0.9-A audit remains useful design history; the `data/` catalog and viewer have **not yet been rebuilt** under the new admission policy.
+
+## v0.9 methodology structure audit (historical design audit)
 
 **Audit the ontology before adding relationships or changing the browser.** The current catalog includes 61 methods, 34 families, 15 research problems and 530 typed links, but combines formulations, algorithm families, concrete numerical methods, model architectures, training strategies, physical models and software frameworks at the same `method.*` level.
 

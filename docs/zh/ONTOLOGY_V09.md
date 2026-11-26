@@ -1,5 +1,7 @@
 # v0.9 统一方法学知识图谱：本体设计提案
 
+> **2026-11-26 说明：** 本文件是以旧样本产生的结构设计提案，供后续审查；现已明确采用[高质量来源先行政策](SOURCE_ADMISSION_POLICY.md)和[归纳式重建路线](EVIDENCE_FIRST_REBUILD.md)，不得将本提案的11种类型、19项 Capability 或旧节点视为必须保留的正式本体。
+
 > 本文是 **Ontology Design Proposal**，并非已正式执行的数据库迁移。方案遵循“一套权威学术数据、多个可切换的知识视角”。
 >
 > 与审计报告配套阅读：[《现有结构审计》](AUDIT_V09.md) · [方法类型提案](../../audits/v09/method-kind-proposals.json) · [研究能力层提案](../../audits/v09/capability-layer-proposal.json)。
