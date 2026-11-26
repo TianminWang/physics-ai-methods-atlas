@@ -6,6 +6,13 @@
 
 **Current build principle: screen reliable papers and books first, derive and verify the knowledge structure, and then render it interactively.** The former three-phase research axis and global method-evolution DAG are reusable interface prototypes, **not a fixed scholarly ontology**.
 
+## v0.9-B1 launched: bibliographic discovery (2026-11-26)
+
+The **[approved execution plan (Chinese, authoritative)](docs/zh/EXECUTION_PLAN_V09.md)** establishes two orthogonal search facets: M1–M8 mathematical/computational methods and A1–A6 biomedical applications. The eventual interface will connect taxonomy, evidence-backed lineage, research problems and a scholarly library.
+
+[First B1 search log and candidate ledger](research/b1/SEARCH_LOG_2026-11-26.md): **26 pending candidates (22 papers and 4 books)**, verified only as initial bibliographic leads. None have passed full admission review; the pre-existing canonical data and v0.8 viewer remain unchanged.
+
+
 ## Evidence-first admission and rebuild (2026-11-26)
 
 **The current 61 methods, 34 families, 58 paper records and 12 books are exploratory seeds used to develop the data model and visualization, not a finalized scholarly canon.** The project will now screen reliable papers and books first, derive concepts and claims from admitted sources, and only then construct and visualize evidence-backed relationships. Existing nodes and counts are not guaranteed to survive unchanged.
