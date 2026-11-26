@@ -926,6 +926,326 @@
       "bibliographic_review": "source_page_located",
       "scientific_quality_review": "not_performed",
       "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-048",
+      "kind": "paper",
+      "title": "A one-dimensional fluid dynamic model of the systemic arteries",
+      "year": 2000,
+      "venue": "Studies in Health Technology and Informatics",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/10977605/",
+      "method_search_tags": [
+        "M1"
+      ],
+      "biomedical_application_tags": [
+        "A2"
+      ],
+      "discovery_reason": "经典动脉1D与结构树出流模型；来源可信度和正式发表形式待核对",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-049",
+      "kind": "paper",
+      "title": "Structured tree outflow condition for blood flow in larger systemic arteries",
+      "year": 1999,
+      "venue": "American Journal of Physiology",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/9887040/",
+      "doi": "10.1152/ajpheart.1999.276.1.H257",
+      "method_search_tags": [
+        "M1"
+      ],
+      "biomedical_application_tags": [
+        "A2"
+      ],
+      "discovery_reason": "生理结构树边界阻抗与脉搏波传播理论源流",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-050",
+      "kind": "paper",
+      "title": "Numerical simulation and experimental validation of blood flow in arteries with structured-tree outflow conditions",
+      "year": 2000,
+      "venue": "Annals of Biomedical Engineering",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/11212947/",
+      "doi": "10.1114/1.1326031",
+      "method_search_tags": [
+        "M1"
+      ],
+      "biomedical_application_tags": [
+        "A2"
+      ],
+      "discovery_reason": "一维血流与结构树出流的数值及实验核验",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-051",
+      "kind": "paper",
+      "title": "One-dimensional haemodynamic modeling and wave dynamics in the entire adult circulation",
+      "year": 2015,
+      "venue": "Journal of Biomechanics",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/25832485/",
+      "method_search_tags": [
+        "M1"
+      ],
+      "biomedical_application_tags": [
+        "A2"
+      ],
+      "discovery_reason": "全循环0D/1D多尺度模拟与冠脉模型",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-052",
+      "kind": "paper",
+      "title": "An anatomically detailed arterial network model for one-dimensional computational hemodynamics",
+      "year": 2014,
+      "venue": "Journal of Biomechanics",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/25347874/",
+      "method_search_tags": [
+        "M1"
+      ],
+      "biomedical_application_tags": [
+        "A2"
+      ],
+      "discovery_reason": "高度详细动脉网络1D计算与参数敏感度",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-053",
+      "kind": "paper",
+      "title": "A One-Dimensional Hemodynamic Model of the Coronary Arterial Tree",
+      "year": 2019,
+      "venue": "Scientific Reports",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/31338038/",
+      "method_search_tags": [
+        "M1"
+      ],
+      "biomedical_application_tags": [
+        "A2",
+        "A3"
+      ],
+      "discovery_reason": "冠脉1D结构树与心肌内压耦合模型",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-054",
+      "kind": "paper",
+      "title": "Comparison of the Windkessel model and structured-tree model applied to prescribe outflow boundary conditions for a one-dimensional arterial tree model",
+      "year": 2016,
+      "venue": "Journal of Biomechanics",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/27062594/",
+      "method_search_tags": [
+        "M1"
+      ],
+      "biomedical_application_tags": [
+        "A2"
+      ],
+      "discovery_reason": "0D与结构树出流边界的波传播/模型误差比较",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-055",
+      "kind": "paper",
+      "title": "A novel noninvasive technology for treatment planning using virtual coronary stenting and computed tomography-derived computed fractional flow reserve",
+      "year": 2014,
+      "venue": "JACC: Cardiovascular Interventions",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/24332418/",
+      "doi": "10.1016/j.jcin.2013.05.024",
+      "method_search_tags": [
+        "M1"
+      ],
+      "biomedical_application_tags": [
+        "A3",
+        "A5"
+      ],
+      "discovery_reason": "虚拟支架+CCTA-FFR反事实规划，需区分可行性与真实治疗结局",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-056",
+      "kind": "paper",
+      "title": "Artificial Intelligence-Assisted Automated Optical Coherence Tomography Analysis for Percutaneous Coronary Intervention Planning: From Plaque Analysis to Precision Lesion Preparation and Stent Optimization",
+      "year": 2026,
+      "venue": "Journal of the American Heart Association",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42960750/",
+      "doi": "10.1161/JAHA.126.049590",
+      "method_search_tags": [
+        "M8"
+      ],
+      "biomedical_application_tags": [
+        "A1",
+        "A5"
+      ],
+      "discovery_reason": "OCT与AI驱动PCI规划的综述和源流入口",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-057",
+      "kind": "paper",
+      "title": "Comprehensive full-vessel segmentation and volumetric plaque quantification for intracoronary optical coherence tomography using deep learning",
+      "year": 2025,
+      "venue": "European Heart Journal – Digital Health",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40395415/",
+      "doi": "10.1093/ehjdh/ztaf021",
+      "method_search_tags": [
+        "M8"
+      ],
+      "biomedical_application_tags": [
+        "A1",
+        "A4"
+      ],
+      "discovery_reason": "OCT血管全层分割与斑块定量的患者数据验证",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-058",
+      "kind": "paper",
+      "title": "Interpolatory Projection Methods for Parameterized Model Reduction",
+      "year": 2011,
+      "venue": "SIAM Journal on Scientific Computing",
+      "source_url": "https://epubs.siam.org/doi/10.1137/090776925",
+      "doi": "10.1137/090776925",
+      "method_search_tags": [
+        "M1"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "带参数的模型降阶与保结构投影理论",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-059",
+      "kind": "paper",
+      "title": "A Meshfree Method for a PDE-Constrained Optimization Problem",
+      "year": 2021,
+      "venue": "SIAM Journal on Numerical Analysis",
+      "source_url": "https://epubs.siam.org/doi/10.1137/20M1363510",
+      "doi": "10.1137/20M1363510",
+      "method_search_tags": [
+        "M1",
+        "M2"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "PDE约束优化的伴随与无网格数值逼近误差分析",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-060",
+      "kind": "paper",
+      "title": "Generic and patient-specific models of the arterial tree",
+      "year": 2012,
+      "venue": "Journal of Biomechanics",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/22843240/",
+      "method_search_tags": [
+        "M1"
+      ],
+      "biomedical_application_tags": [
+        "A2",
+        "A6"
+      ],
+      "discovery_reason": "从0D到3D的动脉模型与患者特异建模综述",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-061",
+      "kind": "paper",
+      "title": "Validation of a one-dimensional model of the systemic arterial tree",
+      "year": 2009,
+      "venue": "American Journal of Physiology—Heart and Circulatory Physiology",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/19429832/",
+      "method_search_tags": [
+        "M1"
+      ],
+      "biomedical_application_tags": [
+        "A2"
+      ],
+      "discovery_reason": "1D动脉树与MRI/Doppler/血压观测验证",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-062",
+      "kind": "paper",
+      "title": "A multiscale approach for modelling wave propagation in an arterial segment",
+      "year": 2004,
+      "venue": "Computer Methods in Biomechanics and Biomedical Engineering",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/15203956/",
+      "doi": "10.1080/1025584042000205868",
+      "method_search_tags": [
+        "M1"
+      ],
+      "biomedical_application_tags": [
+        "A2"
+      ],
+      "discovery_reason": "血管壁-流体简化1D模型与波传播",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-063",
+      "kind": "paper",
+      "title": "Models of the arterial tree",
+      "year": 2000,
+      "venue": "Studies in Health Technology and Informatics",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/10977604/",
+      "method_search_tags": [
+        "M1"
+      ],
+      "biomedical_application_tags": [
+        "A2"
+      ],
+      "discovery_reason": "集中参数与分布动脉模型的理论综述线索",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    }
+  ],
+  "discovery_log_updates": [
+    {
+      "date": "2026-11-26",
+      "note": "Follow-up domain-restricted search added hemodynamics/clinical PCI and mathematical model-reduction references; all remain unreviewed; previous 47 records are retained."
     }
   ]
 }
