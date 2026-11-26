@@ -1,5 +1,8 @@
 # B1 首轮检索记录 · 2026-11-26 · 批次 01
 
+> **历史探索记录（非 Scholarly Corpus v1 的发现批次）：** 自 2026-11-26 用户批准[Corpus-first 全域协议](../../docs/zh/CORPUS_FIRST_PROTOCOL_V1.md)起，旧26条不自动迁移为新 Corpus 候选，不作独立覆盖或正式准入证据。新来源从零检索与审核，独立记录在 [research/corpus_v1](../corpus_v1/SEARCH_AND_COVERAGE_2026-11-26.md)。
+
+
 > **性质：初步学术发现 / metadata seed。不是完成的系统综述、正式入选文献库或完整的学术质量审核。**
 >
 > 结构化候选数据见 [candidates-2026-11-26-01.json](candidates-2026-11-26-01.json)。每条来源均标注 `admission_status=pending`、`review_level=bibliographic_discovery_only`。只有完成 B2 准入才允许转入正式 Corpus。
