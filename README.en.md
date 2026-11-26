@@ -4,7 +4,7 @@
 
 > A growing, evidence-linked knowledge graph of **ODE/PDE inverse problems, scientific ML, neural operators, coronary hemodynamics, personalized digital twins and world models**.
 
-The current design is **one three-phase research axis plus one global method-evolution DAG**. The research axis describes scientific capabilities; the DAG describes documented technical development and its targeted bottlenecks.
+**Current build principle: screen reliable papers and books first, derive and verify the knowledge structure, and then render it interactively.** The former three-phase research axis and global method-evolution DAG are reusable interface prototypes, **not a fixed scholarly ontology**.
 
 ## Evidence-first admission and rebuild (2026-11-26)
 
