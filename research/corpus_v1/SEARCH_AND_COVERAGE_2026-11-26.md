@@ -72,7 +72,7 @@
 为检验此前欠缺的**生物医学数值模型与干预规划**，补充执行了以下实际查询：
 
 - `site:pubmed.ncbi.nlm.nih.gov structured tree arterial 1d blood flow model wave propagation Olufsen 1999 2000`，回溯 [1999 结构树出流](https://pubmed.ncbi.nlm.nih.gov/9887040/) 与 [2000 数值/实验验证](https://pubmed.ncbi.nlm.nih.gov/11212947/)。
-- `site:pubmed.ncbi.nlm.nih.gov coronary patient-specific reduced-order FFR hemodynamic`，发现全循环及冠脉模型相关线索。
+- `site:pubmed.ncbi.nlm.nih.gov "coronary" "patient-specific" "reduced-order" "FFR" "hemodynamic"`，发现全循环及冠脉模型相关线索。
 - `site:pubmed.ncbi.nlm.nih.gov "virtual stenting" coronary FFR treatment planning 2014 2024`，发现 [2014 CCTA-FFR 虚拟支架研究](https://pubmed.ncbi.nlm.nih.gov/24332418/)。
 - `site:pubmed.ncbi.nlm.nih.gov coronary catheter OCT segmentation plaque geometry virtual stent 2025 journal medical image analysis`，发现 [2025 OCT 全血管分割](https://pubmed.ncbi.nlm.nih.gov/40395415/)。
 - `site:siam.org book reduced order modeling projection-based model reduction Antoulas Benner Gugercin`，补充 [参数化模型降阶理论](https://epubs.siam.org/doi/10.1137/090776925) 线索。
