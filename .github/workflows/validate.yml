@@ -22,6 +22,13 @@ jobs:
       - name: Install Graphviz and CJK fonts
         run: sudo apt-get update && sudo apt-get install -y graphviz fonts-noto-cjk
       - run: python -m pytest -q
+      - run: python -m scripts.audit_v09 --output build/audit-v09.json
+      - name: Upload methodology audit (non-canonical design report)
+        uses: actions/upload-artifact@v4
+        with:
+          name: atlas-methodology-audit-v09
+          path: build/audit-v09.json
+          if-no-files-found: error
       - run: python -m scripts.export_unified --lang zh --output build/unified-zh.json
       - run: python -m scripts.export_unified --lang en --output build/unified-en.json
       - run: python -m scripts.build_v08 --site build/viewer-v08
