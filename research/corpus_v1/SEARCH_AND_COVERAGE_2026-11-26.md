@@ -2,7 +2,7 @@
 
 > **状态：启动 / 发现性扫描，非完整检索** · **检索截止日期：2026-11-26** · **实际扫描日期：2026-11-26**
 >
-> [正式协议](../../docs/zh/CORPUS_FIRST_PROTOCOL_V1.md) | [47 条独立发现线索](discovery-leads-2026-11-26.json)
+> [正式协议](../../docs/zh/CORPUS_FIRST_PROTOCOL_V1.md) | [63 条独立发现线索](discovery-leads-2026-11-26.json)
 >
 > **本记录仅证明“部分候选已在可核查的来源页面被发现”，不证明领域完成、论文已通过质量审查、重要文献已穷尽或方法知识体系已建立。**
 
@@ -35,7 +35,7 @@
 
 ## 3. 首批跨领域发现的来源类型
 
-本次 `discovery-leads-2026-11-26.json` 记录 **47 条来源页面线索，其中 38 篇论文与综述、9 本书**。每项均包含可访问来源 URL 和最初的 M/A 检索主题标签；共31条带 DOI（其他需要在全面书目校验中补齐）。
+本次 `discovery-leads-2026-11-26.json` 记录 **63 条来源页面线索，其中 54 篇论文与综述、9 本书**。每项均包含可访问来源 URL 和最初的 M/A 检索主题标签；共45条带 DOI（其他需要在全面书目校验中补齐）。
 
 **所有47条均为 `academic_admission=pending`，且 `scientific_quality_review=not_performed`。** 标签分布只是观察到的代表性线索，不得将“每个方向有条目”理解成完成领域检索。
 
@@ -66,6 +66,20 @@
 | A6 医学数字孪生 | 循环系统综述、外周/脑血流患者特异模型 | 长期闭环同化、冠脉个体化更新、UQ及干预结局反馈 | **未完成** |
 
 每项主题后续要完成：**至少两种独立发现途径、重要经典与现代代表研究、领域权威综述/专著（如适用）、去重与质量准入、引文补查及收敛性检查**，然后才可将状态改为“达到首版基线验收”。
+
+## 4.1 第一次后续定向扩展与书目纠错
+
+为检验此前欠缺的**生物医学数值模型与干预规划**，补充执行了以下实际查询：
+
+- `site:pubmed.ncbi.nlm.nih.gov structured tree arterial 1d blood flow model wave propagation Olufsen 1999 2000`，回溯 [1999 结构树出流](https://pubmed.ncbi.nlm.nih.gov/9887040/) 与 [2000 数值/实验验证](https://pubmed.ncbi.nlm.nih.gov/11212947/)。
+- `site:pubmed.ncbi.nlm.nih.gov coronary patient-specific reduced-order FFR hemodynamic`，发现全循环及冠脉模型相关线索。
+- `site:pubmed.ncbi.nlm.nih.gov "virtual stenting" coronary FFR treatment planning 2014 2024`，发现 [2014 CCTA-FFR 虚拟支架研究](https://pubmed.ncbi.nlm.nih.gov/24332418/)。
+- `site:pubmed.ncbi.nlm.nih.gov coronary catheter OCT segmentation plaque geometry virtual stent 2025 journal medical image analysis`，发现 [2025 OCT 全血管分割](https://pubmed.ncbi.nlm.nih.gov/40395415/)。
+- `site:siam.org book reduced order modeling projection-based model reduction Antoulas Benner Gugercin`，补充 [参数化模型降阶理论](https://epubs.siam.org/doi/10.1137/090776925) 线索。
+
+这使候选总数从47增长到63。进一步核查了部分 PubMed/正式期刊元数据：其中6项更正或补齐正式**发表年份、期刊及 DOI**（如 [Blanco 等动脉网络论文](https://pubmed.ncbi.nlm.nih.gov/25347874/) 的正式见刊为 **IEEE Transactions on Biomedical Engineering 2015**，而非初步查询中误填的2014）。这些属**书目层纠错**，不表示论文已通过学术准入。
+
+新的候选分布仍不均衡，尤其**并未**完成 M1–M8、A1–A6 的全部系统检索、全文评价或覆盖饱和审计。
 
 ## 5. 下一段真正的全域检索任务
 
