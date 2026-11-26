@@ -1,0 +1,931 @@
+{
+  "corpus": "Scholarly Corpus v1",
+  "document_kind": "NON_EXHAUSTIVE_DISCOVERY_LEADS",
+  "batch_id": "2026-11-26-cross-domain-opening",
+  "discovery_date": "2026-11-26",
+  "cutoff_date": "2026-11-26",
+  "quality_policy": "docs/zh/SOURCE_ADMISSION_POLICY.md",
+  "execution_protocol": "docs/zh/CORPUS_FIRST_PROTOCOL_V1.md",
+  "all_candidates_pending": true,
+  "notes": [
+    "This batch contains only source-page-located bibliographic leads; it is NOT Corpus v1 and does not establish comprehensive search coverage.",
+    "All quality and publication integrity assessments still must be performed.",
+    "The 26 earlier B1 experimental leads are NOT auto-migrated. Duplicates with earlier efforts are immaterial to corpus identity.",
+    "Source dates, DOIs, and publication versions are provisional until complete standardized deduplication/review.",
+    "No knowledge graph, ontology, method classification, or genealogical relationship is inferred from candidate tags."
+  ],
+  "candidates": [
+    {
+      "candidate_id": "CV1-001",
+      "kind": "book",
+      "title": "Regularization of Inverse Problems",
+      "year": 1996,
+      "venue": "Kluwer / Springer",
+      "source_url": "https://link.springer.com/book/9780792341574",
+      "method_search_tags": [
+        "M2"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "传统正则化专著及经典理论引文入口；新版/再版年份待归一",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-002",
+      "kind": "book",
+      "title": "An Introduction to the Mathematical Theory of Inverse Problems",
+      "year": 2021,
+      "venue": "Springer",
+      "source_url": "https://link.springer.com/book/10.1007/978-3-030-63343-1",
+      "doi": "10.1007/978-3-030-63343-1",
+      "method_search_tags": [
+        "M2"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "现代逆问题教材；需定位初版历史与具体理论章节",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-003",
+      "kind": "book",
+      "title": "Numerical Optimization",
+      "year": 2006,
+      "venue": "Springer (2nd edition)",
+      "source_url": "https://link.springer.com/book/10.1007/978-0-387-40065-5",
+      "doi": "10.1007/978-0-387-40065-5",
+      "method_search_tags": [
+        "M2",
+        "M1"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "传统与现代数值优化算法体系、约束条件和理论基础",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-004",
+      "kind": "book",
+      "title": "Finite Volume Methods for Hyperbolic Problems",
+      "year": 2002,
+      "venue": "Cambridge University Press",
+      "source_url": "https://www.cambridge.org/core/books/finite-volume-methods-for-hyperbolic-problems/97D5D1ACB1926DA1D4D52EAD6909E2B9",
+      "doi": "10.1017/CBO9780511791253",
+      "method_search_tags": [
+        "M1"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "FVM 与双曲守恒律的数值分析；区分初版和数字版日期",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-005",
+      "kind": "book",
+      "title": "Statistical and Computational Inverse Problems",
+      "year": 2005,
+      "venue": "Springer",
+      "source_url": "https://link.springer.com/book/10.1007/b138659",
+      "doi": "10.1007/b138659",
+      "method_search_tags": [
+        "M2",
+        "M3"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "统计反问题和贝叶斯逆问题权威理论/实例参考",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-006",
+      "kind": "book",
+      "title": "Bayesian Filtering and Smoothing (2nd edition)",
+      "year": 2023,
+      "venue": "Cambridge University Press",
+      "source_url": "https://www.cambridge.org/core/books/bayesian-filtering-and-smoothing/F88740E8D25010CF3119A5CA379FA37A",
+      "doi": "10.1017/9781108917407",
+      "method_search_tags": [
+        "M3",
+        "M4"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "状态空间模型、滤波平滑及参数推断，第二版按版本核对",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-007",
+      "kind": "book",
+      "title": "Data Assimilation: Methods, Algorithms, and Applications",
+      "year": 2016,
+      "venue": "SIAM",
+      "source_url": "https://epubs.siam.org/doi/10.1137/1.9781611974546.ch1",
+      "doi": "10.1137/1.9781611974546",
+      "method_search_tags": [
+        "M2",
+        "M3",
+        "M4"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "变分与序贯数据同化/逆问题；正式出版2016，线上章节2017",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-008",
+      "kind": "book",
+      "title": "Linear and Nonlinear Inverse Problems with Practical Applications",
+      "year": 2012,
+      "venue": "SIAM",
+      "source_url": "https://epubs.siam.org/doi/10.1137/1.9781611972344",
+      "doi": "10.1137/1.9781611972344",
+      "method_search_tags": [
+        "M1",
+        "M2"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "线性非线性逆问题专著，含SVD/正则化等章节",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-009",
+      "kind": "book",
+      "title": "Computational Methods for Inverse Problems",
+      "year": 2002,
+      "venue": "SIAM",
+      "source_url": "https://epubs.siam.org/doi/book/10.1137/1.9780898717570",
+      "doi": "10.1137/1.9780898717570",
+      "method_search_tags": [
+        "M1",
+        "M2"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "计算反问题教材，需核验出版年份、作者与章节版本",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-010",
+      "kind": "paper",
+      "title": "Statistical Regularization of Inverse Problems",
+      "year": 2001,
+      "venue": "SIAM Review",
+      "source_url": "https://epubs.siam.org/doi/10.1137/S0036144500358232",
+      "doi": "10.1137/S0036144500358232",
+      "method_search_tags": [
+        "M2",
+        "M3"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "统计正则化基础综述与引文网络",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-011",
+      "kind": "paper",
+      "title": "Optimal a Posteriori Parameter Choice for Tikhonov Regularization for Solving Nonlinear Ill-Posed Problems",
+      "year": 1993,
+      "venue": "SIAM Journal on Numerical Analysis",
+      "source_url": "https://epubs.siam.org/doi/10.1137/0730091",
+      "doi": "10.1137/0730091",
+      "method_search_tags": [
+        "M2"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "非线性病态反问题的参数选择及稳定性理论",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-012",
+      "kind": "paper",
+      "title": "On the Choice of the Regularization Parameter in Nonlinear Inverse Problems",
+      "year": 1992,
+      "venue": "SIAM Journal on Optimization",
+      "source_url": "https://epubs.siam.org/doi/10.1137/0802019",
+      "doi": "10.1137/0802019",
+      "method_search_tags": [
+        "M2"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "非线性反问题的正则化参数选择与优化算法",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-013",
+      "kind": "paper",
+      "title": "Regularization Based on All-At-Once Formulations for Inverse Problems",
+      "year": 2017,
+      "venue": "SIAM Journal on Numerical Analysis",
+      "source_url": "https://epubs.siam.org/doi/10.1137/16M1060984",
+      "doi": "10.1137/16M1060984",
+      "method_search_tags": [
+        "M1",
+        "M2"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "约束消元与 all-at-once 反问题构造的理论对照",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-014",
+      "kind": "paper",
+      "title": "Sequential Neural Score Estimation: Likelihood-Free Inference with Conditional Score Based Diffusion Models",
+      "year": 2024,
+      "venue": "ICML (PMLR 235)",
+      "source_url": "https://proceedings.mlr.press/v235/sharrock24a.html",
+      "method_search_tags": [
+        "M3",
+        "M6"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "SBI 与条件扩散/后验 score 建模的交叉论文",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-015",
+      "kind": "paper",
+      "title": "All-in-one simulation-based inference",
+      "year": 2024,
+      "venue": "ICML (PMLR 235)",
+      "source_url": "https://proceedings.mlr.press/v235/gloeckler24a.html",
+      "method_search_tags": [
+        "M3",
+        "M6"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Simformer，SBI中灵活条件分布与功能参数后验的论文",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-016",
+      "kind": "paper",
+      "title": "Automatic Posterior Transformation for Likelihood-Free Inference",
+      "year": 2019,
+      "venue": "ICML (PMLR 97)",
+      "source_url": "https://proceedings.mlr.press/v97/greenberg19a",
+      "method_search_tags": [
+        "M3"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "SBI中序贯后验推断与提案分布调整",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-017",
+      "kind": "paper",
+      "title": "Benchmarking Simulation-Based Inference",
+      "year": 2021,
+      "venue": "AISTATS (PMLR 130)",
+      "source_url": "https://proceedings.mlr.press/v130/lueckmann21a",
+      "method_search_tags": [
+        "M3"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "SBI比较实验、评价指标及独立基准",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-018",
+      "kind": "paper",
+      "title": "Neural Operator: Learning Maps Between Function Spaces With Applications to PDEs",
+      "year": 2023,
+      "venue": "Journal of Machine Learning Research",
+      "source_url": "https://www.jmlr.org/papers/v24/21-1524.html",
+      "method_search_tags": [
+        "M1",
+        "M5"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "神经算子函数空间理论与多种参数化范式",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-019",
+      "kind": "paper",
+      "title": "Learning nonlinear operators via DeepONet based on the universal approximation theorem of operators",
+      "year": 2021,
+      "venue": "Nature Machine Intelligence",
+      "source_url": "https://www.nature.com/articles/s42256-021-00302-5",
+      "doi": "10.1038/s42256-021-00302-5",
+      "method_search_tags": [
+        "M1",
+        "M5"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "DeepONet 的理论与神经网络结构；后续审核原始贡献",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-020",
+      "kind": "paper",
+      "title": "Learning to Simulate Complex Physics with Graph Networks",
+      "year": 2020,
+      "venue": "ICML (PMLR 119)",
+      "source_url": "https://proceedings.mlr.press/v119/sanchez-gonzalez20a.html",
+      "method_search_tags": [
+        "M4",
+        "M5"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "粒子图网络物理动力学学习与长期 rollout",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-021",
+      "kind": "paper",
+      "title": "Denoising Diffusion Probabilistic Models",
+      "year": 2020,
+      "venue": "NeurIPS",
+      "source_url": "https://proceedings.neurips.cc/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html",
+      "method_search_tags": [
+        "M6"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "扩散生成模型的重要原始工作，需回溯更早源流",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-022",
+      "kind": "paper",
+      "title": "Denoising Diffusion Restoration Models",
+      "year": 2022,
+      "venue": "NeurIPS",
+      "source_url": "https://openreview.net/pdf/d5d2e8046bc91d6eba6c0ab08f41f53e6946dc81.pdf",
+      "method_search_tags": [
+        "M3",
+        "M6",
+        "M8"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "线性逆问题中的扩散先验和后验采样；正式论文版本待核查",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-023",
+      "kind": "paper",
+      "title": "A Variational Perspective on Solving Inverse Problems with Diffusion Models",
+      "year": 2024,
+      "venue": "ICLR",
+      "source_url": "https://openreview.net/pdf?id=1YO4EE3SPB",
+      "method_search_tags": [
+        "M3",
+        "M6",
+        "M8"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "扩散生成式反问题与变分构造；需核查正则性和近似保证",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-024",
+      "kind": "paper",
+      "title": "Conservative Q-Learning for Offline Reinforcement Learning",
+      "year": 2020,
+      "venue": "NeurIPS",
+      "source_url": "https://proceedings.neurips.cc/paper_files/paper/2020/file/0d2b2061826a5df3221116a5085a6052-Paper.pdf",
+      "method_search_tags": [
+        "M7"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "离线RL中保守价值学习与分布外动作控制",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-025",
+      "kind": "paper",
+      "title": "Continual Reinforcement Learning by Planning with Online World Models",
+      "year": 2025,
+      "venue": "ICML (PMLR 267)",
+      "source_url": "https://proceedings.mlr.press/v267/liu25p.html",
+      "method_search_tags": [
+        "M7"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "在线世界模型与规划在持续学习中的作用",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-026",
+      "kind": "paper",
+      "title": "Long-Horizon Model-Based Offline Reinforcement Learning Without Explicit Conservatism",
+      "year": 2026,
+      "venue": "ICML (PMLR 306)",
+      "source_url": "https://proceedings.mlr.press/v306/ni26a.html",
+      "method_search_tags": [
+        "M3",
+        "M7"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "Bayesian world model 与长时域离线RL的研究，需细审结论边界",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-027",
+      "kind": "paper",
+      "title": "Continuous-Time Modeling of Counterfactual Outcomes Using Neural Controlled Differential Equations",
+      "year": 2022,
+      "venue": "ICML (PMLR 162)",
+      "source_url": "https://proceedings.mlr.press/v162/seedat22b.html",
+      "method_search_tags": [
+        "M4",
+        "M7"
+      ],
+      "biomedical_application_tags": [
+        "A6"
+      ],
+      "discovery_reason": "连续时间潜在状态与医疗反事实方法，特定模拟实验非冠脉验证",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-028",
+      "kind": "paper",
+      "title": "Efficient Neural Controlled Differential Equations via Attentive Kernel Smoothing",
+      "year": 2026,
+      "venue": "ICML (PMLR 306)",
+      "source_url": "https://proceedings.mlr.press/v306/serov26a.html",
+      "method_search_tags": [
+        "M4",
+        "M7"
+      ],
+      "biomedical_application_tags": [],
+      "discovery_reason": "不规则时间序列动态建模和计算效率",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-029",
+      "kind": "paper",
+      "title": "Angiographic quantitative flow ratio-guided coronary intervention (FAVOR III China): a multicentre, randomised, sham-controlled trial",
+      "year": 2021,
+      "venue": "The Lancet",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/34742368/",
+      "doi": "10.1016/S0140-6736(21)02248-0",
+      "method_search_tags": [],
+      "biomedical_application_tags": [
+        "A3",
+        "A5"
+      ],
+      "discovery_reason": "QFR临床干预证据；不当作AI算法原创论文",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-030",
+      "kind": "paper",
+      "title": "Addition of Computed Tomography-Derived Fractional Flow Reserve in the Diagnostic Pathway of Patients With Stable Coronary Artery Disease: The FUSION Randomized Controlled Trial",
+      "year": 2026,
+      "venue": "Journal of the American College of Cardiology",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42670732/",
+      "doi": "10.1016/j.jacc.2026.08.036",
+      "method_search_tags": [],
+      "biomedical_application_tags": [
+        "A1",
+        "A3",
+        "A5"
+      ],
+      "discovery_reason": "FFRct在临床诊断决策链中的随机试验证据",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-031",
+      "kind": "paper",
+      "title": "Angiography-Derived Fractional Flow Reserve to Guide PCI",
+      "year": 2026,
+      "venue": "New England Journal of Medicine",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41910384/",
+      "doi": "10.1056/NEJMoa2600949",
+      "method_search_tags": [],
+      "biomedical_application_tags": [
+        "A3",
+        "A5"
+      ],
+      "discovery_reason": "介入FFR指导策略的临床RCT与结局证据",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-032",
+      "kind": "paper",
+      "title": "Angiography-Derived vs Wire-Based Fractional Flow Reserve to Guide Revascularization: The Randomized LIPSIA-STRATEGY Trial",
+      "year": 2026,
+      "venue": "Journal of the American College of Cardiology",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43033171/",
+      "method_search_tags": [],
+      "biomedical_application_tags": [
+        "A3",
+        "A5"
+      ],
+      "discovery_reason": "血管造影与导丝FFR指导血运重建临床随机比较",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-033",
+      "kind": "paper",
+      "title": "CT-derived fractional flow reserve for anatomically long-segment coronary disease: a multicentre diagnostic accuracy study",
+      "year": 2026,
+      "venue": "European Radiology",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42982907/",
+      "doi": "10.1007/s00330-026-13011-7",
+      "method_search_tags": [],
+      "biomedical_application_tags": [
+        "A1",
+        "A3",
+        "A4"
+      ],
+      "discovery_reason": "真实患者 CT-FFR 病变形态分层，注意探索性分析与外推",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-034",
+      "kind": "paper",
+      "title": "Digital twins and digital models of the human circulatory system",
+      "year": 2026,
+      "venue": "Nature Reviews Bioengineering",
+      "source_url": "https://www.nature.com/articles/s44222-026-00427-5",
+      "doi": "10.1038/s44222-026-00427-5",
+      "method_search_tags": [
+        "M4",
+        "M5"
+      ],
+      "biomedical_application_tags": [
+        "A2",
+        "A6"
+      ],
+      "discovery_reason": "循环系统数字孪生方法与临床转化的权威综述入口",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-035",
+      "kind": "paper",
+      "title": "A physics-informed peripheral hemodynamic digital twin for personalized estimation of arterial stiffness",
+      "year": 2026,
+      "venue": "npj Digital Medicine",
+      "source_url": "https://www.nature.com/articles/s41746-026-03431-6",
+      "doi": "10.1038/s41746-026-03431-6",
+      "method_search_tags": [
+        "M1",
+        "M2",
+        "M5"
+      ],
+      "biomedical_application_tags": [
+        "A2",
+        "A3",
+        "A6"
+      ],
+      "discovery_reason": "外围动脉患者特异参数推断及盲测验证；非冠脉应用",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-036",
+      "kind": "paper",
+      "title": "Cardiovascular digital twins using a Windkessel physics informed neural network",
+      "year": 2026,
+      "venue": "npj Digital Medicine",
+      "source_url": "https://www.nature.com/articles/s41746-026-02610-9",
+      "doi": "10.1038/s41746-026-02610-9",
+      "method_search_tags": [
+        "M1",
+        "M2",
+        "M5"
+      ],
+      "biomedical_application_tags": [
+        "A2",
+        "A4",
+        "A6"
+      ],
+      "discovery_reason": "Windkessel + PINN 个体化血压模型；验证质量待核查",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-037",
+      "kind": "paper",
+      "title": "Towards a physics informed digital twin to predict cerebral blood flow and cerebral vascular regulation",
+      "year": 2026,
+      "venue": "npj Digital Medicine",
+      "source_url": "https://www.nature.com/articles/s41746-026-02600-x",
+      "doi": "10.1038/s41746-026-02600-x",
+      "method_search_tags": [
+        "M2",
+        "M4"
+      ],
+      "biomedical_application_tags": [
+        "A2",
+        "A6"
+      ],
+      "discovery_reason": "脑血流动态隐状态与数字孪生；跨系统迁移不等于冠脉临床证据",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-038",
+      "kind": "paper",
+      "title": "Topology-oriented foreground focusing network for semi-supervised coronary artery segmentation",
+      "year": 2025,
+      "venue": "Medical Image Analysis",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S1361841525000131",
+      "doi": "10.1016/j.media.2025.103465",
+      "method_search_tags": [
+        "M8"
+      ],
+      "biomedical_application_tags": [
+        "A1",
+        "A4"
+      ],
+      "discovery_reason": "CCTA分割拓扑与半监督工程方法",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-039",
+      "kind": "paper",
+      "title": "Deep learning based coronary vessels segmentation in X-ray angiography using temporal information",
+      "year": 2025,
+      "venue": "Medical Image Analysis",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S1361841525000441",
+      "doi": "10.1016/j.media.2025.103496",
+      "method_search_tags": [
+        "M8",
+        "M4"
+      ],
+      "biomedical_application_tags": [
+        "A1",
+        "A4"
+      ],
+      "discovery_reason": "DSA/ICA时间信息、血管连通性与OOD测试",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-040",
+      "kind": "paper",
+      "title": "A topology-preserving three-stage framework for fully-connected coronary artery extraction",
+      "year": 2025,
+      "venue": "Medical Image Analysis",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S1361841525001252",
+      "doi": "10.1016/j.media.2025.103578",
+      "method_search_tags": [
+        "M8"
+      ],
+      "biomedical_application_tags": [
+        "A1",
+        "A4"
+      ],
+      "discovery_reason": "冠脉拓扑完整性/隐式表示分割，需核查基线和外部验证",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-041",
+      "kind": "paper",
+      "title": "An Integrated Approach for Simultaneous Calibration and 3-D Coronary Artery Centerline Reconstruction From Two Non-Simultaneous Angiographic Images",
+      "year": 2025,
+      "venue": "IEEE Transactions on Medical Imaging",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40540370/",
+      "doi": "10.1109/TMI.2025.3582168",
+      "method_search_tags": [
+        "M8"
+      ],
+      "biomedical_application_tags": [
+        "A1"
+      ],
+      "discovery_reason": "多视角不同时相的几何校准与重建方法",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-042",
+      "kind": "paper",
+      "title": "Leveraging Diffusion Model and Image Foundation Model for Improved Correspondence Matching in Coronary Angiography",
+      "year": 2026,
+      "venue": "IEEE Transactions on Medical Imaging",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41115088/",
+      "doi": "10.1109/TMI.2025.3623507",
+      "method_search_tags": [
+        "M6",
+        "M8"
+      ],
+      "biomedical_application_tags": [
+        "A1",
+        "A4"
+      ],
+      "discovery_reason": "扩散和视觉基础模型辅助造影配准；方法与验证待审",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-043",
+      "kind": "paper",
+      "title": "Fully automated IVUS image segmentation with efficient deep-learning-assisted annotation",
+      "year": 2025,
+      "venue": "Computers in Biology and Medicine",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41248587/",
+      "doi": "10.1016/j.compbiomed.2025.111312",
+      "method_search_tags": [
+        "M8"
+      ],
+      "biomedical_application_tags": [
+        "A1",
+        "A4"
+      ],
+      "discovery_reason": "IVUS分割与标注效率及患者数据评价",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-044",
+      "kind": "paper",
+      "title": "ACE-ProtoNet: Adaptive covariance eigen-gate and uncertainty-aware prototype learning for coronary artery segmentation",
+      "year": 2026,
+      "venue": "Medical Image Analysis",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S136184152600109X",
+      "doi": "10.1016/j.media.2026.104040",
+      "method_search_tags": [
+        "M3",
+        "M8"
+      ],
+      "biomedical_application_tags": [
+        "A1",
+        "A4"
+      ],
+      "discovery_reason": "CCTA分割与不确定性/原型学习；需要审核方法贡献",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-045",
+      "kind": "paper",
+      "title": "Deep learning techniques for automated coronary artery segmentation and coronary artery disease detection: A systematic review of the last decade (2013-2024)",
+      "year": 2025,
+      "venue": "Computer Methods and Programs in Biomedicine",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S0169260725002755",
+      "doi": "10.1016/j.cmpb.2025.108858",
+      "method_search_tags": [
+        "M8"
+      ],
+      "biomedical_application_tags": [
+        "A1",
+        "A4"
+      ],
+      "discovery_reason": "冠脉影像综述与原始方法文献追踪入口",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-046",
+      "kind": "paper",
+      "title": "DARCS: Memory-Efficient Deep Compressed Sensing Reconstruction for Acceleration of 3D Whole-Heart Coronary MR Angiography",
+      "year": 2025,
+      "venue": "IEEE Transactions on Medical Imaging",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/40030771/",
+      "doi": "10.1109/TMI.2024.3524717",
+      "method_search_tags": [
+        "M8"
+      ],
+      "biomedical_application_tags": [
+        "A1",
+        "A4"
+      ],
+      "discovery_reason": "冠脉MR三维重建与深度展开的内存瓶颈",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    },
+    {
+      "candidate_id": "CV1-047",
+      "kind": "paper",
+      "title": "A survey on deep learning in medical image analysis",
+      "year": 2017,
+      "venue": "Medical Image Analysis",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/28778026/",
+      "doi": "10.1016/j.media.2017.07.005",
+      "method_search_tags": [
+        "M8"
+      ],
+      "biomedical_application_tags": [
+        "A1",
+        "A4"
+      ],
+      "discovery_reason": "医学AI方法发展和参考文献追溯的综述入口",
+      "academic_admission": "pending",
+      "bibliographic_review": "source_page_located",
+      "scientific_quality_review": "not_performed",
+      "retraction_and_correction_check": "not_performed"
+    }
+  ]
+}
