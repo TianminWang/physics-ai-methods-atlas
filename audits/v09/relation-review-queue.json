@@ -1,0 +1,80 @@
+{
+  "version": "0.9.0-review-queue",
+  "status": "NOT_VERIFIED_NO_CANONICAL_RELATION_MUTATION",
+  "policy": "These are semantic questions, not declarations that published edges are incorrect; inspect primary scholarly sources before any migration.",
+  "candidates": [
+    {
+      "id": "relation.method-flow-matching--extends--method-normalizing-flow",
+      "priority": "high",
+      "issue": "FM is primarily a training objective for continuous normalizing flows rather than a descendant of the entire normalizing-flow model family.",
+      "candidate_relation": "training_strategy_for",
+      "source_url": "https://openreview.net/pdf?id=PqvMRDCJT9t",
+      "review_requirement": "Check conditional probability paths and CNF class in Lipman et al. (ICLR 2023)."
+    },
+    {
+      "id": "relation.method-score-based-sde--extends--method-diffusion-probabilistic-model",
+      "priority": "high",
+      "issue": "Song et al. present a continuous-time unifying framework encapsulating prior score/diffusion modeling; simple successor history may misrepresent the conceptual relation.",
+      "candidate_relation": "unifies_or_generalizes",
+      "source_url": "https://mlanthology.org/iclr/2021/song2021iclr-scorebased/",
+      "review_requirement": "Read the abstract/introduction and separate temporal scientific influence from equivalence/unification."
+    },
+    {
+      "id": "relation.method-variational-autoencoder--combines--method-variational-inference",
+      "priority": "high",
+      "issue": "VAE uses amortized variational inference as a training/inference mechanism. A symmetric-looking hybrid genealogy edge may obscure the relation between model architecture and inference procedure.",
+      "candidate_relation": "uses_inference_strategy",
+      "source_url": "https://mlanthology.org/iclr/2014/kingma2014iclr-auto/",
+      "review_requirement": "Read original ELBO, encoder, decoder and stochastic gradient sections."
+    },
+    {
+      "id": "relation.ensemble-kalman-inversion--extends--ensemble-kalman-filter",
+      "priority": "medium",
+      "issue": "Kalman-style ensemble updates are adapted to inversion, but EKI and filtering solve different inferential tasks. Check historic direct descent and exact formulation.",
+      "candidate_relation": "adapts_algorithm_from",
+      "review_requirement": "Check Iglesias et al. (2013) and earlier filtering literature before changing type."
+    },
+    {
+      "id": "relation.pino--combines--pinn",
+      "priority": "medium",
+      "issue": "Physics residual losses used in PINO derive from a broader physics-informed training principle, not necessarily the full PINN algorithm as a fused component.",
+      "candidate_relation": "adopts_training_principle_from",
+      "review_requirement": "Identify specifically inherited loss/supervision components in PINO paper."
+    },
+    {
+      "id": "relation.physics-informed-deeponet--combines--pinn",
+      "priority": "medium",
+      "issue": "Physics-informed operator loss may be a mechanism shared with PINNs, not integration of both full model architectures.",
+      "candidate_relation": "adopts_training_principle_from",
+      "review_requirement": "Check original PI-DeepONet training objective."
+    },
+    {
+      "id": "relation.direct-inverse-operator--combines--pinn",
+      "priority": "medium",
+      "issue": "Direct inverse operator uses physics constraints; need to distinguish physical consistency loss from PINN architectural composition.",
+      "candidate_relation": "adopts_training_principle_from",
+      "review_requirement": "Review primary PI-DION paper and clarify which mechanism is transferred."
+    },
+    {
+      "id": "relation.method-diffusion-posterior-sampling--extends--method-score-based-sde",
+      "priority": "medium",
+      "issue": "Extension is plausible as application of guided score sampling, but should record approximate posterior nature and observation-guidance assumptions, not unconditional exact Bayes inference.",
+      "candidate_relation": "extends_or_applies_to_inverse",
+      "review_requirement": "Check Chung et al. (ICLR 2023) and exact sampling guarantees; avoid any clinical effectiveness inference."
+    },
+    {
+      "id": "relation.method-dreamer-latent-imagination--extends--method-planet-latent-planning",
+      "priority": "low",
+      "issue": "Plausible direct methodological development, but the displayed edge should not imply validated clinical intervention planning.",
+      "candidate_relation": "extends",
+      "review_requirement": "Preserve distinction between control environments and coronary virtual PCI."
+    },
+    {
+      "id": "relation.levenberg-marquardt--extends--gauss-newton",
+      "priority": "low",
+      "issue": "Damped Gauss–Newton relation is defensible; historic sources and the distinction between regularization damping and modern trust-region variants should be clearly described.",
+      "candidate_relation": "extends",
+      "review_requirement": "Separate Levenberg/Marquardt contributions and mathematical variants."
+    }
+  ]
+}
