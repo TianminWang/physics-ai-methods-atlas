@@ -1,0 +1,936 @@
+{
+  "kind": "INDEX_COVERAGE_AUDIT_NOT_ACADEMIC_ADMISSION",
+  "generated_at": "2026-11-27T02:33:55.643048+00:00",
+  "retrieval_cutoff": "2026-11-26",
+  "total_queries": 618,
+  "query_counts_by_engine": {
+    "crossref": {
+      "ok": 251,
+      "capped_first_page": 251,
+      "error": 219
+    },
+    "europepmc": {
+      "ok": 120,
+      "capped_first_page": 43
+    },
+    "openalex": {
+      "ok": 28,
+      "capped_first_page": 22
+    }
+  },
+  "query_counts_by_facet": {
+    "A1": {
+      "ok": 37,
+      "error": 15
+    },
+    "A2": {
+      "ok": 41,
+      "error": 11
+    },
+    "A3": {
+      "ok": 42,
+      "error": 10
+    },
+    "A4": {
+      "error": 12,
+      "ok": 40
+    },
+    "A5": {
+      "error": 14,
+      "ok": 38
+    },
+    "A6": {
+      "error": 14,
+      "ok": 38
+    },
+    "BOOK": {
+      "error": 25,
+      "ok": 25
+    },
+    "M1": {
+      "ok": 16,
+      "error": 16
+    },
+    "M2": {
+      "ok": 17,
+      "error": 15
+    },
+    "M3": {
+      "ok": 19,
+      "error": 13
+    },
+    "M4": {
+      "error": 17,
+      "ok": 15
+    },
+    "M5": {
+      "error": 13,
+      "ok": 19
+    },
+    "M6": {
+      "ok": 18,
+      "error": 14
+    },
+    "M7": {
+      "error": 15,
+      "ok": 17
+    },
+    "M8": {
+      "error": 15,
+      "ok": 17
+    }
+  },
+  "query_counts_by_era": {
+    "None": {
+      "error": 25,
+      "ok": 53
+    },
+    "classic": {
+      "ok": 82,
+      "error": 58
+    },
+    "historic": {
+      "ok": 60
+    },
+    "modern": {
+      "error": 68,
+      "ok": 72
+    },
+    "recent": {
+      "ok": 132,
+      "error": 68
+    }
+  },
+  "query_error_reasons": [
+    {
+      "engine": "crossref",
+      "error_type": "429",
+      "count": 219
+    }
+  ],
+  "actual_retrieved_items": 15506,
+  "unique_indexed_records": 13149,
+  "records_with_doi": 12922,
+  "work_type_distribution": {
+    "journal-article": 4464,
+    "book-chapter": 1583,
+    "proceedings-article": 1143,
+    "journal article": 702,
+    "book": 648,
+    "research-article; journal article": 541,
+    "article": 448,
+    "monograph": 444,
+    "preprint": 294,
+    "research support, non-u.s. gov't; journal article": 286,
+    "review; journal article": 219,
+    "review-article; review; journal article": 198,
+    "posted-content": 175,
+    "conference-paper": 152,
+    "other": 134,
+    "research support, non-u.s. gov't; research-article; journal article": 91,
+    "comparative study; journal article": 81,
+    "dissertation": 66,
+    "journal article; case reports": 62,
+    "journal article; case reports; case-report": 62,
+    "report": 55,
+    "edited-book": 51,
+    "comparative study; research support, non-u.s. gov't; journal article": 43,
+    "research support, non-u.s. gov't; review; journal article": 39,
+    "reference-entry": 31,
+    "research-article; journal article; research support, n.i.h., extramural": 30,
+    "dataset": 29,
+    "patent": 27,
+    "letter": 26,
+    "validation study; journal article": 25,
+    "research support, non-u.s. gov't; research-article; journal article; research support, n.i.h., extramural": 24,
+    "review": 22,
+    "research-article; review; journal article": 20,
+    "brief-report; journal article": 19,
+    "conference-abstract": 19,
+    "editorial": 18,
+    "multicenter study; journal article": 18,
+    "research support, non-u.s. gov't; validation study; journal article": 18,
+    "research-article; validation study; journal article": 17,
+    "journal article; english abstract": 16,
+    "review; journal article; english abstract": 16,
+    "comparative study; research-article; journal article": 14,
+    "evaluation study; journal article": 14,
+    "multicenter study; randomized controlled trial; journal article": 14,
+    "research support, non-u.s. gov't; research support, u.s. gov't, non-p.h.s.; journal article": 14,
+    "journal article; observational study": 13,
+    "randomized controlled trial; journal article": 13,
+    "comparative study; evaluation study; journal article": 12,
+    "research support, non-u.s. gov't; multicenter study; journal article": 11,
+    "review-article; journal article": 11,
+    "comparative study; multicenter study; randomized controlled trial; journal article": 10,
+    "letter; case reports": 10,
+    "research support, non-u.s. gov't; research-article; validation study; journal article": 10,
+    "systematic review; journal article": 10,
+    "comparative study; randomized controlled trial; journal article": 9,
+    "clinical trial; journal article": 8,
+    "clinical trial; research support, non-u.s. gov't; journal article": 8,
+    "comment; editorial": 8,
+    "comparative study; research support, non-u.s. gov't; research-article; journal article": 8,
+    "research support, non-u.s. gov't; journal article; case reports": 8,
+    "research support, u.s. gov't, non-p.h.s.; journal article": 8,
+    "research-article; journal article; english abstract": 8,
+    "abstract": 7,
+    "comparative study; research support, non-u.s. gov't; randomized controlled trial; journal article": 7,
+    "journal article; research support, n.i.h., extramural": 7,
+    "letter; comment": 7,
+    "meta-analysis; systematic review; journal article": 7,
+    "other; journal article": 7,
+    "reference-book": 7,
+    "research support, non-u.s. gov't; journal article; research support, n.i.h., extramural": 7,
+    "research-article; journal article; observational study": 7,
+    "research-article; multicenter study; journal article": 7,
+    "research-article; multicenter study; journal article; observational study": 7,
+    "comparative study; research support, non-u.s. gov't; multicenter study; journal article": 6,
+    "comparative study; research support, non-u.s. gov't; multicenter study; randomized controlled trial; journal article": 6,
+    "peer-review": 6,
+    "research support, non-u.s. gov't; evaluation study; journal article": 6,
+    "research support, non-u.s. gov't; multicenter study; randomized controlled trial; journal article": 6,
+    "research support, non-u.s. gov't; research-article; journal article; observational study": 6,
+    "research support, u.s. gov't, p.h.s.; research support, non-u.s. gov't; journal article": 6,
+    "video-audio media; research support, non-u.s. gov't; journal article": 6,
+    "comparative study; equivalence trial; multicenter study; randomized controlled trial; journal article": 5,
+    "comparative study; research support, non-u.s. gov't; evaluation study; journal article": 5,
+    "comparative study; review; journal article": 5,
+    "journal article; case-report": 5,
+    "multicenter study; journal article; observational study": 5,
+    "proceedings": 5,
+    "research support, non-u.s. gov't; multicenter study; journal article; observational study": 5,
+    "research support, non-u.s. gov't; research-article; research support, u.s. gov't, non-p.h.s.; journal article; research support, n.i.h., extramural": 5,
+    "research support, u.s. gov't, p.h.s.; journal article": 5,
+    "research-article; evaluation study; journal article": 5,
+    "research-article; multicenter study; randomized controlled trial; journal article": 5,
+    "research-article; randomized controlled trial; journal article": 5,
+    "research-article; research support, u.s. gov't, non-p.h.s.; journal article; research support, n.i.h., extramural": 5,
+    "research-article; review; journal article; research support, n.i.h., extramural": 5,
+    "validation study; multicenter study; journal article": 5,
+    "book-part": 4,
+    "clinical trial protocol; research-article; journal article": 4,
+    "clinical trial; multicenter study; journal article": 4,
+    "clinical trial; research support, non-u.s. gov't; research-article; journal article; research support, n.i.h., extramural": 4,
+    "comment; journal article": 4,
+    "comparative study; multicenter study; journal article": 4,
+    "comparative study; research support, non-u.s. gov't; research-article; journal article; research support, n.i.h., extramural": 4,
+    "comparative study; research-article; journal article; research support, n.i.h., extramural": 4,
+    "comparative study; research-article; multicenter study; randomized controlled trial; journal article": 4,
+    "comparative study; research-article; randomized controlled trial; journal article": 4,
+    "comparative study; validation study; journal article": 4,
+    "meta-analysis; journal article": 4,
+    "practice guideline; journal article": 4,
+    "research support, non-u.s. gov't; journal article; observational study": 4,
+    "research support, non-u.s. gov't; randomized controlled trial; journal article": 4,
+    "research support, non-u.s. gov't; review-article; review; journal article": 4,
+    "study guide": 4,
+    "case-study; journal article": 3,
+    "clinical trial protocol; journal article": 3,
+    "clinical trial; research-article; journal article": 3,
+    "comparative study; clinical trial; journal article": 3,
+    "comparative study; research support, non-u.s. gov't; research-article; multicenter study; randomized controlled trial; journal article": 3,
+    "comparative study; research support, u.s. gov't, p.h.s.; research support, non-u.s. gov't; journal article": 3,
+    "comparative study; research-article; validation study; journal article": 3,
+    "controlled clinical trial; journal article": 3,
+    "meta-analysis; review; journal article": 3,
+    "research support, non-u.s. gov't; research-article; multicenter study; journal article; observational study": 3,
+    "research support, non-u.s. gov't; research-article; research support, u.s. gov't, non-p.h.s.; journal article": 3,
+    "research support, non-u.s. gov't; research-article; review; journal article; research support, n.i.h., extramural": 3,
+    "research support, non-u.s. gov't; research-article; validation study; journal article; research support, n.i.h., extramural": 3,
+    "research support, non-u.s. gov't; validation study; evaluation study; journal article": 3,
+    "research-article; journal article; case reports": 3,
+    "review; journal article; case reports": 3,
+    "software": 3,
+    "systematic review; systematic-review; journal article": 3,
+    "video-audio media; journal article": 3,
+    "video-audio media; journal article; case reports": 3,
+    "clinical trial protocol; research support, non-u.s. gov't; research-article; journal article": 2,
+    "clinical trial; research support, non-u.s. gov't; multicenter study; journal article": 2,
+    "clinical trial; research support, non-u.s. gov't; research-article; journal article": 2,
+    "clinical trial; research support, non-u.s. gov't; research-article; multicenter study; journal article": 2,
+    "clinical trial; research support, non-u.s. gov't; validation study; journal article": 2,
+    "comment; research support, non-u.s. gov't; editorial": 2,
+    "comparative study; clinical trial; research support, non-u.s. gov't; multicenter study; journal article": 2,
+    "comparative study; journal article; english abstract": 2,
+    "comparative study; research support, non-u.s. gov't; evaluation study; journal article; research support, n.i.h., extramural": 2,
+    "comparative study; research support, non-u.s. gov't; journal article; observational study": 2,
+    "comparative study; research support, non-u.s. gov't; journal article; research support, n.i.h., extramural": 2,
+    "comparative study; research support, non-u.s. gov't; review; journal article": 2,
+    "comparative study; research support, non-u.s. gov't; validation study; journal article": 2,
+    "comparative study; research-article; journal article; observational study": 2,
+    "comparative study; research-article; research support, u.s. gov't, non-p.h.s.; journal article; research support, n.i.h., extramural": 2,
+    "comparative study; validation study; evaluation study; journal article": 2,
+    "component": 2,
+    "consensus statement; journal article": 2,
+    "controlled clinical trial; comparative study; journal article": 2,
+    "editorial; journal article": 2,
+    "evaluation study; journal article; research support, n.i.h., extramural": 2,
+    "historical article; journal article": 2,
+    "journal article; case reports; research support, n.i.h., extramural": 2,
+    "journal article; english abstract; case reports": 2,
+    "lecture; research support, non-u.s. gov't": 2,
+    "letter; research support, non-u.s. gov't": 2,
+    "meta-analysis; comparative study; journal article": 2,
+    "meta-analysis; research-article; journal article": 2,
+    "meta-analysis; research-article; systematic review; journal article": 2,
+    "methods-article; journal article": 2,
+    "multicenter study; evaluation study; journal article": 2,
+    "published erratum": 2,
+    "published erratum; correction": 2,
+    "research support, non-u.s. gov't; evaluation study; journal article; research support, n.i.h., extramural": 2,
+    "research support, non-u.s. gov't; multicenter study; evaluation study; journal article": 2,
+    "research support, non-u.s. gov't; research support, u.s. gov't, non-p.h.s.; journal article; research support, n.i.h., extramural": 2,
+    "research support, non-u.s. gov't; research-article; evaluation study; journal article": 2,
+    "research support, non-u.s. gov't; research-article; multicenter study; journal article": 2,
+    "research support, non-u.s. gov't; research-article; randomized controlled trial; journal article": 2,
+    "research support, non-u.s. gov't; research-article; research support, u.s. gov't, non-p.h.s.; evaluation study; journal article; research support, n.i.h., extramural": 2,
+    "research support, non-u.s. gov't; research-article; review; journal article": 2,
+    "research support, non-u.s. gov't; research-article; validation study; multicenter study; journal article": 2,
+    "research support, non-u.s. gov't; review; journal article; research support, n.i.h., extramural": 2,
+    "research support, non-u.s. gov't; validation study; multicenter study; journal article": 2,
+    "research-article; validation study; journal article; research support, n.i.h., extramural": 2,
+    "research-article; validation study; multicenter study; journal article": 2,
+    "review; consensus statement; journal article": 2,
+    "scoping review; review-article; journal article": 2,
+    "systematic review; review-article; journal article": 2,
+    "validation study; journal article; observational study": 2,
+    "video-audio media; research support, non-u.s. gov't; research-article; journal article": 2,
+    "article-commentary; journal article": 1,
+    "book-review; book review": 1,
+    "brief-report; brief report": 1,
+    "brief-report; randomized controlled trial; journal article": 1,
+    "brief-report; research support, non-u.s. gov't; journal article": 1,
+    "case-study; journal article; case reports": 1,
+    "clinical trial protocol; comparative study; research-article; journal article": 1,
+    "clinical trial protocol; protocol; journal article": 1,
+    "clinical trial protocol; protocol; research support, non-u.s. gov't; journal article": 1,
+    "clinical trial, phase iii; comparative study; research support, non-u.s. gov't; journal article": 1,
+    "clinical trial; randomized controlled trial; journal article": 1,
+    "clinical trial; research support, non-u.s. gov't; journal article; research support, n.i.h., extramural": 1,
+    "clinical trial; research support, non-u.s. gov't; randomized controlled trial; journal article": 1,
+    "clinical trial; research support, non-u.s. gov't; research-article; multicenter study; journal article; research support, n.i.h., extramural; observational study": 1,
+    "clinical trial; research-article; multicenter study; journal article": 1,
+    "clinical trial; research-article; validation study; journal article": 1,
+    "clinical trial; validation study; journal article": 1,
+    "comment; comparative study; research support, non-u.s. gov't; evaluation study; journal article": 1,
+    "comment; research support, n.i.h., intramural; editorial": 1,
+    "comment; research support, non-u.s. gov't; journal article": 1,
+    "comparative study; brief-report; evaluation study; journal article": 1,
+    "comparative study; brief-report; research support, non-u.s. gov't; multicenter study; randomized controlled trial; journal article": 1,
+    "comparative study; clinical study; journal article": 1,
+    "comparative study; clinical trial; multicenter study; journal article": 1,
+    "comparative study; clinical trial; multicenter study; randomized controlled trial; journal article": 1,
+    "comparative study; clinical trial; research support, non-u.s. gov't; validation study; journal article": 1,
+    "comparative study; clinical trial; research support, u.s. gov't, p.h.s.; validation study; journal article": 1,
+    "comparative study; equivalence trial; research support, non-u.s. gov't; multicenter study; randomized controlled trial; journal article": 1,
+    "comparative study; evaluation study; journal article; research support, n.i.h., extramural": 1,
+    "comparative study; journal article; observational study": 1,
+    "comparative study; journal article; research support, n.i.h., extramural": 1,
+    "comparative study; multicenter study; journal article; observational study": 1,
+    "comparative study; multicenter study; randomized controlled trial; pragmatic clinical trial; journal article": 1,
+    "comparative study; research support, non-u.s. gov't; journal article; case reports": 1,
+    "comparative study; research support, non-u.s. gov't; multicenter study; journal article; case reports": 1,
+    "comparative study; research support, non-u.s. gov't; multicenter study; research support, u.s. gov't, non-p.h.s.; journal article": 1,
+    "comparative study; research support, non-u.s. gov't; research-article; multicenter study; journal article": 1,
+    "comparative study; research support, non-u.s. gov't; research-article; multicenter study; journal article; observational study": 1,
+    "comparative study; research support, non-u.s. gov't; research-article; multicenter study; journal article; research support, n.i.h., extramural": 1,
+    "comparative study; research support, non-u.s. gov't; research-article; randomized controlled trial; journal article; research support, n.i.h., extramural": 1,
+    "comparative study; research support, non-u.s. gov't; research-article; research support, u.s. gov't, non-p.h.s.; journal article; research support, n.i.h., extramural": 1,
+    "comparative study; research support, non-u.s. gov't; research-article; systematic review; network meta-analysis; journal article": 1,
+    "comparative study; research support, non-u.s. gov't; research-article; validation study; journal article": 1,
+    "comparative study; research support, non-u.s. gov't; research-article; validation study; journal article; research support, n.i.h., extramural": 1,
+    "comparative study; research support, non-u.s. gov't; validation study; evaluation study; journal article": 1,
+    "comparative study; research support, non-u.s. gov't; validation study; multicenter study; evaluation study; journal article": 1,
+    "comparative study; research support, u.s. gov't, p.h.s.; journal article": 1,
+    "comparative study; research support, u.s. gov't, p.h.s.; research support, non-u.s. gov't; journal article; research support, n.i.h., extramural": 1,
+    "comparative study; research-article; evaluation study; journal article": 1,
+    "comparative study; validation study; multicenter study; journal article": 1,
+    "controlled clinical trial; clinical trial; validation study; journal article": 1,
+    "controlled clinical trial; comparative study; clinical trial; journal article": 1,
+    "controlled clinical trial; comparative study; research support, non-u.s. gov't; multicenter study; journal article": 1,
+    "controlled clinical trial; comparative study; research-article; journal article; research support, n.i.h., extramural": 1,
+    "controlled clinical trial; research-article; journal article": 1,
+    "database": 1,
+    "editorial; review; journal article": 1,
+    "equivalence trial; multicenter study; randomized controlled trial; journal article": 1,
+    "erratum": 1,
+    "evaluation study; journal article; case reports": 1,
+    "historical article; biography; journal article; english abstract": 1,
+    "historical article; research-article; review; journal article": 1,
+    "journal article; retraction notice": 1,
+    "letter; article-commentary; comment; research support, non-u.s. gov't; research support, n.i.h., extramural": 1,
+    "letter; comment; research support, non-u.s. gov't": 1,
+    "letter; journal article": 1,
+    "letter; research support, non-u.s. gov't; evaluation study; research support, n.i.h., extramural": 1,
+    "letter; research support, non-u.s. gov't; research support, u.s. gov't, non-p.h.s.; research support, n.i.h., extramural": 1,
+    "letter; research support, u.s. gov't, non-p.h.s.; research support, n.i.h., extramural": 1,
+    "letter; research-article; research support, n.i.h., extramural": 1,
+    "letter; research-article; research support, u.s. gov't, non-p.h.s.; research support, n.i.h., extramural": 1,
+    "letter; validation study": 1,
+    "meta-analysis; comparative study; research support, non-u.s. gov't; systematic review; journal article": 1,
+    "meta-analysis; research support, non-u.s. gov't; review-article; review; journal article": 1,
+    "meta-analysis; research support, non-u.s. gov't; systematic review; review-article; journal article": 1,
+    "meta-analysis; systematic review; review-article; journal article": 1,
+    "meta-analysis; systematic review; review-article; review; journal article": 1,
+    "methods-article; randomized controlled trial; journal article": 1,
+    "network meta-analysis; journal article": 1,
+    "other; review; journal article": 1,
+    "paratext": 1,
+    "preprint; preprint-withdrawal": 1,
+    "reply; journal article": 1,
+    "report; journal article": 1,
+    "research article": 1,
+    "research support, american recovery and reinvestment act; research support, u.s. gov't, p.h.s.; validation study; journal article": 1,
+    "research support, n.i.h., intramural; comparative study; research support, non-u.s. gov't; research-article; validation study; journal article": 1,
+    "research support, n.i.h., intramural; comparative study; research-article; journal article": 1,
+    "research support, non-u.s. gov't; clinical trial, phase i; journal article": 1,
+    "research support, non-u.s. gov't; journal article; english abstract": 1,
+    "research support, non-u.s. gov't; research-article; evaluation study; journal article; research support, n.i.h., extramural": 1,
+    "research support, non-u.s. gov't; research-article; journal article; case reports": 1,
+    "research support, non-u.s. gov't; research-article; multicenter study; clinical study; journal article": 1,
+    "research support, non-u.s. gov't; research-article; multicenter study; randomized controlled trial; journal article": 1,
+    "research support, non-u.s. gov't; research-article; technical report; research support, u.s. gov't, non-p.h.s.; evaluation study; journal article": 1,
+    "research support, non-u.s. gov't; research-article; validation study; randomized controlled trial; journal article": 1,
+    "research support, non-u.s. gov't; research-article; validation study; research support, u.s. gov't, non-p.h.s.; journal article; research support, n.i.h., extramural": 1,
+    "research support, non-u.s. gov't; review; journal article; english abstract": 1,
+    "research support, non-u.s. gov't; review; research support, u.s. gov't, non-p.h.s.; journal article": 1,
+    "research support, non-u.s. gov't; systematic review; journal article": 1,
+    "research support, non-u.s. gov't; systematic review; review-article; journal article": 1,
+    "research support, non-u.s. gov't; validation study; review; journal article": 1,
+    "research support, u.s. gov't, non-p.h.s.; evaluation study; journal article; research support, n.i.h., extramural": 1,
+    "research support, u.s. gov't, non-p.h.s.; journal article; english abstract": 1,
+    "research support, u.s. gov't, non-p.h.s.; journal article; research support, n.i.h., extramural; case-report": 1,
+    "research support, u.s. gov't, p.h.s.; research support, non-u.s. gov't; randomized controlled trial; journal article": 1,
+    "research support, u.s. gov't, p.h.s.; research support, non-u.s. gov't; research support, u.s. gov't, non-p.h.s.; journal article": 1,
+    "research support, u.s. gov't, p.h.s.; research support, non-u.s. gov't; research-article; multicenter study; research support, u.s. gov't, non-p.h.s.; journal article; research support, n.i.h., extramural": 1,
+    "research support, u.s. gov't, p.h.s.; research support, non-u.s. gov't; research-article; review; journal article": 1,
+    "research support, u.s. gov't, p.h.s.; research support, non-u.s. gov't; review; journal article": 1,
+    "research support, u.s. gov't, p.h.s.; research support, non-u.s. gov't; review; journal article; english abstract": 1,
+    "research support, u.s. gov't, p.h.s.; research support, non-u.s. gov't; review; journal article; research support, n.i.h., extramural": 1,
+    "research support, u.s. gov't, p.h.s.; research-article; journal article; research support, n.i.h., extramural": 1,
+    "research-article; evaluation study; journal article; research support, n.i.h., extramural": 1,
+    "research-article; journal article; case reports; research support, n.i.h., extramural": 1,
+    "research-article; multicenter study; journal article; research support, n.i.h., extramural": 1,
+    "research-article; randomized controlled trial; journal article; research support, n.i.h., extramural": 1,
+    "research-article; research support, u.s. gov't, non-p.h.s.; journal article": 1,
+    "research-article; review; journal article; case reports; research support, n.i.h., extramural": 1,
+    "research-article; review; research support, u.s. gov't, non-p.h.s.; journal article; research support, n.i.h., extramural": 1,
+    "research-article; validation study; multicenter study; journal article; observational study": 1,
+    "retracted publication; review-article; journal article": 1,
+    "review; evaluation study; journal article": 1,
+    "review; journal article; case reports; case-report": 1,
+    "review; network meta-analysis; journal article": 1,
+    "review; research support, u.s. gov't, non-p.h.s.; journal article": 1,
+    "scoping review; journal article": 1,
+    "study guide; book": 1,
+    "supplementary-materials": 1,
+    "systematic review; network meta-analysis; journal article": 1,
+    "systematic review; review-article; network meta-analysis; journal article": 1,
+    "systematic-review; journal article; english abstract": 1,
+    "twin study; research support, non-u.s. gov't; research-article; research support, u.s. gov't, non-p.h.s.; journal article; research support, n.i.h., extramural": 1,
+    "validation study; evaluation study; journal article": 1,
+    "validation study; multicenter study; journal article; observational study": 1,
+    "validation study; review; journal article": 1,
+    "video-audio media; comparative study; journal article": 1,
+    "video-audio media; journal article; research support, n.i.h., extramural": 1,
+    "video-audio media; research support, n.i.h., intramural; research support, non-u.s. gov't; research-article; multicenter study; journal article": 1,
+    "video-audio media; research support, non-u.s. gov't; journal article; case reports": 1,
+    "video-audio media; research-article; journal article; research support, n.i.h., extramural": 1,
+    "video-audio media; review; journal article": 1
+  },
+  "query_title_token_overlap_histogram": {
+    "0": 980,
+    "1": 2040,
+    "2": 4510,
+    "3": 3677,
+    "4": 1352,
+    "5": 547,
+    "6": 43
+  },
+  "by_publication_decade": {
+    "1910s": 3,
+    "1920s": 6,
+    "1930s": 11,
+    "1940s": 4,
+    "1950s": 24,
+    "1960s": 70,
+    "1970s": 190,
+    "1980s": 349,
+    "1990s": 829,
+    "2000s": 2032,
+    "2010s": 4316,
+    "2020s": 5315
+  },
+  "by_retrieval_source": {
+    "crossref": 8734,
+    "europepmc": 3667,
+    "openalex": 1159
+  },
+  "index_support_multiplicity": {
+    "1": 12756,
+    "2": 375,
+    "3": 18
+  },
+  "previous_147_exact_title_or_doi_overlap_count": 59,
+  "previous_147_total": 147,
+  "examples_by_facet_for_manual_review": {
+    "M1": [
+      {
+        "title": "Exploring the Use of Proper Orthogonal Decomposition for Enhancing Blood Flow Images Via Computational Fluid Dynamics",
+        "year": 2008,
+        "venue": "Lecture Notes in Computer Science",
+        "doi": "10.1007/978-3-540-85990-1_94"
+      },
+      {
+        "title": "A Posteriori Error Estimation in Finite Element Analysis",
+        "year": 2000,
+        "venue": "",
+        "doi": "10.1002/9781118032824"
+      },
+      {
+        "title": "A posteriori error estimation in finite element analysis",
+        "year": 1997,
+        "venue": "Computer Methods in Applied Mechanics and Engineering",
+        "doi": "10.1016/s0045-7825(96)01107-3"
+      },
+      {
+        "title": "Galerkin Proper Orthogonal Decomposition Methods for a General Equation in Fluid Dynamics",
+        "year": 2002,
+        "venue": "SIAM Journal on Numerical Analysis",
+        "doi": "10.1137/s0036142900382612"
+      },
+      {
+        "title": "Nonlinear Stability of Finite Volume Methods for Hyperbolic Conservation Laws",
+        "year": 2004,
+        "venue": "Frontiers in Mathematics",
+        "doi": "10.1007/b93802"
+      }
+    ],
+    "M2": [
+      {
+        "title": "Convergence of Tikhonov regularization for constrained ill-posed inverse problems",
+        "year": 1994,
+        "venue": "Inverse Problems",
+        "doi": "10.1088/0266-5611/10/1/006"
+      },
+      {
+        "title": "A predictor–corrector iterated Tikhonov regularization for linear ill-posed inverse problems",
+        "year": 2013,
+        "venue": "Applied Mathematics and Computation",
+        "doi": "10.1016/j.amc.2013.06.080"
+      },
+      {
+        "title": "Distributed Tikhonov regularization for ill-posed inverse problems from a Bayesian perspective",
+        "year": 2025,
+        "venue": "Computational Optimization and Applications",
+        "doi": "10.1007/s10589-025-00675-y"
+      },
+      {
+        "title": "A relaxed iterated Tikhonov regularization for linear ill-posed inverse problems",
+        "year": 2023,
+        "venue": "Journal of Mathematical Analysis and Applications",
+        "doi": "10.1016/j.jmaa.2023.127754"
+      },
+      {
+        "title": "Tikhonov-type iterative regularization methods for ill-posed inverse problems: theoretical aspects and applications",
+        "year": 2016,
+        "venue": "IrInSubria (University of Insubria)",
+        "doi": null
+      }
+    ],
+    "M3": [
+      {
+        "title": "Markov chain Monte Carlo posterior sampling with the Hamiltonian method",
+        "year": 2001,
+        "venue": "Proceedings of SPIE, the International Society for Optical Engineering/Proceedings of SPIE",
+        "doi": "10.1117/12.431119"
+      },
+      {
+        "title": "Probabilistic Numerical Methods for Partial Differential Equations and Bayesian Inverse Problems",
+        "year": 2016,
+        "venue": "ePrints Soton (University of Southampton)",
+        "doi": "10.48550/arxiv.1605.07811"
+      },
+      {
+        "title": "Gaussian processes for Bayesian inverse problems associated with linear partial differential equations",
+        "year": 2024,
+        "venue": "Statistics and Computing",
+        "doi": "10.1007/s11222-024-10452-2"
+      },
+      {
+        "title": "Robust particle tracker via Markov Chain Monte Carlo posterior sampling",
+        "year": 2013,
+        "venue": "Multimedia Tools and Applications",
+        "doi": "10.1007/s11042-013-1379-y"
+      },
+      {
+        "title": "A Markov chain Monte Carlo strategy for sampling from the joint posterior distribution of pedigrees and population parameters under a Fisher–Wright model with partial selfing",
+        "year": 2007,
+        "venue": "Theoretical Population Biology",
+        "doi": "10.1016/j.tpb.2007.03.002"
+      }
+    ],
+    "M4": [
+      {
+        "title": "System identification of nonlinear state-space models",
+        "year": 2011,
+        "venue": "Automatica",
+        "doi": "10.1016/j.automatica.2010.10.013"
+      },
+      {
+        "title": "Identification of nonlinear systems using Polynomial Nonlinear State Space models",
+        "year": 2010,
+        "venue": "Automatica",
+        "doi": "10.1016/j.automatica.2010.01.001"
+      },
+      {
+        "title": "Estimation, Filtering, and Smoothing in State Space Models with Incompletely Specified Initial Conditions",
+        "year": 1985,
+        "venue": "The Annals of Statistics",
+        "doi": "10.1214/aos/1176349739"
+      },
+      {
+        "title": "Fast Filtering and Smoothing for Multivariate State Space Models",
+        "year": 2000,
+        "venue": "Journal of Time Series Analysis",
+        "doi": "10.1111/1467-9892.00186"
+      },
+      {
+        "title": "Deep State Space Models for Nonlinear System Identification",
+        "year": 2021,
+        "venue": "IFAC-PapersOnLine",
+        "doi": "10.1016/j.ifacol.2021.08.406"
+      }
+    ],
+    "M5": [
+      {
+        "title": "Physics-informed neural networks (PINNs) for fluid mechanics: a review",
+        "year": 2021,
+        "venue": "Acta Mechanica Sinica",
+        "doi": "10.1007/s10409-021-01148-1"
+      },
+      {
+        "title": "Physics‐Informed Neural Networks (PINNs) for Wave Propagation and Full Waveform Inversions",
+        "year": 2022,
+        "venue": "Journal of Geophysical Research Solid Earth",
+        "doi": "10.1029/2021jb023120"
+      },
+      {
+        "title": "Error analysis for physics-informed neural networks (PINNs) approximating Kolmogorov PDEs",
+        "year": 2022,
+        "venue": "Advances in Computational Mathematics",
+        "doi": "10.1007/s10444-022-09985-9"
+      },
+      {
+        "title": "A Unified Scalable Framework for Causal Sweeping Strategies for Physics-Informed Neural Networks (Pinns) and Their Temporal Decompositions",
+        "year": 2023,
+        "venue": "Journal of Computational Physics",
+        "doi": "10.1016/j.jcp.2023.112464"
+      },
+      {
+        "title": "NeuralPDE: Automating Physics-Informed Neural Networks (PINNs) with Error Approximations",
+        "year": 2021,
+        "venue": "arXiv",
+        "doi": "10.48550/arxiv.2107.09443"
+      }
+    ],
+    "M6": [
+      {
+        "title": "Solution of physics-based Bayesian inverse problems with deep generative priors",
+        "year": 2022,
+        "venue": "Computer Methods in Applied Mechanics and Engineering",
+        "doi": "10.1016/j.cma.2022.115428"
+      },
+      {
+        "title": "Deep Unfolding With Normalizing Flow Priors for Inverse Problems",
+        "year": 2022,
+        "venue": "IEEE Transactions on Signal Processing",
+        "doi": "10.1109/tsp.2022.3179807"
+      },
+      {
+        "title": "A dimension-reduced variational approach for solving physics-based inverse problems using generative adversarial network priors and normalizing flows",
+        "year": 2024,
+        "venue": "Computer Methods in Applied Mechanics and Engineering",
+        "doi": "10.1016/j.cma.2023.116682"
+      },
+      {
+        "title": "Solving Inverse Problems with Score-Based Generative Priors learned from Noisy Data",
+        "year": 2023,
+        "venue": "2023 57th Asilomar Conference on Signals, Systems, and Computers",
+        "doi": "10.1109/ieeeconf59524.2023.10477042"
+      },
+      {
+        "title": "Score-based diffusion models via stochastic differential equations",
+        "year": 2025,
+        "venue": "Statistics Surveys",
+        "doi": "10.1214/25-ss152"
+      }
+    ],
+    "M7": [
+      {
+        "title": "Safe deep reinforcement learning-based constrained optimal control scheme for active distribution networks",
+        "year": 2020,
+        "venue": "Applied Energy",
+        "doi": "10.1016/j.apenergy.2020.114772"
+      },
+      {
+        "title": "Safe Deep Reinforcement Learning-Based Constrained Optimal Control Scheme for HEV Energy Management",
+        "year": 2023,
+        "venue": "IEEE Transactions on Transportation Electrification",
+        "doi": "10.1109/tte.2023.3240430"
+      },
+      {
+        "title": "Safe chance constrained reinforcement learning for batch process control",
+        "year": 2022,
+        "venue": "Computers &amp; Chemical Engineering",
+        "doi": "10.1016/j.compchemeng.2021.107630"
+      },
+      {
+        "title": "Optimal Control for Constrained Discrete-Time Nonlinear Systems Based on Safe Reinforcement Learning",
+        "year": 2025,
+        "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+        "doi": "10.1109/tnnls.2023.3326397"
+      },
+      {
+        "title": "Constrained traffic signal control under competing public transport priority requests via safe reinforcement learning",
+        "year": 2025,
+        "venue": "Expert Systems with Applications",
+        "doi": "10.1016/j.eswa.2025.127676"
+      }
+    ],
+    "M8": [
+      {
+        "title": "VoxelMorph: A Learning Framework for Deformable Medical Image Registration",
+        "year": 2019,
+        "venue": "IEEE Transactions on Medical Imaging",
+        "doi": "10.1109/tmi.2019.2897538"
+      },
+      {
+        "title": "Deformable Medical Image Registration: A Survey",
+        "year": 2013,
+        "venue": "IEEE Transactions on Medical Imaging",
+        "doi": "10.1109/tmi.2013.2265603"
+      },
+      {
+        "title": "An Unsupervised Learning Model for Deformable Medical Image Registration",
+        "year": 2018,
+        "venue": "2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+        "doi": "10.1109/cvpr.2018.00964"
+      },
+      {
+        "title": "PHiSeg: Capturing Uncertainty in Medical Image Segmentation",
+        "year": 2019,
+        "venue": "Lecture Notes in Computer Science",
+        "doi": "10.1007/978-3-030-32245-8_14"
+      },
+      {
+        "title": "Deformable Medical Image Registration: Setting the State of the Art with Discrete Methods",
+        "year": 2011,
+        "venue": "Annual Review of Biomedical Engineering",
+        "doi": "10.1146/annurev-bioeng-071910-124649"
+      }
+    ],
+    "A1": [
+      {
+        "title": "Methodology for fully automated segmentation and plaque characterization in intracoronary optical coherence tomography images.",
+        "year": 2014,
+        "venue": "J Biomed Opt",
+        "doi": "10.1117/1.jbo.19.2.026009"
+      },
+      {
+        "title": "Coronary Computed Tomography Angiography–derived Fractional Flow Reserve",
+        "year": 2022,
+        "venue": "Journal of Thoracic Imaging",
+        "doi": "10.1097/rti.0000000000000679"
+      },
+      {
+        "title": "Coronary Artery WSS Profiling Using a Geometry Reconstruction Based on Biplane Angiography",
+        "year": 2009,
+        "venue": "Annals of Biomedical Engineering",
+        "doi": "10.1007/s10439-009-9656-7"
+      },
+      {
+        "title": "Optimal Measurement Sites of Coronary-Computed Tomography Angiography-derived Fractional Flow Reserve",
+        "year": 2022,
+        "venue": "Journal of Thoracic Imaging",
+        "doi": "10.1097/rti.0000000000000687"
+      },
+      {
+        "title": "Quantitative Flow Ratio Is Related to Intraluminal Coronary Stenosis Parameters as Assessed with Optical Coherence Tomography",
+        "year": 2021,
+        "venue": "Journal of Clinical Medicine",
+        "doi": "10.3390/jcm10091856"
+      }
+    ],
+    "A2": [
+      {
+        "title": "A hybrid one-dimensional/Womersley model of pulsatile blood flow in the entire coronary arterial tree.",
+        "year": 2007,
+        "venue": "Am J Physiol Heart Circ Physiol",
+        "doi": "10.1152/ajpheart.00987.2006"
+      },
+      {
+        "title": "Comparison of the Windkessel model and structured-tree model applied to prescribe outflow boundary conditions for a one-dimensional arterial tree model.",
+        "year": 2016,
+        "venue": "J Biomech",
+        "doi": "10.1016/j.jbiomech.2016.03.037"
+      },
+      {
+        "title": "Physics-informed neural networks (PINNs) for 4D hemodynamics prediction: An investigation of optimal framework based on vascular morphology.",
+        "year": 2023,
+        "venue": "Comput Biol Med",
+        "doi": "10.1016/j.compbiomed.2023.107287"
+      },
+      {
+        "title": "Effect of microcirculatory dysfunction on coronary hemodynamics: A pilot study based on computational fluid dynamics simulation",
+        "year": 2022,
+        "venue": "Computers in Biology and Medicine",
+        "doi": "10.1016/j.compbiomed.2022.105583"
+      },
+      {
+        "title": "A novel mono-physics particle-based approach for the simulation of cardiovascular fluid-structure interaction problems",
+        "year": 2024,
+        "venue": "Computer Methods and Programs in Biomedicine",
+        "doi": "10.1016/j.cmpb.2024.108034"
+      }
+    ],
+    "A3": [
+      {
+        "title": "Assessment of lesion-specific ischemia using fractional flow reserve (FFR) profiles derived from coronary computed tomography angiography (FFRCT) and invasive pressure measurements (FFRINV): Importance of the site of measurement and implications for patient referral for invasive coronary angiography and percutaneous coronary intervention",
+        "year": 2018,
+        "venue": "Journal of cardiovascular computed tomography",
+        "doi": "10.1016/j.jcct.2018.09.003"
+      },
+      {
+        "title": "Benefit of icosapent ethyl on coronary physiology assessed by computed tomography angiography fractional flow reserve: EVAPORATE-FFRCT",
+        "year": 2023,
+        "venue": "European Heart Journal - Cardiovascular Imaging",
+        "doi": "10.1093/ehjci/jead063"
+      },
+      {
+        "title": "Computed tomography-derived fractional flow reserve (FFRCT) has no additional clinical impact over the anatomical Coronary Artery Disease - Reporting and Data System (CAD-RADS) in real-world elective healthcare of coronary artery disease",
+        "year": 2022,
+        "venue": "Clinical Radiology",
+        "doi": "10.1016/j.crad.2022.05.031"
+      },
+      {
+        "title": "Lumen boundaries extracted from coronary computed tomography angiography on computed fractional flow reserve (FFRCT): validation with optical coherence tomography",
+        "year": 2019,
+        "venue": "EuroIntervention",
+        "doi": "10.4244/eij-d-17-01132"
+      },
+      {
+        "title": "Expanding the role of fractional flow reserve derived from computed tomography (FFRCT) for the non-invasive imaging of patients with coronary stents: rise of the machines?",
+        "year": 2021,
+        "venue": "European Radiology",
+        "doi": "10.1007/s00330-021-07974-y"
+      }
+    ],
+    "A4": [
+      {
+        "title": "Clinical Impact of Physiology-Guided PCI: 1-year Results of the Post-Revascularization Optimization and Physiological Evaluation of Intermediate Lesions using Fractional Flow Reserve (PROPHET-FFR) Study.",
+        "year": 2026,
+        "venue": "Circ Cardiovasc Interv",
+        "doi": "10.1161/circinterventions.126.017446"
+      },
+      {
+        "title": "Residual Cardiovascular Risk Beyond Coronary Physiology: Complementary Prognostic Value of Trimethylamine N-Oxide in Patients Undergoing Coronary Computed Tomography Angiography With Computed Tomography-Derived Fractional Flow Reserve.",
+        "year": 2026,
+        "venue": "J Am Heart Assoc",
+        "doi": "10.1161/jaha.126.050221"
+      },
+      {
+        "title": "fPINNs: Fractional Physics-Informed Neural Networks",
+        "year": 2019,
+        "venue": "SIAM Journal on Scientific Computing",
+        "doi": "10.1137/18m1229845"
+      },
+      {
+        "title": "Physics-Informed Deep Neural Operator Networks",
+        "year": 2023,
+        "venue": "Computational Methods in Engineering &amp; the Sciences",
+        "doi": "10.1007/978-3-031-36644-4_6"
+      },
+      {
+        "title": "Physics informed neural networks for velocity inversion",
+        "year": 2019,
+        "venue": "International Meeting for Applied Geoscience &amp; Energy",
+        "doi": "10.1190/segam2019-3216823.1"
+      }
+    ],
+    "A5": [
+      {
+        "title": "Target vessel-specific post-PCI fractional flow reserve cutoff values improve prognostic prediction after coronary stenting",
+        "year": 2025,
+        "venue": "European Heart Journal",
+        "doi": "10.1093/eurheartj/ehaf784.1747"
+      },
+      {
+        "title": "A novel noninvasive technology for treatment planning using virtual coronary stenting and computed tomography-derived computed fractional flow reserve.",
+        "year": 2014,
+        "venue": "JACC Cardiovasc Interv",
+        "doi": "10.1016/j.jcin.2013.05.024"
+      },
+      {
+        "title": "Non‐invasive procedural planning using computed tomography‐derived fractional flow reserve",
+        "year": 2020,
+        "venue": "Catheterization and Cardiovascular Interventions",
+        "doi": "10.1002/ccd.29210"
+      },
+      {
+        "title": "Relationship between coronary volume, myocardial mass, and post‐PCI fractional flow reserve",
+        "year": 2023,
+        "venue": "Catheterization and Cardiovascular Interventions",
+        "doi": "10.1002/ccd.30664"
+      },
+      {
+        "title": "Computed Tomography-Based Fractional Flow Reserve (FFR-CT)",
+        "year": 2015,
+        "venue": "Circulation Journal",
+        "doi": "10.1253/circj.cj-14-1306"
+      }
+    ],
+    "A6": [
+      {
+        "title": "A Multimodal Earth Digital Twin Framework with Causal AI for Autonomous Climate Intervention Planning",
+        "year": 2026,
+        "venue": "2026 International Conference on Modern Sustainable Systems (CMSS)",
+        "doi": "10.1109/cmss69636.2026.11689310"
+      },
+      {
+        "title": "Dynamic Simulation and Effect Evaluation of Urban Planning Intervention from the Perspective of Digital Twin",
+        "year": 2026,
+        "venue": "Journal of Sociology and Education",
+        "doi": "10.63887/2026.2.2.80"
+      },
+      {
+        "title": "Hybrid Digital Twin and Real-World Data for Personalized Coronary Intervention Planning",
+        "year": 2026,
+        "venue": "International Journal of Drug Delivery Technology",
+        "doi": "10.25258/ijddt.16.10s.24"
+      },
+      {
+        "title": "Sex-specific assumptions underlie cardiovascular digital twin technologies: A narrative review",
+        "year": 2026,
+        "venue": "PLOS Digital Health",
+        "doi": "10.1371/journal.pdig.0001692"
+      },
+      {
+        "title": "Digital Twin for Civil Engineering Systems: An Exploratory Review for Distributed Sensing Updating",
+        "year": 2022,
+        "venue": "Sensors",
+        "doi": "10.3390/s22093168"
+      }
+    ]
+  },
+  "all_admission_pending": true,
+  "all_scientific_quality_unreviewed": true,
+  "interpretation": [
+    "Index hit count sums are inflated by overlapping queries and not unique studies.",
+    "Search is first-page capped and a portion of queries can be rate-limited; no recall saturation has been proven.",
+    "Topic tags are inherited from the queries that retrieved each item, not expert validation.",
+    "Book type labels may include ambiguous registrations; ISBN, publisher and edition remain to verify.",
+    "This audit does not establish formal academic admission or clinical evidence maturity."
+  ]
+}
