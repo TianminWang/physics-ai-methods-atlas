@@ -1,0 +1,230 @@
+{
+  "version": "corpus-v1-indexed-retrieval-v2",
+  "cutoff": "2026-11-26",
+  "created": "2026-11-27",
+  "approach": "Coverage-seeking metadata index retrieval; NOT exhaustive database census; NOT admission screening",
+  "method_app_facet_queries": {
+    "M1": [
+      "finite volume method hyperbolic conservation laws",
+      "finite element method PDE numerical analysis",
+      "Runge Kutta numerical integration stiff ODE",
+      "reduced order modelling parametric PDE",
+      "proper orthogonal decomposition computational fluid dynamics",
+      "spectral methods partial differential equations",
+      "a posteriori error estimation finite element",
+      "model reduction operator inference",
+      "fluid structure interaction numerical simulation",
+      "numerical stability convergence conservation laws"
+    ],
+    "M2": [
+      "ill posed inverse problems Tikhonov regularization",
+      "nonlinear least squares inverse parameter estimation",
+      "PDE constrained optimization adjoint",
+      "structural practical identifiability dynamical models",
+      "Gauss Newton inverse parameter estimation",
+      "inverse problems regularization discrepancy principle",
+      "optimal experimental design inverse PDE",
+      "Bayesian inverse problems well posedness",
+      "inverse problems model error stability uniqueness",
+      "inverse problems all at once formulation"
+    ],
+    "M3": [
+      "Bayesian inverse problems partial differential equations",
+      "Markov chain Monte Carlo posterior sampling",
+      "Hamiltonian Monte Carlo NUTS sampling",
+      "variational inference inverse problems",
+      "simulation based inference likelihood free",
+      "neural posterior estimation sequential",
+      "uncertainty quantification stochastic PDE",
+      "Bayesian calibration model discrepancy",
+      "surrogate Bayesian inverse problems",
+      "posterior predictive uncertainty calibration"
+    ],
+    "M4": [
+      "Kalman filtering data assimilation",
+      "ensemble Kalman inversion nonlinear",
+      "4D Var variational data assimilation",
+      "state space nonlinear system identification",
+      "sparse identification nonlinear dynamical systems",
+      "neural ordinary differential equations latent state",
+      "data assimilation machine learning",
+      "continuous time dynamics identification",
+      "filtering smoothing state space models",
+      "sensor fusion hidden state inference"
+    ],
+    "M5": [
+      "physics informed neural networks PINNs",
+      "Fourier neural operator PDE",
+      "DeepONet operator learning",
+      "physics informed neural operator",
+      "graph neural operator PDE",
+      "differentiable physics simulation",
+      "neural partial differential equations solver",
+      "mesh graph neural networks simulation",
+      "learned surrogate PDE inverse problems",
+      "neural operator generalization theory"
+    ],
+    "M6": [
+      "variational autoencoder generative models",
+      "generative adversarial networks",
+      "score based diffusion models",
+      "flow matching generative models",
+      "diffusion posterior sampling inverse problems",
+      "generative priors inverse problems",
+      "score matching stochastic differential equations",
+      "normalizing flow inverse problems",
+      "diffusion models scientific computing",
+      "posterior sampling diffusion nonlinear inverse"
+    ],
+    "M7": [
+      "model based reinforcement learning world model",
+      "Dreamer latent imagination planning",
+      "PlaNet latent dynamics planning",
+      "model predictive control optimal control",
+      "offline reinforcement learning conservative Q learning",
+      "safe reinforcement learning constrained control",
+      "world model action conditioned prediction",
+      "learned dynamics optimal planning",
+      "control under uncertainty digital twins",
+      "offline policy learning decision making"
+    ],
+    "M8": [
+      "medical image reconstruction deep learning",
+      "multi view geometry 3D reconstruction",
+      "differentiable rendering geometry",
+      "optical flow medical imaging",
+      "foundation model medical image segmentation",
+      "coronary artery 3D reconstruction",
+      "medical image registration deformable",
+      "4D reconstruction cardiac imaging",
+      "multimodal image representation learning",
+      "uncertainty quantification medical image segmentation"
+    ],
+    "A1": [
+      "coronary angiography segmentation deep learning",
+      "coronary CT angiography vessel segmentation",
+      "coronary artery reconstruction biplane angiography",
+      "optical coherence tomography plaque segmentation",
+      "intravascular ultrasound image analysis",
+      "coronary computed tomography centerline",
+      "coronary angiography flow measurement",
+      "angiographic 3D vessel reconstruction",
+      "coronary image geometry reconstruction",
+      "angiography vessel tracking video"
+    ],
+    "A2": [
+      "coronary hemodynamics computational fluid dynamics",
+      "one dimensional coronary blood flow wave propagation",
+      "coronary artery lumped parameter model",
+      "Windkessel structured tree boundary conditions",
+      "patient specific coronary CFD simulation",
+      "coronary microvascular resistance modeling",
+      "multiscale arterial hemodynamics model",
+      "cardiovascular physics informed neural networks",
+      "coronary stenosis pressure drop computation",
+      "fluid structure interaction cardiovascular simulation"
+    ],
+    "A3": [
+      "computed tomography fractional flow reserve FFRct",
+      "quantitative flow ratio coronary stenosis",
+      "angiography based fractional flow reserve",
+      "coronary blood flow velocity pressure estimation",
+      "invasive coronary physiology index iFR",
+      "coronary artery functional assessment artificial intelligence",
+      "coronary microvascular resistance inverse",
+      "image based coronary fractional flow reserve",
+      "FFR pressure waveform flow computation",
+      "coronary physiology patient specific prediction"
+    ],
+    "A4": [
+      "medical neural operator hemodynamics",
+      "physics informed AI patient specific biomedical model",
+      "medical AI external validation",
+      "scientific machine learning cardiovascular blood flow",
+      "deep learning coronary physiology",
+      "multicenter coronary image segmentation",
+      "uncertainty quantification medical surrogate",
+      "data assimilation biomedical digital twin",
+      "medical image AI algorithm generalization",
+      "clinical AI model independent validation"
+    ],
+    "A5": [
+      "virtual coronary stenting planning",
+      "virtual PCI functional prediction",
+      "FFR virtual PCI post stent",
+      "counterfactual coronary intervention simulation",
+      "coronary stent placement optimization",
+      "computational virtual coronary revascularization",
+      "angiography guided PCI trial QFR",
+      "CT FFR virtual stenting",
+      "reinforcement learning PCI planning",
+      "post PCI fractional flow reserve prediction"
+    ],
+    "A6": [
+      "patient specific cardiovascular digital twin",
+      "hemodynamics digital twin data assimilation",
+      "coronary digital twin intervention",
+      "digital twin longitudinal updating biomedical",
+      "physiological world model clinical decision",
+      "vascular model personalization longitudinal",
+      "digital twin uncertainty clinical validation",
+      "counterfactual simulation cardiovascular twin",
+      "patient specific cardiovascular state estimation",
+      "cardiovascular digital twin intervention planning"
+    ]
+  },
+  "books_queries": [
+    "inverse problems mathematical theory",
+    "regularization inverse problems",
+    "nonlinear least squares inverse problems",
+    "numerical optimization",
+    "numerical partial differential equations",
+    "finite element numerical analysis",
+    "finite volume methods computational fluid",
+    "reduced order modeling theory",
+    "probability theory stochastic processes",
+    "Bayesian statistical inverse problems",
+    "computational uncertainty quantification",
+    "data assimilation methods",
+    "Bayesian filtering smoothing",
+    "optimal control model predictive control",
+    "control systems nonlinear dynamics",
+    "reinforcement learning introduction",
+    "deep learning mathematics",
+    "probabilistic machine learning",
+    "computer vision multiple view geometry",
+    "medical image analysis artificial intelligence",
+    "cardiovascular computational modeling",
+    "coronary physiology intervention planning",
+    "flow matching diffusion generative models",
+    "dynamical system identification",
+    "biomedical digital twin"
+  ],
+  "eras": [
+    [
+      "classic",
+      "1900-01-01",
+      "2009-12-31"
+    ],
+    [
+      "modern",
+      "2010-01-01",
+      "2019-12-31"
+    ],
+    [
+      "recent",
+      "2020-01-01",
+      "2026-11-26"
+    ]
+  ],
+  "crossref_firstpage_per_era": 40,
+  "europepmc_firstpage_per_era": 75,
+  "openalex_firstpage": 50,
+  "notes": [
+    "Crossref: topic queries, source-deposited DOI metadata, capped by page and era; count is search-hit estimate, not eligible studies.",
+    "Europe PMC: biomedical-oriented secondary index as complementary capture channel, PMID, DOI and source.",
+    "OpenAlex: selective complementary matching, not assumed available without a key; errors logged.",
+    "Each query is retained even on failure; no data fabricated, no silent truncation.",
+    "Academic peer review, contribution quality, retractions and versions still require separate screening."
+  ]
+}

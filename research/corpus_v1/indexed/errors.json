@@ -1,0 +1,878 @@
+[
+  {
+    "query": "crossref-M1-002-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=finite+element+method+PDE+numerical+analysis&rows=40&filter=from-pub-date%3A1"
+  },
+  {
+    "query": "crossref-M1-002-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=finite+element+method+PDE+numerical+analysis&rows=40&filter=from-pub-date%3A2"
+  },
+  {
+    "query": "crossref-M1-002-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=finite+element+method+PDE+numerical+analysis&rows=40&filter=from-pub-date%3A2"
+  },
+  {
+    "query": "crossref-M1-003-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=Runge+Kutta+numerical+integration+stiff+ODE&rows=40&filter=from-pub-date%3A19"
+  },
+  {
+    "query": "crossref-M1-004-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=reduced+order+modelling+parametric+PDE&rows=40&filter=from-pub-date%3A1900-01"
+  },
+  {
+    "query": "crossref-M1-003-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=Runge+Kutta+numerical+integration+stiff+ODE&rows=40&filter=from-pub-date%3A20"
+  },
+  {
+    "query": "crossref-M1-005-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=proper+orthogonal+decomposition+computational+fluid+dynamics&rows=40&filter=f"
+  },
+  {
+    "query": "crossref-M1-005-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=proper+orthogonal+decomposition+computational+fluid+dynamics&rows=40&filter=f"
+  },
+  {
+    "query": "crossref-M1-007-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=a+posteriori+error+estimation+finite+element&rows=40&filter=from-pub-date%3A2"
+  },
+  {
+    "query": "crossref-M1-008-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=model+reduction+operator+inference&rows=40&filter=from-pub-date%3A2020-01-01%"
+  },
+  {
+    "query": "crossref-M1-008-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=model+reduction+operator+inference&rows=40&filter=from-pub-date%3A2010-01-01%"
+  },
+  {
+    "query": "crossref-M1-009-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=fluid+structure+interaction+numerical+simulation&rows=40&filter=from-pub-date"
+  },
+  {
+    "query": "crossref-M1-006-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=spectral+methods+partial+differential+equations&rows=40&filter=from-pub-date%"
+  },
+  {
+    "query": "crossref-M1-010-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=numerical+stability+convergence+conservation+laws&rows=40&filter=from-pub-dat"
+  },
+  {
+    "query": "crossref-M2-001-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=ill+posed+inverse+problems+Tikhonov+regularization&rows=40&filter=from-pub-da"
+  },
+  {
+    "query": "crossref-M1-009-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=fluid+structure+interaction+numerical+simulation&rows=40&filter=from-pub-date"
+  },
+  {
+    "query": "crossref-M1-010-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=numerical+stability+convergence+conservation+laws&rows=40&filter=from-pub-dat"
+  },
+  {
+    "query": "crossref-M2-001-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=ill+posed+inverse+problems+Tikhonov+regularization&rows=40&filter=from-pub-da"
+  },
+  {
+    "query": "crossref-M2-002-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=nonlinear+least+squares+inverse+parameter+estimation&rows=40&filter=from-pub-"
+  },
+  {
+    "query": "crossref-M2-004-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=structural+practical+identifiability+dynamical+models&rows=40&filter=from-pub"
+  },
+  {
+    "query": "crossref-M2-004-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=structural+practical+identifiability+dynamical+models&rows=40&filter=from-pub"
+  },
+  {
+    "query": "crossref-M2-006-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=inverse+problems+regularization+discrepancy+principle&rows=40&filter=from-pub"
+  },
+  {
+    "query": "crossref-M2-007-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=optimal+experimental+design+inverse+PDE&rows=40&filter=from-pub-date%3A2020-0"
+  },
+  {
+    "query": "crossref-M2-008-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=Bayesian+inverse+problems+well+posedness&rows=40&filter=from-pub-date%3A1900-"
+  },
+  {
+    "query": "crossref-M2-006-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=inverse+problems+regularization+discrepancy+principle&rows=40&filter=from-pub"
+  },
+  {
+    "query": "crossref-M2-009-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=inverse+problems+model+error+stability+uniqueness&rows=40&filter=from-pub-dat"
+  },
+  {
+    "query": "crossref-M2-009-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=inverse+problems+model+error+stability+uniqueness&rows=40&filter=from-pub-dat"
+  },
+  {
+    "query": "crossref-M2-007-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=optimal+experimental+design+inverse+PDE&rows=40&filter=from-pub-date%3A1900-0"
+  },
+  {
+    "query": "crossref-M2-008-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=Bayesian+inverse+problems+well+posedness&rows=40&filter=from-pub-date%3A2020-"
+  },
+  {
+    "query": "crossref-M2-010-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=inverse+problems+all+at+once+formulation&rows=40&filter=from-pub-date%3A2010-"
+  },
+  {
+    "query": "crossref-M2-010-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=inverse+problems+all+at+once+formulation&rows=40&filter=from-pub-date%3A1900-"
+  },
+  {
+    "query": "crossref-M3-003-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=Hamiltonian+Monte+Carlo+NUTS+sampling&rows=40&filter=from-pub-date%3A1900-01-"
+  },
+  {
+    "query": "crossref-M3-001-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=Bayesian+inverse+problems+partial+differential+equations&rows=40&filter=from-"
+  },
+  {
+    "query": "crossref-M3-004-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=variational+inference+inverse+problems&rows=40&filter=from-pub-date%3A2020-01"
+  },
+  {
+    "query": "crossref-M3-005-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=simulation+based+inference+likelihood+free&rows=40&filter=from-pub-date%3A190"
+  },
+  {
+    "query": "crossref-M3-004-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=variational+inference+inverse+problems&rows=40&filter=from-pub-date%3A2010-01"
+  },
+  {
+    "query": "crossref-M3-007-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=uncertainty+quantification+stochastic+PDE&rows=40&filter=from-pub-date%3A1900"
+  },
+  {
+    "query": "crossref-M3-006-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=neural+posterior+estimation+sequential&rows=40&filter=from-pub-date%3A2010-01"
+  },
+  {
+    "query": "crossref-M3-006-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=neural+posterior+estimation+sequential&rows=40&filter=from-pub-date%3A1900-01"
+  },
+  {
+    "query": "crossref-M3-008-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=Bayesian+calibration+model+discrepancy&rows=40&filter=from-pub-date%3A2010-01"
+  },
+  {
+    "query": "crossref-M3-002-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=Markov+chain+Monte+Carlo+posterior+sampling&rows=40&filter=from-pub-date%3A20"
+  },
+  {
+    "query": "crossref-M3-008-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=Bayesian+calibration+model+discrepancy&rows=40&filter=from-pub-date%3A2020-01"
+  },
+  {
+    "query": "crossref-M4-001-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=Kalman+filtering+data+assimilation&rows=40&filter=from-pub-date%3A1900-01-01%"
+  },
+  {
+    "query": "crossref-M4-001-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=Kalman+filtering+data+assimilation&rows=40&filter=from-pub-date%3A2020-01-01%"
+  },
+  {
+    "query": "crossref-M3-008-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=Bayesian+calibration+model+discrepancy&rows=40&filter=from-pub-date%3A1900-01"
+  },
+  {
+    "query": "crossref-M4-002-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=ensemble+Kalman+inversion+nonlinear&rows=40&filter=from-pub-date%3A1900-01-01"
+  },
+  {
+    "query": "crossref-M4-001-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=Kalman+filtering+data+assimilation&rows=40&filter=from-pub-date%3A2010-01-01%"
+  },
+  {
+    "query": "crossref-M4-003-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=4D+Var+variational+data+assimilation&rows=40&filter=from-pub-date%3A1900-01-0"
+  },
+  {
+    "query": "crossref-M4-003-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=4D+Var+variational+data+assimilation&rows=40&filter=from-pub-date%3A2010-01-0"
+  },
+  {
+    "query": "crossref-M3-009-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=surrogate+Bayesian+inverse+problems&rows=40&filter=from-pub-date%3A2020-01-01"
+  },
+  {
+    "query": "crossref-M4-006-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=neural+ordinary+differential+equations+latent+state&rows=40&filter=from-pub-d"
+  },
+  {
+    "query": "crossref-M4-005-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=sparse+identification+nonlinear+dynamical+systems&rows=40&filter=from-pub-dat"
+  },
+  {
+    "query": "crossref-M4-005-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=sparse+identification+nonlinear+dynamical+systems&rows=40&filter=from-pub-dat"
+  },
+  {
+    "query": "crossref-M4-006-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=neural+ordinary+differential+equations+latent+state&rows=40&filter=from-pub-d"
+  },
+  {
+    "query": "crossref-M4-007-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=data+assimilation+machine+learning&rows=40&filter=from-pub-date%3A2010-01-01%"
+  },
+  {
+    "query": "crossref-M4-008-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=continuous+time+dynamics+identification&rows=40&filter=from-pub-date%3A2010-0"
+  },
+  {
+    "query": "crossref-M4-004-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=state+space+nonlinear+system+identification&rows=40&filter=from-pub-date%3A19"
+  },
+  {
+    "query": "crossref-M4-010-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=sensor+fusion+hidden+state+inference&rows=40&filter=from-pub-date%3A2020-01-0"
+  },
+  {
+    "query": "crossref-M4-010-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=sensor+fusion+hidden+state+inference&rows=40&filter=from-pub-date%3A1900-01-0"
+  },
+  {
+    "query": "crossref-M4-009-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=filtering+smoothing+state+space+models&rows=40&filter=from-pub-date%3A2020-01"
+  },
+  {
+    "query": "crossref-M4-009-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=filtering+smoothing+state+space+models&rows=40&filter=from-pub-date%3A2010-01"
+  },
+  {
+    "query": "crossref-M5-001-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=physics+informed+neural+networks+PINNs&rows=40&filter=from-pub-date%3A1900-01"
+  },
+  {
+    "query": "crossref-M5-003-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=DeepONet+operator+learning&rows=40&filter=from-pub-date%3A2020-01-01%2Cuntil-"
+  },
+  {
+    "query": "crossref-M5-003-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=DeepONet+operator+learning&rows=40&filter=from-pub-date%3A1900-01-01%2Cuntil-"
+  },
+  {
+    "query": "crossref-M5-004-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=physics+informed+neural+operator&rows=40&filter=from-pub-date%3A2020-01-01%2C"
+  },
+  {
+    "query": "crossref-M5-005-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=graph+neural+operator+PDE&rows=40&filter=from-pub-date%3A1900-01-01%2Cuntil-p"
+  },
+  {
+    "query": "crossref-M5-007-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=neural+partial+differential+equations+solver&rows=40&filter=from-pub-date%3A2"
+  },
+  {
+    "query": "crossref-M5-007-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=neural+partial+differential+equations+solver&rows=40&filter=from-pub-date%3A2"
+  },
+  {
+    "query": "crossref-M5-001-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=physics+informed+neural+networks+PINNs&rows=40&filter=from-pub-date%3A2020-01"
+  },
+  {
+    "query": "crossref-M5-009-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=learned+surrogate+PDE+inverse+problems&rows=40&filter=from-pub-date%3A2010-01"
+  },
+  {
+    "query": "crossref-M5-008-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=mesh+graph+neural+networks+simulation&rows=40&filter=from-pub-date%3A2020-01-"
+  },
+  {
+    "query": "crossref-M5-009-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=learned+surrogate+PDE+inverse+problems&rows=40&filter=from-pub-date%3A2020-01"
+  },
+  {
+    "query": "crossref-M6-001-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=variational+autoencoder+generative+models&rows=40&filter=from-pub-date%3A2010"
+  },
+  {
+    "query": "crossref-M5-010-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=neural+operator+generalization+theory&rows=40&filter=from-pub-date%3A2020-01-"
+  },
+  {
+    "query": "crossref-M5-008-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=mesh+graph+neural+networks+simulation&rows=40&filter=from-pub-date%3A1900-01-"
+  },
+  {
+    "query": "crossref-M6-003-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=score+based+diffusion+models&rows=40&filter=from-pub-date%3A2010-01-01%2Cunti"
+  },
+  {
+    "query": "crossref-M6-004-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=flow+matching+generative+models&rows=40&filter=from-pub-date%3A2020-01-01%2Cu"
+  },
+  {
+    "query": "crossref-M6-005-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=diffusion+posterior+sampling+inverse+problems&rows=40&filter=from-pub-date%3A"
+  },
+  {
+    "query": "crossref-M6-001-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=variational+autoencoder+generative+models&rows=40&filter=from-pub-date%3A2020"
+  },
+  {
+    "query": "crossref-M6-006-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=generative+priors+inverse+problems&rows=40&filter=from-pub-date%3A2010-01-01%"
+  },
+  {
+    "query": "crossref-M6-006-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=generative+priors+inverse+problems&rows=40&filter=from-pub-date%3A1900-01-01%"
+  },
+  {
+    "query": "crossref-M6-004-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=flow+matching+generative+models&rows=40&filter=from-pub-date%3A2010-01-01%2Cu"
+  },
+  {
+    "query": "crossref-M6-008-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=normalizing+flow+inverse+problems&rows=40&filter=from-pub-date%3A2010-01-01%2"
+  },
+  {
+    "query": "crossref-M6-008-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=normalizing+flow+inverse+problems&rows=40&filter=from-pub-date%3A1900-01-01%2"
+  },
+  {
+    "query": "crossref-M6-005-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=diffusion+posterior+sampling+inverse+problems&rows=40&filter=from-pub-date%3A"
+  },
+  {
+    "query": "crossref-M6-010-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=posterior+sampling+diffusion+nonlinear+inverse&rows=40&filter=from-pub-date%3"
+  },
+  {
+    "query": "crossref-M7-001-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=model+based+reinforcement+learning+world+model&rows=40&filter=from-pub-date%3"
+  },
+  {
+    "query": "crossref-M6-007-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=score+matching+stochastic+differential+equations&rows=40&filter=from-pub-date"
+  },
+  {
+    "query": "crossref-M6-010-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=posterior+sampling+diffusion+nonlinear+inverse&rows=40&filter=from-pub-date%3"
+  },
+  {
+    "query": "crossref-M7-001-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=model+based+reinforcement+learning+world+model&rows=40&filter=from-pub-date%3"
+  },
+  {
+    "query": "crossref-M7-003-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=PlaNet+latent+dynamics+planning&rows=40&filter=from-pub-date%3A1900-01-01%2Cu"
+  },
+  {
+    "query": "crossref-M7-004-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=model+predictive+control+optimal+control&rows=40&filter=from-pub-date%3A2010-"
+  },
+  {
+    "query": "crossref-M7-002-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=Dreamer+latent+imagination+planning&rows=40&filter=from-pub-date%3A2020-01-01"
+  },
+  {
+    "query": "crossref-M7-004-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=model+predictive+control+optimal+control&rows=40&filter=from-pub-date%3A2020-"
+  },
+  {
+    "query": "crossref-M7-006-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=safe+reinforcement+learning+constrained+control&rows=40&filter=from-pub-date%"
+  },
+  {
+    "query": "crossref-M7-002-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=Dreamer+latent+imagination+planning&rows=40&filter=from-pub-date%3A2010-01-01"
+  },
+  {
+    "query": "crossref-M7-005-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=offline+reinforcement+learning+conservative+Q+learning&rows=40&filter=from-pu"
+  },
+  {
+    "query": "crossref-M7-005-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=offline+reinforcement+learning+conservative+Q+learning&rows=40&filter=from-pu"
+  },
+  {
+    "query": "crossref-M7-008-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=learned+dynamics+optimal+planning&rows=40&filter=from-pub-date%3A2010-01-01%2"
+  },
+  {
+    "query": "crossref-M7-007-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=world+model+action+conditioned+prediction&rows=40&filter=from-pub-date%3A2020"
+  },
+  {
+    "query": "crossref-M7-010-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=offline+policy+learning+decision+making&rows=40&filter=from-pub-date%3A1900-0"
+  },
+  {
+    "query": "crossref-M7-010-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=offline+policy+learning+decision+making&rows=40&filter=from-pub-date%3A2020-0"
+  },
+  {
+    "query": "crossref-M8-001-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=medical+image+reconstruction+deep+learning&rows=40&filter=from-pub-date%3A202"
+  },
+  {
+    "query": "crossref-M8-001-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=medical+image+reconstruction+deep+learning&rows=40&filter=from-pub-date%3A190"
+  },
+  {
+    "query": "crossref-M8-002-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=multi+view+geometry+3D+reconstruction&rows=40&filter=from-pub-date%3A1900-01-"
+  },
+  {
+    "query": "crossref-M8-001-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=medical+image+reconstruction+deep+learning&rows=40&filter=from-pub-date%3A201"
+  },
+  {
+    "query": "crossref-M8-003-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=differentiable+rendering+geometry&rows=40&filter=from-pub-date%3A2020-01-01%2"
+  },
+  {
+    "query": "crossref-M7-009-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=control+under+uncertainty+digital+twins&rows=40&filter=from-pub-date%3A2020-0"
+  },
+  {
+    "query": "crossref-M8-005-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=foundation+model+medical+image+segmentation&rows=40&filter=from-pub-date%3A19"
+  },
+  {
+    "query": "crossref-M8-005-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=foundation+model+medical+image+segmentation&rows=40&filter=from-pub-date%3A20"
+  },
+  {
+    "query": "crossref-M8-004-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=optical+flow+medical+imaging&rows=40&filter=from-pub-date%3A1900-01-01%2Cunti"
+  },
+  {
+    "query": "crossref-M8-006-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=coronary+artery+3D+reconstruction&rows=40&filter=from-pub-date%3A1900-01-01%2"
+  },
+  {
+    "query": "crossref-M8-007-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=medical+image+registration+deformable&rows=40&filter=from-pub-date%3A2020-01-"
+  },
+  {
+    "query": "crossref-M8-008-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=4D+reconstruction+cardiac+imaging&rows=40&filter=from-pub-date%3A1900-01-01%2"
+  },
+  {
+    "query": "crossref-M8-008-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=4D+reconstruction+cardiac+imaging&rows=40&filter=from-pub-date%3A2020-01-01%2"
+  },
+  {
+    "query": "crossref-M8-008-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=4D+reconstruction+cardiac+imaging&rows=40&filter=from-pub-date%3A2010-01-01%2"
+  },
+  {
+    "query": "crossref-M8-009-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=multimodal+image+representation+learning&rows=40&filter=from-pub-date%3A2020-"
+  },
+  {
+    "query": "crossref-M8-010-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=uncertainty+quantification+medical+image+segmentation&rows=40&filter=from-pub"
+  },
+  {
+    "query": "crossref-A1-001-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=coronary+angiography+segmentation+deep+learning&rows=40&filter=from-pub-date%"
+  },
+  {
+    "query": "crossref-A1-002-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=coronary+CT+angiography+vessel+segmentation&rows=40&filter=from-pub-date%3A20"
+  },
+  {
+    "query": "crossref-A1-003-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=coronary+artery+reconstruction+biplane+angiography&rows=40&filter=from-pub-da"
+  },
+  {
+    "query": "crossref-A1-003-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=coronary+artery+reconstruction+biplane+angiography&rows=40&filter=from-pub-da"
+  },
+  {
+    "query": "crossref-A1-004-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=optical+coherence+tomography+plaque+segmentation&rows=40&filter=from-pub-date"
+  },
+  {
+    "query": "crossref-A1-002-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=coronary+CT+angiography+vessel+segmentation&rows=40&filter=from-pub-date%3A20"
+  },
+  {
+    "query": "crossref-A1-006-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=coronary+computed+tomography+centerline&rows=40&filter=from-pub-date%3A1900-0"
+  },
+  {
+    "query": "crossref-A1-006-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=coronary+computed+tomography+centerline&rows=40&filter=from-pub-date%3A2020-0"
+  },
+  {
+    "query": "crossref-A1-005-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=intravascular+ultrasound+image+analysis&rows=40&filter=from-pub-date%3A1900-0"
+  },
+  {
+    "query": "crossref-A1-008-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=angiographic+3D+vessel+reconstruction&rows=40&filter=from-pub-date%3A1900-01-"
+  },
+  {
+    "query": "crossref-A1-004-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=optical+coherence+tomography+plaque+segmentation&rows=40&filter=from-pub-date"
+  },
+  {
+    "query": "crossref-A1-007-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=coronary+angiography+flow+measurement&rows=40&filter=from-pub-date%3A1900-01-"
+  },
+  {
+    "query": "crossref-A1-010-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=angiography+vessel+tracking+video&rows=40&filter=from-pub-date%3A2010-01-01%2"
+  },
+  {
+    "query": "crossref-A1-009-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=coronary+image+geometry+reconstruction&rows=40&filter=from-pub-date%3A2020-01"
+  },
+  {
+    "query": "crossref-A2-001-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=coronary+hemodynamics+computational+fluid+dynamics&rows=40&filter=from-pub-da"
+  },
+  {
+    "query": "crossref-A1-008-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=angiographic+3D+vessel+reconstruction&rows=40&filter=from-pub-date%3A2010-01-"
+  },
+  {
+    "query": "crossref-A2-003-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=coronary+artery+lumped+parameter+model&rows=40&filter=from-pub-date%3A1900-01"
+  },
+  {
+    "query": "crossref-A2-002-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=one+dimensional+coronary+blood+flow+wave+propagation&rows=40&filter=from-pub-"
+  },
+  {
+    "query": "crossref-A2-004-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=Windkessel+structured+tree+boundary+conditions&rows=40&filter=from-pub-date%3"
+  },
+  {
+    "query": "crossref-A2-003-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=coronary+artery+lumped+parameter+model&rows=40&filter=from-pub-date%3A2020-01"
+  },
+  {
+    "query": "crossref-A2-005-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=patient+specific+coronary+CFD+simulation&rows=40&filter=from-pub-date%3A1900-"
+  },
+  {
+    "query": "crossref-A2-002-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=one+dimensional+coronary+blood+flow+wave+propagation&rows=40&filter=from-pub-"
+  },
+  {
+    "query": "crossref-A2-009-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=coronary+stenosis+pressure+drop+computation&rows=40&filter=from-pub-date%3A20"
+  },
+  {
+    "query": "crossref-A2-009-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=coronary+stenosis+pressure+drop+computation&rows=40&filter=from-pub-date%3A20"
+  },
+  {
+    "query": "crossref-A2-007-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=multiscale+arterial+hemodynamics+model&rows=40&filter=from-pub-date%3A2020-01"
+  },
+  {
+    "query": "crossref-A2-006-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=coronary+microvascular+resistance+modeling&rows=40&filter=from-pub-date%3A201"
+  },
+  {
+    "query": "crossref-A3-003-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=angiography+based+fractional+flow+reserve&rows=40&filter=from-pub-date%3A1900"
+  },
+  {
+    "query": "crossref-A3-003-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=angiography+based+fractional+flow+reserve&rows=40&filter=from-pub-date%3A2010"
+  },
+  {
+    "query": "crossref-A3-003-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=angiography+based+fractional+flow+reserve&rows=40&filter=from-pub-date%3A2020"
+  },
+  {
+    "query": "crossref-A3-005-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=invasive+coronary+physiology+index+iFR&rows=40&filter=from-pub-date%3A2010-01"
+  },
+  {
+    "query": "crossref-A3-005-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=invasive+coronary+physiology+index+iFR&rows=40&filter=from-pub-date%3A2020-01"
+  },
+  {
+    "query": "crossref-A3-006-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=coronary+artery+functional+assessment+artificial+intelligence&rows=40&filter="
+  },
+  {
+    "query": "crossref-A3-007-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=coronary+microvascular+resistance+inverse&rows=40&filter=from-pub-date%3A2010"
+  },
+  {
+    "query": "crossref-A3-008-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=image+based+coronary+fractional+flow+reserve&rows=40&filter=from-pub-date%3A2"
+  },
+  {
+    "query": "crossref-A3-004-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=coronary+blood+flow+velocity+pressure+estimation&rows=40&filter=from-pub-date"
+  },
+  {
+    "query": "crossref-A3-010-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=coronary+physiology+patient+specific+prediction&rows=40&filter=from-pub-date%"
+  },
+  {
+    "query": "crossref-A4-001-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=medical+neural+operator+hemodynamics&rows=40&filter=from-pub-date%3A1900-01-0"
+  },
+  {
+    "query": "crossref-A4-002-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=physics+informed+AI+patient+specific+biomedical+model&rows=40&filter=from-pub"
+  },
+  {
+    "query": "crossref-A4-004-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=scientific+machine+learning+cardiovascular+blood+flow&rows=40&filter=from-pub"
+  },
+  {
+    "query": "crossref-A4-001-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=medical+neural+operator+hemodynamics&rows=40&filter=from-pub-date%3A2010-01-0"
+  },
+  {
+    "query": "crossref-A4-006-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=multicenter+coronary+image+segmentation&rows=40&filter=from-pub-date%3A2010-0"
+  },
+  {
+    "query": "crossref-A4-007-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=uncertainty+quantification+medical+surrogate&rows=40&filter=from-pub-date%3A2"
+  },
+  {
+    "query": "crossref-A4-007-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=uncertainty+quantification+medical+surrogate&rows=40&filter=from-pub-date%3A2"
+  },
+  {
+    "query": "crossref-A4-008-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=data+assimilation+biomedical+digital+twin&rows=40&filter=from-pub-date%3A1900"
+  },
+  {
+    "query": "crossref-A4-007-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=uncertainty+quantification+medical+surrogate&rows=40&filter=from-pub-date%3A1"
+  },
+  {
+    "query": "crossref-A4-009-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=medical+image+AI+algorithm+generalization&rows=40&filter=from-pub-date%3A2020"
+  },
+  {
+    "query": "crossref-A4-010-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=clinical+AI+model+independent+validation&rows=40&filter=from-pub-date%3A2010-"
+  },
+  {
+    "query": "crossref-A4-008-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=data+assimilation+biomedical+digital+twin&rows=40&filter=from-pub-date%3A2020"
+  },
+  {
+    "query": "crossref-A5-001-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=virtual+coronary+stenting+planning&rows=40&filter=from-pub-date%3A2010-01-01%"
+  },
+  {
+    "query": "crossref-A5-003-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=FFR+virtual+PCI+post+stent&rows=40&filter=from-pub-date%3A2010-01-01%2Cuntil-"
+  },
+  {
+    "query": "crossref-A5-005-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=coronary+stent+placement+optimization&rows=40&filter=from-pub-date%3A1900-01-"
+  },
+  {
+    "query": "crossref-A5-005-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=coronary+stent+placement+optimization&rows=40&filter=from-pub-date%3A2020-01-"
+  },
+  {
+    "query": "crossref-A5-001-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=virtual+coronary+stenting+planning&rows=40&filter=from-pub-date%3A1900-01-01%"
+  },
+  {
+    "query": "crossref-A5-006-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=computational+virtual+coronary+revascularization&rows=40&filter=from-pub-date"
+  },
+  {
+    "query": "crossref-A5-007-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=angiography+guided+PCI+trial+QFR&rows=40&filter=from-pub-date%3A2020-01-01%2C"
+  },
+  {
+    "query": "crossref-A5-006-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=computational+virtual+coronary+revascularization&rows=40&filter=from-pub-date"
+  },
+  {
+    "query": "crossref-A5-007-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=angiography+guided+PCI+trial+QFR&rows=40&filter=from-pub-date%3A2010-01-01%2C"
+  },
+  {
+    "query": "crossref-A5-010-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=post+PCI+fractional+flow+reserve+prediction&rows=40&filter=from-pub-date%3A19"
+  },
+  {
+    "query": "crossref-A5-010-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=post+PCI+fractional+flow+reserve+prediction&rows=40&filter=from-pub-date%3A20"
+  },
+  {
+    "query": "crossref-A5-009-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=reinforcement+learning+PCI+planning&rows=40&filter=from-pub-date%3A1900-01-01"
+  },
+  {
+    "query": "crossref-A5-009-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=reinforcement+learning+PCI+planning&rows=40&filter=from-pub-date%3A2010-01-01"
+  },
+  {
+    "query": "crossref-A6-002-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=hemodynamics+digital+twin+data+assimilation&rows=40&filter=from-pub-date%3A19"
+  },
+  {
+    "query": "crossref-A5-008-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=CT+FFR+virtual+stenting&rows=40&filter=from-pub-date%3A2020-01-01%2Cuntil-pub"
+  },
+  {
+    "query": "crossref-A6-003-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=coronary+digital+twin+intervention&rows=40&filter=from-pub-date%3A1900-01-01%"
+  },
+  {
+    "query": "crossref-A6-001-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=patient+specific+cardiovascular+digital+twin&rows=40&filter=from-pub-date%3A1"
+  },
+  {
+    "query": "crossref-A6-004-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=digital+twin+longitudinal+updating+biomedical&rows=40&filter=from-pub-date%3A"
+  },
+  {
+    "query": "crossref-A6-006-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=vascular+model+personalization+longitudinal&rows=40&filter=from-pub-date%3A20"
+  },
+  {
+    "query": "crossref-A6-006-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=vascular+model+personalization+longitudinal&rows=40&filter=from-pub-date%3A20"
+  },
+  {
+    "query": "crossref-A6-003-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=coronary+digital+twin+intervention&rows=40&filter=from-pub-date%3A2010-01-01%"
+  },
+  {
+    "query": "crossref-A6-005-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=physiological+world+model+clinical+decision&rows=40&filter=from-pub-date%3A20"
+  },
+  {
+    "query": "crossref-A6-007-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=digital+twin+uncertainty+clinical+validation&rows=40&filter=from-pub-date%3A2"
+  },
+  {
+    "query": "crossref-A6-008-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=counterfactual+simulation+cardiovascular+twin&rows=40&filter=from-pub-date%3A"
+  },
+  {
+    "query": "crossref-A6-008-modern",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=counterfactual+simulation+cardiovascular+twin&rows=40&filter=from-pub-date%3A"
+  },
+  {
+    "query": "crossref-A6-009-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=patient+specific+cardiovascular+state+estimation&rows=40&filter=from-pub-date"
+  },
+  {
+    "query": "crossref-A6-010-classic",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=cardiovascular+digital+twin+intervention+planning&rows=40&filter=from-pub-dat"
+  },
+  {
+    "query": "crossref-BOOK-002-book",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=regularization+inverse+problems&rows=40&filter=until-pub-date%3A2026-11-26%2C"
+  },
+  {
+    "query": "crossref-BOOK-001-monograph",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=inverse+problems+mathematical+theory&rows=40&filter=until-pub-date%3A2026-11-"
+  },
+  {
+    "query": "crossref-A6-007-recent",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=digital+twin+uncertainty+clinical+validation&rows=40&filter=from-pub-date%3A2"
+  },
+  {
+    "query": "crossref-BOOK-003-book",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=nonlinear+least+squares+inverse+problems&rows=40&filter=until-pub-date%3A2026"
+  },
+  {
+    "query": "crossref-BOOK-003-monograph",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=nonlinear+least+squares+inverse+problems&rows=40&filter=until-pub-date%3A2026"
+  },
+  {
+    "query": "crossref-BOOK-004-monograph",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=numerical+optimization&rows=40&filter=until-pub-date%3A2026-11-26%2Ctype%3Amo"
+  },
+  {
+    "query": "crossref-BOOK-006-book",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=finite+element+numerical+analysis&rows=40&filter=until-pub-date%3A2026-11-26%"
+  },
+  {
+    "query": "crossref-BOOK-008-book",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=reduced+order+modeling+theory&rows=40&filter=until-pub-date%3A2026-11-26%2Cty"
+  },
+  {
+    "query": "crossref-BOOK-001-book",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=inverse+problems+mathematical+theory&rows=40&filter=until-pub-date%3A2026-11-"
+  },
+  {
+    "query": "crossref-BOOK-006-monograph",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=finite+element+numerical+analysis&rows=40&filter=until-pub-date%3A2026-11-26%"
+  },
+  {
+    "query": "crossref-BOOK-008-monograph",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=reduced+order+modeling+theory&rows=40&filter=until-pub-date%3A2026-11-26%2Cty"
+  },
+  {
+    "query": "crossref-BOOK-007-monograph",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=finite+volume+methods+computational+fluid&rows=40&filter=until-pub-date%3A202"
+  },
+  {
+    "query": "crossref-BOOK-012-monograph",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=data+assimilation+methods&rows=40&filter=until-pub-date%3A2026-11-26%2Ctype%3"
+  },
+  {
+    "query": "crossref-BOOK-010-book",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=Bayesian+statistical+inverse+problems&rows=40&filter=until-pub-date%3A2026-11"
+  },
+  {
+    "query": "crossref-BOOK-013-book",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=Bayesian+filtering+smoothing&rows=40&filter=until-pub-date%3A2026-11-26%2Ctyp"
+  },
+  {
+    "query": "crossref-BOOK-016-book",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=reinforcement+learning+introduction&rows=40&filter=until-pub-date%3A2026-11-2"
+  },
+  {
+    "query": "crossref-BOOK-013-monograph",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=Bayesian+filtering+smoothing&rows=40&filter=until-pub-date%3A2026-11-26%2Ctyp"
+  },
+  {
+    "query": "crossref-BOOK-016-monograph",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=reinforcement+learning+introduction&rows=40&filter=until-pub-date%3A2026-11-2"
+  },
+  {
+    "query": "crossref-BOOK-018-monograph",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=probabilistic+machine+learning&rows=40&filter=until-pub-date%3A2026-11-26%2Ct"
+  },
+  {
+    "query": "crossref-BOOK-019-book",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=computer+vision+multiple+view+geometry&rows=40&filter=until-pub-date%3A2026-1"
+  },
+  {
+    "query": "crossref-BOOK-020-book",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=medical+image+analysis+artificial+intelligence&rows=40&filter=until-pub-date%"
+  },
+  {
+    "query": "crossref-BOOK-022-book",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=coronary+physiology+intervention+planning&rows=40&filter=until-pub-date%3A202"
+  },
+  {
+    "query": "crossref-BOOK-022-monograph",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=coronary+physiology+intervention+planning&rows=40&filter=until-pub-date%3A202"
+  },
+  {
+    "query": "crossref-BOOK-021-book",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=cardiovascular+computational+modeling&rows=40&filter=until-pub-date%3A2026-11"
+  },
+  {
+    "query": "crossref-BOOK-024-monograph",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=dynamical+system+identification&rows=40&filter=until-pub-date%3A2026-11-26%2C"
+  },
+  {
+    "query": "crossref-BOOK-023-monograph",
+    "error": "HTTP 429: https://api.crossref.org/works?query.title=flow+matching+diffusion+generative+models&rows=40&filter=until-pub-date%3A202"
+  }
+]
