@@ -30,6 +30,8 @@ CUTOFF=PLAN["cutoff"]
 UA="Physics-AI-Methods-Atlas-Corpus-Discovery/0.1 (scholarly-metadata-only; +https://github.com/TianminWang/physics-ai-methods-atlas)"
 MAX_QUERIES=int(os.environ.get("ATLAS_SEARCH_MAX_QUERIES","0"))
 ENABLE_OPENALEX=os.environ.get("ATLAS_OPENALEX","1")=="1"
+PER_FACET=int(os.environ.get("ATLAS_PER_FACET","0"))
+BOOKS_LIMIT=int(os.environ.get("ATLAS_BOOKS_LIMIT","0"))
 TERMS=set("of for in on to an a and or the with from using via through approach framework towards based methods method study studies analysis model modeling models learning deep machine data system systems algorithm algorithms survey review clinical patients patient".split())
 records={}
 lookup={}
@@ -266,11 +268,11 @@ def main():
     tasks=[]
     eras=PLAN["eras"]
     for facet,phrases in PLAN["method_app_facet_queries"].items():
-        for i,phrase in enumerate(phrases,1):
+        for i,phrase in enumerate(phrases[:PER_FACET] if PER_FACET else phrases,1):
             for era in eras:
                 tasks.append(("crossref",facet,phrase,era,None,i))
     # Fewer, targeted book-type queries.
-    for i,phrase in enumerate(PLAN["books_queries"],1):
+    for i,phrase in enumerate(PLAN["books_queries"][:BOOKS_LIMIT] if BOOKS_LIMIT else PLAN["books_queries"],1):
         tasks.append(("crossref","BOOK",phrase,None,"book",i))
         # Crossref registers some technical books as monographs.
         tasks.append(("crossref","BOOK",phrase,None,"monograph",i))
@@ -278,7 +280,7 @@ def main():
     mederas=[("historic","1900-01-01","2014-12-31"),("recent","2015-01-01",CUTOFF)]
     for facet,phrases in PLAN["method_app_facet_queries"].items():
         if not facet.startswith("A"):continue
-        for i,phrase in enumerate(phrases,1):
+        for i,phrase in enumerate(phrases[:PER_FACET] if PER_FACET else phrases,1):
             for era in mederas:tasks.append(("europepmc",facet,phrase,era,None,i))
     # Keyless OpenAlex is a complementary sample only; obey daily budget if throttled.
     if ENABLE_OPENALEX:
