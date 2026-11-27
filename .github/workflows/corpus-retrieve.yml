@@ -15,7 +15,7 @@ jobs:
   indexed-discovery:
     if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
         with:
@@ -26,8 +26,8 @@ jobs:
           python-version: "3.11"
       - name: Retrieve registered literature metadata
         env:
-          ATLAS_SEARCH_MAX_QUERIES: "9"
-          ATLAS_OPENALEX: "0"
+          ATLAS_SEARCH_MAX_QUERIES: "0"
+          ATLAS_OPENALEX: "1"
         run: python -m scripts.research.retrieve_index
       - name: Upload bibliographic retrieval records
         if: always()
