@@ -1,29 +1,45 @@
 {
   "retrieval_version": "corpus-v1-indexed-retrieval-v2",
   "cutoff": "2026-11-26",
-  "started_at": "2026-11-27T02:07:38.032892+00:00",
-  "completed_at": "2026-11-27T02:08:28.983935+00:00",
+  "started_at": "2026-11-27T02:30:39.068566+00:00",
+  "completed_at": "2026-11-27T02:35:35.159189+00:00",
   "query_plan_sha256_16": "e9af3936091d00f8",
   "source_status": "indexed_discovery_only",
-  "queries_executed": 9,
+  "queries_executed": 124,
   "by_query_status": {
-    "ok": 9
+    "error": 20,
+    "ok": 104
   },
-  "index_total_hits_sum_not_unique_or_eligible": 12029389,
-  "total_source_records_in_first_pages": 360,
-  "unique_candidates": 347,
-  "papers_and_proceedings": 343,
-  "books_and_monographs": 4,
-  "with_doi": 347,
+  "index_total_hits_sum_not_unique_or_eligible": 53412553,
+  "total_source_records_in_first_pages": 4128,
+  "unique_candidates": 3642,
+  "papers_and_proceedings": 3095,
+  "books_and_monographs": 547,
+  "with_doi": 3611,
   "by_method_facet": {
-    "M1": 347
+    "M1": 231,
+    "M2": 150,
+    "M3": 151,
+    "M4": 226,
+    "M5": 197,
+    "M6": 134,
+    "M7": 145,
+    "M8": 156
   },
-  "by_biomedical_facet": {},
+  "by_biomedical_facet": {
+    "A1": 323,
+    "A2": 410,
+    "A3": 514,
+    "A4": 194,
+    "A5": 198,
+    "A6": 159
+  },
   "by_index": {
-    "crossref": 347
+    "crossref": 2846,
+    "europepmc": 831
   },
-  "pending": 347,
-  "failed_queries": 0,
+  "pending": 3642,
+  "failed_queries": 20,
   "methodology_notes": [
     "These are metadata search hits, not a comprehensive field census or approved publications.",
     "Queries draw first page per era, limits are recorded per query; total hits are not independent or eligible studies.",
