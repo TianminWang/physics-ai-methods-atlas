@@ -4,7 +4,7 @@
 >
 > 检索范围截止日期：2026-11-26。依据：[正式质量准入政策](../../docs/zh/SOURCE_ADMISSION_POLICY.md)、[Corpus-first 协议](../../docs/zh/CORPUS_FIRST_PROTOCOL_V1.md)。
 >
-> 可重跑原始资料：[索引查询计划](../INDEX_SEARCH_PLAN_V2.json) · [程序](../../../scripts/research/retrieve_index.py) · [查询审计](query_audit.json) · [数据库结果](indexed_candidates.jsonl) · [机器汇总](search_summary.json) · [失败请求](errors.json) · [覆盖与类型审计](retrieval_audit.json)。
+> 可重跑原始资料：[索引查询计划](INDEX_SEARCH_PLAN_V2.json) · [程序](../../scripts/research/retrieve_index.py) · [查询审计](indexed/query_audit.json) · [数据库结果](indexed/indexed_candidates.jsonl) · [机器汇总](indexed/search_summary.json) · [失败请求](indexed/errors.json) · [覆盖与类型审计](indexed/retrieval_audit.json)。
 
 ## 1. 主要发现与旧147条比较
 
