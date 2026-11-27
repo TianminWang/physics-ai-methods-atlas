@@ -1,0 +1,37 @@
+name: Corpus v1 retrieval audit
+
+on:
+  pull_request:
+    paths:
+      - "scripts/research/audit_index.py"
+      - ".github/workflows/corpus-audit.yml"
+      - "research/corpus_v1/indexed/search_summary.json"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  inspect-index:
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Summarize candidate coverage and query errors
+        run: python -m scripts.research.audit_index
+      - name: Commit audit to PR branch
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add research/corpus_v1/indexed/retrieval_audit.json
+          if ! git diff --cached --quiet; then
+            git commit -m "research: audit indexed retrieval coverage and errors"
+            git push origin HEAD:${{ github.head_ref }}
+          fi
