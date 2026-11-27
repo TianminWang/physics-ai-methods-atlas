@@ -27,7 +27,9 @@ jobs:
       - name: Retrieve registered literature metadata
         env:
           ATLAS_SEARCH_MAX_QUERIES: "0"
-          ATLAS_OPENALEX: "1"
+          ATLAS_PER_FACET: "2"
+          ATLAS_BOOKS_LIMIT: "8"
+          ATLAS_OPENALEX: "0"
         run: python -m scripts.research.retrieve_index
       - name: Upload bibliographic retrieval records
         if: always()
