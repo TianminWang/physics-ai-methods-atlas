@@ -7,6 +7,7 @@ Run: python -m scripts.research.retrieve_index
 """
 from __future__ import annotations
 import concurrent.futures
+import threading
 import datetime as dt
 import hashlib
 import json
@@ -36,6 +37,8 @@ stats=[]
 failures=[]
 snapshot_time=dt.datetime.now(dt.timezone.utc).isoformat()
 config_digest=hashlib.sha256(PLAN_PATH.read_bytes()).hexdigest()[:16]
+RECORD_LOCK=threading.RLock()
+HOST_LIMITS={"api.crossref.org":threading.Semaphore(5),"www.ebi.ac.uk":threading.Semaphore(2),"api.openalex.org":threading.Semaphore(1)}
 
 def words(t):
     return [w for w in re.findall(r"[a-z0-9]+",t.lower()) if len(w)>2 and w not in TERMS]
@@ -192,7 +195,10 @@ def run_query(engine,facet,phrase,era=None,stype=None,index=0):
     log={"id":qid,"engine":engine,"facet":facet,"phrase":phrase,"era":era[0] if era else None,
          "filter_type":stype,"request_url":url,"status":"unknown","retrieved":0}
     try:
-        obj=request(url)
+        host=urllib.parse.urlparse(url).netloc
+        sem=HOST_LIMITS.get(host,threading.Semaphore(1))
+        with sem:
+            obj=request(url)
         if engine=="crossref":
             items=(obj.get("message") or {}).get("items",[])
             log["index_total_hits"]=(obj.get("message") or {}).get("total-results")
@@ -209,7 +215,8 @@ def run_query(engine,facet,phrase,era=None,stype=None,index=0):
         selected=0
         for k,x in enumerate(items,1):
             try:
-                if add(x,engine,facet,qid,phrase,k):selected+=1
+                with RECORD_LOCK:
+                    if add(x,engine,facet,qid,phrase,k):selected+=1
             except Exception as e:
                 failures.append({"query":qid,"record_rank":k,"error":str(e)[:130]})
         log["valid_metadata_selected"]=selected
@@ -281,8 +288,10 @@ def main():
     print("TASKS "+str(len(tasks))+" total, max="+str(MAX_QUERIES),flush=True)
     if MAX_QUERIES>0:tasks=tasks[:MAX_QUERIES]
     try:
-        for task in tasks:run_query(*task)
+        with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
+            list(pool.map(lambda args: run_query(*args),tasks))
     finally:
+        stats.sort(key=lambda q:q["id"])
         summarize()
     success=sum(q["status"]=="ok" for q in stats)
     if not success:
