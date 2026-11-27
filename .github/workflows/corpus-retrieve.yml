@@ -1,0 +1,45 @@
+name: Corpus v1 indexed discovery
+
+on:
+  pull_request:
+    paths:
+      - "research/corpus_v1/**"
+      - "scripts/research/**"
+      - ".github/workflows/corpus-retrieve.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  indexed-discovery:
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Retrieve registered literature metadata
+        run: python -m scripts.research.retrieve_index
+      - name: Upload bibliographic retrieval records
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: corpus-indexed-search
+          path: research/corpus_v1/indexed/
+          if-no-files-found: warn
+      - name: Commit results to the PR branch
+        if: success()
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add research/corpus_v1/indexed/
+          if ! git diff --cached --quiet; then
+            git commit -m "research: record reproducible Crossref EuropePMC OpenAlex discovery"
+            git push origin HEAD:${{ github.head_ref }}
+          fi
