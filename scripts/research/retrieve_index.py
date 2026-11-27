@@ -46,7 +46,7 @@ def titlekey(t):
 def normal_doi(x):
     if not x:return ""
     x=str(x).strip().lower()
-    x=re.sub(r"^https?://(dx\\.)?doi\\.org/","",x)
+    x=re.sub(r"^https?://(?:dx[.])?doi[.]org/","",x)
     return x.strip().replace(" ","")
 
 def request(url,retries=3):
@@ -154,8 +154,9 @@ def add(x,engine,facet,qid,query_text,search_rank):
     if c.get("openalex_id") and not entry.get("openalex_id"):entry["openalex_id"]=c["openalex_id"]
     if engine not in entry["found_in"]:entry["found_in"].append(engine)
     if qid not in entry["query_ids"]:entry["query_ids"].append(qid)
-    tagfield="biomedical_application_tags" if facet.startswith("A") else "method_search_tags"
-    if facet not in entry[tagfield]:entry[tagfield].append(facet)
+    if facet!="BOOK":
+        tagfield="biomedical_application_tags" if facet.startswith("A") else "method_search_tags"
+        if facet not in entry[tagfield]:entry[tagfield].append(facet)
     title_terms=set(words(title))
     qterms=set(words(query_text))
     overlap=len(title_terms&qterms)
