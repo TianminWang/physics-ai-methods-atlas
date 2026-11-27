@@ -1,6 +1,6 @@
 {
   "kind": "INDEX_COVERAGE_AUDIT_NOT_ACADEMIC_ADMISSION",
-  "generated_at": "2026-11-27T02:33:55.643048+00:00",
+  "generated_at": "2026-11-27T02:36:06.047879+00:00",
   "retrieval_cutoff": "2026-11-26",
   "total_queries": 618,
   "query_counts_by_engine": {
