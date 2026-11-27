@@ -10,7 +10,7 @@
 
 The [Corpus-first protocol v1 (Chinese, authoritative)](docs/zh/CORPUS_FIRST_PROTOCOL_V1.md) supersedes the prior incremental search/build-graph sequence. **Search and screen the entire agreed methodological and biomedical scope, deduplicate and assess sources, audit coverage and freeze Scholarly Corpus v1 before designing the formal knowledge graph.** Internal search work units are for reproducibility, not separate ontology releases.
 
-The previous 61 methods, 34 families and 26 experimental B1 candidates are **legacy prototype artifacts, not mandatory scholarly seeds**. [Current independent discovery/coverage audit](research/corpus_v1/BREADTH_SCAN_REPORT_2026-11-26.md): 147 leads (121 papers/reviews, 26 books), **all pending quality review**. Neither exhaustive retrieval nor Corpus v1 nor a new graph has been completed.
+The previous 61 methods and 34 families remain **legacy prototype artifacts**, not scholarly seeds. [Expanded index retrieval report (2026-11-27)](research/corpus_v1/INDEXED_RETRIEVAL_REPORT_2026-11-27.md): 618 index queries across Crossref, Europe PMC and OpenAlex; **399 succeeded and 219 failed (Crossref rate limits)**. From 15,506 returned records, **13,149 DOI/title-year-deduplicated raw metadata leads** were registered. These include weak matches, chapters and other content, **not 13,149 admitted studies**. All await academic review; pagination limits, source recall and citation tracing remain incomplete. The former [147 hand-picked discoveries](research/corpus_v1/BREADTH_SCAN_REPORT_2026-11-26.md) are historical.
 
 
 
